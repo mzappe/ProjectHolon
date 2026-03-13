@@ -2,6 +2,7 @@
 #include "bg.h"
 #include "decompress.h"
 #include "expansion_intro.h"
+#include "intro_frlg.h"
 #include "gpu_regs.h"
 #include "libgcnmultiboot.h"
 #include "link.h"
