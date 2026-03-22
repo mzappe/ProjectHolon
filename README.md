@@ -1,5 +1,5 @@
 # Pokemon Holon Legends
-![59c53455-5679-4271-b1e0-aa6476b7e839](https://github.com/user-attachments/assets/cad60817-44ca-41f3-a7bc-1c8789deb525)
+![phl-logo2](https://github.com/user-attachments/assets/073c6f1e-dfd8-4b9e-9393-797692aa7182)
 
 A Pokemon ROM hack set in the **Holon region** from the TCG Delta Species arc, built on [RHH's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion).
 
