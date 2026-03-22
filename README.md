@@ -1,53 +1,82 @@
-# About `pokeemerald-expansion`
+# Pokemon Holon Legends
 
-![Gif that shows debugging functionality that is unique to pokeemerald-expansion such as rerolling Trainer ID, Cheat Start, PC from Debug Menu, Debug PC Fill, Pokémon Sprite Visualizer, Debug Warp to Map, and Battle Debug Menu](https://github.com/user-attachments/assets/cf9dfbee-4c6b-4bca-8e0a-07f116ef891c) ![Gif that shows overworld functionality that is unique to pokeemerald-expansion such as indoor running, BW2 style map popups, overworld followers, DNA Splicers, Gen 1 style fishing, OW Item descriptions, Quick Run from Battle, Use Last Ball, Wild Double Battles, and Catch from EXP](https://github.com/user-attachments/assets/383af243-0904-4d41-bced-721492fbc48e) ![Gif that shows off a number of modern Pokémon battle mechanics happening in the pokeemerald-expansion engine: 2 vs 1 battles, modern Pokémon, items, moves, abilities, fully customizable opponents and partners, Trainer Slides, and generational gimmicks](https://github.com/user-attachments/assets/50c576bc-415e-4d66-a38f-ad712f3316be)
+A Pokemon ROM hack set in the **Holon region** from the TCG Delta Species arc, built on [RHH's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion).
 
-<!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
+An ancient meteorite lies buried beneath the Holon Research Tower. For years, the Tower broadcast electromagnetic energy to track Mew sightings in Mirage Forest — unknowingly transforming the surrounding Pokemon into **Delta Species**, creatures carrying elemental types their species was never meant to have. Then something went wrong: the broadcast reached what was buried below, and a contained local phenomenon became a spreading ecological crisis. The player travels outward from Mirage Forest through five locations mirroring the five TCG sets of the Delta Species arc, piecing together what happened and how to stop it before the region's ecosystems collapse.
 
-**`pokeemerald-expansion`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon ROM hacks. **`pokeemerald-expansion`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project. **It is not a playable Pokémon game on its own.**
+## Features
 
-# [Features](FEATURES.md)
+### The Holon Region
+- **Three geographic zones** — the forested Mainland, the island Archipelago, and the endgame Dragon Frontiers
+- **Five canonical TCG locations** — Mirage Forest (EX Legend Maker), Holon Village (EX Delta Species), Holon Lake (EX Holon Phantoms), the Unnamed Island (EX Crystal Guardians), and Dragon Frontiers (EX Dragon Frontiers)
+- Connective towns, routes, and landmarks that make the region feel inhabited beyond its story anchors
+- 8 Gyms + Pokemon League
+- Gen 3 design philosophy — no quest markers, no mission menus, world-driven exploration
 
-**`pokeemerald-expansion`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), along with popular quality-of-life enhancements designed to streamline development and improve the player experience. A full list of those features can be found in [`FEATURES.md`](FEATURES.md).
+### Delta Species
+- Pokemon transformed by electromagnetic radiation from the Holon Research Tower
+- Non-standard elemental types, custom sprites and palettes
+- Delta mutations spread outward from the Tower, growing more severe the closer you get
+- Delta starter Pokemon
 
-# [Credits](CREDITS.md)
+### Story
+- A scientific accident, an ancient mystery, and a dormant extraterrestrial organism beneath the Tower
+- Deoxys — fractured into four Delta formes, each locked into a single behavioral extreme
+- Rayquaza — unable to identify what the fractured Delta Deoxys have become, responding with territorial aggression
+- Steven Stone investigating the Holon Ruins and the ancient civilization that once protected the crash site
+- A faction that appears to be part of the research effort but isn't what it seems
 
- [![](https://img.shields.io/github/all-contributors/rh-hideout/pokeemerald-expansion/upcoming)](CREDITS.md)
+### Powered by pokeemerald-expansion
+- Modern battle engine with Mega Evolution, Z-Moves, Dynamax, and Terastallization (configurable)
+- Physical/Special split, Fairy type, all items/abilities/moves through Gen IX
+- Improved AI, Level/EV caps, Sleep Clause, Type Indicators
+- Quality-of-life: indoor running, follower Pokemon, day/night cycle, DexNav, HGSS-style Pokedex
+- Full feature list in [`FEATURES.md`](FEATURES.md)
 
-If you use **`pokeemerald-expansion`**, please credit **RHH (Rom Hacking Hideout)**. Optionally, include the version number for clarity.
+## Getting Started
+
+### Prerequisites
+- devkitARM (ARM GCC cross-compiler)
+- libpng, pkg-config
+- Python 3
+
+Platform-specific setup instructions are in [`INSTALL.md`](INSTALL.md).
+
+### Building
+
+```bash
+# Clone the repository (do not use GitHub's "Download Zip")
+git clone https://github.com/mzappe/ProjectHolon.git
+cd ProjectHolon
+
+# Build the ROM
+make -j$(nproc)
+```
+
+The output ROM will be `pokeemerald.gba`.
+
+## Documentation
+
+- [`FEATURES.md`](FEATURES.md) — Full pokeemerald-expansion feature list
+- [`INSTALL.md`](INSTALL.md) — Platform-specific installation guides (Windows WSL, Linux, macOS, ChromeOS)
+- [`GDDs/`](GDDs/) — Game design documents including story bible, gameplay guide, and technical reference
+
+## Credits
+
+This project is built on **[RHH's pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion)**, which is itself built on **[pret's pokeemerald](https://github.com/pret/pokeemerald)** decompilation.
 
 ```
-Based off RHH's pokeemerald-expansion 1.15.0 https://github.com/rh-hideout/pokeemerald-expansion/
+Based on RHH's pokeemerald-expansion https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
-Please consider [crediting all contributors](CREDITS.md) involved in the project!
+Full contributor list for pokeemerald-expansion can be found in [`CREDITS.md`](CREDITS.md).
 
-# Choosing `pokeemerald` or **`pokeemerald-expansion`**
-
-- **`pokeemerald-expansion`** supports multiplayer functionality with other games built on **`pokeemerald-expansion`**. It is not compatible with official Pokémon games.
-- If compatibility with official games is important, use [`pokeemerald`](https://github.com/pret/pokeemerald). Otherwise, we recommend using **`pokeemerald-expansion`**.
-- **`pokeemerald-expansion`** incorporates regular updates from `pokeemerald`, including bug fixes and documentation improvements.
-
-# [Getting Started](INSTALL.md)
-
-❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches.
-
-If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
-
-## 📥 [Installing **`pokeemerald-expansion`**](INSTALL.md)
-## 🏗️ [Building **`pokeemerald-expansion`**](INSTALL.md#Building-pokeemerald-expansion)
-## 🚚 [Migrating from **`pokeemerald`**](INSTALL.md#Migrating-from-pokeemerald)
-## 🚀 [Updating **`pokeemerald-expansion`**](INSTALL.md#Updating-pokeemerald-expansion)
-
-# [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
-
-For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
-
-# [Contributions](CONTRIBUTING.md)
-If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
-
-# [Community](https://discord.gg/6CzjAG6GZk)
+## Community
 
 [![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
 
-Our community uses the [ROM Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
+Join the [ROM Hacking Hideout (RHH) Discord](https://discord.gg/6CzjAG6GZk) for pokeemerald-expansion support and discussion.
+
+## Status
+
+This project is in active development. Pokemon Holon Legends is not yet playable.
