@@ -1,4 +1,4 @@
-# Pokémon Holon — pokeemerald-expansion Features & Branch Guide
+# Pokémon Holon Legends — pokeemerald-expansion Features & Branch Guide
 
 A comprehensive reference for deciding which **pokeemerald-expansion** features to enable, disable, or configure for **Pokémon Holon**, plus a catalog of community **feature branches** worth considering.
 

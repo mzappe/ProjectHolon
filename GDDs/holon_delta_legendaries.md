@@ -1,4 +1,4 @@
-# Pokémon Holon — Delta Legendary & Mythical Reference
+# Pokémon Holon Legends — Delta Legendary & Mythical Reference
 
 A complete reference table for every legendary and mythical Pokémon in Generations 1–4,
 assessing their potential as Delta forms in the Holon post-game. Organized by generation,

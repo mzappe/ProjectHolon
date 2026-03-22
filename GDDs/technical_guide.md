@@ -1,4 +1,4 @@
-# Pokémon Holon — Master Technical Guide
+# Pokémon Holon Legends — Master Technical Guide
 
 A comprehensive, concrete technical guide for building **Pokémon Holon** as a solo, AI-assisted ROM hack on **pokeemerald-expansion**, targeting **macOS** with **Antigravity** as the IDE.
 

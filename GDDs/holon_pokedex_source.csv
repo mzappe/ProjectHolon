@@ -1,0 +1,434 @@
+set_id,set_name,location,card_number,name,supertype,subtypes,types,evolves_from,rarity,is_delta,is_gold_star,is_ex,is_holons,card_image_local
+ex12,EX Legend Maker,Mirage Forest,1,Aerodactyl,Pokémon,Stage 1,Colorless,Mysterious Fossil,Rare Holo,No,No,No,No,ex12/1_hires.png
+ex12,EX Legend Maker,Mirage Forest,2,Aggron,Pokémon,Stage 2,Metal,Lairon,Rare Holo,No,No,No,No,ex12/2_hires.png
+ex12,EX Legend Maker,Mirage Forest,3,Cradily,Pokémon,Stage 2,Grass,Lileep,Rare Holo,No,No,No,No,ex12/3_hires.png
+ex12,EX Legend Maker,Mirage Forest,4,Delcatty,Pokémon,Stage 1,Colorless,Skitty,Rare Holo,No,No,No,No,ex12/4_hires.png
+ex12,EX Legend Maker,Mirage Forest,5,Gengar,Pokémon,Stage 2,Psychic,Haunter,Rare Holo,No,No,No,No,ex12/5_hires.png
+ex12,EX Legend Maker,Mirage Forest,6,Golem,Pokémon,Stage 2,Fighting,Graveler,Rare Holo,No,No,No,No,ex12/6_hires.png
+ex12,EX Legend Maker,Mirage Forest,7,Kabutops,Pokémon,Stage 2,Fighting,Kabuto,Rare Holo,No,No,No,No,ex12/7_hires.png
+ex12,EX Legend Maker,Mirage Forest,8,Lapras,Pokémon,Basic,Water,,Rare Holo,No,No,No,No,ex12/8_hires.png
+ex12,EX Legend Maker,Mirage Forest,9,Machamp,Pokémon,Stage 2,Fighting,Machoke,Rare Holo,No,No,No,No,ex12/9_hires.png
+ex12,EX Legend Maker,Mirage Forest,10,Mew,Pokémon,Basic,Psychic,,Rare Holo,No,No,No,No,ex12/10_hires.png
+ex12,EX Legend Maker,Mirage Forest,11,Muk,Pokémon,Stage 1,Grass,Grimer,Rare Holo,No,No,No,No,ex12/11_hires.png
+ex12,EX Legend Maker,Mirage Forest,12,Shiftry,Pokémon,Stage 2,Darkness,Nuzleaf,Rare Holo,No,No,No,No,ex12/12_hires.png
+ex12,EX Legend Maker,Mirage Forest,13,Victreebel,Pokémon,Stage 2,Grass,Weepinbell,Rare Holo,No,No,No,No,ex12/13_hires.png
+ex12,EX Legend Maker,Mirage Forest,14,Wailord,Pokémon,Stage 1,Water,Wailmer,Rare Holo,No,No,No,No,ex12/14_hires.png
+ex12,EX Legend Maker,Mirage Forest,15,Absol,Pokémon,Basic,Darkness,,Rare,No,No,No,No,ex12/15_hires.png
+ex12,EX Legend Maker,Mirage Forest,16,Girafarig,Pokémon,Basic,Psychic,,Rare,No,No,No,No,ex12/16_hires.png
+ex12,EX Legend Maker,Mirage Forest,17,Gorebyss,Pokémon,Stage 1,Water,Clamperl,Rare,No,No,No,No,ex12/17_hires.png
+ex12,EX Legend Maker,Mirage Forest,18,Huntail,Pokémon,Stage 1,Water,Clamperl,Rare,No,No,No,No,ex12/18_hires.png
+ex12,EX Legend Maker,Mirage Forest,19,Lanturn,Pokémon,Stage 1,Lightning,Chinchou,Rare,No,No,No,No,ex12/19_hires.png
+ex12,EX Legend Maker,Mirage Forest,20,Lunatone,Pokémon,Basic,Psychic,,Rare,No,No,No,No,ex12/20_hires.png
+ex12,EX Legend Maker,Mirage Forest,21,Magmar,Pokémon,Basic,Fire,,Rare,No,No,No,No,ex12/21_hires.png
+ex12,EX Legend Maker,Mirage Forest,22,Magneton,Pokémon,Stage 1,Lightning,Magnemite,Rare,No,No,No,No,ex12/22_hires.png
+ex12,EX Legend Maker,Mirage Forest,23,Omastar,Pokémon,Stage 2,Water,Omanyte,Rare,No,No,No,No,ex12/23_hires.png
+ex12,EX Legend Maker,Mirage Forest,24,Pinsir,Pokémon,Basic,Grass,,Rare,No,No,No,No,ex12/24_hires.png
+ex12,EX Legend Maker,Mirage Forest,25,Solrock,Pokémon,Basic,Fighting,,Rare,No,No,No,No,ex12/25_hires.png
+ex12,EX Legend Maker,Mirage Forest,26,Spinda,Pokémon,Basic,Colorless,,Rare,No,No,No,No,ex12/26_hires.png
+ex12,EX Legend Maker,Mirage Forest,27,Torkoal,Pokémon,Basic,Fire,,Rare,No,No,No,No,ex12/27_hires.png
+ex12,EX Legend Maker,Mirage Forest,28,Wobbuffet,Pokémon,Basic,Psychic,,Rare,No,No,No,No,ex12/28_hires.png
+ex12,EX Legend Maker,Mirage Forest,29,Anorith,Pokémon,Stage 1,Fighting,Claw Fossil,Uncommon,No,No,No,No,ex12/29_hires.png
+ex12,EX Legend Maker,Mirage Forest,30,Cascoon,Pokémon,Stage 1,Grass,Wurmple,Uncommon,No,No,No,No,ex12/30_hires.png
+ex12,EX Legend Maker,Mirage Forest,31,Dunsparce,Pokémon,Basic,Colorless,,Uncommon,No,No,No,No,ex12/31_hires.png
+ex12,EX Legend Maker,Mirage Forest,32,Electrode,Pokémon,Stage 1,Lightning,Voltorb,Uncommon,No,No,No,No,ex12/32_hires.png
+ex12,EX Legend Maker,Mirage Forest,33,Furret,Pokémon,Stage 1,Colorless,Sentret,Uncommon,No,No,No,No,ex12/33_hires.png
+ex12,EX Legend Maker,Mirage Forest,34,Graveler,Pokémon,Stage 1,Fighting,Geodude,Uncommon,No,No,No,No,ex12/34_hires.png
+ex12,EX Legend Maker,Mirage Forest,35,Haunter,Pokémon,Stage 1,Psychic,Gastly,Uncommon,No,No,No,No,ex12/35_hires.png
+ex12,EX Legend Maker,Mirage Forest,36,Kabuto,Pokémon,Stage 1,Fighting,Mysterious Fossil,Uncommon,No,No,No,No,ex12/36_hires.png
+ex12,EX Legend Maker,Mirage Forest,37,Kecleon,Pokémon,Basic,Colorless,,Uncommon,No,No,No,No,ex12/37_hires.png
+ex12,EX Legend Maker,Mirage Forest,38,Lairon,Pokémon,Stage 1,Metal,Aron,Uncommon,No,No,No,No,ex12/38_hires.png
+ex12,EX Legend Maker,Mirage Forest,39,Machoke,Pokémon,Stage 1,Fighting,Machop,Uncommon,No,No,No,No,ex12/39_hires.png
+ex12,EX Legend Maker,Mirage Forest,40,Misdreavus,Pokémon,Basic,Psychic,,Uncommon,No,No,No,No,ex12/40_hires.png
+ex12,EX Legend Maker,Mirage Forest,41,Nuzleaf,Pokémon,Stage 1,Darkness,Seedot,Uncommon,No,No,No,No,ex12/41_hires.png
+ex12,EX Legend Maker,Mirage Forest,42,Roselia,Pokémon,Basic,Grass,,Uncommon,No,No,No,No,ex12/42_hires.png
+ex12,EX Legend Maker,Mirage Forest,43,Sealeo,Pokémon,Stage 1,Water,Spheal,Uncommon,No,No,No,No,ex12/43_hires.png
+ex12,EX Legend Maker,Mirage Forest,44,Tangela,Pokémon,Basic,Grass,,Uncommon,No,No,No,No,ex12/44_hires.png
+ex12,EX Legend Maker,Mirage Forest,45,Tentacruel,Pokémon,Stage 1,Water,Tentacool,Uncommon,No,No,No,No,ex12/45_hires.png
+ex12,EX Legend Maker,Mirage Forest,46,Vibrava,Pokémon,Stage 1,Colorless,Trapinch,Uncommon,No,No,No,No,ex12/46_hires.png
+ex12,EX Legend Maker,Mirage Forest,47,Weepinbell,Pokémon,Stage 1,Grass,Bellsprout,Uncommon,No,No,No,No,ex12/47_hires.png
+ex12,EX Legend Maker,Mirage Forest,48,Aron,Pokémon,Basic,Metal,,Common,No,No,No,No,ex12/48_hires.png
+ex12,EX Legend Maker,Mirage Forest,49,Bellsprout,Pokémon,Basic,Grass,,Common,No,No,No,No,ex12/49_hires.png
+ex12,EX Legend Maker,Mirage Forest,50,Chinchou,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex12/50_hires.png
+ex12,EX Legend Maker,Mirage Forest,51,Clamperl,Pokémon,Basic,Water,,Common,No,No,No,No,ex12/51_hires.png
+ex12,EX Legend Maker,Mirage Forest,52,Gastly,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex12/52_hires.png
+ex12,EX Legend Maker,Mirage Forest,53,Geodude,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex12/53_hires.png
+ex12,EX Legend Maker,Mirage Forest,54,Grimer,Pokémon,Basic,Grass,,Common,No,No,No,No,ex12/54_hires.png
+ex12,EX Legend Maker,Mirage Forest,55,Growlithe,Pokémon,Basic,Fire,,Common,No,No,No,No,ex12/55_hires.png
+ex12,EX Legend Maker,Mirage Forest,56,Lileep,Pokémon,Stage 1,Grass,Root Fossil,Common,No,No,No,No,ex12/56_hires.png
+ex12,EX Legend Maker,Mirage Forest,57,Machop,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex12/57_hires.png
+ex12,EX Legend Maker,Mirage Forest,58,Magby,Pokémon,Basic,Fire,,Common,No,No,No,No,ex12/58_hires.png
+ex12,EX Legend Maker,Mirage Forest,59,Magnemite,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex12/59_hires.png
+ex12,EX Legend Maker,Mirage Forest,60,Omanyte,Pokémon,Stage 1,Water,Mysterious Fossil,Common,No,No,No,No,ex12/60_hires.png
+ex12,EX Legend Maker,Mirage Forest,61,Seedot,Pokémon,Basic,Grass,,Common,No,No,No,No,ex12/61_hires.png
+ex12,EX Legend Maker,Mirage Forest,62,Sentret,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex12/62_hires.png
+ex12,EX Legend Maker,Mirage Forest,63,Shuppet,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex12/63_hires.png
+ex12,EX Legend Maker,Mirage Forest,64,Skitty,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex12/64_hires.png
+ex12,EX Legend Maker,Mirage Forest,65,Spheal,Pokémon,Basic,Water,,Common,No,No,No,No,ex12/65_hires.png
+ex12,EX Legend Maker,Mirage Forest,66,Tentacool,Pokémon,Basic,Water,,Common,No,No,No,No,ex12/66_hires.png
+ex12,EX Legend Maker,Mirage Forest,67,Trapinch,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex12/67_hires.png
+ex12,EX Legend Maker,Mirage Forest,68,Voltorb,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex12/68_hires.png
+ex12,EX Legend Maker,Mirage Forest,69,Wailmer,Pokémon,Basic,Water,,Common,No,No,No,No,ex12/69_hires.png
+ex12,EX Legend Maker,Mirage Forest,70,Wurmple,Pokémon,Basic,Grass,,Common,No,No,No,No,ex12/70_hires.png
+ex12,EX Legend Maker,Mirage Forest,71,Wynaut,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex12/71_hires.png
+ex12,EX Legend Maker,Mirage Forest,83,Arcanine ex,Pokémon,Stage 1 / ex,Fire,Growlithe,Rare Holo EX,No,No,Yes,No,ex12/83_hires.png
+ex12,EX Legend Maker,Mirage Forest,84,Armaldo ex,Pokémon,Stage 2 / ex,Fighting,Anorith,Rare Holo EX,No,No,Yes,No,ex12/84_hires.png
+ex12,EX Legend Maker,Mirage Forest,85,Banette ex,Pokémon,Stage 1 / ex,Psychic,Shuppet,Rare Holo EX,No,No,Yes,No,ex12/85_hires.png
+ex12,EX Legend Maker,Mirage Forest,86,Dustox ex,Pokémon,Stage 2 / ex,Grass,Cascoon,Rare Holo EX,No,No,Yes,No,ex12/86_hires.png
+ex12,EX Legend Maker,Mirage Forest,87,Flygon ex,Pokémon,Stage 2 / ex,Colorless,Vibrava,Rare Holo EX,No,No,Yes,No,ex12/87_hires.png
+ex12,EX Legend Maker,Mirage Forest,88,Mew ex,Pokémon,Basic / ex,Psychic,,Rare Holo EX,No,No,Yes,No,ex12/88_hires.png
+ex12,EX Legend Maker,Mirage Forest,89,Walrein ex,Pokémon,Stage 2 / ex,Water,Sealeo,Rare Holo EX,No,No,Yes,No,ex12/89_hires.png
+ex12,EX Legend Maker,Mirage Forest,90,Regice ★,Pokémon,Basic / Star,Water,,Rare Holo Star,No,Yes,No,No,ex12/90_hires.png
+ex12,EX Legend Maker,Mirage Forest,91,Regirock ★,Pokémon,Basic / Star,Fighting,,Rare Holo Star,No,Yes,No,No,ex12/91_hires.png
+ex12,EX Legend Maker,Mirage Forest,92,Registeel ★,Pokémon,Basic / Star,Metal,,Rare Holo Star,No,Yes,No,No,ex12/92_hires.png
+ex12,EX Legend Maker,Mirage Forest,93,Pikachu δ,Pokémon,Basic,Metal,,Rare Secret,Yes,No,No,No,ex12/93_hires.png
+ex11,EX Delta Species,Holon Research Tower,1,Beedrill δ,Pokémon,Stage 2,Grass / Metal,Kakuna,Rare Holo,Yes,No,No,No,ex11/1_hires.png
+ex11,EX Delta Species,Holon Research Tower,2,Crobat δ,Pokémon,Stage 2,Grass / Metal,Golbat,Rare Holo,Yes,No,No,No,ex11/2_hires.png
+ex11,EX Delta Species,Holon Research Tower,3,Dragonite δ,Pokémon,Stage 2,Lightning / Metal,Dragonair,Rare Holo,Yes,No,No,No,ex11/3_hires.png
+ex11,EX Delta Species,Holon Research Tower,4,Espeon δ,Pokémon,Stage 1,Psychic / Metal,Eevee,Rare Holo,Yes,No,No,No,ex11/4_hires.png
+ex11,EX Delta Species,Holon Research Tower,5,Flareon δ,Pokémon,Stage 1,Fire / Metal,Eevee,Rare Holo,Yes,No,No,No,ex11/5_hires.png
+ex11,EX Delta Species,Holon Research Tower,6,Gardevoir δ,Pokémon,Stage 2,Psychic / Metal,Kirlia,Rare Holo,Yes,No,No,No,ex11/6_hires.png
+ex11,EX Delta Species,Holon Research Tower,7,Jolteon δ,Pokémon,Stage 1,Lightning / Metal,Eevee,Rare Holo,Yes,No,No,No,ex11/7_hires.png
+ex11,EX Delta Species,Holon Research Tower,8,Latias δ,Pokémon,Basic,Lightning / Metal,,Rare Holo,Yes,No,No,No,ex11/8_hires.png
+ex11,EX Delta Species,Holon Research Tower,9,Latios δ,Pokémon,Basic,Lightning / Metal,,Rare Holo,Yes,No,No,No,ex11/9_hires.png
+ex11,EX Delta Species,Holon Research Tower,10,Marowak δ,Pokémon,Stage 1,Fighting / Metal,Cubone,Rare Holo,Yes,No,No,No,ex11/10_hires.png
+ex11,EX Delta Species,Holon Research Tower,11,Metagross δ,Pokémon,Stage 2,Lightning / Metal,Metang,Rare Holo,Yes,No,No,No,ex11/11_hires.png
+ex11,EX Delta Species,Holon Research Tower,12,Mewtwo δ,Pokémon,Basic,Fire / Metal,,Rare Holo,Yes,No,No,No,ex11/12_hires.png
+ex11,EX Delta Species,Holon Research Tower,13,Rayquaza δ,Pokémon,Basic,Lightning / Metal,,Rare Holo,Yes,No,No,No,ex11/13_hires.png
+ex11,EX Delta Species,Holon Research Tower,14,Salamence δ,Pokémon,Stage 2,Fire / Metal,Shelgon,Rare Holo,Yes,No,No,No,ex11/14_hires.png
+ex11,EX Delta Species,Holon Research Tower,15,Starmie δ,Pokémon,Stage 1,Water / Metal,Staryu,Rare Holo,Yes,No,No,No,ex11/15_hires.png
+ex11,EX Delta Species,Holon Research Tower,16,Tyranitar δ,Pokémon,Stage 2,Fire / Metal,Pupitar,Rare Holo,Yes,No,No,No,ex11/16_hires.png
+ex11,EX Delta Species,Holon Research Tower,17,Umbreon δ,Pokémon,Stage 1,Darkness / Metal,Eevee,Rare Holo,Yes,No,No,No,ex11/17_hires.png
+ex11,EX Delta Species,Holon Research Tower,18,Vaporeon δ,Pokémon,Stage 1,Water / Metal,Eevee,Rare Holo,Yes,No,No,No,ex11/18_hires.png
+ex11,EX Delta Species,Holon Research Tower,19,Azumarill δ,Pokémon,Stage 1,Water / Metal,Marill,Rare,Yes,No,No,No,ex11/19_hires.png
+ex11,EX Delta Species,Holon Research Tower,20,Azurill,Pokémon,Basic,Colorless,,Rare,No,No,No,No,ex11/20_hires.png
+ex11,EX Delta Species,Holon Research Tower,21,Holon's Electrode,Pokémon,Stage 1,Lightning,Holon's Voltorb,Rare,No,No,No,Yes,ex11/21_hires.png
+ex11,EX Delta Species,Holon Research Tower,22,Holon's Magneton,Pokémon,Stage 1,Metal,Holon's Magnemite,Rare,No,No,No,Yes,ex11/22_hires.png
+ex11,EX Delta Species,Holon Research Tower,23,Hypno,Pokémon,Stage 1,Psychic,Drowzee,Rare,No,No,No,No,ex11/23_hires.png
+ex11,EX Delta Species,Holon Research Tower,24,Mightyena δ,Pokémon,Stage 1,Darkness / Metal,Poochyena,Rare,Yes,No,No,No,ex11/24_hires.png
+ex11,EX Delta Species,Holon Research Tower,25,Porygon2,Pokémon,Stage 1,Colorless,Porygon,Rare,No,No,No,No,ex11/25_hires.png
+ex11,EX Delta Species,Holon Research Tower,26,Rain Castform,Pokémon,Basic,Water,,Rare,No,No,No,No,ex11/26_hires.png
+ex11,EX Delta Species,Holon Research Tower,27,Sandslash δ,Pokémon,Stage 1,Fighting / Metal,Sandshrew,Rare,Yes,No,No,No,ex11/27_hires.png
+ex11,EX Delta Species,Holon Research Tower,28,Slowking,Pokémon,Stage 1,Water,Slowpoke,Rare,No,No,No,No,ex11/28_hires.png
+ex11,EX Delta Species,Holon Research Tower,29,Snow-cloud Castform,Pokémon,Basic,Water,,Rare,No,No,No,No,ex11/29_hires.png
+ex11,EX Delta Species,Holon Research Tower,30,Starmie δ,Pokémon,Stage 1,Water / Metal,Staryu,Rare,Yes,No,No,No,ex11/30_hires.png
+ex11,EX Delta Species,Holon Research Tower,31,Sunny Castform,Pokémon,Basic,Fire,,Rare,No,No,No,No,ex11/31_hires.png
+ex11,EX Delta Species,Holon Research Tower,32,Swellow,Pokémon,Stage 1,Colorless,Taillow,Rare,No,No,No,No,ex11/32_hires.png
+ex11,EX Delta Species,Holon Research Tower,33,Weezing,Pokémon,Stage 1,Grass,Koffing,Rare,No,No,No,No,ex11/33_hires.png
+ex11,EX Delta Species,Holon Research Tower,34,Castform,Pokémon,Basic,Colorless,,Uncommon,No,No,No,No,ex11/34_hires.png
+ex11,EX Delta Species,Holon Research Tower,35,Ditto,Pokémon,Basic,Colorless,,Uncommon,No,No,No,No,ex11/35_hires.png
+ex11,EX Delta Species,Holon Research Tower,36,Ditto,Pokémon,Basic,Grass,,Uncommon,No,No,No,No,ex11/36_hires.png
+ex11,EX Delta Species,Holon Research Tower,37,Ditto,Pokémon,Basic,Fire,,Uncommon,No,No,No,No,ex11/37_hires.png
+ex11,EX Delta Species,Holon Research Tower,38,Ditto,Pokémon,Basic,Psychic,,Uncommon,No,No,No,No,ex11/38_hires.png
+ex11,EX Delta Species,Holon Research Tower,39,Ditto,Pokémon,Basic,Lightning,,Uncommon,No,No,No,No,ex11/39_hires.png
+ex11,EX Delta Species,Holon Research Tower,40,Ditto,Pokémon,Basic,Water,,Uncommon,No,No,No,No,ex11/40_hires.png
+ex11,EX Delta Species,Holon Research Tower,41,Dragonair δ,Pokémon,Stage 1,Lightning,Dratini,Uncommon,Yes,No,No,No,ex11/41_hires.png
+ex11,EX Delta Species,Holon Research Tower,42,Dragonair δ,Pokémon,Stage 1,Lightning,Dratini,Uncommon,Yes,No,No,No,ex11/42_hires.png
+ex11,EX Delta Species,Holon Research Tower,43,Golbat,Pokémon,Stage 1,Grass,Zubat,Uncommon,No,No,No,No,ex11/43_hires.png
+ex11,EX Delta Species,Holon Research Tower,44,Hariyama,Pokémon,Stage 1,Fighting,Makuhita,Uncommon,No,No,No,No,ex11/44_hires.png
+ex11,EX Delta Species,Holon Research Tower,45,Illumise,Pokémon,Basic,Grass,,Uncommon,No,No,No,No,ex11/45_hires.png
+ex11,EX Delta Species,Holon Research Tower,46,Kakuna,Pokémon,Stage 1,Grass,Weedle,Uncommon,No,No,No,No,ex11/46_hires.png
+ex11,EX Delta Species,Holon Research Tower,47,Kirlia,Pokémon,Stage 1,Psychic,Ralts,Uncommon,No,No,No,No,ex11/47_hires.png
+ex11,EX Delta Species,Holon Research Tower,48,Magneton,Pokémon,Stage 1,Lightning,Magnemite,Uncommon,No,No,No,No,ex11/48_hires.png
+ex11,EX Delta Species,Holon Research Tower,49,Metang δ,Pokémon,Stage 1,Lightning,Beldum,Uncommon,Yes,No,No,No,ex11/49_hires.png
+ex11,EX Delta Species,Holon Research Tower,50,Persian,Pokémon,Stage 1,Colorless,Meowth,Uncommon,No,No,No,No,ex11/50_hires.png
+ex11,EX Delta Species,Holon Research Tower,51,Pupitar δ,Pokémon,Stage 1,Fire,Larvitar,Uncommon,Yes,No,No,No,ex11/51_hires.png
+ex11,EX Delta Species,Holon Research Tower,52,Rapidash,Pokémon,Stage 1,Fire,Ponyta,Uncommon,No,No,No,No,ex11/52_hires.png
+ex11,EX Delta Species,Holon Research Tower,53,Shelgon δ,Pokémon,Stage 1,Fire,Bagon,Uncommon,Yes,No,No,No,ex11/53_hires.png
+ex11,EX Delta Species,Holon Research Tower,54,Shelgon δ,Pokémon,Stage 1,Fire,Bagon,Uncommon,Yes,No,No,No,ex11/54_hires.png
+ex11,EX Delta Species,Holon Research Tower,55,Skarmory,Pokémon,Basic,Metal,,Uncommon,No,No,No,No,ex11/55_hires.png
+ex11,EX Delta Species,Holon Research Tower,56,Volbeat,Pokémon,Basic,Grass,,Uncommon,No,No,No,No,ex11/56_hires.png
+ex11,EX Delta Species,Holon Research Tower,57,Bagon δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex11/57_hires.png
+ex11,EX Delta Species,Holon Research Tower,58,Bagon δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex11/58_hires.png
+ex11,EX Delta Species,Holon Research Tower,59,Beldum δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex11/59_hires.png
+ex11,EX Delta Species,Holon Research Tower,60,Cubone,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex11/60_hires.png
+ex11,EX Delta Species,Holon Research Tower,61,Ditto,Pokémon,Basic,Fire,,Common,No,No,No,No,ex11/61_hires.png
+ex11,EX Delta Species,Holon Research Tower,62,Ditto,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex11/62_hires.png
+ex11,EX Delta Species,Holon Research Tower,63,Ditto,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex11/63_hires.png
+ex11,EX Delta Species,Holon Research Tower,64,Ditto,Pokémon,Basic,Water,,Common,No,No,No,No,ex11/64_hires.png
+ex11,EX Delta Species,Holon Research Tower,65,Dratini δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex11/65_hires.png
+ex11,EX Delta Species,Holon Research Tower,66,Dratini δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex11/66_hires.png
+ex11,EX Delta Species,Holon Research Tower,67,Drowzee,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex11/67_hires.png
+ex11,EX Delta Species,Holon Research Tower,68,Eevee δ,Pokémon,Basic,Metal,,Common,Yes,No,No,No,ex11/68_hires.png
+ex11,EX Delta Species,Holon Research Tower,69,Eevee,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex11/69_hires.png
+ex11,EX Delta Species,Holon Research Tower,70,Holon's Magnemite,Pokémon,Basic,Metal,,Common,No,No,No,Yes,ex11/70_hires.png
+ex11,EX Delta Species,Holon Research Tower,71,Holon's Voltorb,Pokémon,Basic,Lightning,,Common,No,No,No,Yes,ex11/71_hires.png
+ex11,EX Delta Species,Holon Research Tower,72,Koffing,Pokémon,Basic,Grass,,Common,No,No,No,No,ex11/72_hires.png
+ex11,EX Delta Species,Holon Research Tower,73,Larvitar δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex11/73_hires.png
+ex11,EX Delta Species,Holon Research Tower,74,Magnemite,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex11/74_hires.png
+ex11,EX Delta Species,Holon Research Tower,75,Makuhita,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex11/75_hires.png
+ex11,EX Delta Species,Holon Research Tower,76,Marill,Pokémon,Basic,Water,,Common,No,No,No,No,ex11/76_hires.png
+ex11,EX Delta Species,Holon Research Tower,77,Meowth,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex11/77_hires.png
+ex11,EX Delta Species,Holon Research Tower,78,Ponyta,Pokémon,Basic,Fire,,Common,No,No,No,No,ex11/78_hires.png
+ex11,EX Delta Species,Holon Research Tower,79,Poochyena,Pokémon,Basic,Darkness,,Common,No,No,No,No,ex11/79_hires.png
+ex11,EX Delta Species,Holon Research Tower,80,Porygon,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex11/80_hires.png
+ex11,EX Delta Species,Holon Research Tower,81,Ralts,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex11/81_hires.png
+ex11,EX Delta Species,Holon Research Tower,82,Sandshrew,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex11/82_hires.png
+ex11,EX Delta Species,Holon Research Tower,83,Slowpoke,Pokémon,Basic,Water,,Common,No,No,No,No,ex11/83_hires.png
+ex11,EX Delta Species,Holon Research Tower,84,Staryu,Pokémon,Basic,Water,,Common,No,No,No,No,ex11/84_hires.png
+ex11,EX Delta Species,Holon Research Tower,85,Staryu,Pokémon,Basic,Water,,Common,No,No,No,No,ex11/85_hires.png
+ex11,EX Delta Species,Holon Research Tower,86,Taillow,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex11/86_hires.png
+ex11,EX Delta Species,Holon Research Tower,87,Weedle,Pokémon,Basic,Grass,,Common,No,No,No,No,ex11/87_hires.png
+ex11,EX Delta Species,Holon Research Tower,88,Zubat,Pokémon,Basic,Grass,,Common,No,No,No,No,ex11/88_hires.png
+ex11,EX Delta Species,Holon Research Tower,108,Flareon ex,Pokémon,Stage 1 / ex,Fire,Eevee,Rare Holo EX,No,No,Yes,No,ex11/108_hires.png
+ex11,EX Delta Species,Holon Research Tower,109,Jolteon ex,Pokémon,Stage 1 / ex,Lightning,Eevee,Rare Holo EX,No,No,Yes,No,ex11/109_hires.png
+ex11,EX Delta Species,Holon Research Tower,110,Vaporeon ex,Pokémon,Stage 1 / ex,Water,Eevee,Rare Holo EX,No,No,Yes,No,ex11/110_hires.png
+ex11,EX Delta Species,Holon Research Tower,111,Groudon ★,Pokémon,Basic / Star,Fighting,,Rare Holo Star,No,Yes,No,No,ex11/111_hires.png
+ex11,EX Delta Species,Holon Research Tower,112,Kyogre ★,Pokémon,Basic / Star,Water,,Rare Holo Star,No,Yes,No,No,ex11/112_hires.png
+ex11,EX Delta Species,Holon Research Tower,113,Metagross ★,Pokémon,Basic / Star,Metal,,Rare Holo Star,No,Yes,No,No,ex11/113_hires.png
+ex11,EX Delta Species,Holon Research Tower,114,Azumarill,Pokémon,Stage 1,Water,Marill,Rare Secret,No,No,No,No,ex11/114_hires.png
+ex13,EX Holon Phantoms,Holon Lake,1,Armaldo δ,Pokémon,Stage 2,Fighting / Metal,Anorith,Rare Holo,Yes,No,No,No,ex13/1_hires.png
+ex13,EX Holon Phantoms,Holon Lake,2,Cradily δ,Pokémon,Stage 2,Darkness / Metal,Lileep,Rare Holo,Yes,No,No,No,ex13/2_hires.png
+ex13,EX Holon Phantoms,Holon Lake,3,Deoxys δ,Pokémon,Basic,Darkness,,Rare Holo,Yes,No,No,No,ex13/3_hires.png
+ex13,EX Holon Phantoms,Holon Lake,4,Deoxys δ,Pokémon,Basic,Metal,,Rare Holo,Yes,No,No,No,ex13/4_hires.png
+ex13,EX Holon Phantoms,Holon Lake,5,Deoxys δ,Pokémon,Basic,Colorless,,Rare Holo,Yes,No,No,No,ex13/5_hires.png
+ex13,EX Holon Phantoms,Holon Lake,6,Deoxys δ,Pokémon,Basic,Lightning,,Rare Holo,Yes,No,No,No,ex13/6_hires.png
+ex13,EX Holon Phantoms,Holon Lake,7,Flygon δ,Pokémon,Stage 2,Grass / Metal,Vibrava,Rare Holo,Yes,No,No,No,ex13/7_hires.png
+ex13,EX Holon Phantoms,Holon Lake,8,Gyarados δ,Pokémon,Stage 1,Lightning / Metal,Magikarp,Rare Holo,Yes,No,No,No,ex13/8_hires.png
+ex13,EX Holon Phantoms,Holon Lake,9,Kabutops δ,Pokémon,Stage 2,Lightning,Kabuto,Rare Holo,Yes,No,No,No,ex13/9_hires.png
+ex13,EX Holon Phantoms,Holon Lake,10,Kingdra δ,Pokémon,Stage 2,Fire / Metal,Seadra,Rare Holo,Yes,No,No,No,ex13/10_hires.png
+ex13,EX Holon Phantoms,Holon Lake,11,Latias δ,Pokémon,Basic,Fire,,Rare Holo,Yes,No,No,No,ex13/11_hires.png
+ex13,EX Holon Phantoms,Holon Lake,12,Latios δ,Pokémon,Basic,Water,,Rare Holo,Yes,No,No,No,ex13/12_hires.png
+ex13,EX Holon Phantoms,Holon Lake,13,Omastar δ,Pokémon,Stage 2,Psychic,Omanyte,Rare Holo,Yes,No,No,No,ex13/13_hires.png
+ex13,EX Holon Phantoms,Holon Lake,14,Pidgeot δ,Pokémon,Stage 2,Lightning / Metal,Pidgeotto,Rare Holo,Yes,No,No,No,ex13/14_hires.png
+ex13,EX Holon Phantoms,Holon Lake,15,Raichu δ,Pokémon,Stage 1,Metal,Pikachu,Rare Holo,Yes,No,No,No,ex13/15_hires.png
+ex13,EX Holon Phantoms,Holon Lake,16,Rayquaza δ,Pokémon,Basic,Water / Metal,,Rare Holo,Yes,No,No,No,ex13/16_hires.png
+ex13,EX Holon Phantoms,Holon Lake,17,Vileplume δ,Pokémon,Stage 2,Psychic / Metal,Gloom,Rare Holo,Yes,No,No,No,ex13/17_hires.png
+ex13,EX Holon Phantoms,Holon Lake,18,Absol,Pokémon,Basic,Darkness,,Rare,No,No,No,No,ex13/18_hires.png
+ex13,EX Holon Phantoms,Holon Lake,19,Bellossom δ,Pokémon,Stage 2,Water,Gloom,Rare,Yes,No,No,No,ex13/19_hires.png
+ex13,EX Holon Phantoms,Holon Lake,20,Blaziken,Pokémon,Stage 2,Fire,Combusken,Rare,No,No,No,No,ex13/20_hires.png
+ex13,EX Holon Phantoms,Holon Lake,21,Latias δ,Pokémon,Basic,Fire,,Rare,Yes,No,No,No,ex13/21_hires.png
+ex13,EX Holon Phantoms,Holon Lake,22,Latios δ,Pokémon,Basic,Water,,Rare,Yes,No,No,No,ex13/22_hires.png
+ex13,EX Holon Phantoms,Holon Lake,23,Mawile,Pokémon,Basic,Metal,,Rare,No,No,No,No,ex13/23_hires.png
+ex13,EX Holon Phantoms,Holon Lake,24,Mewtwo δ,Pokémon,Basic,Lightning,,Rare,Yes,No,No,No,ex13/24_hires.png
+ex13,EX Holon Phantoms,Holon Lake,25,Nosepass,Pokémon,Basic,Fighting,,Rare,No,No,No,No,ex13/25_hires.png
+ex13,EX Holon Phantoms,Holon Lake,26,Rayquaza δ,Pokémon,Basic,Fire,,Rare,Yes,No,No,No,ex13/26_hires.png
+ex13,EX Holon Phantoms,Holon Lake,27,Regice,Pokémon,Basic,Water,,Rare,No,No,No,No,ex13/27_hires.png
+ex13,EX Holon Phantoms,Holon Lake,28,Regirock,Pokémon,Basic,Fighting,,Rare,No,No,No,No,ex13/28_hires.png
+ex13,EX Holon Phantoms,Holon Lake,29,Registeel,Pokémon,Basic,Metal,,Rare,No,No,No,No,ex13/29_hires.png
+ex13,EX Holon Phantoms,Holon Lake,30,Relicanth,Pokémon,Basic,Water,,Rare,No,No,No,No,ex13/30_hires.png
+ex13,EX Holon Phantoms,Holon Lake,31,Sableye,Pokémon,Basic,Darkness,,Rare,No,No,No,No,ex13/31_hires.png
+ex13,EX Holon Phantoms,Holon Lake,32,Seviper,Pokémon,Basic,Grass,,Rare,No,No,No,No,ex13/32_hires.png
+ex13,EX Holon Phantoms,Holon Lake,33,Torkoal,Pokémon,Basic,Fire,,Rare,No,No,No,No,ex13/33_hires.png
+ex13,EX Holon Phantoms,Holon Lake,34,Zangoose,Pokémon,Basic,Colorless,,Rare,No,No,No,No,ex13/34_hires.png
+ex13,EX Holon Phantoms,Holon Lake,35,Aerodactyl δ,Pokémon,Stage 1,Fire,Mysterious Fossil,Uncommon,Yes,No,No,No,ex13/35_hires.png
+ex13,EX Holon Phantoms,Holon Lake,36,Camerupt,Pokémon,Stage 1,Fire,Numel,Uncommon,No,No,No,No,ex13/36_hires.png
+ex13,EX Holon Phantoms,Holon Lake,37,Chimecho δ,Pokémon,Basic,Metal,,Uncommon,Yes,No,No,No,ex13/37_hires.png
+ex13,EX Holon Phantoms,Holon Lake,38,Claydol,Pokémon,Stage 1,Psychic,Baltoy,Uncommon,No,No,No,No,ex13/38_hires.png
+ex13,EX Holon Phantoms,Holon Lake,39,Combusken,Pokémon,Stage 1,Fire,Torchic,Uncommon,No,No,No,No,ex13/39_hires.png
+ex13,EX Holon Phantoms,Holon Lake,40,Donphan,Pokémon,Stage 1,Fighting,Phanpy,Uncommon,No,No,No,No,ex13/40_hires.png
+ex13,EX Holon Phantoms,Holon Lake,41,Exeggutor δ,Pokémon,Stage 1,Fighting,Exeggcute,Uncommon,Yes,No,No,No,ex13/41_hires.png
+ex13,EX Holon Phantoms,Holon Lake,42,Gloom δ,Pokémon,Stage 1,Psychic,Oddish,Uncommon,Yes,No,No,No,ex13/42_hires.png
+ex13,EX Holon Phantoms,Holon Lake,43,Golduck δ,Pokémon,Stage 1,Lightning,Psyduck,Uncommon,Yes,No,No,No,ex13/43_hires.png
+ex13,EX Holon Phantoms,Holon Lake,44,Holon's Castform,Pokémon,Basic,Colorless,,Uncommon,No,No,No,Yes,ex13/44_hires.png
+ex13,EX Holon Phantoms,Holon Lake,45,Lairon,Pokémon,Stage 1,Metal,Aron,Uncommon,No,No,No,No,ex13/45_hires.png
+ex13,EX Holon Phantoms,Holon Lake,46,Manectric,Pokémon,Stage 1,Lightning,Electrike,Uncommon,No,No,No,No,ex13/46_hires.png
+ex13,EX Holon Phantoms,Holon Lake,47,Masquerain,Pokémon,Stage 1,Grass,Surskit,Uncommon,No,No,No,No,ex13/47_hires.png
+ex13,EX Holon Phantoms,Holon Lake,48,Persian δ,Pokémon,Stage 1,Darkness / Metal,Meowth,Uncommon,Yes,No,No,No,ex13/48_hires.png
+ex13,EX Holon Phantoms,Holon Lake,49,Pidgeotto δ,Pokémon,Stage 1,Lightning,Pidgey,Uncommon,Yes,No,No,No,ex13/49_hires.png
+ex13,EX Holon Phantoms,Holon Lake,50,Primeape δ,Pokémon,Stage 1,Fire,Mankey,Uncommon,Yes,No,No,No,ex13/50_hires.png
+ex13,EX Holon Phantoms,Holon Lake,51,Raichu,Pokémon,Stage 1,Lightning,Pikachu,Uncommon,No,No,No,No,ex13/51_hires.png
+ex13,EX Holon Phantoms,Holon Lake,52,Seadra δ,Pokémon,Stage 1,Fire,Horsea,Uncommon,Yes,No,No,No,ex13/52_hires.png
+ex13,EX Holon Phantoms,Holon Lake,53,Sharpedo δ,Pokémon,Stage 1,Fighting,Carvanha,Uncommon,Yes,No,No,No,ex13/53_hires.png
+ex13,EX Holon Phantoms,Holon Lake,54,Vibrava δ,Pokémon,Stage 1,Grass,Trapinch,Uncommon,Yes,No,No,No,ex13/54_hires.png
+ex13,EX Holon Phantoms,Holon Lake,55,Whiscash,Pokémon,Stage 1,Fighting,Barboach,Uncommon,No,No,No,No,ex13/55_hires.png
+ex13,EX Holon Phantoms,Holon Lake,56,Wobbuffet,Pokémon,Basic,Psychic,,Uncommon,No,No,No,No,ex13/56_hires.png
+ex13,EX Holon Phantoms,Holon Lake,57,Anorith δ,Pokémon,Stage 1,Metal,Claw Fossil,Common,Yes,No,No,No,ex13/57_hires.png
+ex13,EX Holon Phantoms,Holon Lake,58,Aron,Pokémon,Basic,Metal,,Common,No,No,No,No,ex13/58_hires.png
+ex13,EX Holon Phantoms,Holon Lake,59,Baltoy,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex13/59_hires.png
+ex13,EX Holon Phantoms,Holon Lake,60,Barboach,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex13/60_hires.png
+ex13,EX Holon Phantoms,Holon Lake,61,Carvanha δ,Pokémon,Basic,Fighting,,Common,Yes,No,No,No,ex13/61_hires.png
+ex13,EX Holon Phantoms,Holon Lake,62,Corphish,Pokémon,Basic,Water,,Common,No,No,No,No,ex13/62_hires.png
+ex13,EX Holon Phantoms,Holon Lake,63,Corphish,Pokémon,Basic,Water,,Common,No,No,No,No,ex13/63_hires.png
+ex13,EX Holon Phantoms,Holon Lake,64,Electrike,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex13/64_hires.png
+ex13,EX Holon Phantoms,Holon Lake,65,Exeggcute δ,Pokémon,Basic,Fighting,,Common,Yes,No,No,No,ex13/65_hires.png
+ex13,EX Holon Phantoms,Holon Lake,66,Horsea δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex13/66_hires.png
+ex13,EX Holon Phantoms,Holon Lake,67,Kabuto δ,Pokémon,Stage 1,Lightning,Mysterious Fossil,Common,Yes,No,No,No,ex13/67_hires.png
+ex13,EX Holon Phantoms,Holon Lake,68,Lileep δ,Pokémon,Stage 1,Darkness,Root Fossil,Common,Yes,No,No,No,ex13/68_hires.png
+ex13,EX Holon Phantoms,Holon Lake,69,Magikarp δ,Pokémon,Basic,Metal,,Common,Yes,No,No,No,ex13/69_hires.png
+ex13,EX Holon Phantoms,Holon Lake,70,Mankey δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex13/70_hires.png
+ex13,EX Holon Phantoms,Holon Lake,71,Meowth δ,Pokémon,Basic,Darkness / Metal,,Common,Yes,No,No,No,ex13/71_hires.png
+ex13,EX Holon Phantoms,Holon Lake,72,Numel,Pokémon,Basic,Fire,,Common,No,No,No,No,ex13/72_hires.png
+ex13,EX Holon Phantoms,Holon Lake,73,Oddish δ,Pokémon,Basic,Water,,Common,Yes,No,No,No,ex13/73_hires.png
+ex13,EX Holon Phantoms,Holon Lake,74,Omanyte δ,Pokémon,Stage 1,Psychic,Mysterious Fossil,Common,Yes,No,No,No,ex13/74_hires.png
+ex13,EX Holon Phantoms,Holon Lake,75,Phanpy,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex13/75_hires.png
+ex13,EX Holon Phantoms,Holon Lake,76,Pichu δ,Pokémon,Basic,Metal,,Common,Yes,No,No,No,ex13/76_hires.png
+ex13,EX Holon Phantoms,Holon Lake,77,Pidgey δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex13/77_hires.png
+ex13,EX Holon Phantoms,Holon Lake,78,Pikachu,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex13/78_hires.png
+ex13,EX Holon Phantoms,Holon Lake,79,Pikachu δ,Pokémon,Basic,Metal,,Common,Yes,No,No,No,ex13/79_hires.png
+ex13,EX Holon Phantoms,Holon Lake,80,Poochyena,Pokémon,Basic,Darkness,,Common,No,No,No,No,ex13/80_hires.png
+ex13,EX Holon Phantoms,Holon Lake,81,Psyduck δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex13/81_hires.png
+ex13,EX Holon Phantoms,Holon Lake,82,Surskit,Pokémon,Basic,Grass,,Common,No,No,No,No,ex13/82_hires.png
+ex13,EX Holon Phantoms,Holon Lake,83,Torchic,Pokémon,Basic,Fire,,Common,No,No,No,No,ex13/83_hires.png
+ex13,EX Holon Phantoms,Holon Lake,84,Trapinch δ,Pokémon,Basic,Grass,,Common,Yes,No,No,No,ex13/84_hires.png
+ex13,EX Holon Phantoms,Holon Lake,99,Crawdaunt ex,Pokémon,Stage 1 / ex,Water,Corphish,Rare Holo EX,No,No,Yes,No,ex13/99_hires.png
+ex13,EX Holon Phantoms,Holon Lake,100,Mew ex,Pokémon,Basic / ex,Psychic,,Rare Holo EX,No,No,Yes,No,ex13/100_hires.png
+ex13,EX Holon Phantoms,Holon Lake,101,Mightyena ex,Pokémon,Stage 1 / ex,Darkness,Poochyena,Rare Holo EX,No,No,Yes,No,ex13/101_hires.png
+ex13,EX Holon Phantoms,Holon Lake,102,Gyarados ★ δ,Pokémon,Basic / Star,Fire,,Rare Holo Star,Yes,Yes,No,No,ex13/102_hires.png
+ex13,EX Holon Phantoms,Holon Lake,103,Mewtwo ★,Pokémon,Basic / Star,Psychic,,Rare Holo Star,No,Yes,No,No,ex13/103_hires.png
+ex13,EX Holon Phantoms,Holon Lake,104,Pikachu ★,Pokémon,Basic / Star,Lightning,,Rare Holo Star,No,Yes,No,No,ex13/104_hires.png
+ex13,EX Holon Phantoms,Holon Lake,111,Mew,Pokémon,Basic,Psychic,,Rare Secret,No,No,No,No,ex13/111_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,1,Banette,Pokémon,Stage 1,Psychic,Shuppet,Rare Holo,No,No,No,No,ex14/1_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,2,Blastoise δ,Pokémon,Stage 2,Fighting / Metal,Wartortle,Rare Holo,Yes,No,No,No,ex14/2_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,3,Camerupt,Pokémon,Stage 1,Fire,Numel,Rare Holo,No,No,No,No,ex14/3_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,4,Charizard δ,Pokémon,Stage 2,Lightning / Metal,Charmeleon,Rare Holo,Yes,No,No,No,ex14/4_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,5,Dugtrio,Pokémon,Stage 1,Fighting,Diglett,Rare Holo,No,No,No,No,ex14/5_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,6,Ludicolo δ,Pokémon,Stage 2,Fire,Lombre,Rare Holo,Yes,No,No,No,ex14/6_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,7,Luvdisc,Pokémon,Basic,Water,,Rare Holo,No,No,No,No,ex14/7_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,8,Manectric,Pokémon,Stage 1,Lightning,Electrike,Rare Holo,No,No,No,No,ex14/8_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,9,Mawile,Pokémon,Basic,Metal,,Rare Holo,No,No,No,No,ex14/9_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,10,Sableye,Pokémon,Basic,Darkness,,Rare Holo,No,No,No,No,ex14/10_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,11,Swalot,Pokémon,Stage 1,Grass,Gulpin,Rare Holo,No,No,No,No,ex14/11_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,12,Tauros,Pokémon,Basic,Colorless,,Rare Holo,No,No,No,No,ex14/12_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,13,Wigglytuff,Pokémon,Stage 1,Colorless,Jigglypuff,Rare Holo,No,No,No,No,ex14/13_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,14,Blastoise,Pokémon,Stage 2,Water,Wartortle,Rare,No,No,No,No,ex14/14_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,15,Cacturne δ,Pokémon,Stage 1,Fighting,Cacnea,Rare,Yes,No,No,No,ex14/15_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,16,Combusken,Pokémon,Stage 1,Fighting,Torchic,Rare,No,No,No,No,ex14/16_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,17,Dusclops,Pokémon,Stage 1,Psychic,Duskull,Rare,No,No,No,No,ex14/17_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,18,Fearow δ,Pokémon,Stage 1,Lightning,Spearow,Rare,Yes,No,No,No,ex14/18_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,19,Grovyle δ,Pokémon,Stage 1,Psychic,Treecko,Rare,Yes,No,No,No,ex14/19_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,20,Grumpig,Pokémon,Stage 1,Psychic,Spoink,Rare,No,No,No,No,ex14/20_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,21,Igglybuff,Pokémon,Basic,Colorless,,Rare,No,No,No,No,ex14/21_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,22,Kingler δ,Pokémon,Stage 1,Fire / Metal,Krabby,Rare,Yes,No,No,No,ex14/22_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,23,Loudred,Pokémon,Stage 1,Colorless,Whismur,Rare,No,No,No,No,ex14/23_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,24,Marshtomp,Pokémon,Stage 1,Water,Mudkip,Rare,No,No,No,No,ex14/24_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,25,Medicham,Pokémon,Stage 1,Fighting,Meditite,Rare,No,No,No,No,ex14/25_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,26,Pelipper δ,Pokémon,Stage 1,Lightning,Wingull,Rare,Yes,No,No,No,ex14/26_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,27,Swampert,Pokémon,Stage 2,Fighting,Marshtomp,Rare,No,No,No,No,ex14/27_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,28,Venusaur,Pokémon,Stage 2,Grass,Ivysaur,Rare,No,No,No,No,ex14/28_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,29,Charmeleon,Pokémon,Stage 1,Fire,Charmander,Uncommon,No,No,No,No,ex14/29_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,30,Charmeleon δ,Pokémon,Stage 1,Lightning,Charmander,Uncommon,Yes,No,No,No,ex14/30_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,31,Combusken,Pokémon,Stage 1,Fire,Torchic,Uncommon,No,No,No,No,ex14/31_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,32,Grovyle,Pokémon,Stage 1,Grass,Treecko,Uncommon,No,No,No,No,ex14/32_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,33,Gulpin,Pokémon,Basic,Grass,,Uncommon,No,No,No,No,ex14/33_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,34,Ivysaur,Pokémon,Stage 1,Grass,Bulbasaur,Uncommon,No,No,No,No,ex14/34_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,35,Ivysaur,Pokémon,Stage 1,Grass,Bulbasaur,Uncommon,No,No,No,No,ex14/35_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,36,Lairon,Pokémon,Stage 1,Metal,Aron,Uncommon,No,No,No,No,ex14/36_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,37,Lombre,Pokémon,Stage 1,Water,Lotad,Uncommon,No,No,No,No,ex14/37_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,38,Marshtomp,Pokémon,Stage 1,Fighting,Mudkip,Uncommon,No,No,No,No,ex14/38_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,39,Nuzleaf,Pokémon,Stage 1,Darkness,Seedot,Uncommon,No,No,No,No,ex14/39_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,40,Shuppet,Pokémon,Basic,Psychic,,Uncommon,No,No,No,No,ex14/40_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,41,Skitty,Pokémon,Basic,Colorless,,Uncommon,No,No,No,No,ex14/41_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,42,Wartortle,Pokémon,Stage 1,Water,Squirtle,Uncommon,No,No,No,No,ex14/42_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,43,Wartortle,Pokémon,Stage 1,Water,Squirtle,Uncommon,No,No,No,No,ex14/43_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,44,Aron,Pokémon,Basic,Metal,,Common,No,No,No,No,ex14/44_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,45,Bulbasaur,Pokémon,Basic,Grass,,Common,No,No,No,No,ex14/45_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,46,Bulbasaur,Pokémon,Basic,Grass,,Common,No,No,No,No,ex14/46_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,47,Cacnea,Pokémon,Basic,Grass,,Common,No,No,No,No,ex14/47_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,48,Charmander,Pokémon,Basic,Fire,,Common,No,No,No,No,ex14/48_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,49,Charmander δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex14/49_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,50,Diglett,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex14/50_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,51,Duskull,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex14/51_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,52,Electrike,Pokémon,Basic,Lightning,,Common,No,No,No,No,ex14/52_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,53,Jigglypuff,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex14/53_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,54,Krabby,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/54_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,55,Lotad,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/55_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,56,Meditite,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex14/56_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,57,Mudkip,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/57_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,58,Mudkip,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/58_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,59,Numel,Pokémon,Basic,Fire,,Common,No,No,No,No,ex14/59_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,60,Seedot,Pokémon,Basic,Grass,,Common,No,No,No,No,ex14/60_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,61,Spearow,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex14/61_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,62,Spoink,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex14/62_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,63,Squirtle,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/63_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,64,Squirtle,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/64_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,65,Torchic,Pokémon,Basic,Fire,,Common,No,No,No,No,ex14/65_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,66,Torchic,Pokémon,Basic,Fire,,Common,No,No,No,No,ex14/66_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,67,Treecko,Pokémon,Basic,Grass,,Common,No,No,No,No,ex14/67_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,68,Treecko δ,Pokémon,Basic,Psychic,,Common,Yes,No,No,No,ex14/68_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,69,Whismur,Pokémon,Basic,Colorless,,Common,No,No,No,No,ex14/69_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,70,Wingull,Pokémon,Basic,Water,,Common,No,No,No,No,ex14/70_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,89,Aggron ex,Pokémon,Stage 2 / ex,Metal,Lairon,Rare Holo EX,No,No,Yes,No,ex14/89_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,90,Blaziken ex,Pokémon,Stage 2 / ex,Fighting,Combusken,Rare Holo EX,No,No,Yes,No,ex14/90_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,91,Delcatty ex,Pokémon,Stage 1 / ex,Colorless,Skitty,Rare Holo EX,No,No,Yes,No,ex14/91_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,92,Exploud ex,Pokémon,Stage 2 / ex,Colorless,Loudred,Rare Holo EX,No,No,Yes,No,ex14/92_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,93,Groudon ex,Pokémon,Basic / ex,Fighting,,Rare Holo EX,No,No,Yes,No,ex14/93_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,94,Jirachi ex,Pokémon,Basic / ex,Psychic,,Rare Holo EX,No,No,Yes,No,ex14/94_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,95,Kyogre ex,Pokémon,Basic / ex,Water,,Rare Holo EX,No,No,Yes,No,ex14/95_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,96,Sceptile ex δ,Pokémon,Stage 2 / ex,Psychic,Grovyle,Rare Holo EX,Yes,No,No,No,ex14/96_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,97,Shiftry ex,Pokémon,Stage 2 / ex,Darkness,Nuzleaf,Rare Holo EX,No,No,Yes,No,ex14/97_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,98,Swampert ex,Pokémon,Stage 2 / ex,Water,Marshtomp,Rare Holo EX,No,No,Yes,No,ex14/98_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,99,Alakazam ★,Pokémon,Basic / Star,Psychic,,Rare Holo Star,No,Yes,No,No,ex14/99_hires.png
+ex14,EX Crystal Guardians,Unnamed Island,100,Celebi ★,Pokémon,Basic / Star,Grass,,Rare Holo Star,No,Yes,No,No,ex14/100_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,1,Ampharos δ,Pokémon,Stage 2,Colorless,Flaaffy,Rare Holo,Yes,No,No,No,ex15/1_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,2,Feraligatr δ,Pokémon,Stage 2,Lightning,Croconaw,Rare Holo,Yes,No,No,No,ex15/2_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,3,Heracross δ,Pokémon,Basic,Fire,,Rare Holo,Yes,No,No,No,ex15/3_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,4,Meganium δ,Pokémon,Stage 2,Fighting,Bayleef,Rare Holo,Yes,No,No,No,ex15/4_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,5,Milotic δ,Pokémon,Stage 1,Fire,Feebas,Rare Holo,Yes,No,No,No,ex15/5_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,6,Nidoking δ,Pokémon,Stage 2,Darkness,Nidorino,Rare Holo,Yes,No,No,No,ex15/6_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,7,Nidoqueen δ,Pokémon,Stage 2,Metal,Nidorina,Rare Holo,Yes,No,No,No,ex15/7_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,8,Ninetales δ,Pokémon,Stage 1,Psychic,Vulpix,Rare Holo,Yes,No,No,No,ex15/8_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,9,Pinsir δ,Pokémon,Basic,Fighting,,Rare Holo,Yes,No,No,No,ex15/9_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,10,Snorlax δ,Pokémon,Basic,Grass,,Rare Holo,Yes,No,No,No,ex15/10_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,11,Togetic δ,Pokémon,Stage 1,Water,Togepi,Rare Holo,Yes,No,No,No,ex15/11_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,12,Typhlosion δ,Pokémon,Stage 2,Psychic,Quilava,Rare Holo,Yes,No,No,No,ex15/12_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,13,Arbok δ,Pokémon,Stage 1,Fire,Ekans,Rare,Yes,No,No,No,ex15/13_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,14,Cloyster δ,Pokémon,Stage 1,Fighting,Shellder,Rare,Yes,No,No,No,ex15/14_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,15,Dewgong δ,Pokémon,Stage 1,Colorless,Seel,Rare,Yes,No,No,No,ex15/15_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,16,Gligar δ,Pokémon,Basic,Lightning,,Rare,Yes,No,No,No,ex15/16_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,17,Jynx δ,Pokémon,Basic,Fire,,Rare,Yes,No,No,No,ex15/17_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,18,Ledian δ,Pokémon,Stage 1,Metal,Ledyba,Rare,Yes,No,No,No,ex15/18_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,19,Lickitung δ,Pokémon,Basic,Psychic,,Rare,Yes,No,No,No,ex15/19_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,20,Mantine δ,Pokémon,Basic,Lightning,,Rare,Yes,No,No,No,ex15/20_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,21,Quagsire δ,Pokémon,Stage 1,Grass,Wooper,Rare,Yes,No,No,No,ex15/21_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,22,Seadra δ,Pokémon,Stage 1,Fighting,Horsea,Rare,Yes,No,No,No,ex15/22_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,23,Tropius δ,Pokémon,Basic,Metal,,Rare,Yes,No,No,No,ex15/23_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,24,Vibrava δ,Pokémon,Stage 1,Psychic,Trapinch,Rare,Yes,No,No,No,ex15/24_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,25,Xatu δ,Pokémon,Stage 1,Darkness,Natu,Rare,Yes,No,No,No,ex15/25_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,26,Bayleef δ,Pokémon,Stage 1,Fighting,Chikorita,Uncommon,Yes,No,No,No,ex15/26_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,27,Croconaw δ,Pokémon,Stage 1,Lightning,Totodile,Uncommon,Yes,No,No,No,ex15/27_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,28,Dragonair δ,Pokémon,Stage 1,Grass,Dratini,Uncommon,Yes,No,No,No,ex15/28_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,29,Electabuzz δ,Pokémon,Basic,Fighting,,Uncommon,Yes,No,No,No,ex15/29_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,30,Flaaffy δ,Pokémon,Stage 1,Colorless,Mareep,Uncommon,Yes,No,No,No,ex15/30_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,31,Horsea δ,Pokémon,Basic,Fighting,,Uncommon,Yes,No,No,No,ex15/31_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,32,Kirlia,Pokémon,Stage 1,Psychic,Ralts,Uncommon,No,No,No,No,ex15/32_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,33,Kirlia δ,Pokémon,Stage 1,Fire,Ralts,Uncommon,Yes,No,No,No,ex15/33_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,34,Nidorina δ,Pokémon,Stage 1,Metal,Nidoran ♀,Uncommon,Yes,No,No,No,ex15/34_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,35,Nidorino δ,Pokémon,Stage 1,Darkness,Nidoran ♂,Uncommon,Yes,No,No,No,ex15/35_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,36,Quilava δ,Pokémon,Stage 1,Psychic,Cyndaquil,Uncommon,Yes,No,No,No,ex15/36_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,37,Seadra δ,Pokémon,Stage 1,Fighting,Horsea,Uncommon,Yes,No,No,No,ex15/37_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,38,Shelgon δ,Pokémon,Stage 1,Water,Bagon,Uncommon,Yes,No,No,No,ex15/38_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,39,Smeargle δ,Pokémon,Basic,Psychic,,Uncommon,Yes,No,No,No,ex15/39_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,40,Swellow δ,Pokémon,Stage 1,Fire,Taillow,Uncommon,Yes,No,No,No,ex15/40_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,41,Togepi δ,Pokémon,Basic,Water,,Uncommon,Yes,No,No,No,ex15/41_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,42,Vibrava δ,Pokémon,Stage 1,Psychic,Trapinch,Uncommon,Yes,No,No,No,ex15/42_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,43,Bagon δ,Pokémon,Basic,Water,,Common,Yes,No,No,No,ex15/43_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,44,Chikorita δ,Pokémon,Basic,Fighting,,Common,Yes,No,No,No,ex15/44_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,45,Cyndaquil δ,Pokémon,Basic,Psychic,,Common,Yes,No,No,No,ex15/45_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,46,Dratini δ,Pokémon,Basic,Grass,,Common,Yes,No,No,No,ex15/46_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,47,Ekans δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex15/47_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,48,Elekid δ,Pokémon,Basic,Fighting,,Common,Yes,No,No,No,ex15/48_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,49,Feebas δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex15/49_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,50,Horsea δ,Pokémon,Basic,Fighting,,Common,Yes,No,No,No,ex15/50_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,51,Larvitar,Pokémon,Basic,Fighting,,Common,No,No,No,No,ex15/51_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,52,Larvitar δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex15/52_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,53,Ledyba δ,Pokémon,Basic,Metal,,Common,Yes,No,No,No,ex15/53_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,54,Mareep δ,Pokémon,Basic,Colorless,,Common,Yes,No,No,No,ex15/54_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,55,Natu δ,Pokémon,Basic,Darkness,,Common,Yes,No,No,No,ex15/55_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,56,Nidoran ♀ δ,Pokémon,Basic,Metal,,Common,Yes,No,No,No,ex15/56_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,57,Nidoran ♂ δ,Pokémon,Basic,Darkness,,Common,Yes,No,No,No,ex15/57_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,58,Pupitar,Pokémon,Stage 1,Fighting,Larvitar,Common,No,No,No,No,ex15/58_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,59,Pupitar δ,Pokémon,Stage 1,Lightning,Larvitar,Common,Yes,No,No,No,ex15/59_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,60,Ralts,Pokémon,Basic,Psychic,,Common,No,No,No,No,ex15/60_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,61,Ralts δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex15/61_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,62,Seel δ,Pokémon,Basic,Colorless,,Common,Yes,No,No,No,ex15/62_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,63,Shellder δ,Pokémon,Basic,Fighting,,Common,Yes,No,No,No,ex15/63_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,64,Smoochum δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex15/64_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,65,Swablu δ,Pokémon,Basic,Water,,Common,Yes,No,No,No,ex15/65_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,66,Taillow δ,Pokémon,Basic,Fire,,Common,Yes,No,No,No,ex15/66_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,67,Totodile δ,Pokémon,Basic,Lightning,,Common,Yes,No,No,No,ex15/67_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,68,Trapinch δ,Pokémon,Basic,Psychic,,Common,Yes,No,No,No,ex15/68_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,69,Trapinch δ,Pokémon,Basic,Psychic,,Common,Yes,No,No,No,ex15/69_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,70,Vulpix δ,Pokémon,Basic,Psychic,,Common,Yes,No,No,No,ex15/70_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,71,Wooper δ,Pokémon,Basic,Grass,,Common,Yes,No,No,No,ex15/71_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,90,Altaria ex δ,Pokémon,Stage 1 / ex,Water,Swablu,Rare Holo EX,Yes,No,No,No,ex15/90_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,91,Dragonite ex δ,Pokémon,Stage 2 / ex,Grass,Dragonair,Rare Holo EX,Yes,No,No,No,ex15/91_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,92,Flygon ex δ,Pokémon,Stage 2 / ex,Psychic,Vibrava,Rare Holo EX,Yes,No,No,No,ex15/92_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,93,Gardevoir ex δ,Pokémon,Stage 2 / ex,Fire,Kirlia,Rare Holo EX,Yes,No,No,No,ex15/93_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,94,Kingdra ex δ,Pokémon,Stage 2 / ex,Fighting,Seadra,Rare Holo EX,Yes,No,No,No,ex15/94_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,95,Latias ex δ,Pokémon,Basic / ex,Fire,,Rare Holo EX,Yes,No,No,No,ex15/95_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,96,Latios ex δ,Pokémon,Basic / ex,Water,,Rare Holo EX,Yes,No,No,No,ex15/96_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,97,Rayquaza ex δ,Pokémon,Basic / ex,Lightning,,Rare Holo EX,Yes,No,No,No,ex15/97_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,98,Salamence ex δ,Pokémon,Stage 2 / ex,Water,Shelgon,Rare Holo EX,Yes,No,No,No,ex15/98_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,99,Tyranitar ex δ,Pokémon,Stage 2 / ex,Lightning,Pupitar,Rare Holo EX,Yes,No,No,No,ex15/99_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,100,Charizard ★ δ,Pokémon,Basic / Star,Darkness,,Rare Holo Star,Yes,Yes,No,No,ex15/100_hires.png
+ex15,EX Dragon Frontiers,Dragon Frontiers,101,Mew ★ δ,Pokémon,Basic / Star,Water,,Rare Holo Star,Yes,Yes,No,No,ex15/101_hires.png

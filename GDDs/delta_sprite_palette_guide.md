@@ -1,4 +1,4 @@
-# Delta Species Sprite Palette Swapping — Pixelorama Guide
+# Pokémon Holon Legends — Delta Species Sprite Palette Swapping Guide
 
 A practical workflow for creating placeholder Delta Species sprites by recoloring existing Pokémon sprites in Pixelorama. Covers every step from opening the source sprite to dropping the finished file into the repo.
 
