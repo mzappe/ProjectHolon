@@ -1,0 +1,435 @@
+dex_number,name,category,type_1,type_2,tcg_type_1,tcg_type_2,tcg_set,location,card_number,evolves_from,needs_review,card_image
+1,Lapras,Normal,Water,Ice,Water,,EX Legend Maker,Mirage Forest,8,,No,ex12/8_hires.png
+2,Absol,Normal,Dark,,Darkness,,EX Legend Maker,Mirage Forest,15,,No,ex12/15_hires.png
+3,Absol,Normal,Dark,,Darkness,,EX Holon Phantoms,Holon Lake,18,,No,ex13/18_hires.png
+4,Girafarig,Normal,Normal,Psychic,Psychic,,EX Legend Maker,Mirage Forest,16,,No,ex12/16_hires.png
+5,Lunatone,Normal,Rock,Psychic,Psychic,,EX Legend Maker,Mirage Forest,20,,No,ex12/20_hires.png
+6,Magmar,Normal,Fire,,Fire,,EX Legend Maker,Mirage Forest,21,,No,ex12/21_hires.png
+7,Pinsir,Normal,Bug,,Grass,,EX Legend Maker,Mirage Forest,24,,No,ex12/24_hires.png
+8,Pinsir δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,9,,Yes,ex15/9_hires.png
+9,Solrock,Normal,Rock,Psychic,Fighting,,EX Legend Maker,Mirage Forest,25,,No,ex12/25_hires.png
+10,Spinda,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,26,,No,ex12/26_hires.png
+11,Torkoal,Normal,Fire,,Fire,,EX Legend Maker,Mirage Forest,27,,No,ex12/27_hires.png
+12,Torkoal,Normal,Fire,,Fire,,EX Holon Phantoms,Holon Lake,33,,No,ex13/33_hires.png
+13,Wobbuffet,Normal,Psychic,,Psychic,,EX Legend Maker,Mirage Forest,28,,No,ex12/28_hires.png
+14,Wobbuffet,Normal,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,56,,No,ex13/56_hires.png
+15,Dunsparce,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,31,,No,ex12/31_hires.png
+16,Kecleon,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,37,,No,ex12/37_hires.png
+17,Misdreavus,Normal,Ghost,,Psychic,,EX Legend Maker,Mirage Forest,40,,No,ex12/40_hires.png
+18,Roselia,Normal,Grass,Poison,Grass,,EX Legend Maker,Mirage Forest,42,,No,ex12/42_hires.png
+19,Tangela,Normal,Grass,,Grass,,EX Legend Maker,Mirage Forest,44,,No,ex12/44_hires.png
+20,Aron,Normal,Steel,Rock,Metal,,EX Legend Maker,Mirage Forest,48,,No,ex12/48_hires.png
+21,Aron,Normal,Steel,Rock,Metal,,EX Holon Phantoms,Holon Lake,58,,No,ex13/58_hires.png
+22,Aron,Normal,Steel,Rock,Metal,,EX Crystal Guardians,Unnamed Island,44,,No,ex14/44_hires.png
+23,Lairon,Normal,Steel,Rock,Metal,,EX Legend Maker,Mirage Forest,38,Aron,No,ex12/38_hires.png
+24,Lairon,Normal,Steel,Rock,Metal,,EX Holon Phantoms,Holon Lake,45,Aron,No,ex13/45_hires.png
+25,Lairon,Normal,Steel,Rock,Metal,,EX Crystal Guardians,Unnamed Island,36,Aron,No,ex14/36_hires.png
+26,Aggron,Normal,Steel,Rock,Metal,,EX Legend Maker,Mirage Forest,2,Lairon,No,ex12/2_hires.png
+27,Aggron ex,Normal,Steel,Rock,Metal,,EX Crystal Guardians,Unnamed Island,89,Lairon,No,ex14/89_hires.png
+28,Bellsprout,Normal,Grass,Poison,Grass,,EX Legend Maker,Mirage Forest,49,,No,ex12/49_hires.png
+29,Weepinbell,Normal,Grass,Poison,Grass,,EX Legend Maker,Mirage Forest,47,Bellsprout,No,ex12/47_hires.png
+30,Victreebel,Normal,Grass,Poison,Grass,,EX Legend Maker,Mirage Forest,13,Weepinbell,No,ex12/13_hires.png
+31,Chinchou,Normal,Water,Electric,Lightning,,EX Legend Maker,Mirage Forest,50,,No,ex12/50_hires.png
+32,Lanturn,Normal,Water,Electric,Lightning,,EX Legend Maker,Mirage Forest,19,Chinchou,No,ex12/19_hires.png
+33,Clamperl,Normal,Water,,Water,,EX Legend Maker,Mirage Forest,51,,No,ex12/51_hires.png
+34,Gorebyss,Normal,Water,,Water,,EX Legend Maker,Mirage Forest,17,Clamperl,No,ex12/17_hires.png
+35,Huntail,Normal,Water,,Water,,EX Legend Maker,Mirage Forest,18,Clamperl,No,ex12/18_hires.png
+36,Gastly,Normal,Ghost,Poison,Psychic,,EX Legend Maker,Mirage Forest,52,,No,ex12/52_hires.png
+37,Haunter,Normal,Ghost,Poison,Psychic,,EX Legend Maker,Mirage Forest,35,Gastly,No,ex12/35_hires.png
+38,Gengar,Normal,Ghost,Poison,Psychic,,EX Legend Maker,Mirage Forest,5,Haunter,No,ex12/5_hires.png
+39,Geodude,Normal,Rock,Ground,Fighting,,EX Legend Maker,Mirage Forest,53,,No,ex12/53_hires.png
+40,Graveler,Normal,Rock,Ground,Fighting,,EX Legend Maker,Mirage Forest,34,Geodude,No,ex12/34_hires.png
+41,Golem,Normal,Rock,Ground,Fighting,,EX Legend Maker,Mirage Forest,6,Graveler,No,ex12/6_hires.png
+42,Grimer,Normal,Poison,,Grass,,EX Legend Maker,Mirage Forest,54,,No,ex12/54_hires.png
+43,Muk,Normal,Poison,,Grass,,EX Legend Maker,Mirage Forest,11,Grimer,No,ex12/11_hires.png
+44,Growlithe,Normal,Fire,,Fire,,EX Legend Maker,Mirage Forest,55,,No,ex12/55_hires.png
+45,Arcanine ex,Normal,Fire,,Fire,,EX Legend Maker,Mirage Forest,83,Growlithe,No,ex12/83_hires.png
+46,Machop,Normal,Fighting,,Fighting,,EX Legend Maker,Mirage Forest,57,,No,ex12/57_hires.png
+47,Machoke,Normal,Fighting,,Fighting,,EX Legend Maker,Mirage Forest,39,Machop,No,ex12/39_hires.png
+48,Machamp,Normal,Fighting,,Fighting,,EX Legend Maker,Mirage Forest,9,Machoke,No,ex12/9_hires.png
+49,Magby,Normal,Fire,,Fire,,EX Legend Maker,Mirage Forest,58,,No,ex12/58_hires.png
+50,Magnemite,Normal,Electric,Steel,Lightning,,EX Legend Maker,Mirage Forest,59,,No,ex12/59_hires.png
+51,Magnemite,Normal,Electric,Steel,Lightning,,EX Delta Species,Holon Research Tower,74,,No,ex11/74_hires.png
+52,Magneton,Normal,Electric,Steel,Lightning,,EX Legend Maker,Mirage Forest,22,Magnemite,No,ex12/22_hires.png
+53,Magneton,Normal,Electric,Steel,Lightning,,EX Delta Species,Holon Research Tower,48,Magnemite,No,ex11/48_hires.png
+54,Seedot,Normal,Grass,,Grass,,EX Legend Maker,Mirage Forest,61,,No,ex12/61_hires.png
+55,Seedot,Normal,Grass,,Grass,,EX Crystal Guardians,Unnamed Island,60,,No,ex14/60_hires.png
+56,Nuzleaf,Normal,Grass,Dark,Darkness,,EX Legend Maker,Mirage Forest,41,Seedot,No,ex12/41_hires.png
+57,Nuzleaf,Normal,Grass,Dark,Darkness,,EX Crystal Guardians,Unnamed Island,39,Seedot,No,ex14/39_hires.png
+58,Shiftry,Normal,Grass,Dark,Darkness,,EX Legend Maker,Mirage Forest,12,Nuzleaf,No,ex12/12_hires.png
+59,Shiftry ex,Normal,Grass,Dark,Darkness,,EX Crystal Guardians,Unnamed Island,97,Nuzleaf,No,ex14/97_hires.png
+60,Sentret,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,62,,No,ex12/62_hires.png
+61,Furret,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,33,Sentret,No,ex12/33_hires.png
+62,Shuppet,Normal,Ghost,,Psychic,,EX Legend Maker,Mirage Forest,63,,No,ex12/63_hires.png
+63,Shuppet,Normal,Ghost,,Psychic,,EX Crystal Guardians,Unnamed Island,40,,No,ex14/40_hires.png
+64,Banette,Normal,Ghost,,Psychic,,EX Crystal Guardians,Unnamed Island,1,Shuppet,No,ex14/1_hires.png
+65,Banette ex,Normal,Ghost,,Psychic,,EX Legend Maker,Mirage Forest,85,Shuppet,No,ex12/85_hires.png
+66,Skitty,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,64,,No,ex12/64_hires.png
+67,Skitty,Normal,Normal,,Colorless,,EX Crystal Guardians,Unnamed Island,41,,No,ex14/41_hires.png
+68,Delcatty,Normal,Normal,,Colorless,,EX Legend Maker,Mirage Forest,4,Skitty,No,ex12/4_hires.png
+69,Delcatty ex,Normal,Normal,,Colorless,,EX Crystal Guardians,Unnamed Island,91,Skitty,No,ex14/91_hires.png
+70,Spheal,Normal,Ice,Water,Water,,EX Legend Maker,Mirage Forest,65,,No,ex12/65_hires.png
+71,Sealeo,Normal,Ice,Water,Water,,EX Legend Maker,Mirage Forest,43,Spheal,No,ex12/43_hires.png
+72,Walrein ex,Normal,Ice,Water,Water,,EX Legend Maker,Mirage Forest,89,Sealeo,No,ex12/89_hires.png
+73,Tentacool,Normal,Water,Poison,Water,,EX Legend Maker,Mirage Forest,66,,No,ex12/66_hires.png
+74,Tentacruel,Normal,Water,Poison,Water,,EX Legend Maker,Mirage Forest,45,Tentacool,No,ex12/45_hires.png
+75,Trapinch,Normal,Ground,,Fighting,,EX Legend Maker,Mirage Forest,67,,No,ex12/67_hires.png
+76,Trapinch δ,Delta,Grass,,Grass,,EX Holon Phantoms,Holon Lake,84,,Yes,ex13/84_hires.png
+77,Trapinch δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,68,,Yes,ex15/68_hires.png
+78,Trapinch δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,69,,Yes,ex15/69_hires.png
+79,Vibrava,Normal,Ground,Dragon,Colorless,,EX Legend Maker,Mirage Forest,46,Trapinch,No,ex12/46_hires.png
+80,Vibrava δ,Delta,Grass,,Grass,,EX Holon Phantoms,Holon Lake,54,Trapinch,Yes,ex13/54_hires.png
+81,Vibrava δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,24,Trapinch,Yes,ex15/24_hires.png
+82,Vibrava δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,42,Trapinch,Yes,ex15/42_hires.png
+83,Flygon δ,Delta,Grass,Steel,Grass,Metal,EX Holon Phantoms,Holon Lake,7,Vibrava,Yes,ex13/7_hires.png
+84,Flygon ex,Normal,Ground,Dragon,Colorless,,EX Legend Maker,Mirage Forest,87,Vibrava,No,ex12/87_hires.png
+85,Flygon ex δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,92,Vibrava,Yes,ex15/92_hires.png
+86,Voltorb,Normal,Electric,,Lightning,,EX Legend Maker,Mirage Forest,68,,No,ex12/68_hires.png
+87,Electrode,Normal,Electric,,Lightning,,EX Legend Maker,Mirage Forest,32,Voltorb,No,ex12/32_hires.png
+88,Wailmer,Normal,Water,,Water,,EX Legend Maker,Mirage Forest,69,,No,ex12/69_hires.png
+89,Wailord,Normal,Water,,Water,,EX Legend Maker,Mirage Forest,14,Wailmer,No,ex12/14_hires.png
+90,Wurmple,Normal,Bug,,Grass,,EX Legend Maker,Mirage Forest,70,,No,ex12/70_hires.png
+91,Cascoon,Normal,Bug,,Grass,,EX Legend Maker,Mirage Forest,30,Wurmple,No,ex12/30_hires.png
+92,Dustox ex,Normal,Bug,Poison,Grass,,EX Legend Maker,Mirage Forest,86,Cascoon,No,ex12/86_hires.png
+93,Wynaut,Normal,Psychic,,Psychic,,EX Legend Maker,Mirage Forest,71,,No,ex12/71_hires.png
+94,Pikachu δ,Delta,Steel,,Metal,,EX Legend Maker,Mirage Forest,93,,No,ex12/93_hires.png
+95,Pikachu,Normal,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,78,,No,ex13/78_hires.png
+96,Pikachu δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,79,,No,ex13/79_hires.png
+97,Raichu δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,15,Pikachu,No,ex13/15_hires.png
+98,Raichu,Normal,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,51,Pikachu,No,ex13/51_hires.png
+99,Azurill,Normal,Normal,Fairy,Colorless,,EX Delta Species,Holon Research Tower,20,,No,ex11/20_hires.png
+100,Rain Castform,Normal,Normal,,Water,,EX Delta Species,Holon Research Tower,26,,No,ex11/26_hires.png
+101,Snow-cloud Castform,Normal,Normal,,Water,,EX Delta Species,Holon Research Tower,29,,No,ex11/29_hires.png
+102,Sunny Castform,Normal,Normal,,Fire,,EX Delta Species,Holon Research Tower,31,,No,ex11/31_hires.png
+103,Castform,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,34,,No,ex11/34_hires.png
+104,Ditto,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,35,,No,ex11/35_hires.png
+105,Ditto,Normal,Normal,,Grass,,EX Delta Species,Holon Research Tower,36,,No,ex11/36_hires.png
+106,Ditto,Normal,Normal,,Fire,,EX Delta Species,Holon Research Tower,37,,No,ex11/37_hires.png
+107,Ditto,Normal,Normal,,Psychic,,EX Delta Species,Holon Research Tower,38,,No,ex11/38_hires.png
+108,Ditto,Normal,Normal,,Lightning,,EX Delta Species,Holon Research Tower,39,,No,ex11/39_hires.png
+109,Ditto,Normal,Normal,,Water,,EX Delta Species,Holon Research Tower,40,,No,ex11/40_hires.png
+110,Ditto,Normal,Normal,,Fire,,EX Delta Species,Holon Research Tower,61,,No,ex11/61_hires.png
+111,Ditto,Normal,Normal,,Fighting,,EX Delta Species,Holon Research Tower,62,,No,ex11/62_hires.png
+112,Ditto,Normal,Normal,,Lightning,,EX Delta Species,Holon Research Tower,63,,No,ex11/63_hires.png
+113,Ditto,Normal,Normal,,Water,,EX Delta Species,Holon Research Tower,64,,No,ex11/64_hires.png
+114,Illumise,Normal,Bug,,Grass,,EX Delta Species,Holon Research Tower,45,,No,ex11/45_hires.png
+115,Skarmory,Normal,Steel,Flying,Metal,,EX Delta Species,Holon Research Tower,55,,No,ex11/55_hires.png
+116,Volbeat,Normal,Bug,,Grass,,EX Delta Species,Holon Research Tower,56,,No,ex11/56_hires.png
+117,Bagon δ,Delta,Fire,,Fire,,EX Delta Species,Holon Research Tower,57,,No,ex11/57_hires.png
+118,Bagon δ,Delta,Fire,,Fire,,EX Delta Species,Holon Research Tower,58,,No,ex11/58_hires.png
+119,Bagon δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,43,,No,ex15/43_hires.png
+120,Shelgon δ,Delta,Fire,,Fire,,EX Delta Species,Holon Research Tower,53,Bagon,No,ex11/53_hires.png
+121,Shelgon δ,Delta,Fire,,Fire,,EX Delta Species,Holon Research Tower,54,Bagon,No,ex11/54_hires.png
+122,Shelgon δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,38,Bagon,No,ex15/38_hires.png
+123,Salamence δ,Delta,Fire,Steel,Fire,Metal,EX Delta Species,Holon Research Tower,14,Shelgon,No,ex11/14_hires.png
+124,Salamence ex δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,98,Shelgon,No,ex15/98_hires.png
+125,Beldum δ,Delta,Electric,,Lightning,,EX Delta Species,Holon Research Tower,59,,No,ex11/59_hires.png
+126,Metang δ,Delta,Electric,,Lightning,,EX Delta Species,Holon Research Tower,49,Beldum,No,ex11/49_hires.png
+127,Metagross δ,Delta,Electric,Steel,Lightning,Metal,EX Delta Species,Holon Research Tower,11,Metang,No,ex11/11_hires.png
+128,Cubone,Normal,Ground,,Fighting,,EX Delta Species,Holon Research Tower,60,,No,ex11/60_hires.png
+129,Marowak δ,Delta,Fighting,Steel,Fighting,Metal,EX Delta Species,Holon Research Tower,10,Cubone,Yes,ex11/10_hires.png
+130,Dratini δ,Delta,Electric,,Lightning,,EX Delta Species,Holon Research Tower,65,,No,ex11/65_hires.png
+131,Dratini δ,Delta,Electric,,Lightning,,EX Delta Species,Holon Research Tower,66,,No,ex11/66_hires.png
+132,Dratini δ,Delta,Grass,,Grass,,EX Dragon Frontiers,Dragon Frontiers,46,,Yes,ex15/46_hires.png
+133,Dragonair δ,Delta,Electric,,Lightning,,EX Delta Species,Holon Research Tower,41,Dratini,No,ex11/41_hires.png
+134,Dragonair δ,Delta,Electric,,Lightning,,EX Delta Species,Holon Research Tower,42,Dratini,No,ex11/42_hires.png
+135,Dragonair δ,Delta,Grass,,Grass,,EX Dragon Frontiers,Dragon Frontiers,28,Dratini,Yes,ex15/28_hires.png
+136,Dragonite δ,Delta,Electric,Steel,Lightning,Metal,EX Delta Species,Holon Research Tower,3,Dragonair,No,ex11/3_hires.png
+137,Dragonite ex δ,Delta,Grass,,Grass,,EX Dragon Frontiers,Dragon Frontiers,91,Dragonair,Yes,ex15/91_hires.png
+138,Drowzee,Normal,Psychic,,Psychic,,EX Delta Species,Holon Research Tower,67,,No,ex11/67_hires.png
+139,Hypno,Normal,Psychic,,Psychic,,EX Delta Species,Holon Research Tower,23,Drowzee,No,ex11/23_hires.png
+140,Eevee δ,Delta,Steel,,Metal,,EX Delta Species,Holon Research Tower,68,,No,ex11/68_hires.png
+141,Eevee,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,69,,No,ex11/69_hires.png
+142,Espeon δ,Delta,Psychic,Steel,Psychic,Metal,EX Delta Species,Holon Research Tower,4,Eevee,Yes,ex11/4_hires.png
+143,Flareon δ,Delta,Fire,Steel,Fire,Metal,EX Delta Species,Holon Research Tower,5,Eevee,No,ex11/5_hires.png
+144,Jolteon δ,Delta,Electric,Steel,Lightning,Metal,EX Delta Species,Holon Research Tower,7,Eevee,No,ex11/7_hires.png
+145,Umbreon δ,Delta,Dark,Steel,Darkness,Metal,EX Delta Species,Holon Research Tower,17,Eevee,No,ex11/17_hires.png
+146,Vaporeon δ,Delta,Water,Steel,Water,Metal,EX Delta Species,Holon Research Tower,18,Eevee,No,ex11/18_hires.png
+147,Flareon ex,Normal,Fire,,Fire,,EX Delta Species,Holon Research Tower,108,Eevee,No,ex11/108_hires.png
+148,Jolteon ex,Normal,Electric,,Lightning,,EX Delta Species,Holon Research Tower,109,Eevee,No,ex11/109_hires.png
+149,Vaporeon ex,Normal,Water,,Water,,EX Delta Species,Holon Research Tower,110,Eevee,No,ex11/110_hires.png
+150,Koffing,Normal,Poison,,Grass,,EX Delta Species,Holon Research Tower,72,,No,ex11/72_hires.png
+151,Weezing,Normal,Poison,,Grass,,EX Delta Species,Holon Research Tower,33,Koffing,No,ex11/33_hires.png
+152,Larvitar δ,Delta,Fire,,Fire,,EX Delta Species,Holon Research Tower,73,,No,ex11/73_hires.png
+153,Larvitar,Normal,Rock,Ground,Fighting,,EX Dragon Frontiers,Dragon Frontiers,51,,No,ex15/51_hires.png
+154,Larvitar δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,52,,No,ex15/52_hires.png
+155,Pupitar δ,Delta,Fire,,Fire,,EX Delta Species,Holon Research Tower,51,Larvitar,No,ex11/51_hires.png
+156,Pupitar,Normal,Rock,Ground,Fighting,,EX Dragon Frontiers,Dragon Frontiers,58,Larvitar,No,ex15/58_hires.png
+157,Pupitar δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,59,Larvitar,No,ex15/59_hires.png
+158,Tyranitar δ,Delta,Fire,Steel,Fire,Metal,EX Delta Species,Holon Research Tower,16,Pupitar,No,ex11/16_hires.png
+159,Tyranitar ex δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,99,Pupitar,No,ex15/99_hires.png
+160,Makuhita,Normal,Fighting,,Fighting,,EX Delta Species,Holon Research Tower,75,,No,ex11/75_hires.png
+161,Hariyama,Normal,Fighting,,Fighting,,EX Delta Species,Holon Research Tower,44,Makuhita,No,ex11/44_hires.png
+162,Marill,Normal,Water,Fairy,Water,,EX Delta Species,Holon Research Tower,76,,No,ex11/76_hires.png
+163,Azumarill δ,Delta,Water,Steel,Water,Metal,EX Delta Species,Holon Research Tower,19,Marill,No,ex11/19_hires.png
+164,Azumarill,Normal,Water,Fairy,Water,,EX Delta Species,Holon Research Tower,114,Marill,No,ex11/114_hires.png
+165,Meowth,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,77,,No,ex11/77_hires.png
+166,Meowth δ,Delta,Dark,Steel,Darkness,Metal,EX Holon Phantoms,Holon Lake,71,,No,ex13/71_hires.png
+167,Persian,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,50,Meowth,No,ex11/50_hires.png
+168,Persian δ,Delta,Dark,Steel,Darkness,Metal,EX Holon Phantoms,Holon Lake,48,Meowth,No,ex13/48_hires.png
+169,Ponyta,Normal,Fire,,Fire,,EX Delta Species,Holon Research Tower,78,,No,ex11/78_hires.png
+170,Rapidash,Normal,Fire,,Fire,,EX Delta Species,Holon Research Tower,52,Ponyta,No,ex11/52_hires.png
+171,Poochyena,Normal,Dark,,Darkness,,EX Delta Species,Holon Research Tower,79,,No,ex11/79_hires.png
+172,Poochyena,Normal,Dark,,Darkness,,EX Holon Phantoms,Holon Lake,80,,No,ex13/80_hires.png
+173,Mightyena δ,Delta,Dark,Steel,Darkness,Metal,EX Delta Species,Holon Research Tower,24,Poochyena,No,ex11/24_hires.png
+174,Mightyena ex,Normal,Dark,,Darkness,,EX Holon Phantoms,Holon Lake,101,Poochyena,No,ex13/101_hires.png
+175,Porygon,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,80,,No,ex11/80_hires.png
+176,Porygon2,Normal,Normal,,Colorless,,EX Delta Species,Holon Research Tower,25,Porygon,No,ex11/25_hires.png
+177,Ralts,Normal,Psychic,Fairy,Psychic,,EX Delta Species,Holon Research Tower,81,,No,ex11/81_hires.png
+178,Ralts,Normal,Psychic,Fairy,Psychic,,EX Dragon Frontiers,Dragon Frontiers,60,,No,ex15/60_hires.png
+179,Ralts δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,61,,No,ex15/61_hires.png
+180,Kirlia,Normal,Psychic,Fairy,Psychic,,EX Delta Species,Holon Research Tower,47,Ralts,No,ex11/47_hires.png
+181,Kirlia,Normal,Psychic,Fairy,Psychic,,EX Dragon Frontiers,Dragon Frontiers,32,Ralts,No,ex15/32_hires.png
+182,Kirlia δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,33,Ralts,No,ex15/33_hires.png
+183,Gardevoir δ,Delta,Psychic,Steel,Psychic,Metal,EX Delta Species,Holon Research Tower,6,Kirlia,Yes,ex11/6_hires.png
+184,Gardevoir ex δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,93,Kirlia,No,ex15/93_hires.png
+185,Sandshrew,Normal,Ground,,Fighting,,EX Delta Species,Holon Research Tower,82,,No,ex11/82_hires.png
+186,Sandslash δ,Delta,Fighting,Steel,Fighting,Metal,EX Delta Species,Holon Research Tower,27,Sandshrew,Yes,ex11/27_hires.png
+187,Slowpoke,Normal,Water,Psychic,Water,,EX Delta Species,Holon Research Tower,83,,No,ex11/83_hires.png
+188,Slowking,Normal,Water,Psychic,Water,,EX Delta Species,Holon Research Tower,28,Slowpoke,No,ex11/28_hires.png
+189,Staryu,Normal,Water,,Water,,EX Delta Species,Holon Research Tower,84,,No,ex11/84_hires.png
+190,Staryu,Normal,Water,,Water,,EX Delta Species,Holon Research Tower,85,,No,ex11/85_hires.png
+191,Starmie δ,Delta,Water,Steel,Water,Metal,EX Delta Species,Holon Research Tower,15,Staryu,No,ex11/15_hires.png
+192,Starmie δ,Delta,Water,Steel,Water,Metal,EX Delta Species,Holon Research Tower,30,Staryu,No,ex11/30_hires.png
+193,Taillow,Normal,Normal,Flying,Colorless,,EX Delta Species,Holon Research Tower,86,,No,ex11/86_hires.png
+194,Taillow δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,66,,No,ex15/66_hires.png
+195,Swellow,Normal,Normal,Flying,Colorless,,EX Delta Species,Holon Research Tower,32,Taillow,No,ex11/32_hires.png
+196,Swellow δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,40,Taillow,No,ex15/40_hires.png
+197,Weedle,Normal,Bug,Poison,Grass,,EX Delta Species,Holon Research Tower,87,,No,ex11/87_hires.png
+198,Kakuna,Normal,Bug,Poison,Grass,,EX Delta Species,Holon Research Tower,46,Weedle,No,ex11/46_hires.png
+199,Beedrill δ,Delta,Grass,Steel,Grass,Metal,EX Delta Species,Holon Research Tower,1,Kakuna,Yes,ex11/1_hires.png
+200,Zubat,Normal,Poison,Flying,Grass,,EX Delta Species,Holon Research Tower,88,,No,ex11/88_hires.png
+201,Golbat,Normal,Poison,Flying,Grass,,EX Delta Species,Holon Research Tower,43,Zubat,No,ex11/43_hires.png
+202,Crobat δ,Delta,Grass,Steel,Grass,Metal,EX Delta Species,Holon Research Tower,2,Golbat,Yes,ex11/2_hires.png
+203,Mawile,Normal,Steel,Fairy,Metal,,EX Holon Phantoms,Holon Lake,23,,No,ex13/23_hires.png
+204,Mawile,Normal,Steel,Fairy,Metal,,EX Crystal Guardians,Unnamed Island,9,,No,ex14/9_hires.png
+205,Nosepass,Normal,Rock,,Fighting,,EX Holon Phantoms,Holon Lake,25,,No,ex13/25_hires.png
+206,Relicanth,Normal,Water,Rock,Water,,EX Holon Phantoms,Holon Lake,30,,No,ex13/30_hires.png
+207,Sableye,Normal,Dark,Ghost,Darkness,,EX Holon Phantoms,Holon Lake,31,,No,ex13/31_hires.png
+208,Sableye,Normal,Dark,Ghost,Darkness,,EX Crystal Guardians,Unnamed Island,10,,No,ex14/10_hires.png
+209,Seviper,Normal,Poison,,Grass,,EX Holon Phantoms,Holon Lake,32,,No,ex13/32_hires.png
+210,Zangoose,Normal,Normal,,Colorless,,EX Holon Phantoms,Holon Lake,34,,No,ex13/34_hires.png
+211,Chimecho δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,37,,No,ex13/37_hires.png
+212,Baltoy,Normal,Ground,Psychic,Psychic,,EX Holon Phantoms,Holon Lake,59,,No,ex13/59_hires.png
+213,Claydol,Normal,Ground,Psychic,Psychic,,EX Holon Phantoms,Holon Lake,38,Baltoy,No,ex13/38_hires.png
+214,Barboach,Normal,Water,Ground,Fighting,,EX Holon Phantoms,Holon Lake,60,,No,ex13/60_hires.png
+215,Whiscash,Normal,Water,Ground,Fighting,,EX Holon Phantoms,Holon Lake,55,Barboach,No,ex13/55_hires.png
+216,Carvanha δ,Delta,Fighting,,Fighting,,EX Holon Phantoms,Holon Lake,61,,Yes,ex13/61_hires.png
+217,Sharpedo δ,Delta,Fighting,,Fighting,,EX Holon Phantoms,Holon Lake,53,Carvanha,Yes,ex13/53_hires.png
+218,Corphish,Normal,Water,,Water,,EX Holon Phantoms,Holon Lake,62,,No,ex13/62_hires.png
+219,Corphish,Normal,Water,,Water,,EX Holon Phantoms,Holon Lake,63,,No,ex13/63_hires.png
+220,Crawdaunt ex,Normal,Water,Dark,Water,,EX Holon Phantoms,Holon Lake,99,Corphish,No,ex13/99_hires.png
+221,Electrike,Normal,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,64,,No,ex13/64_hires.png
+222,Electrike,Normal,Electric,,Lightning,,EX Crystal Guardians,Unnamed Island,52,,No,ex14/52_hires.png
+223,Manectric,Normal,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,46,Electrike,No,ex13/46_hires.png
+224,Manectric,Normal,Electric,,Lightning,,EX Crystal Guardians,Unnamed Island,8,Electrike,No,ex14/8_hires.png
+225,Exeggcute δ,Delta,Fighting,,Fighting,,EX Holon Phantoms,Holon Lake,65,,Yes,ex13/65_hires.png
+226,Exeggutor δ,Delta,Fighting,,Fighting,,EX Holon Phantoms,Holon Lake,41,Exeggcute,Yes,ex13/41_hires.png
+227,Horsea δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,66,,No,ex13/66_hires.png
+228,Horsea δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,31,,Yes,ex15/31_hires.png
+229,Horsea δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,50,,Yes,ex15/50_hires.png
+230,Seadra δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,52,Horsea,No,ex13/52_hires.png
+231,Seadra δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,22,Horsea,Yes,ex15/22_hires.png
+232,Seadra δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,37,Horsea,Yes,ex15/37_hires.png
+233,Kingdra δ,Delta,Fire,Steel,Fire,Metal,EX Holon Phantoms,Holon Lake,10,Seadra,No,ex13/10_hires.png
+234,Kingdra ex δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,94,Seadra,Yes,ex15/94_hires.png
+235,Magikarp δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,69,,No,ex13/69_hires.png
+236,Gyarados δ,Delta,Electric,Steel,Lightning,Metal,EX Holon Phantoms,Holon Lake,8,Magikarp,No,ex13/8_hires.png
+237,Mankey δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,70,,No,ex13/70_hires.png
+238,Primeape δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,50,Mankey,No,ex13/50_hires.png
+239,Numel,Normal,Fire,Ground,Fire,,EX Holon Phantoms,Holon Lake,72,,No,ex13/72_hires.png
+240,Numel,Normal,Fire,Ground,Fire,,EX Crystal Guardians,Unnamed Island,59,,No,ex14/59_hires.png
+241,Camerupt,Normal,Fire,Ground,Fire,,EX Holon Phantoms,Holon Lake,36,Numel,No,ex13/36_hires.png
+242,Camerupt,Normal,Fire,Ground,Fire,,EX Crystal Guardians,Unnamed Island,3,Numel,No,ex14/3_hires.png
+243,Oddish δ,Delta,Water,,Water,,EX Holon Phantoms,Holon Lake,73,,No,ex13/73_hires.png
+244,Gloom δ,Delta,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,42,Oddish,Yes,ex13/42_hires.png
+245,Vileplume δ,Delta,Psychic,Steel,Psychic,Metal,EX Holon Phantoms,Holon Lake,17,Gloom,Yes,ex13/17_hires.png
+246,Bellossom δ,Delta,Water,,Water,,EX Holon Phantoms,Holon Lake,19,Gloom,No,ex13/19_hires.png
+247,Phanpy,Normal,Ground,,Fighting,,EX Holon Phantoms,Holon Lake,75,,No,ex13/75_hires.png
+248,Donphan,Normal,Ground,,Fighting,,EX Holon Phantoms,Holon Lake,40,Phanpy,No,ex13/40_hires.png
+249,Pichu δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,76,,No,ex13/76_hires.png
+250,Pidgey δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,77,,No,ex13/77_hires.png
+251,Pidgeotto δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,49,Pidgey,No,ex13/49_hires.png
+252,Pidgeot δ,Delta,Electric,Steel,Lightning,Metal,EX Holon Phantoms,Holon Lake,14,Pidgeotto,No,ex13/14_hires.png
+253,Psyduck δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,81,,No,ex13/81_hires.png
+254,Golduck δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,43,Psyduck,No,ex13/43_hires.png
+255,Surskit,Normal,Bug,Water,Grass,,EX Holon Phantoms,Holon Lake,82,,No,ex13/82_hires.png
+256,Masquerain,Normal,Bug,Flying,Grass,,EX Holon Phantoms,Holon Lake,47,Surskit,No,ex13/47_hires.png
+257,Torchic,Normal,Fire,,Fire,,EX Holon Phantoms,Holon Lake,83,,No,ex13/83_hires.png
+258,Torchic,Normal,Fire,,Fire,,EX Crystal Guardians,Unnamed Island,65,,No,ex14/65_hires.png
+259,Torchic,Normal,Fire,,Fire,,EX Crystal Guardians,Unnamed Island,66,,No,ex14/66_hires.png
+260,Combusken,Normal,Fire,Fighting,Fire,,EX Holon Phantoms,Holon Lake,39,Torchic,No,ex13/39_hires.png
+261,Combusken,Normal,Fire,Fighting,Fighting,,EX Crystal Guardians,Unnamed Island,16,Torchic,No,ex14/16_hires.png
+262,Combusken,Normal,Fire,Fighting,Fire,,EX Crystal Guardians,Unnamed Island,31,Torchic,No,ex14/31_hires.png
+263,Blaziken,Normal,Fire,Fighting,Fire,,EX Holon Phantoms,Holon Lake,20,Combusken,No,ex13/20_hires.png
+264,Blaziken ex,Normal,Fire,Fighting,Fighting,,EX Crystal Guardians,Unnamed Island,90,Combusken,No,ex14/90_hires.png
+265,Luvdisc,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,7,,No,ex14/7_hires.png
+266,Tauros,Normal,Normal,,Colorless,,EX Crystal Guardians,Unnamed Island,12,,No,ex14/12_hires.png
+267,Igglybuff,Normal,Normal,Fairy,Colorless,,EX Crystal Guardians,Unnamed Island,21,,No,ex14/21_hires.png
+268,Gulpin,Normal,Poison,,Grass,,EX Crystal Guardians,Unnamed Island,33,,No,ex14/33_hires.png
+269,Swalot,Normal,Poison,,Grass,,EX Crystal Guardians,Unnamed Island,11,Gulpin,No,ex14/11_hires.png
+270,Bulbasaur,Normal,Grass,Poison,Grass,,EX Crystal Guardians,Unnamed Island,45,,No,ex14/45_hires.png
+271,Bulbasaur,Normal,Grass,Poison,Grass,,EX Crystal Guardians,Unnamed Island,46,,No,ex14/46_hires.png
+272,Ivysaur,Normal,Grass,Poison,Grass,,EX Crystal Guardians,Unnamed Island,34,Bulbasaur,No,ex14/34_hires.png
+273,Ivysaur,Normal,Grass,Poison,Grass,,EX Crystal Guardians,Unnamed Island,35,Bulbasaur,No,ex14/35_hires.png
+274,Venusaur,Normal,Grass,Poison,Grass,,EX Crystal Guardians,Unnamed Island,28,Ivysaur,No,ex14/28_hires.png
+275,Cacnea,Normal,Grass,,Grass,,EX Crystal Guardians,Unnamed Island,47,,No,ex14/47_hires.png
+276,Cacturne δ,Delta,Fighting,,Fighting,,EX Crystal Guardians,Unnamed Island,15,Cacnea,Yes,ex14/15_hires.png
+277,Charmander,Normal,Fire,,Fire,,EX Crystal Guardians,Unnamed Island,48,,No,ex14/48_hires.png
+278,Charmander δ,Delta,Electric,,Lightning,,EX Crystal Guardians,Unnamed Island,49,,No,ex14/49_hires.png
+279,Charmeleon,Normal,Fire,,Fire,,EX Crystal Guardians,Unnamed Island,29,Charmander,No,ex14/29_hires.png
+280,Charmeleon δ,Delta,Electric,,Lightning,,EX Crystal Guardians,Unnamed Island,30,Charmander,No,ex14/30_hires.png
+281,Charizard δ,Delta,Electric,Steel,Lightning,Metal,EX Crystal Guardians,Unnamed Island,4,Charmeleon,No,ex14/4_hires.png
+282,Diglett,Normal,Ground,,Fighting,,EX Crystal Guardians,Unnamed Island,50,,No,ex14/50_hires.png
+283,Dugtrio,Normal,Ground,,Fighting,,EX Crystal Guardians,Unnamed Island,5,Diglett,No,ex14/5_hires.png
+284,Duskull,Normal,Ghost,,Psychic,,EX Crystal Guardians,Unnamed Island,51,,No,ex14/51_hires.png
+285,Dusclops,Normal,Ghost,,Psychic,,EX Crystal Guardians,Unnamed Island,17,Duskull,No,ex14/17_hires.png
+286,Jigglypuff,Normal,Normal,Fairy,Colorless,,EX Crystal Guardians,Unnamed Island,53,,No,ex14/53_hires.png
+287,Wigglytuff,Normal,Normal,Fairy,Colorless,,EX Crystal Guardians,Unnamed Island,13,Jigglypuff,No,ex14/13_hires.png
+288,Krabby,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,54,,No,ex14/54_hires.png
+289,Kingler δ,Delta,Fire,Steel,Fire,Metal,EX Crystal Guardians,Unnamed Island,22,Krabby,No,ex14/22_hires.png
+290,Lotad,Normal,Water,Grass,Water,,EX Crystal Guardians,Unnamed Island,55,,No,ex14/55_hires.png
+291,Lombre,Normal,Water,Grass,Water,,EX Crystal Guardians,Unnamed Island,37,Lotad,No,ex14/37_hires.png
+292,Ludicolo δ,Delta,Fire,,Fire,,EX Crystal Guardians,Unnamed Island,6,Lombre,No,ex14/6_hires.png
+293,Meditite,Normal,Fighting,Psychic,Fighting,,EX Crystal Guardians,Unnamed Island,56,,No,ex14/56_hires.png
+294,Medicham,Normal,Fighting,Psychic,Fighting,,EX Crystal Guardians,Unnamed Island,25,Meditite,No,ex14/25_hires.png
+295,Mudkip,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,57,,No,ex14/57_hires.png
+296,Mudkip,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,58,,No,ex14/58_hires.png
+297,Marshtomp,Normal,Water,Ground,Water,,EX Crystal Guardians,Unnamed Island,24,Mudkip,No,ex14/24_hires.png
+298,Marshtomp,Normal,Water,Ground,Fighting,,EX Crystal Guardians,Unnamed Island,38,Mudkip,No,ex14/38_hires.png
+299,Swampert,Normal,Water,Ground,Fighting,,EX Crystal Guardians,Unnamed Island,27,Marshtomp,No,ex14/27_hires.png
+300,Swampert ex,Normal,Water,Ground,Water,,EX Crystal Guardians,Unnamed Island,98,Marshtomp,No,ex14/98_hires.png
+301,Spearow,Normal,Normal,Flying,Colorless,,EX Crystal Guardians,Unnamed Island,61,,No,ex14/61_hires.png
+302,Fearow δ,Delta,Electric,,Lightning,,EX Crystal Guardians,Unnamed Island,18,Spearow,No,ex14/18_hires.png
+303,Spoink,Normal,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,62,,No,ex14/62_hires.png
+304,Grumpig,Normal,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,20,Spoink,No,ex14/20_hires.png
+305,Squirtle,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,63,,No,ex14/63_hires.png
+306,Squirtle,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,64,,No,ex14/64_hires.png
+307,Wartortle,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,42,Squirtle,No,ex14/42_hires.png
+308,Wartortle,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,43,Squirtle,No,ex14/43_hires.png
+309,Blastoise δ,Delta,Fighting,Steel,Fighting,Metal,EX Crystal Guardians,Unnamed Island,2,Wartortle,Yes,ex14/2_hires.png
+310,Blastoise,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,14,Wartortle,No,ex14/14_hires.png
+311,Treecko,Normal,Grass,,Grass,,EX Crystal Guardians,Unnamed Island,67,,No,ex14/67_hires.png
+312,Treecko δ,Delta,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,68,,Yes,ex14/68_hires.png
+313,Grovyle δ,Delta,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,19,Treecko,Yes,ex14/19_hires.png
+314,Grovyle,Normal,Grass,,Grass,,EX Crystal Guardians,Unnamed Island,32,Treecko,No,ex14/32_hires.png
+315,Sceptile ex δ,Delta,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,96,Grovyle,Yes,ex14/96_hires.png
+316,Whismur,Normal,Normal,,Colorless,,EX Crystal Guardians,Unnamed Island,69,,No,ex14/69_hires.png
+317,Loudred,Normal,Normal,,Colorless,,EX Crystal Guardians,Unnamed Island,23,Whismur,No,ex14/23_hires.png
+318,Exploud ex,Normal,Normal,,Colorless,,EX Crystal Guardians,Unnamed Island,92,Loudred,No,ex14/92_hires.png
+319,Wingull,Normal,Water,Flying,Water,,EX Crystal Guardians,Unnamed Island,70,,No,ex14/70_hires.png
+320,Pelipper δ,Delta,Electric,,Lightning,,EX Crystal Guardians,Unnamed Island,26,Wingull,No,ex14/26_hires.png
+321,Heracross δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,3,,No,ex15/3_hires.png
+322,Snorlax δ,Delta,Grass,,Grass,,EX Dragon Frontiers,Dragon Frontiers,10,,Yes,ex15/10_hires.png
+323,Gligar δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,16,,No,ex15/16_hires.png
+324,Jynx δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,17,,No,ex15/17_hires.png
+325,Lickitung δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,19,,Yes,ex15/19_hires.png
+326,Mantine δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,20,,No,ex15/20_hires.png
+327,Tropius δ,Delta,Steel,,Metal,,EX Dragon Frontiers,Dragon Frontiers,23,,No,ex15/23_hires.png
+328,Electabuzz δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,29,,Yes,ex15/29_hires.png
+329,Smeargle δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,39,,Yes,ex15/39_hires.png
+330,Togepi δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,41,,No,ex15/41_hires.png
+331,Togetic δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,11,Togepi,No,ex15/11_hires.png
+332,Chikorita δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,44,,Yes,ex15/44_hires.png
+333,Bayleef δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,26,Chikorita,Yes,ex15/26_hires.png
+334,Meganium δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,4,Bayleef,Yes,ex15/4_hires.png
+335,Cyndaquil δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,45,,Yes,ex15/45_hires.png
+336,Quilava δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,36,Cyndaquil,Yes,ex15/36_hires.png
+337,Typhlosion δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,12,Quilava,Yes,ex15/12_hires.png
+338,Ekans δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,47,,No,ex15/47_hires.png
+339,Arbok δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,13,Ekans,No,ex15/13_hires.png
+340,Elekid δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,48,,Yes,ex15/48_hires.png
+341,Feebas δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,49,,No,ex15/49_hires.png
+342,Milotic δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,5,Feebas,No,ex15/5_hires.png
+343,Ledyba δ,Delta,Steel,,Metal,,EX Dragon Frontiers,Dragon Frontiers,53,,No,ex15/53_hires.png
+344,Ledian δ,Delta,Steel,,Metal,,EX Dragon Frontiers,Dragon Frontiers,18,Ledyba,No,ex15/18_hires.png
+345,Mareep δ,Delta,Normal,,Colorless,,EX Dragon Frontiers,Dragon Frontiers,54,,Yes,ex15/54_hires.png
+346,Flaaffy δ,Delta,Normal,,Colorless,,EX Dragon Frontiers,Dragon Frontiers,30,Mareep,Yes,ex15/30_hires.png
+347,Ampharos δ,Delta,Normal,,Colorless,,EX Dragon Frontiers,Dragon Frontiers,1,Flaaffy,Yes,ex15/1_hires.png
+348,Natu δ,Delta,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,55,,No,ex15/55_hires.png
+349,Xatu δ,Delta,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,25,Natu,No,ex15/25_hires.png
+350,Nidoran ♀ δ,Delta,Steel,,Metal,,EX Dragon Frontiers,Dragon Frontiers,56,,No,ex15/56_hires.png
+351,Nidorina δ,Delta,Steel,,Metal,,EX Dragon Frontiers,Dragon Frontiers,34,Nidoran ♀,No,ex15/34_hires.png
+352,Nidoqueen δ,Delta,Steel,,Metal,,EX Dragon Frontiers,Dragon Frontiers,7,Nidorina,No,ex15/7_hires.png
+353,Nidoran ♂ δ,Delta,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,57,,No,ex15/57_hires.png
+354,Nidorino δ,Delta,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,35,Nidoran ♂,No,ex15/35_hires.png
+355,Nidoking δ,Delta,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,6,Nidorino,No,ex15/6_hires.png
+356,Seel δ,Delta,Normal,,Colorless,,EX Dragon Frontiers,Dragon Frontiers,62,,Yes,ex15/62_hires.png
+357,Dewgong δ,Delta,Normal,,Colorless,,EX Dragon Frontiers,Dragon Frontiers,15,Seel,Yes,ex15/15_hires.png
+358,Shellder δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,63,,Yes,ex15/63_hires.png
+359,Cloyster δ,Delta,Fighting,,Fighting,,EX Dragon Frontiers,Dragon Frontiers,14,Shellder,Yes,ex15/14_hires.png
+360,Smoochum δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,64,,No,ex15/64_hires.png
+361,Swablu δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,65,,No,ex15/65_hires.png
+362,Altaria ex δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,90,Swablu,No,ex15/90_hires.png
+363,Totodile δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,67,,No,ex15/67_hires.png
+364,Croconaw δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,27,Totodile,No,ex15/27_hires.png
+365,Feraligatr δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,2,Croconaw,No,ex15/2_hires.png
+366,Vulpix δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,70,,Yes,ex15/70_hires.png
+367,Ninetales δ,Delta,Psychic,,Psychic,,EX Dragon Frontiers,Dragon Frontiers,8,Vulpix,Yes,ex15/8_hires.png
+368,Wooper δ,Delta,Grass,,Grass,,EX Dragon Frontiers,Dragon Frontiers,71,,Yes,ex15/71_hires.png
+369,Quagsire δ,Delta,Grass,,Grass,,EX Dragon Frontiers,Dragon Frontiers,21,Wooper,Yes,ex15/21_hires.png
+370,Aerodactyl,Normal,Rock,Flying,Colorless,,EX Legend Maker,Mirage Forest,1,Mysterious Fossil,No,ex12/1_hires.png
+371,Aerodactyl δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,35,Mysterious Fossil,No,ex13/35_hires.png
+372,Cradily,Normal,Rock,Grass,Grass,,EX Legend Maker,Mirage Forest,3,Lileep,No,ex12/3_hires.png
+373,Cradily δ,Delta,Dark,Steel,Darkness,Metal,EX Holon Phantoms,Holon Lake,2,Lileep,No,ex13/2_hires.png
+374,Kabutops,Normal,Rock,Water,Fighting,,EX Legend Maker,Mirage Forest,7,Kabuto,No,ex12/7_hires.png
+375,Kabutops δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,9,Kabuto,No,ex13/9_hires.png
+376,Omastar,Normal,Rock,Water,Water,,EX Legend Maker,Mirage Forest,23,Omanyte,No,ex12/23_hires.png
+377,Omastar δ,Delta,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,13,Omanyte,Yes,ex13/13_hires.png
+378,Anorith,Normal,Rock,Bug,Fighting,,EX Legend Maker,Mirage Forest,29,Claw Fossil,No,ex12/29_hires.png
+379,Anorith δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,57,Claw Fossil,No,ex13/57_hires.png
+380,Kabuto,Normal,Rock,Water,Fighting,,EX Legend Maker,Mirage Forest,36,Mysterious Fossil,No,ex12/36_hires.png
+381,Kabuto δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,67,Mysterious Fossil,No,ex13/67_hires.png
+382,Lileep,Normal,Rock,Grass,Grass,,EX Legend Maker,Mirage Forest,56,Root Fossil,No,ex12/56_hires.png
+383,Lileep δ,Delta,Dark,,Darkness,,EX Holon Phantoms,Holon Lake,68,Root Fossil,No,ex13/68_hires.png
+384,Omanyte,Normal,Rock,Water,Water,,EX Legend Maker,Mirage Forest,60,Mysterious Fossil,No,ex12/60_hires.png
+385,Omanyte δ,Delta,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,74,Mysterious Fossil,Yes,ex13/74_hires.png
+386,Armaldo ex,Normal,Rock,Bug,Fighting,,EX Legend Maker,Mirage Forest,84,Anorith,No,ex12/84_hires.png
+387,Armaldo δ,Delta,Fighting,Steel,Fighting,Metal,EX Holon Phantoms,Holon Lake,1,Anorith,Yes,ex13/1_hires.png
+388,Latias δ,Delta,Electric,Steel,Lightning,Metal,EX Delta Species,Holon Research Tower,8,,No,ex11/8_hires.png
+389,Latias δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,11,,No,ex13/11_hires.png
+390,Latias δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,21,,No,ex13/21_hires.png
+391,Latias ex δ,Delta,Fire,,Fire,,EX Dragon Frontiers,Dragon Frontiers,95,,No,ex15/95_hires.png
+392,Latios δ,Delta,Electric,Steel,Lightning,Metal,EX Delta Species,Holon Research Tower,9,,No,ex11/9_hires.png
+393,Latios δ,Delta,Water,,Water,,EX Holon Phantoms,Holon Lake,12,,No,ex13/12_hires.png
+394,Latios δ,Delta,Water,,Water,,EX Holon Phantoms,Holon Lake,22,,No,ex13/22_hires.png
+395,Latios ex δ,Delta,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,96,,No,ex15/96_hires.png
+396,Mewtwo δ,Delta,Fire,Steel,Fire,Metal,EX Delta Species,Holon Research Tower,12,,No,ex11/12_hires.png
+397,Mewtwo δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,24,,No,ex13/24_hires.png
+398,Rayquaza δ,Delta,Electric,Steel,Lightning,Metal,EX Delta Species,Holon Research Tower,13,,No,ex11/13_hires.png
+399,Rayquaza δ,Delta,Water,Steel,Water,Metal,EX Holon Phantoms,Holon Lake,16,,No,ex13/16_hires.png
+400,Rayquaza δ,Delta,Fire,,Fire,,EX Holon Phantoms,Holon Lake,26,,No,ex13/26_hires.png
+401,Rayquaza ex δ,Delta,Electric,,Lightning,,EX Dragon Frontiers,Dragon Frontiers,97,,No,ex15/97_hires.png
+402,Groudon ex,Normal,Ground,,Fighting,,EX Crystal Guardians,Unnamed Island,93,,No,ex14/93_hires.png
+403,Kyogre ex,Normal,Water,,Water,,EX Crystal Guardians,Unnamed Island,95,,No,ex14/95_hires.png
+404,Mew,Normal,Psychic,,Psychic,,EX Legend Maker,Mirage Forest,10,,No,ex12/10_hires.png
+405,Mew,Normal,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,111,,No,ex13/111_hires.png
+406,Mew ex,Normal,Psychic,,Psychic,,EX Legend Maker,Mirage Forest,88,,No,ex12/88_hires.png
+407,Mew ex,Normal,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,100,,No,ex13/100_hires.png
+408,Regice,Normal,Ice,,Water,,EX Holon Phantoms,Holon Lake,27,,No,ex13/27_hires.png
+409,Regirock,Normal,Rock,,Fighting,,EX Holon Phantoms,Holon Lake,28,,No,ex13/28_hires.png
+410,Registeel,Normal,Steel,,Metal,,EX Holon Phantoms,Holon Lake,29,,No,ex13/29_hires.png
+411,Deoxys δ,Delta,Dark,,Darkness,,EX Holon Phantoms,Holon Lake,3,,No,ex13/3_hires.png
+412,Deoxys δ,Delta,Steel,,Metal,,EX Holon Phantoms,Holon Lake,4,,No,ex13/4_hires.png
+413,Deoxys δ,Delta,Normal,,Colorless,,EX Holon Phantoms,Holon Lake,5,,Yes,ex13/5_hires.png
+414,Deoxys δ,Delta,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,6,,No,ex13/6_hires.png
+415,Jirachi δ,Delta,Dark,Fire,Darkness,Fire,Invented,Unnamed Island,,,No,placeholder
+416,Jirachi ex,Normal,Steel,Psychic,Psychic,,EX Crystal Guardians,Unnamed Island,94,,No,ex14/94_hires.png
+417,Holon's Castform,Holon's,Normal,,Colorless,,EX Holon Phantoms,Holon Lake,44,,Yes,ex13/44_hires.png
+418,Holon's Magnemite,Holon's,Steel,,Metal,,EX Delta Species,Holon Research Tower,70,,No,ex11/70_hires.png
+419,Holon's Magneton,Holon's,Steel,,Metal,,EX Delta Species,Holon Research Tower,22,Holon's Magnemite,No,ex11/22_hires.png
+420,Holon's Voltorb,Holon's,Electric,,Lightning,,EX Delta Species,Holon Research Tower,71,,No,ex11/71_hires.png
+421,Holon's Electrode,Holon's,Electric,,Lightning,,EX Delta Species,Holon Research Tower,21,Holon's Voltorb,No,ex11/21_hires.png
+422,Mewtwo ★,Gold Star,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,103,,Yes,ex13/103_hires.png
+423,Metagross ★,Gold Star,Steel,,Metal,,EX Delta Species,Holon Research Tower,113,,No,ex11/113_hires.png
+424,Groudon ★,Gold Star,Fighting,,Fighting,,EX Delta Species,Holon Research Tower,111,,Yes,ex11/111_hires.png
+425,Kyogre ★,Gold Star,Water,,Water,,EX Delta Species,Holon Research Tower,112,,No,ex11/112_hires.png
+426,Mew ★ δ,Gold Star,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,101,,No,ex15/101_hires.png
+427,Regice ★,Gold Star,Water,,Water,,EX Legend Maker,Mirage Forest,90,,No,ex12/90_hires.png
+428,Regirock ★,Gold Star,Fighting,,Fighting,,EX Legend Maker,Mirage Forest,91,,Yes,ex12/91_hires.png
+429,Registeel ★,Gold Star,Steel,,Metal,,EX Legend Maker,Mirage Forest,92,,No,ex12/92_hires.png
+430,Pikachu ★,Gold Star,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,104,,No,ex13/104_hires.png
+431,Gyarados ★ δ,Gold Star,Fire,,Fire,,EX Holon Phantoms,Holon Lake,102,,No,ex13/102_hires.png
+432,Charizard ★ δ,Gold Star,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,100,,No,ex15/100_hires.png
+433,Alakazam ★,Gold Star,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,99,,Yes,ex14/99_hires.png
+434,Celebi ★,Gold Star,Grass,,Grass,,EX Crystal Guardians,Unnamed Island,100,,Yes,ex14/100_hires.png
