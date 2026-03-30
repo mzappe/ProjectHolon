@@ -409,6 +409,20 @@ h1 {
   border-radius: 8px;
 }
 
+.evo-arrow-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.evo-method {
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
 .evo-arrow {
   color: var(--text-muted);
   font-size: 14px;
@@ -871,11 +885,56 @@ h1 {
 .lightbox-close:hover { opacity: 0.7; }
 
 .lightbox-img {
-  max-width: 90vw;
+  max-width: 80vw;
   max-height: 90vh;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  font-size: 48px;
+  line-height: 1;
+  padding: 0 12px;
+  z-index: 201;
+  transition: color 0.15s;
+}
+.lightbox-nav:hover { color: #fff; }
+.lightbox-prev { left: 8px; }
+.lightbox-next { right: 8px; }
+
+/* ── View toggle ─────────────────────────────────────────────────────────── */
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.toggle-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 10px;
+  line-height: 1;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.toggle-btn:hover { color: var(--text); border-color: var(--border); }
+.toggle-btn.active {
+  color: var(--accent);
+  background: var(--card-bg);
+  border-color: var(--accent);
 }
 
 /* ── Empty / loading states ──────────────────────────────────────────────── */

@@ -311,6 +311,59 @@ function setupModal() {
   });
 }
 
+function formatEvoMethod(method, param) {
+  if (!method) return '';
+  if (method === 'level' && param > 0) return `Lv ${param}`;
+  if (method === 'level') return '';
+  return method.charAt(0).toUpperCase() + method.slice(1);
+}
+
+function buildEvolutionChain(primary) {
+  const findEntry = name => state.pokedexData.find(p => p.name === name);
+  const findNextForm = name => state.pokedexData.find(p => p.evolves_from === name);
+
+  // Walk back to root using CSV evolves_from
+  let root = primary;
+  const visited = new Set();
+  while (root.evolves_from && !visited.has(root.name)) {
+    visited.add(root.name);
+    const prev = findEntry(root.evolves_from);
+    if (!prev) break;
+    root = prev;
+  }
+
+  // Walk forward from root to build the full linear chain
+  const chain = [];
+  let current = root;
+  const seen = new Set();
+  while (current && !seen.has(current.name)) {
+    seen.add(current.name);
+    chain.push(current);
+    current = findNextForm(current.name) || null;
+  }
+
+  if (chain.length <= 1) return '';
+
+  let html = `<div class="evo-chain">`;
+  chain.forEach((entry, i) => {
+    if (i > 0) {
+      const prev = chain[i - 1];
+      const label = formatEvoMethod(prev.evolution?.method, prev.evolution?.param);
+      html += `<div class="evo-arrow-wrap">
+        ${label ? `<span class="evo-method">${escHtml(label)}</span>` : ''}
+        <span class="evo-arrow">→</span>
+      </div>`;
+    }
+    const iconUrl = entry.sprites?.icon || '';
+    html += `<button class="evo-btn${entry.name === primary.name ? ' evo-active' : ''}" onclick="openModal('${escHtml(entry.name)}')">
+      ${iconUrl ? `<span class="evo-icon" style="background-image:url('${iconUrl}')"></span>` : ''}
+      <span class="evo-name">${escHtml(entry.name)}</span>
+    </button>`;
+  });
+  html += `</div>`;
+  return html;
+}
+
 function openModal(name) {
   const entries = state.pokedexData.filter(p => p.name === name);
   if (!entries.length) return;
@@ -323,53 +376,213 @@ function openModal(name) {
   }));
   const cardUrls = allCards.map(c => c.img_url);
 
-  let html = `<div class="modal-header"><h2>${escHtml(primary.name)}</h2><div class="type-badges">${typeBadges([primary.type_1, primary.type_2])}</div></div>`;
-  html += `<div class="modal-body">`;
+  const categoryLabel = primary.categoryName ? `${primary.categoryName} Pokémon` : (primary.category || '');
 
-  if (primary.sprites?.icon) {
-    html += `<span class="poke-icon" style="background-image:url('${primary.sprites.icon}')"></span>`;
-  }
+  // Header
+  let html = `
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <span class="modal-name">${escHtml(primary.name)}</span>
+        <div class="modal-types">${typeBadges([primary.type_1, primary.type_2])}</div>
+      </div>
+      <div class="modal-header-right">
+        <span class="modal-category">${escHtml(categoryLabel)}</span>
+      </div>
+    </div>`;
 
-  html += `<div class="modal-info">
-    <p><strong>Category:</strong> ${escHtml(primary.category)}</p>
-    <p><strong>Type:</strong> ${escHtml(primary.type_1)}${primary.type_2 ? ` / ${escHtml(primary.type_2)}` : ''}</p>
-    <p><strong>Location:</strong> ${escHtml(primary.location)}</p>
-    <p><strong>TCG Set:</strong> ${escHtml(primary.tcg_set)}</p>
-  </div>`;
+  // Tabs
+  html += `
+    <div class="modal-tabs">
+      <button class="modal-tab-btn active" data-tab="overview">Overview</button>
+      <button class="modal-tab-btn" data-tab="moveset">Moveset</button>
+      <button class="modal-tab-btn" data-tab="location">Location</button>
+      <button class="modal-tab-btn" data-tab="tcg">TCG</button>
+    </div>`;
 
+  // ── Overview Tab ──────────────────────────────────────────────────────────
+  html += `<div class="modal-tab-panel active" data-tab-panel="overview">`;
+
+  html += buildEvolutionChain(primary);
+
+  // Sprites
+  html += `
+    <div class="sprite-panel">
+      <div class="sprite-group">
+        <div class="sprite-group-label">Normal</div>
+        <div class="sprite-group-row">
+          <div class="sprite-block">
+            <div class="sprite-cell">
+              <span class="sprite-main-anim" style="background-image:url('${primary.sprites.main}')"></span>
+            </div>
+            <span class="sprite-label">Main</span>
+          </div>
+          <div class="sprite-block">
+            <div class="sprite-cell">
+              <span class="sprite-static" style="background-image:url('${primary.sprites.front}')"></span>
+            </div>
+            <span class="sprite-label">Front</span>
+          </div>
+          <div class="sprite-block">
+            <div class="sprite-cell">
+              <img class="sprite-back-img" src="${primary.sprites.back}" loading="lazy">
+            </div>
+            <span class="sprite-label">Back</span>
+          </div>
+          <div class="sprite-block">
+            <div class="sprite-cell">
+              <span class="sprite-icon-sm" style="background-image:url('${primary.sprites.icon}')"></span>
+            </div>
+            <span class="sprite-label">Icon</span>
+          </div>
+        </div>
+      </div>
+      <div class="sprite-divider"></div>
+      <div class="sprite-group">
+        <div class="sprite-group-label shiny-label">Shiny</div>
+        <div class="sprite-group-row">
+          <div class="sprite-block">
+            <div class="sprite-cell shiny-cell">
+              <span class="sprite-main-anim" style="background-image:url('${primary.sprites.shiny_front}')"></span>
+            </div>
+            <span class="sprite-label">Main</span>
+          </div>
+          <div class="sprite-block">
+            <div class="sprite-cell shiny-cell">
+              <span class="sprite-static" style="background-image:url('${primary.sprites.shiny_front}')"></span>
+            </div>
+            <span class="sprite-label">Front</span>
+          </div>
+          <div class="sprite-block">
+            <div class="sprite-cell shiny-cell">
+              <img class="sprite-back-img" src="${primary.sprites.shiny_back}" loading="lazy">
+            </div>
+            <span class="sprite-label">Back</span>
+          </div>
+        </div>
+      </div>
+    </div>`;
+
+  // Stats
   if (primary.stats) {
-    html += `<div class="stats-section"><h3>Stats</h3><div class="stats-grid">
-      ${['HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed'].map((stat, i) => {
-        const values = [primary.stats.hp, primary.stats.attack, primary.stats.defense, primary.stats.spAtk, primary.stats.spDef, primary.stats.speed];
-        return `<div class="stat-box"><strong>${stat}</strong><div class="stat-bar" style="width:${(values[i]/255)*100}%"></div>${values[i]}</div>`;
-      }).join('')}
-    </div></div>`;
+    const statDefs = [
+      { key: 'HP',      label: 'HP',      color: '#ff5959' },
+      { key: 'Attack',  label: 'Attack',  color: '#f08030' },
+      { key: 'Defense', label: 'Defense', color: '#f8d030' },
+      { key: 'SpAtk',   label: 'Sp. Atk', color: '#6890f0' },
+      { key: 'SpDef',   label: 'Sp. Def', color: '#78c850' },
+      { key: 'Speed',   label: 'Speed',   color: '#f85888' },
+    ];
+    html += `<div class="stats-section"><h3>Base Stats</h3><div class="stats-grid">`;
+    statDefs.forEach(s => {
+      const val = primary.stats[s.key] || 0;
+      const pct = ((val / 255) * 100).toFixed(1);
+      html += `
+        <div class="stat-row">
+          <span class="stat-name">${s.label}</span>
+          <div class="stat-bar-container">
+            <div class="stat-bar" style="width:${pct}%; background:${s.color};"></div>
+          </div>
+          <span class="stat-value">${val}</span>
+        </div>`;
+    });
+    html += `</div></div>`;
   }
 
+  // Abilities
   if (primary.abilities) {
-    html += `<div class="abilities-section"><h3>Abilities</h3><div class="abilities-list">
-      ${primary.abilities.map((a, i) => `<span class="ability-item${i === 2 ? ' ability-hidden' : ''}">${a || '—'}</span>`).join('')}
-    </div></div>`;
+    const labels = ['Ability 1', 'Ability 2', 'Hidden'];
+    html += `<div class="abilities-section"><h3>Abilities</h3><div class="abilities-grid">`;
+    [0, 1, 2].forEach(i => {
+      const val = primary.abilities[i] || '—';
+      html += `
+        <div class="ability-slot${i === 2 ? ' ability-hidden' : ''}">
+          <span class="ability-slot-label">${labels[i]}</span>
+          <span class="ability-slot-value">${escHtml(val)}</span>
+        </div>`;
+    });
+    html += `</div></div>`;
   }
 
+  html += `</div>`; // end overview
+
+  // ── Moveset Tab ───────────────────────────────────────────────────────────
+  html += `<div class="modal-tab-panel" data-tab-panel="moveset">`;
   if (primary.movesets?.levelup?.length) {
-    html += `<div class="movesets-section"><h3>Level-up Moves</h3><table class="moves-table"><tr><th>Lvl</th><th>Move</th><th>Type</th><th>Power</th><th>Acc</th></tr>`;
-    primary.movesets.levelup.slice(0, 10).forEach(m => {
-      html += `<tr><td>${m.level}</td><td>${escHtml(m.name)}</td><td><span class="type-badge type-${escHtml(m.type)}">${escHtml(m.type)}</span></td><td>${m.power || '—'}</td><td>${m.accuracy || '—'}</td></tr>`;
+    html += `<div class="movesets-section"><h3>Level-up Moves</h3>
+      <table class="moveset-table">
+        <thead><tr>
+          <th class="move-level">Lvl</th>
+          <th class="move-name">Move</th>
+          <th class="move-type">Type</th>
+          <th class="move-power">Pwr</th>
+          <th class="move-accuracy">Acc</th>
+        </tr></thead>
+        <tbody>`;
+    primary.movesets.levelup.forEach(m => {
+      html += `<tr>
+        <td class="move-level">${m.level}</td>
+        <td class="move-name">${escHtml(m.name)}</td>
+        <td class="move-type"><span class="type-badge type-${escHtml(m.type)}">${escHtml(m.type)}</span></td>
+        <td class="move-power">${m.power || '—'}</td>
+        <td class="move-accuracy">${m.accuracy || '—'}</td>
+      </tr>`;
     });
-    html += `</table></div>`;
+    html += `</tbody></table></div>`;
+  } else {
+    html += `<p class="empty-state">No moveset data.</p>`;
   }
+  html += `</div>`; // end moveset
 
+  // ── Location Tab ──────────────────────────────────────────────────────────
+  html += `<div class="modal-tab-panel" data-tab-panel="location">
+    <div class="location-info">
+      <div class="info-row">
+        <span class="info-label">Location</span>
+        <span class="info-value">${escHtml(primary.location)}</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">TCG Set</span>
+        <span class="info-value">${escHtml(primary.tcg_set)}</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Pokédex #</span>
+        <span class="info-value">${primary.dex_number}</span>
+      </div>
+      ${primary.evolves_from ? `<div class="info-row">
+        <span class="info-label">Evolves From</span>
+        <span class="info-value">${escHtml(primary.evolves_from)}</span>
+      </div>` : ''}
+    </div>
+  </div>`; // end location
+
+  // ── TCG Tab ───────────────────────────────────────────────────────────────
+  html += `<div class="modal-tab-panel" data-tab-panel="tcg">`;
   if (allCards.length) {
-    html += `<div class="tcg-cards-section"><h3>TCG Cards</h3>`;
+    html += `<div class="modal-cards-section"><h3>Cards</h3><div class="modal-card-list">`;
     allCards.forEach((card, idx) => {
-      html += `<div class="tcg-card-small" style="cursor:pointer" onclick="openCardLightbox('${card.img_url}', ${JSON.stringify(cardUrls)}, ${idx})"><img src="${card.img_url}" alt="" loading="lazy"><p>${escHtml(card.set)} #${escHtml(card.number)}</p></div>`;
+      html += `<div class="modal-tcg-card" onclick="openCardLightbox('${card.img_url}', ${JSON.stringify(cardUrls)}, ${idx})">
+        <img src="${card.img_url}" alt="${escHtml(card.set)}" loading="lazy">
+        <div class="modal-tcg-card-label">${escHtml(card.set)} #${escHtml(card.number)}</div>
+      </div>`;
     });
-    html += `</div>`;
+    html += `</div></div>`;
+  } else {
+    html += `<p class="empty-state">No TCG cards for this Pokémon.</p>`;
   }
+  html += `</div>`; // end tcg
 
-  html += `</div>`;
   modalContent.innerHTML = html;
+
+  // Wire up tab switching
+  modalContent.querySelectorAll('.modal-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalContent.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+      modalContent.querySelectorAll('.modal-tab-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      modalContent.querySelector(`[data-tab-panel="${btn.dataset.tab}"]`).classList.add('active');
+    });
+  });
+
   modalOverlay.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
 }
