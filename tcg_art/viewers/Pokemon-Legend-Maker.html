@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Maker - TCG Viewer</title>
+    <style>
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-container {
+    aspect-ratio: 5 / 7;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.card-number {
+    float: right;
+    color: var(--accent);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Legend Maker</h1>
+    </header>
+    <div class="card-grid">
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/1_hires.png" alt="Aerodactyl" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#1/92</span>
+                <span class="card-name">Aerodactyl</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/2_hires.png" alt="Aggron" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#2/92</span>
+                <span class="card-name">Aggron</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/3_hires.png" alt="Cradily" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#3/92</span>
+                <span class="card-name">Cradily</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/4_hires.png" alt="Delcatty" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#4/92</span>
+                <span class="card-name">Delcatty</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/5_hires.png" alt="Gengar" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#5/92</span>
+                <span class="card-name">Gengar</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/6_hires.png" alt="Golem" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#6/92</span>
+                <span class="card-name">Golem</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/7_hires.png" alt="Kabutops" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#7/92</span>
+                <span class="card-name">Kabutops</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/8_hires.png" alt="Lapras" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#8/92</span>
+                <span class="card-name">Lapras</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/9_hires.png" alt="Machamp" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#9/92</span>
+                <span class="card-name">Machamp</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/10_hires.png" alt="Mew" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#10/92</span>
+                <span class="card-name">Mew</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/11_hires.png" alt="Muk" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#11/92</span>
+                <span class="card-name">Muk</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/12_hires.png" alt="Shiftry" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#12/92</span>
+                <span class="card-name">Shiftry</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/13_hires.png" alt="Victreebel" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#13/92</span>
+                <span class="card-name">Victreebel</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/14_hires.png" alt="Wailord" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#14/92</span>
+                <span class="card-name">Wailord</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/15_hires.png" alt="Absol" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#15/92</span>
+                <span class="card-name">Absol</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/16_hires.png" alt="Girafarig" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#16/92</span>
+                <span class="card-name">Girafarig</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/17_hires.png" alt="Gorebyss" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#17/92</span>
+                <span class="card-name">Gorebyss</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/18_hires.png" alt="Huntail" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#18/92</span>
+                <span class="card-name">Huntail</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/19_hires.png" alt="Lanturn" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#19/92</span>
+                <span class="card-name">Lanturn</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/20_hires.png" alt="Lunatone" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#20/92</span>
+                <span class="card-name">Lunatone</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/21_hires.png" alt="Magmar" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#21/92</span>
+                <span class="card-name">Magmar</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/22_hires.png" alt="Magneton" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#22/92</span>
+                <span class="card-name">Magneton</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/23_hires.png" alt="Omastar" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#23/92</span>
+                <span class="card-name">Omastar</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/24_hires.png" alt="Pinsir" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#24/92</span>
+                <span class="card-name">Pinsir</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/25_hires.png" alt="Solrock" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#25/92</span>
+                <span class="card-name">Solrock</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/26_hires.png" alt="Spinda" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#26/92</span>
+                <span class="card-name">Spinda</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/27_hires.png" alt="Torkoal" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#27/92</span>
+                <span class="card-name">Torkoal</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/28_hires.png" alt="Wobbuffet" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#28/92</span>
+                <span class="card-name">Wobbuffet</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/29_hires.png" alt="Anorith" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#29/92</span>
+                <span class="card-name">Anorith</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/30_hires.png" alt="Cascoon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#30/92</span>
+                <span class="card-name">Cascoon</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/31_hires.png" alt="Dunsparce" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#31/92</span>
+                <span class="card-name">Dunsparce</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/32_hires.png" alt="Electrode" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#32/92</span>
+                <span class="card-name">Electrode</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/33_hires.png" alt="Furret" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#33/92</span>
+                <span class="card-name">Furret</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/34_hires.png" alt="Graveler" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#34/92</span>
+                <span class="card-name">Graveler</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/35_hires.png" alt="Haunter" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#35/92</span>
+                <span class="card-name">Haunter</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/36_hires.png" alt="Kabuto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#36/92</span>
+                <span class="card-name">Kabuto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/37_hires.png" alt="Kecleon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#37/92</span>
+                <span class="card-name">Kecleon</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/38_hires.png" alt="Lairon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#38/92</span>
+                <span class="card-name">Lairon</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/39_hires.png" alt="Machoke" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#39/92</span>
+                <span class="card-name">Machoke</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/40_hires.png" alt="Misdreavus" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#40/92</span>
+                <span class="card-name">Misdreavus</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/41_hires.png" alt="Nuzleaf" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#41/92</span>
+                <span class="card-name">Nuzleaf</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/42_hires.png" alt="Roselia" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#42/92</span>
+                <span class="card-name">Roselia</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/43_hires.png" alt="Sealeo" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#43/92</span>
+                <span class="card-name">Sealeo</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/44_hires.png" alt="Tangela" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#44/92</span>
+                <span class="card-name">Tangela</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/45_hires.png" alt="Tentacruel" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#45/92</span>
+                <span class="card-name">Tentacruel</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/46_hires.png" alt="Vibrava" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#46/92</span>
+                <span class="card-name">Vibrava</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/47_hires.png" alt="Weepinbell" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#47/92</span>
+                <span class="card-name">Weepinbell</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/48_hires.png" alt="Aron" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#48/92</span>
+                <span class="card-name">Aron</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/49_hires.png" alt="Bellsprout" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#49/92</span>
+                <span class="card-name">Bellsprout</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/50_hires.png" alt="Chinchou" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#50/92</span>
+                <span class="card-name">Chinchou</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/51_hires.png" alt="Clamperl" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#51/92</span>
+                <span class="card-name">Clamperl</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/52_hires.png" alt="Gastly" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#52/92</span>
+                <span class="card-name">Gastly</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/53_hires.png" alt="Geodude" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#53/92</span>
+                <span class="card-name">Geodude</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/54_hires.png" alt="Grimer" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#54/92</span>
+                <span class="card-name">Grimer</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/55_hires.png" alt="Growlithe" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#55/92</span>
+                <span class="card-name">Growlithe</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/56_hires.png" alt="Lileep" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#56/92</span>
+                <span class="card-name">Lileep</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/57_hires.png" alt="Machop" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#57/92</span>
+                <span class="card-name">Machop</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/58_hires.png" alt="Magby" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#58/92</span>
+                <span class="card-name">Magby</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/59_hires.png" alt="Magnemite" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#59/92</span>
+                <span class="card-name">Magnemite</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/60_hires.png" alt="Omanyte" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#60/92</span>
+                <span class="card-name">Omanyte</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/61_hires.png" alt="Seedot" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#61/92</span>
+                <span class="card-name">Seedot</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/62_hires.png" alt="Sentret" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#62/92</span>
+                <span class="card-name">Sentret</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/63_hires.png" alt="Shuppet" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#63/92</span>
+                <span class="card-name">Shuppet</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/64_hires.png" alt="Skitty" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#64/92</span>
+                <span class="card-name">Skitty</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/65_hires.png" alt="Spheal" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#65/92</span>
+                <span class="card-name">Spheal</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/66_hires.png" alt="Tentacool" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#66/92</span>
+                <span class="card-name">Tentacool</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/67_hires.png" alt="Trapinch" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#67/92</span>
+                <span class="card-name">Trapinch</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/68_hires.png" alt="Voltorb" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#68/92</span>
+                <span class="card-name">Voltorb</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/69_hires.png" alt="Wailmer" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#69/92</span>
+                <span class="card-name">Wailmer</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/70_hires.png" alt="Wurmple" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#70/92</span>
+                <span class="card-name">Wurmple</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/71_hires.png" alt="Wynaut" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#71/92</span>
+                <span class="card-name">Wynaut</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/72_hires.png" alt="Cursed Stone" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#72/92</span>
+                <span class="card-name">Cursed Stone</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/73_hires.png" alt="Fieldworker" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#73/92</span>
+                <span class="card-name">Fieldworker</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/74_hires.png" alt="Full Flame" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#74/92</span>
+                <span class="card-name">Full Flame</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/75_hires.png" alt="Giant Stump" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#75/92</span>
+                <span class="card-name">Giant Stump</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/76_hires.png" alt="Power Tree" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#76/92</span>
+                <span class="card-name">Power Tree</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/77_hires.png" alt="Strange Cave" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#77/92</span>
+                <span class="card-name">Strange Cave</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/78_hires.png" alt="Claw Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#78/92</span>
+                <span class="card-name">Claw Fossil</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/79_hires.png" alt="Mysterious Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#79/92</span>
+                <span class="card-name">Mysterious Fossil</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/80_hires.png" alt="Root Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#80/92</span>
+                <span class="card-name">Root Fossil</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/81_hires.png" alt="Rainbow Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#81/92</span>
+                <span class="card-name">Rainbow Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/82_hires.png" alt="React Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#82/92</span>
+                <span class="card-name">React Energy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/83_hires.png" alt="Arcanine ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#83/92</span>
+                <span class="card-name">Arcanine ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/84_hires.png" alt="Armaldo ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#84/92</span>
+                <span class="card-name">Armaldo ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/85_hires.png" alt="Banette ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#85/92</span>
+                <span class="card-name">Banette ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/86_hires.png" alt="Dustox ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#86/92</span>
+                <span class="card-name">Dustox ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/87_hires.png" alt="Flygon ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#87/92</span>
+                <span class="card-name">Flygon ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/88_hires.png" alt="Mew ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#88/92</span>
+                <span class="card-name">Mew ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/89_hires.png" alt="Walrein ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#89/92</span>
+                <span class="card-name">Walrein ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/90_hires.png" alt="Regice ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#90/92</span>
+                <span class="card-name">Regice ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/91_hires.png" alt="Regirock ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#91/92</span>
+                <span class="card-name">Regirock ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/92_hires.png" alt="Registeel ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#92/92</span>
+                <span class="card-name">Registeel ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_legend_maker/93_hires.png" alt="Pikachu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#93/92</span>
+                <span class="card-name">Pikachu δ</span>
+                <div class="card-meta">Rare Secret</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

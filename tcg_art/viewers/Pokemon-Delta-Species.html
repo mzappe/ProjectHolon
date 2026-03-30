@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Species - TCG Viewer</title>
+    <style>
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-container {
+    aspect-ratio: 5 / 7;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.card-number {
+    float: right;
+    color: var(--accent);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Delta Species</h1>
+    </header>
+    <div class="card-grid">
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/1_hires.png" alt="Beedrill δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#1/113</span>
+                <span class="card-name">Beedrill δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/2_hires.png" alt="Crobat δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#2/113</span>
+                <span class="card-name">Crobat δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/3_hires.png" alt="Dragonite δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#3/113</span>
+                <span class="card-name">Dragonite δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/4_hires.png" alt="Espeon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#4/113</span>
+                <span class="card-name">Espeon δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/5_hires.png" alt="Flareon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#5/113</span>
+                <span class="card-name">Flareon δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/6_hires.png" alt="Gardevoir δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#6/113</span>
+                <span class="card-name">Gardevoir δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/7_hires.png" alt="Jolteon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#7/113</span>
+                <span class="card-name">Jolteon δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/8_hires.png" alt="Latias δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#8/113</span>
+                <span class="card-name">Latias δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/9_hires.png" alt="Latios δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#9/113</span>
+                <span class="card-name">Latios δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/10_hires.png" alt="Marowak δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#10/113</span>
+                <span class="card-name">Marowak δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/11_hires.png" alt="Metagross δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#11/113</span>
+                <span class="card-name">Metagross δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/12_hires.png" alt="Mewtwo δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#12/113</span>
+                <span class="card-name">Mewtwo δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/13_hires.png" alt="Rayquaza δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#13/113</span>
+                <span class="card-name">Rayquaza δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/14_hires.png" alt="Salamence δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#14/113</span>
+                <span class="card-name">Salamence δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/15_hires.png" alt="Starmie δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#15/113</span>
+                <span class="card-name">Starmie δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/16_hires.png" alt="Tyranitar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#16/113</span>
+                <span class="card-name">Tyranitar δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/17_hires.png" alt="Umbreon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#17/113</span>
+                <span class="card-name">Umbreon δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/18_hires.png" alt="Vaporeon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#18/113</span>
+                <span class="card-name">Vaporeon δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/19_hires.png" alt="Azumarill δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#19/113</span>
+                <span class="card-name">Azumarill δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/20_hires.png" alt="Azurill" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#20/113</span>
+                <span class="card-name">Azurill</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/21_hires.png" alt="Holon's Electrode" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#21/113</span>
+                <span class="card-name">Holon's Electrode</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/22_hires.png" alt="Holon's Magneton" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#22/113</span>
+                <span class="card-name">Holon's Magneton</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/23_hires.png" alt="Hypno" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#23/113</span>
+                <span class="card-name">Hypno</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/24_hires.png" alt="Mightyena δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#24/113</span>
+                <span class="card-name">Mightyena δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/25_hires.png" alt="Porygon2" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#25/113</span>
+                <span class="card-name">Porygon2</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/26_hires.png" alt="Rain Castform" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#26/113</span>
+                <span class="card-name">Rain Castform</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/27_hires.png" alt="Sandslash δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#27/113</span>
+                <span class="card-name">Sandslash δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/28_hires.png" alt="Slowking" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#28/113</span>
+                <span class="card-name">Slowking</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/29_hires.png" alt="Snow-cloud Castform" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#29/113</span>
+                <span class="card-name">Snow-cloud Castform</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/30_hires.png" alt="Starmie δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#30/113</span>
+                <span class="card-name">Starmie δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/31_hires.png" alt="Sunny Castform" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#31/113</span>
+                <span class="card-name">Sunny Castform</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/32_hires.png" alt="Swellow" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#32/113</span>
+                <span class="card-name">Swellow</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/33_hires.png" alt="Weezing" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#33/113</span>
+                <span class="card-name">Weezing</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/34_hires.png" alt="Castform" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#34/113</span>
+                <span class="card-name">Castform</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/35_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#35/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/36_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#36/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/37_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#37/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/38_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#38/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/39_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#39/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/40_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#40/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/41_hires.png" alt="Dragonair δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#41/113</span>
+                <span class="card-name">Dragonair δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/42_hires.png" alt="Dragonair δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#42/113</span>
+                <span class="card-name">Dragonair δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/43_hires.png" alt="Golbat" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#43/113</span>
+                <span class="card-name">Golbat</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/44_hires.png" alt="Hariyama" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#44/113</span>
+                <span class="card-name">Hariyama</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/45_hires.png" alt="Illumise" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#45/113</span>
+                <span class="card-name">Illumise</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/46_hires.png" alt="Kakuna" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#46/113</span>
+                <span class="card-name">Kakuna</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/47_hires.png" alt="Kirlia" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#47/113</span>
+                <span class="card-name">Kirlia</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/48_hires.png" alt="Magneton" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#48/113</span>
+                <span class="card-name">Magneton</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/49_hires.png" alt="Metang δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#49/113</span>
+                <span class="card-name">Metang δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/50_hires.png" alt="Persian" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#50/113</span>
+                <span class="card-name">Persian</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/51_hires.png" alt="Pupitar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#51/113</span>
+                <span class="card-name">Pupitar δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/52_hires.png" alt="Rapidash" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#52/113</span>
+                <span class="card-name">Rapidash</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/53_hires.png" alt="Shelgon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#53/113</span>
+                <span class="card-name">Shelgon δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/54_hires.png" alt="Shelgon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#54/113</span>
+                <span class="card-name">Shelgon δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/55_hires.png" alt="Skarmory" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#55/113</span>
+                <span class="card-name">Skarmory</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/56_hires.png" alt="Volbeat" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#56/113</span>
+                <span class="card-name">Volbeat</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/57_hires.png" alt="Bagon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#57/113</span>
+                <span class="card-name">Bagon δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/58_hires.png" alt="Bagon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#58/113</span>
+                <span class="card-name">Bagon δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/59_hires.png" alt="Beldum δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#59/113</span>
+                <span class="card-name">Beldum δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/60_hires.png" alt="Cubone" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#60/113</span>
+                <span class="card-name">Cubone</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/61_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#61/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/62_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#62/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/63_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#63/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/64_hires.png" alt="Ditto" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#64/113</span>
+                <span class="card-name">Ditto</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/65_hires.png" alt="Dratini δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#65/113</span>
+                <span class="card-name">Dratini δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/66_hires.png" alt="Dratini δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#66/113</span>
+                <span class="card-name">Dratini δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/67_hires.png" alt="Drowzee" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#67/113</span>
+                <span class="card-name">Drowzee</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/68_hires.png" alt="Eevee δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#68/113</span>
+                <span class="card-name">Eevee δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/69_hires.png" alt="Eevee" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#69/113</span>
+                <span class="card-name">Eevee</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/70_hires.png" alt="Holon's Magnemite" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#70/113</span>
+                <span class="card-name">Holon's Magnemite</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/71_hires.png" alt="Holon's Voltorb" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#71/113</span>
+                <span class="card-name">Holon's Voltorb</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/72_hires.png" alt="Koffing" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#72/113</span>
+                <span class="card-name">Koffing</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/73_hires.png" alt="Larvitar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#73/113</span>
+                <span class="card-name">Larvitar δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/74_hires.png" alt="Magnemite" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#74/113</span>
+                <span class="card-name">Magnemite</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/75_hires.png" alt="Makuhita" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#75/113</span>
+                <span class="card-name">Makuhita</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/76_hires.png" alt="Marill" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#76/113</span>
+                <span class="card-name">Marill</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/77_hires.png" alt="Meowth" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#77/113</span>
+                <span class="card-name">Meowth</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/78_hires.png" alt="Ponyta" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#78/113</span>
+                <span class="card-name">Ponyta</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/79_hires.png" alt="Poochyena" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#79/113</span>
+                <span class="card-name">Poochyena</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/80_hires.png" alt="Porygon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#80/113</span>
+                <span class="card-name">Porygon</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/81_hires.png" alt="Ralts" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#81/113</span>
+                <span class="card-name">Ralts</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/82_hires.png" alt="Sandshrew" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#82/113</span>
+                <span class="card-name">Sandshrew</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/83_hires.png" alt="Slowpoke" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#83/113</span>
+                <span class="card-name">Slowpoke</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/84_hires.png" alt="Staryu" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#84/113</span>
+                <span class="card-name">Staryu</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/85_hires.png" alt="Staryu" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#85/113</span>
+                <span class="card-name">Staryu</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/86_hires.png" alt="Taillow" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#86/113</span>
+                <span class="card-name">Taillow</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/87_hires.png" alt="Weedle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#87/113</span>
+                <span class="card-name">Weedle</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/88_hires.png" alt="Zubat" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#88/113</span>
+                <span class="card-name">Zubat</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/89_hires.png" alt="Dual Ball" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#89/113</span>
+                <span class="card-name">Dual Ball</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/90_hires.png" alt="Great Ball" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#90/113</span>
+                <span class="card-name">Great Ball</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/91_hires.png" alt="Holon Farmer" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#91/113</span>
+                <span class="card-name">Holon Farmer</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/92_hires.png" alt="Holon Lass" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#92/113</span>
+                <span class="card-name">Holon Lass</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/93_hires.png" alt="Holon Mentor" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#93/113</span>
+                <span class="card-name">Holon Mentor</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/94_hires.png" alt="Holon Research Tower" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#94/113</span>
+                <span class="card-name">Holon Research Tower</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/95_hires.png" alt="Holon Researcher" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#95/113</span>
+                <span class="card-name">Holon Researcher</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/96_hires.png" alt="Holon Ruins" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#96/113</span>
+                <span class="card-name">Holon Ruins</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/97_hires.png" alt="Holon Scientist" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#97/113</span>
+                <span class="card-name">Holon Scientist</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/98_hires.png" alt="Holon Transceiver" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#98/113</span>
+                <span class="card-name">Holon Transceiver</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/99_hires.png" alt="Master Ball" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#99/113</span>
+                <span class="card-name">Master Ball</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/100_hires.png" alt="Super Scoop Up" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#100/113</span>
+                <span class="card-name">Super Scoop Up</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/101_hires.png" alt="Potion" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#101/113</span>
+                <span class="card-name">Potion</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/102_hires.png" alt="Switch" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#102/113</span>
+                <span class="card-name">Switch</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/103_hires.png" alt="Darkness Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#103/113</span>
+                <span class="card-name">Darkness Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/104_hires.png" alt="Holon Energy FF" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#104/113</span>
+                <span class="card-name">Holon Energy FF</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/105_hires.png" alt="Holon Energy GL" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#105/113</span>
+                <span class="card-name">Holon Energy GL</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/106_hires.png" alt="Holon Energy WP" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#106/113</span>
+                <span class="card-name">Holon Energy WP</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/107_hires.png" alt="Metal Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#107/113</span>
+                <span class="card-name">Metal Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/108_hires.png" alt="Flareon ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#108/113</span>
+                <span class="card-name">Flareon ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/109_hires.png" alt="Jolteon ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#109/113</span>
+                <span class="card-name">Jolteon ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/110_hires.png" alt="Vaporeon ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#110/113</span>
+                <span class="card-name">Vaporeon ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/111_hires.png" alt="Groudon ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#111/113</span>
+                <span class="card-name">Groudon ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/112_hires.png" alt="Kyogre ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#112/113</span>
+                <span class="card-name">Kyogre ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/113_hires.png" alt="Metagross ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#113/113</span>
+                <span class="card-name">Metagross ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_delta_species/114_hires.png" alt="Azumarill" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#114/113</span>
+                <span class="card-name">Azumarill</span>
+                <div class="card-meta">Rare Secret</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,571 @@
+/* ── Variables (matching existing tcg viewer theme) ─────────────────────── */
+:root {
+  --bg:           #0d1117;
+  --card-bg:      #161b22;
+  --card-bg-hover:#1c2128;
+  --text:         #c9d1d9;
+  --text-muted:   #8b949e;
+  --accent:       #58a6ff;
+  --border:       #30363d;
+  --danger:       #f85149;
+  --radius:       12px;
+}
+
+/* ── Reset / Base ───────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 24px;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.search-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#search {
+  flex: 1;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 14px;
+  padding: 8px 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+#search:focus { border-color: var(--accent); }
+#search::placeholder { color: var(--text-muted); }
+
+#search-count {
+  color: var(--text-muted);
+  font-size: 12px;
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+/* ── Tab Bar ─────────────────────────────────────────────────────────────── */
+.tab-bar {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  max-width: 100%;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.tab:hover { color: var(--text); }
+.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ── Views ───────────────────────────────────────────────────────────────── */
+.view { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
+.view.active { display: block; }
+
+/* ── Pokédex Grid ────────────────────────────────────────────────────────── */
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.poke-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  padding: 14px 12px 12px;
+  text-align: center;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  position: relative;
+}
+.poke-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  border-color: var(--accent);
+}
+
+/* animated icon using background-image sprite sheet */
+.poke-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 64px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  margin: 0 auto 10px;
+  animation: icon-anim 0.5s steps(1) infinite;
+}
+@keyframes icon-anim {
+  0%   { background-position: 0 0; }
+  50%  { background-position: 0 -32px; }
+}
+
+.poke-name {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.type-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+.type-badge {
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.poke-location {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.review-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--danger);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 5px;
+  text-transform: uppercase;
+}
+
+/* ── TCG Set Tabs ────────────────────────────────────────────────────────── */
+.set-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.set-tab {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 14px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.set-tab:hover { color: var(--text); border-color: var(--accent); }
+.set-tab.active {
+  background: var(--card-bg-hover);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── TCG Card Grid ───────────────────────────────────────────────────────── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.tcg-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tcg-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.tcg-card-img-wrap {
+  aspect-ratio: 5 / 7;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.tcg-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tcg-card-details {
+  padding: 12px;
+}
+.tcg-card-name {
+  display: block;
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.tcg-card-meta {
+  color: var(--text-muted);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.tcg-card-number { color: var(--accent); }
+
+/* ── Modal ───────────────────────────────────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+.modal-overlay.hidden { display: none; }
+
+.modal {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  max-width: 680px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+.modal-close:hover { color: var(--text); }
+
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.modal-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+.modal-sub {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ── Evolution chain ─────────────────────────────────────────────────────── */
+.evo-chain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.evo-arrow {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 0 2px;
+}
+
+.evo-branch {
+  color: var(--text-muted);
+  font-size: 12px;
+  padding: 0 2px;
+}
+
+.evo-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  padding: 6px 10px;
+  transition: border-color 0.15s, background 0.15s;
+  min-width: 56px;
+}
+.evo-btn:hover { border-color: var(--accent); background: var(--card-bg-hover); }
+.evo-btn.evo-active {
+  border-color: var(--accent);
+  background: var(--card-bg-hover);
+  color: var(--accent);
+}
+
+.evo-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 64px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  animation: icon-anim 0.5s steps(1) infinite;
+}
+
+.evo-name {
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.2;
+  max-width: 64px;
+  word-break: break-word;
+}
+
+/* ── Sprite panel ─────────────────────────────────────────────────────────── */
+.sprite-panel {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sprite-group {
+  flex: 1;
+  padding: 16px;
+}
+
+.sprite-group-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+.shiny-label { color: #f0c040; }
+
+.sprite-group-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.sprite-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+}
+
+.sprite-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sprite-label {
+  color: var(--text-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Uniform cell so all sprites sit on the same baseline */
+.sprite-cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+}
+.shiny-cell { background: rgba(240,192,64,0.06); }
+
+/* Main animated sprite (64×128 sheet → 64×64 view) */
+.sprite-main-anim {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-size: 64px 128px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  animation: front-anim 1.2s steps(1) infinite;
+}
+@keyframes front-anim {
+  0%   { background-position: 0 0; }
+  50%  { background-position: 0 -64px; }
+}
+
+/* Static front (same image, no animation) */
+.sprite-static {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-size: 64px 128px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+}
+
+.sprite-back-img {
+  width: 64px;
+  height: 64px;
+  image-rendering: pixelated;
+  display: block;
+}
+
+/* Small icon in shiny section (32×64 sheet → 32×32 view) */
+.sprite-icon-sm {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: 32px 64px;
+  background-position: 0 0;
+  image-rendering: pixelated;
+  animation: icon-anim 0.5s steps(1) infinite;
+}
+
+.modal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+.info-row { display: flex; flex-direction: column; gap: 2px; }
+.info-label { color: var(--text-muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+.info-value { font-size: 13px; font-weight: 500; }
+
+.modal-cards-section {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+.modal-cards-section h3 {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+}
+.modal-card-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.modal-tcg-card {
+  width: 120px;
+  flex-shrink: 0;
+}
+.modal-tcg-card img {
+  width: 120px;
+  border-radius: 6px;
+  display: block;
+}
+.modal-tcg-card-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* ── Type badge colours ──────────────────────────────────────────────────── */
+.type-Normal    { background: #9a9a7a; color: #fff; }
+.type-Fire      { background: #f08030; color: #fff; }
+.type-Water     { background: #6890f0; color: #fff; }
+.type-Electric  { background: #f8d030; color: #111; }
+.type-Grass     { background: #78c850; color: #fff; }
+.type-Ice       { background: #98d8d8; color: #111; }
+.type-Fighting  { background: #c03028; color: #fff; }
+.type-Poison    { background: #a040a0; color: #fff; }
+.type-Ground    { background: #e0c068; color: #111; }
+.type-Flying    { background: #a890f0; color: #fff; }
+.type-Psychic   { background: #f85888; color: #fff; }
+.type-Bug       { background: #a8b820; color: #fff; }
+.type-Rock      { background: #b8a038; color: #fff; }
+.type-Ghost     { background: #705898; color: #fff; }
+.type-Dragon    { background: #7038f8; color: #fff; }
+.type-Dark      { background: #705848; color: #fff; }
+.type-Steel     { background: #b8b8d0; color: #111; }
+.type-Fairy     { background: #ee99ac; color: #111; }
+.type-Colorless { background: #a0a0a0; color: #fff; }
+.type-Darkness  { background: #705848; color: #fff; }
+.type-Metal     { background: #b8b8d0; color: #111; }
+.type-Lightning { background: #f8d030; color: #111; }
+
+/* ── Empty / loading states ──────────────────────────────────────────────── */
+.empty-state {
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 60px 0;
+  text-align: center;
+}

@@ -421,15 +421,15 @@ dex_number,name,category,type_1,type_2,tcg_type_1,tcg_type_2,tcg_set,location,ca
 420,Holon's Voltorb,Holon's,Electric,,Lightning,,EX Delta Species,Holon Research Tower,71,,No,ex11/71_hires.png
 421,Holon's Electrode,Holon's,Electric,,Lightning,,EX Delta Species,Holon Research Tower,21,Holon's Voltorb,No,ex11/21_hires.png
 422,Mewtwo ★,Gold Star,Psychic,,Psychic,,EX Holon Phantoms,Holon Lake,103,,Yes,ex13/103_hires.png
-423,Metagross ★,Gold Star,Steel,,Metal,,EX Delta Species,Holon Research Tower,113,,No,ex11/113_hires.png
-424,Groudon ★,Gold Star,Fighting,,Fighting,,EX Delta Species,Holon Research Tower,111,,Yes,ex11/111_hires.png
+423,Metagross ★,Gold Star,Steel,Psychic,Metal,,EX Delta Species,Holon Research Tower,113,,No,ex11/113_hires.png
+424,Groudon ★,Gold Star,Ground,,Fighting,,EX Delta Species,Holon Research Tower,111,,Yes,ex11/111_hires.png
 425,Kyogre ★,Gold Star,Water,,Water,,EX Delta Species,Holon Research Tower,112,,No,ex11/112_hires.png
 426,Mew ★ δ,Gold Star,Water,,Water,,EX Dragon Frontiers,Dragon Frontiers,101,,No,ex15/101_hires.png
-427,Regice ★,Gold Star,Water,,Water,,EX Legend Maker,Mirage Forest,90,,No,ex12/90_hires.png
-428,Regirock ★,Gold Star,Fighting,,Fighting,,EX Legend Maker,Mirage Forest,91,,Yes,ex12/91_hires.png
+427,Regice ★,Gold Star,Ice,,Water,,EX Legend Maker,Mirage Forest,90,,No,ex12/90_hires.png
+428,Regirock ★,Gold Star,Ground,,Fighting,,EX Legend Maker,Mirage Forest,91,,Yes,ex12/91_hires.png
 429,Registeel ★,Gold Star,Steel,,Metal,,EX Legend Maker,Mirage Forest,92,,No,ex12/92_hires.png
 430,Pikachu ★,Gold Star,Electric,,Lightning,,EX Holon Phantoms,Holon Lake,104,,No,ex13/104_hires.png
-431,Gyarados ★ δ,Gold Star,Fire,,Fire,,EX Holon Phantoms,Holon Lake,102,,No,ex13/102_hires.png
-432,Charizard ★ δ,Gold Star,Dark,,Darkness,,EX Dragon Frontiers,Dragon Frontiers,100,,No,ex15/100_hires.png
+431,Gyarados ★ δ,Gold Star,Fire,Dragon,Fire,,EX Holon Phantoms,Holon Lake,102,,No,ex13/102_hires.png
+432,Charizard ★ δ,Gold Star,Dark,Dragon,Darkness,,EX Dragon Frontiers,Dragon Frontiers,100,,No,ex15/100_hires.png
 433,Alakazam ★,Gold Star,Psychic,,Psychic,,EX Crystal Guardians,Unnamed Island,99,,Yes,ex14/99_hires.png
-434,Celebi ★,Gold Star,Grass,,Grass,,EX Crystal Guardians,Unnamed Island,100,,Yes,ex14/100_hires.png
+434,Celebi ★,Gold Star,Grass,Psychic,Grass,,EX Crystal Guardians,Unnamed Island,100,,Yes,ex14/100_hires.png

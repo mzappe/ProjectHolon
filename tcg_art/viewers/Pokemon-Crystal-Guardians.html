@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Guardians - TCG Viewer</title>
+    <style>
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-container {
+    aspect-ratio: 5 / 7;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.card-number {
+    float: right;
+    color: var(--accent);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Crystal Guardians</h1>
+    </header>
+    <div class="card-grid">
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/1_hires.png" alt="Banette" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#1/100</span>
+                <span class="card-name">Banette</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/2_hires.png" alt="Blastoise δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#2/100</span>
+                <span class="card-name">Blastoise δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/3_hires.png" alt="Camerupt" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#3/100</span>
+                <span class="card-name">Camerupt</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/4_hires.png" alt="Charizard δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#4/100</span>
+                <span class="card-name">Charizard δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/5_hires.png" alt="Dugtrio" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#5/100</span>
+                <span class="card-name">Dugtrio</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/6_hires.png" alt="Ludicolo δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#6/100</span>
+                <span class="card-name">Ludicolo δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/7_hires.png" alt="Luvdisc" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#7/100</span>
+                <span class="card-name">Luvdisc</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/8_hires.png" alt="Manectric" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#8/100</span>
+                <span class="card-name">Manectric</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/9_hires.png" alt="Mawile" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#9/100</span>
+                <span class="card-name">Mawile</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/10_hires.png" alt="Sableye" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#10/100</span>
+                <span class="card-name">Sableye</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/11_hires.png" alt="Swalot" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#11/100</span>
+                <span class="card-name">Swalot</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/12_hires.png" alt="Tauros" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#12/100</span>
+                <span class="card-name">Tauros</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/13_hires.png" alt="Wigglytuff" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#13/100</span>
+                <span class="card-name">Wigglytuff</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/14_hires.png" alt="Blastoise" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#14/100</span>
+                <span class="card-name">Blastoise</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/15_hires.png" alt="Cacturne δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#15/100</span>
+                <span class="card-name">Cacturne δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/16_hires.png" alt="Combusken" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#16/100</span>
+                <span class="card-name">Combusken</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/17_hires.png" alt="Dusclops" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#17/100</span>
+                <span class="card-name">Dusclops</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/18_hires.png" alt="Fearow δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#18/100</span>
+                <span class="card-name">Fearow δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/19_hires.png" alt="Grovyle δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#19/100</span>
+                <span class="card-name">Grovyle δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/20_hires.png" alt="Grumpig" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#20/100</span>
+                <span class="card-name">Grumpig</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/21_hires.png" alt="Igglybuff" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#21/100</span>
+                <span class="card-name">Igglybuff</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/22_hires.png" alt="Kingler δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#22/100</span>
+                <span class="card-name">Kingler δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/23_hires.png" alt="Loudred" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#23/100</span>
+                <span class="card-name">Loudred</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/24_hires.png" alt="Marshtomp" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#24/100</span>
+                <span class="card-name">Marshtomp</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/25_hires.png" alt="Medicham" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#25/100</span>
+                <span class="card-name">Medicham</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/26_hires.png" alt="Pelipper δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#26/100</span>
+                <span class="card-name">Pelipper δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/27_hires.png" alt="Swampert" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#27/100</span>
+                <span class="card-name">Swampert</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/28_hires.png" alt="Venusaur" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#28/100</span>
+                <span class="card-name">Venusaur</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/29_hires.png" alt="Charmeleon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#29/100</span>
+                <span class="card-name">Charmeleon</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/30_hires.png" alt="Charmeleon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#30/100</span>
+                <span class="card-name">Charmeleon δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/31_hires.png" alt="Combusken" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#31/100</span>
+                <span class="card-name">Combusken</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/32_hires.png" alt="Grovyle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#32/100</span>
+                <span class="card-name">Grovyle</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/33_hires.png" alt="Gulpin" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#33/100</span>
+                <span class="card-name">Gulpin</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/34_hires.png" alt="Ivysaur" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#34/100</span>
+                <span class="card-name">Ivysaur</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/35_hires.png" alt="Ivysaur" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#35/100</span>
+                <span class="card-name">Ivysaur</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/36_hires.png" alt="Lairon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#36/100</span>
+                <span class="card-name">Lairon</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/37_hires.png" alt="Lombre" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#37/100</span>
+                <span class="card-name">Lombre</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/38_hires.png" alt="Marshtomp" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#38/100</span>
+                <span class="card-name">Marshtomp</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/39_hires.png" alt="Nuzleaf" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#39/100</span>
+                <span class="card-name">Nuzleaf</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/40_hires.png" alt="Shuppet" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#40/100</span>
+                <span class="card-name">Shuppet</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/41_hires.png" alt="Skitty" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#41/100</span>
+                <span class="card-name">Skitty</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/42_hires.png" alt="Wartortle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#42/100</span>
+                <span class="card-name">Wartortle</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/43_hires.png" alt="Wartortle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#43/100</span>
+                <span class="card-name">Wartortle</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/44_hires.png" alt="Aron" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#44/100</span>
+                <span class="card-name">Aron</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/45_hires.png" alt="Bulbasaur" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#45/100</span>
+                <span class="card-name">Bulbasaur</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/46_hires.png" alt="Bulbasaur" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#46/100</span>
+                <span class="card-name">Bulbasaur</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/47_hires.png" alt="Cacnea" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#47/100</span>
+                <span class="card-name">Cacnea</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/48_hires.png" alt="Charmander" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#48/100</span>
+                <span class="card-name">Charmander</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/49_hires.png" alt="Charmander δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#49/100</span>
+                <span class="card-name">Charmander δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/50_hires.png" alt="Diglett" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#50/100</span>
+                <span class="card-name">Diglett</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/51_hires.png" alt="Duskull" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#51/100</span>
+                <span class="card-name">Duskull</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/52_hires.png" alt="Electrike" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#52/100</span>
+                <span class="card-name">Electrike</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/53_hires.png" alt="Jigglypuff" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#53/100</span>
+                <span class="card-name">Jigglypuff</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/54_hires.png" alt="Krabby" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#54/100</span>
+                <span class="card-name">Krabby</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/55_hires.png" alt="Lotad" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#55/100</span>
+                <span class="card-name">Lotad</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/56_hires.png" alt="Meditite" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#56/100</span>
+                <span class="card-name">Meditite</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/57_hires.png" alt="Mudkip" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#57/100</span>
+                <span class="card-name">Mudkip</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/58_hires.png" alt="Mudkip" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#58/100</span>
+                <span class="card-name">Mudkip</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/59_hires.png" alt="Numel" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#59/100</span>
+                <span class="card-name">Numel</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/60_hires.png" alt="Seedot" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#60/100</span>
+                <span class="card-name">Seedot</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/61_hires.png" alt="Spearow" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#61/100</span>
+                <span class="card-name">Spearow</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/62_hires.png" alt="Spoink" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#62/100</span>
+                <span class="card-name">Spoink</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/63_hires.png" alt="Squirtle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#63/100</span>
+                <span class="card-name">Squirtle</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/64_hires.png" alt="Squirtle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#64/100</span>
+                <span class="card-name">Squirtle</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/65_hires.png" alt="Torchic" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#65/100</span>
+                <span class="card-name">Torchic</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/66_hires.png" alt="Torchic" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#66/100</span>
+                <span class="card-name">Torchic</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/67_hires.png" alt="Treecko" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#67/100</span>
+                <span class="card-name">Treecko</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/68_hires.png" alt="Treecko δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#68/100</span>
+                <span class="card-name">Treecko δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/69_hires.png" alt="Whismur" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#69/100</span>
+                <span class="card-name">Whismur</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/70_hires.png" alt="Wingull" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#70/100</span>
+                <span class="card-name">Wingull</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/71_hires.png" alt="Bill's Maintenance" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#71/100</span>
+                <span class="card-name">Bill's Maintenance</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/72_hires.png" alt="Castaway" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#72/100</span>
+                <span class="card-name">Castaway</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/73_hires.png" alt="Celio's Network" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#73/100</span>
+                <span class="card-name">Celio's Network</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/74_hires.png" alt="Cessation Crystal" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#74/100</span>
+                <span class="card-name">Cessation Crystal</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/75_hires.png" alt="Crystal Beach" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#75/100</span>
+                <span class="card-name">Crystal Beach</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/76_hires.png" alt="Crystal Shard" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#76/100</span>
+                <span class="card-name">Crystal Shard</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/77_hires.png" alt="Double Full Heal" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#77/100</span>
+                <span class="card-name">Double Full Heal</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/78_hires.png" alt="Dual Ball" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#78/100</span>
+                <span class="card-name">Dual Ball</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/79_hires.png" alt="Holon Circle" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#79/100</span>
+                <span class="card-name">Holon Circle</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/80_hires.png" alt="Memory Berry" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#80/100</span>
+                <span class="card-name">Memory Berry</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/81_hires.png" alt="Mysterious Shard" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#81/100</span>
+                <span class="card-name">Mysterious Shard</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/82_hires.png" alt="Poké Ball" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#82/100</span>
+                <span class="card-name">Poké Ball</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/83_hires.png" alt="PokéNav" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#83/100</span>
+                <span class="card-name">PokéNav</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/84_hires.png" alt="Warp Point" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#84/100</span>
+                <span class="card-name">Warp Point</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/85_hires.png" alt="Windstorm" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#85/100</span>
+                <span class="card-name">Windstorm</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/86_hires.png" alt="Energy Search" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#86/100</span>
+                <span class="card-name">Energy Search</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/87_hires.png" alt="Potion" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#87/100</span>
+                <span class="card-name">Potion</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/88_hires.png" alt="Double Rainbow Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#88/100</span>
+                <span class="card-name">Double Rainbow Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/89_hires.png" alt="Aggron ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#89/100</span>
+                <span class="card-name">Aggron ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/90_hires.png" alt="Blaziken ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#90/100</span>
+                <span class="card-name">Blaziken ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/91_hires.png" alt="Delcatty ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#91/100</span>
+                <span class="card-name">Delcatty ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/92_hires.png" alt="Exploud ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#92/100</span>
+                <span class="card-name">Exploud ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/93_hires.png" alt="Groudon ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#93/100</span>
+                <span class="card-name">Groudon ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/94_hires.png" alt="Jirachi ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#94/100</span>
+                <span class="card-name">Jirachi ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/95_hires.png" alt="Kyogre ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#95/100</span>
+                <span class="card-name">Kyogre ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/96_hires.png" alt="Sceptile ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#96/100</span>
+                <span class="card-name">Sceptile ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/97_hires.png" alt="Shiftry ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#97/100</span>
+                <span class="card-name">Shiftry ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/98_hires.png" alt="Swampert ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#98/100</span>
+                <span class="card-name">Swampert ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/99_hires.png" alt="Alakazam ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#99/100</span>
+                <span class="card-name">Alakazam ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_crystal_guardians/100_hires.png" alt="Celebi ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#100/100</span>
+                <span class="card-name">Celebi ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

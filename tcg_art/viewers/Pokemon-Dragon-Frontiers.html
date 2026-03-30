@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Frontiers - TCG Viewer</title>
+    <style>
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-container {
+    aspect-ratio: 5 / 7;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.card-number {
+    float: right;
+    color: var(--accent);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Dragon Frontiers</h1>
+    </header>
+    <div class="card-grid">
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/1_hires.png" alt="Ampharos δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#1/101</span>
+                <span class="card-name">Ampharos δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/2_hires.png" alt="Feraligatr δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#2/101</span>
+                <span class="card-name">Feraligatr δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/3_hires.png" alt="Heracross δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#3/101</span>
+                <span class="card-name">Heracross δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/4_hires.png" alt="Meganium δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#4/101</span>
+                <span class="card-name">Meganium δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/5_hires.png" alt="Milotic δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#5/101</span>
+                <span class="card-name">Milotic δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/6_hires.png" alt="Nidoking δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#6/101</span>
+                <span class="card-name">Nidoking δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/7_hires.png" alt="Nidoqueen δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#7/101</span>
+                <span class="card-name">Nidoqueen δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/8_hires.png" alt="Ninetales δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#8/101</span>
+                <span class="card-name">Ninetales δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/9_hires.png" alt="Pinsir δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#9/101</span>
+                <span class="card-name">Pinsir δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/10_hires.png" alt="Snorlax δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#10/101</span>
+                <span class="card-name">Snorlax δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/11_hires.png" alt="Togetic δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#11/101</span>
+                <span class="card-name">Togetic δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/12_hires.png" alt="Typhlosion δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#12/101</span>
+                <span class="card-name">Typhlosion δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/13_hires.png" alt="Arbok δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#13/101</span>
+                <span class="card-name">Arbok δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/14_hires.png" alt="Cloyster δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#14/101</span>
+                <span class="card-name">Cloyster δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/15_hires.png" alt="Dewgong δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#15/101</span>
+                <span class="card-name">Dewgong δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/16_hires.png" alt="Gligar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#16/101</span>
+                <span class="card-name">Gligar δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/17_hires.png" alt="Jynx δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#17/101</span>
+                <span class="card-name">Jynx δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/18_hires.png" alt="Ledian δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#18/101</span>
+                <span class="card-name">Ledian δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/19_hires.png" alt="Lickitung δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#19/101</span>
+                <span class="card-name">Lickitung δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/20_hires.png" alt="Mantine δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#20/101</span>
+                <span class="card-name">Mantine δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/21_hires.png" alt="Quagsire δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#21/101</span>
+                <span class="card-name">Quagsire δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/22_hires.png" alt="Seadra δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#22/101</span>
+                <span class="card-name">Seadra δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/23_hires.png" alt="Tropius δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#23/101</span>
+                <span class="card-name">Tropius δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/24_hires.png" alt="Vibrava δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#24/101</span>
+                <span class="card-name">Vibrava δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/25_hires.png" alt="Xatu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#25/101</span>
+                <span class="card-name">Xatu δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/26_hires.png" alt="Bayleef δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#26/101</span>
+                <span class="card-name">Bayleef δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/27_hires.png" alt="Croconaw δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#27/101</span>
+                <span class="card-name">Croconaw δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/28_hires.png" alt="Dragonair δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#28/101</span>
+                <span class="card-name">Dragonair δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/29_hires.png" alt="Electabuzz δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#29/101</span>
+                <span class="card-name">Electabuzz δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/30_hires.png" alt="Flaaffy δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#30/101</span>
+                <span class="card-name">Flaaffy δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/31_hires.png" alt="Horsea δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#31/101</span>
+                <span class="card-name">Horsea δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/32_hires.png" alt="Kirlia" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#32/101</span>
+                <span class="card-name">Kirlia</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/33_hires.png" alt="Kirlia δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#33/101</span>
+                <span class="card-name">Kirlia δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/34_hires.png" alt="Nidorina δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#34/101</span>
+                <span class="card-name">Nidorina δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/35_hires.png" alt="Nidorino δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#35/101</span>
+                <span class="card-name">Nidorino δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/36_hires.png" alt="Quilava δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#36/101</span>
+                <span class="card-name">Quilava δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/37_hires.png" alt="Seadra δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#37/101</span>
+                <span class="card-name">Seadra δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/38_hires.png" alt="Shelgon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#38/101</span>
+                <span class="card-name">Shelgon δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/39_hires.png" alt="Smeargle δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#39/101</span>
+                <span class="card-name">Smeargle δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/40_hires.png" alt="Swellow δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#40/101</span>
+                <span class="card-name">Swellow δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/41_hires.png" alt="Togepi δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#41/101</span>
+                <span class="card-name">Togepi δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/42_hires.png" alt="Vibrava δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#42/101</span>
+                <span class="card-name">Vibrava δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/43_hires.png" alt="Bagon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#43/101</span>
+                <span class="card-name">Bagon δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/44_hires.png" alt="Chikorita δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#44/101</span>
+                <span class="card-name">Chikorita δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/45_hires.png" alt="Cyndaquil δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#45/101</span>
+                <span class="card-name">Cyndaquil δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/46_hires.png" alt="Dratini δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#46/101</span>
+                <span class="card-name">Dratini δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/47_hires.png" alt="Ekans δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#47/101</span>
+                <span class="card-name">Ekans δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/48_hires.png" alt="Elekid δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#48/101</span>
+                <span class="card-name">Elekid δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/49_hires.png" alt="Feebas δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#49/101</span>
+                <span class="card-name">Feebas δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/50_hires.png" alt="Horsea δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#50/101</span>
+                <span class="card-name">Horsea δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/51_hires.png" alt="Larvitar" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#51/101</span>
+                <span class="card-name">Larvitar</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/52_hires.png" alt="Larvitar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#52/101</span>
+                <span class="card-name">Larvitar δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/53_hires.png" alt="Ledyba δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#53/101</span>
+                <span class="card-name">Ledyba δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/54_hires.png" alt="Mareep δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#54/101</span>
+                <span class="card-name">Mareep δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/55_hires.png" alt="Natu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#55/101</span>
+                <span class="card-name">Natu δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/56_hires.png" alt="Nidoran ♀ δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#56/101</span>
+                <span class="card-name">Nidoran ♀ δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/57_hires.png" alt="Nidoran ♂ δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#57/101</span>
+                <span class="card-name">Nidoran ♂ δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/58_hires.png" alt="Pupitar" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#58/101</span>
+                <span class="card-name">Pupitar</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/59_hires.png" alt="Pupitar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#59/101</span>
+                <span class="card-name">Pupitar δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/60_hires.png" alt="Ralts" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#60/101</span>
+                <span class="card-name">Ralts</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/61_hires.png" alt="Ralts δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#61/101</span>
+                <span class="card-name">Ralts δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/62_hires.png" alt="Seel δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#62/101</span>
+                <span class="card-name">Seel δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/63_hires.png" alt="Shellder δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#63/101</span>
+                <span class="card-name">Shellder δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/64_hires.png" alt="Smoochum δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#64/101</span>
+                <span class="card-name">Smoochum δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/65_hires.png" alt="Swablu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#65/101</span>
+                <span class="card-name">Swablu δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/66_hires.png" alt="Taillow δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#66/101</span>
+                <span class="card-name">Taillow δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/67_hires.png" alt="Totodile δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#67/101</span>
+                <span class="card-name">Totodile δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/68_hires.png" alt="Trapinch δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#68/101</span>
+                <span class="card-name">Trapinch δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/69_hires.png" alt="Trapinch δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#69/101</span>
+                <span class="card-name">Trapinch δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/70_hires.png" alt="Vulpix δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#70/101</span>
+                <span class="card-name">Vulpix δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/71_hires.png" alt="Wooper δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#71/101</span>
+                <span class="card-name">Wooper δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/72_hires.png" alt="Buffer Piece" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#72/101</span>
+                <span class="card-name">Buffer Piece</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/73_hires.png" alt="Copycat" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#73/101</span>
+                <span class="card-name">Copycat</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/74_hires.png" alt="Holon Legacy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#74/101</span>
+                <span class="card-name">Holon Legacy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/75_hires.png" alt="Holon Mentor" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#75/101</span>
+                <span class="card-name">Holon Mentor</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/76_hires.png" alt="Island Hermit" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#76/101</span>
+                <span class="card-name">Island Hermit</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/77_hires.png" alt="Mr. Stone's Project" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#77/101</span>
+                <span class="card-name">Mr. Stone's Project</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/78_hires.png" alt="Old Rod" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#78/101</span>
+                <span class="card-name">Old Rod</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/79_hires.png" alt="Professor Elm's Training Method" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#79/101</span>
+                <span class="card-name">Professor Elm's Training Method</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/80_hires.png" alt="Professor Oak's Research" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#80/101</span>
+                <span class="card-name">Professor Oak's Research</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/81_hires.png" alt="Strength Charm" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#81/101</span>
+                <span class="card-name">Strength Charm</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/82_hires.png" alt="TV Reporter" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#82/101</span>
+                <span class="card-name">TV Reporter</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/83_hires.png" alt="Switch" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#83/101</span>
+                <span class="card-name">Switch</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/84_hires.png" alt="Holon Energy FF" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#84/101</span>
+                <span class="card-name">Holon Energy FF</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/85_hires.png" alt="Holon Energy GL" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#85/101</span>
+                <span class="card-name">Holon Energy GL</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/86_hires.png" alt="Holon Energy WP" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#86/101</span>
+                <span class="card-name">Holon Energy WP</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/87_hires.png" alt="Boost Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#87/101</span>
+                <span class="card-name">Boost Energy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/88_hires.png" alt="δ Rainbow Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#88/101</span>
+                <span class="card-name">δ Rainbow Energy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/89_hires.png" alt="Scramble Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#89/101</span>
+                <span class="card-name">Scramble Energy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/90_hires.png" alt="Altaria ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#90/101</span>
+                <span class="card-name">Altaria ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/91_hires.png" alt="Dragonite ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#91/101</span>
+                <span class="card-name">Dragonite ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/92_hires.png" alt="Flygon ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#92/101</span>
+                <span class="card-name">Flygon ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/93_hires.png" alt="Gardevoir ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#93/101</span>
+                <span class="card-name">Gardevoir ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/94_hires.png" alt="Kingdra ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#94/101</span>
+                <span class="card-name">Kingdra ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/95_hires.png" alt="Latias ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#95/101</span>
+                <span class="card-name">Latias ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/96_hires.png" alt="Latios ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#96/101</span>
+                <span class="card-name">Latios ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/97_hires.png" alt="Rayquaza ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#97/101</span>
+                <span class="card-name">Rayquaza ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/98_hires.png" alt="Salamence ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#98/101</span>
+                <span class="card-name">Salamence ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/99_hires.png" alt="Tyranitar ex δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#99/101</span>
+                <span class="card-name">Tyranitar ex δ</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/100_hires.png" alt="Charizard ★ δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#100/101</span>
+                <span class="card-name">Charizard ★ δ</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex-dragon_frontiers/101_hires.png" alt="Mew ★ δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#101/101</span>
+                <span class="card-name">Mew ★ δ</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

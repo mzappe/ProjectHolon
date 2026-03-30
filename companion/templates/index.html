@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holon Companion</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>Project Holon</h1>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search Pokémon, cards, types, locations…" autocomplete="off" spellcheck="false">
+        <span id="search-count"></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tab-bar">
+    <button class="tab active" data-tab="pokedex">Pokédex</button>
+    <button class="tab" data-tab="tcg">TCG Cards</button>
+  </nav>
+
+  <main>
+    <div id="view-pokedex" class="view active">
+      <div id="pokedex-grid" class="pokemon-grid"></div>
+    </div>
+
+    <div id="view-tcg" class="view">
+      <div class="set-tabs" id="set-tabs"></div>
+      <div id="tcg-grid" class="card-grid"></div>
+    </div>
+  </main>
+
+  <!-- Pokédex detail modal -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div id="modal" class="modal">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

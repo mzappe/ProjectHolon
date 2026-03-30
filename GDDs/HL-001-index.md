@@ -65,6 +65,7 @@ The player travels outward from Mirage Forest through five locations that mirror
 |----|------|-------|--------|---------|-------------|
 | HL-TEC-001 | [HL-200-technical-guide.md](HL-200-technical-guide.md) | Master Technical Guide | Stable | 1.0 | macOS dev environment, build pipeline, tool stack, branch strategy, production pipelines, roadmap |
 | HL-TEC-002 | [HL-201-expansion-features.md](HL-201-expansion-features.md) | pokeemerald-expansion Features & Branch Guide | Stable | 1.0 | Expansion branch selection, key features, integration workflow, and feature flags |
+| HL-TEC-003 | [HL-202-feature-config-log.csv](HL-202-feature-config-log.csv) | Feature & Config Change Log | In Progress | 1.0 | A record of all base engine modifications, feature additions, and configuration changes |
 
 ### 2.3 Art
 

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holon Phantoms - TCG Viewer</title>
+    <style>
+:root {
+    --bg-color: #0d1117;
+    --card-bg: #161b22;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent: #58a6ff;
+    --border: #30363d;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card-image-container {
+    aspect-ratio: 5 / 7;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.card-number {
+    float: right;
+    color: var(--accent);
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Holon Phantoms</h1>
+    </header>
+    <div class="card-grid">
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/1_hires.png" alt="Armaldo δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#1/110</span>
+                <span class="card-name">Armaldo δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/2_hires.png" alt="Cradily δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#2/110</span>
+                <span class="card-name">Cradily δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/3_hires.png" alt="Deoxys δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#3/110</span>
+                <span class="card-name">Deoxys δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/4_hires.png" alt="Deoxys δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#4/110</span>
+                <span class="card-name">Deoxys δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/5_hires.png" alt="Deoxys δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#5/110</span>
+                <span class="card-name">Deoxys δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/6_hires.png" alt="Deoxys δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#6/110</span>
+                <span class="card-name">Deoxys δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/7_hires.png" alt="Flygon δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#7/110</span>
+                <span class="card-name">Flygon δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/8_hires.png" alt="Gyarados δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#8/110</span>
+                <span class="card-name">Gyarados δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/9_hires.png" alt="Kabutops δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#9/110</span>
+                <span class="card-name">Kabutops δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/10_hires.png" alt="Kingdra δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#10/110</span>
+                <span class="card-name">Kingdra δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/11_hires.png" alt="Latias δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#11/110</span>
+                <span class="card-name">Latias δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/12_hires.png" alt="Latios δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#12/110</span>
+                <span class="card-name">Latios δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/13_hires.png" alt="Omastar δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#13/110</span>
+                <span class="card-name">Omastar δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/14_hires.png" alt="Pidgeot δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#14/110</span>
+                <span class="card-name">Pidgeot δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/15_hires.png" alt="Raichu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#15/110</span>
+                <span class="card-name">Raichu δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/16_hires.png" alt="Rayquaza δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#16/110</span>
+                <span class="card-name">Rayquaza δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/17_hires.png" alt="Vileplume δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#17/110</span>
+                <span class="card-name">Vileplume δ</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/18_hires.png" alt="Absol" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#18/110</span>
+                <span class="card-name">Absol</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/19_hires.png" alt="Bellossom δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#19/110</span>
+                <span class="card-name">Bellossom δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/20_hires.png" alt="Blaziken" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#20/110</span>
+                <span class="card-name">Blaziken</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/21_hires.png" alt="Latias δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#21/110</span>
+                <span class="card-name">Latias δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/22_hires.png" alt="Latios δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#22/110</span>
+                <span class="card-name">Latios δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/23_hires.png" alt="Mawile" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#23/110</span>
+                <span class="card-name">Mawile</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/24_hires.png" alt="Mewtwo δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#24/110</span>
+                <span class="card-name">Mewtwo δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/25_hires.png" alt="Nosepass" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#25/110</span>
+                <span class="card-name">Nosepass</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/26_hires.png" alt="Rayquaza δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#26/110</span>
+                <span class="card-name">Rayquaza δ</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/27_hires.png" alt="Regice" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#27/110</span>
+                <span class="card-name">Regice</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/28_hires.png" alt="Regirock" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#28/110</span>
+                <span class="card-name">Regirock</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/29_hires.png" alt="Registeel" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#29/110</span>
+                <span class="card-name">Registeel</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/30_hires.png" alt="Relicanth" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#30/110</span>
+                <span class="card-name">Relicanth</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/31_hires.png" alt="Sableye" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#31/110</span>
+                <span class="card-name">Sableye</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/32_hires.png" alt="Seviper" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#32/110</span>
+                <span class="card-name">Seviper</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/33_hires.png" alt="Torkoal" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#33/110</span>
+                <span class="card-name">Torkoal</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/34_hires.png" alt="Zangoose" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#34/110</span>
+                <span class="card-name">Zangoose</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/35_hires.png" alt="Aerodactyl δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#35/110</span>
+                <span class="card-name">Aerodactyl δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/36_hires.png" alt="Camerupt" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#36/110</span>
+                <span class="card-name">Camerupt</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/37_hires.png" alt="Chimecho δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#37/110</span>
+                <span class="card-name">Chimecho δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/38_hires.png" alt="Claydol" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#38/110</span>
+                <span class="card-name">Claydol</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/39_hires.png" alt="Combusken" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#39/110</span>
+                <span class="card-name">Combusken</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/40_hires.png" alt="Donphan" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#40/110</span>
+                <span class="card-name">Donphan</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/41_hires.png" alt="Exeggutor δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#41/110</span>
+                <span class="card-name">Exeggutor δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/42_hires.png" alt="Gloom δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#42/110</span>
+                <span class="card-name">Gloom δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/43_hires.png" alt="Golduck δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#43/110</span>
+                <span class="card-name">Golduck δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/44_hires.png" alt="Holon's Castform" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#44/110</span>
+                <span class="card-name">Holon's Castform</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/45_hires.png" alt="Lairon" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#45/110</span>
+                <span class="card-name">Lairon</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/46_hires.png" alt="Manectric" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#46/110</span>
+                <span class="card-name">Manectric</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/47_hires.png" alt="Masquerain" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#47/110</span>
+                <span class="card-name">Masquerain</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/48_hires.png" alt="Persian δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#48/110</span>
+                <span class="card-name">Persian δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/49_hires.png" alt="Pidgeotto δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#49/110</span>
+                <span class="card-name">Pidgeotto δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/50_hires.png" alt="Primeape δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#50/110</span>
+                <span class="card-name">Primeape δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/51_hires.png" alt="Raichu" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#51/110</span>
+                <span class="card-name">Raichu</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/52_hires.png" alt="Seadra δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#52/110</span>
+                <span class="card-name">Seadra δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/53_hires.png" alt="Sharpedo δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#53/110</span>
+                <span class="card-name">Sharpedo δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/54_hires.png" alt="Vibrava δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#54/110</span>
+                <span class="card-name">Vibrava δ</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/55_hires.png" alt="Whiscash" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#55/110</span>
+                <span class="card-name">Whiscash</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/56_hires.png" alt="Wobbuffet" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#56/110</span>
+                <span class="card-name">Wobbuffet</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/57_hires.png" alt="Anorith δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#57/110</span>
+                <span class="card-name">Anorith δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/58_hires.png" alt="Aron" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#58/110</span>
+                <span class="card-name">Aron</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/59_hires.png" alt="Baltoy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#59/110</span>
+                <span class="card-name">Baltoy</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/60_hires.png" alt="Barboach" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#60/110</span>
+                <span class="card-name">Barboach</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/61_hires.png" alt="Carvanha δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#61/110</span>
+                <span class="card-name">Carvanha δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/62_hires.png" alt="Corphish" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#62/110</span>
+                <span class="card-name">Corphish</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/63_hires.png" alt="Corphish" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#63/110</span>
+                <span class="card-name">Corphish</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/64_hires.png" alt="Electrike" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#64/110</span>
+                <span class="card-name">Electrike</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/65_hires.png" alt="Exeggcute δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#65/110</span>
+                <span class="card-name">Exeggcute δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/66_hires.png" alt="Horsea δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#66/110</span>
+                <span class="card-name">Horsea δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/67_hires.png" alt="Kabuto δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#67/110</span>
+                <span class="card-name">Kabuto δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/68_hires.png" alt="Lileep δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#68/110</span>
+                <span class="card-name">Lileep δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/69_hires.png" alt="Magikarp δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#69/110</span>
+                <span class="card-name">Magikarp δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/70_hires.png" alt="Mankey δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#70/110</span>
+                <span class="card-name">Mankey δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/71_hires.png" alt="Meowth δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#71/110</span>
+                <span class="card-name">Meowth δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/72_hires.png" alt="Numel" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#72/110</span>
+                <span class="card-name">Numel</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/73_hires.png" alt="Oddish δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#73/110</span>
+                <span class="card-name">Oddish δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/74_hires.png" alt="Omanyte δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#74/110</span>
+                <span class="card-name">Omanyte δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/75_hires.png" alt="Phanpy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#75/110</span>
+                <span class="card-name">Phanpy</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/76_hires.png" alt="Pichu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#76/110</span>
+                <span class="card-name">Pichu δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/77_hires.png" alt="Pidgey δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#77/110</span>
+                <span class="card-name">Pidgey δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/78_hires.png" alt="Pikachu" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#78/110</span>
+                <span class="card-name">Pikachu</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/79_hires.png" alt="Pikachu δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#79/110</span>
+                <span class="card-name">Pikachu δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/80_hires.png" alt="Poochyena" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#80/110</span>
+                <span class="card-name">Poochyena</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/81_hires.png" alt="Psyduck δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#81/110</span>
+                <span class="card-name">Psyduck δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/82_hires.png" alt="Surskit" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#82/110</span>
+                <span class="card-name">Surskit</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/83_hires.png" alt="Torchic" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#83/110</span>
+                <span class="card-name">Torchic</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/84_hires.png" alt="Trapinch δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#84/110</span>
+                <span class="card-name">Trapinch δ</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/85_hires.png" alt="Holon Adventurer" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#85/110</span>
+                <span class="card-name">Holon Adventurer</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/86_hires.png" alt="Holon Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#86/110</span>
+                <span class="card-name">Holon Fossil</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/87_hires.png" alt="Holon Lake" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#87/110</span>
+                <span class="card-name">Holon Lake</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/88_hires.png" alt="Mr. Stone's Project" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#88/110</span>
+                <span class="card-name">Mr. Stone's Project</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/89_hires.png" alt="Professor Cozmo's Discovery" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#89/110</span>
+                <span class="card-name">Professor Cozmo's Discovery</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/90_hires.png" alt="Rare Candy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#90/110</span>
+                <span class="card-name">Rare Candy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/91_hires.png" alt="Claw Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#91/110</span>
+                <span class="card-name">Claw Fossil</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/92_hires.png" alt="Mysterious Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#92/110</span>
+                <span class="card-name">Mysterious Fossil</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/93_hires.png" alt="Root Fossil" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#93/110</span>
+                <span class="card-name">Root Fossil</span>
+                <div class="card-meta">Common</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/94_hires.png" alt="Darkness Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#94/110</span>
+                <span class="card-name">Darkness Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/95_hires.png" alt="Metal Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#95/110</span>
+                <span class="card-name">Metal Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/96_hires.png" alt="Multi Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#96/110</span>
+                <span class="card-name">Multi Energy</span>
+                <div class="card-meta">Rare</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/97_hires.png" alt="Dark Metal Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#97/110</span>
+                <span class="card-name">Dark Metal Energy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/98_hires.png" alt="δ Rainbow Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#98/110</span>
+                <span class="card-name">δ Rainbow Energy</span>
+                <div class="card-meta">Uncommon</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/99_hires.png" alt="Crawdaunt ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#99/110</span>
+                <span class="card-name">Crawdaunt ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/100_hires.png" alt="Mew ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#100/110</span>
+                <span class="card-name">Mew ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/101_hires.png" alt="Mightyena ex" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#101/110</span>
+                <span class="card-name">Mightyena ex</span>
+                <div class="card-meta">Rare Holo EX</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/102_hires.png" alt="Gyarados ★ δ" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#102/110</span>
+                <span class="card-name">Gyarados ★ δ</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/103_hires.png" alt="Mewtwo ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#103/110</span>
+                <span class="card-name">Mewtwo ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/104_hires.png" alt="Pikachu ★" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#104/110</span>
+                <span class="card-name">Pikachu ★</span>
+                <div class="card-meta">Rare Holo Star</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/105_hires.png" alt="Grass Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#105/110</span>
+                <span class="card-name">Grass Energy</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/106_hires.png" alt="Fire Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#106/110</span>
+                <span class="card-name">Fire Energy</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/107_hires.png" alt="Water Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#107/110</span>
+                <span class="card-name">Water Energy</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/108_hires.png" alt="Lightning Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#108/110</span>
+                <span class="card-name">Lightning Energy</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/109_hires.png" alt="Psychic Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#109/110</span>
+                <span class="card-name">Psychic Energy</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/110_hires.png" alt="Fighting Energy" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#110/110</span>
+                <span class="card-name">Fighting Energy</span>
+                <div class="card-meta">Rare Holo</div>
+            </div>
+        </div>
+
+        <div class="card-item">
+            <div class="card-image-container">
+                <img src="../ex_holon_phantoms/111_hires.png" alt="Mew" class="card-image" loading="lazy">
+            </div>
+            <div class="card-details">
+                <span class="card-number">#111/110</span>
+                <span class="card-name">Mew</span>
+                <div class="card-meta">Rare Secret</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
