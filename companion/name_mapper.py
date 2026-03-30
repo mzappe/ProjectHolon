@@ -4,6 +4,10 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+def baseName(name):
+    """Strip δ, ex, ★ suffixes to get the base display name."""
+    return re.sub(r'\s+(ex\s+δ|★\s+δ|ex δ|★ δ|ex|★|δ)$', '', name).strip()
+
 # Explicit overrides for names that don't auto-convert cleanly
 OVERRIDES = {
     'nidoran_f': 'nidoran_f',

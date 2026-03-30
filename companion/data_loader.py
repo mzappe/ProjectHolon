@@ -2,7 +2,8 @@ import csv
 import os
 import logging
 
-from name_mapper import name_to_sprite_dir, validate_sprite_dirs
+from name_mapper import name_to_sprite_dir, validate_sprite_dirs, baseName
+import pokedex_parser
 
 logger = logging.getLogger(__name__)
 
@@ -56,6 +57,23 @@ def _card_img_url(card_image: str) -> str:
 
 def load_pokedex() -> list:
     entries = []
+
+    # Collect unique base Pokemon names for parser (strip variants)
+    pokemon_names_set = set()
+
+    with open(POKEDEX_CSV, encoding='utf-8') as f:
+        for row in csv.DictReader(f):
+            name = row['name'].strip()
+            base_name = baseName(name)  # Strip δ, ex, ★ suffixes
+            pokemon_names_set.add(base_name)
+
+    # Parse game data for all Pokemon in CSV
+    parsed_species = pokedex_parser.parse_gen3_species(pokemon_names_set)
+    parsed_learnsets = pokedex_parser.parse_gen6_learnsets(pokemon_names_set)
+
+    logger.info(f"Parsed game data for {len(parsed_species)} species and {len(parsed_learnsets)} learnsets")
+
+    # Now load CSV and enrich with parsed data
     with open(POKEDEX_CSV, encoding='utf-8') as f:
         for row in csv.DictReader(f):
             name = row['name'].strip()
@@ -67,6 +85,12 @@ def load_pokedex() -> list:
             # Shiny variants generated server-side via palette swap
             sprites['shiny_front'] = f'/sprites/{sprite_dir}/shiny/anim_front_gba.png'
             sprites['shiny_back']  = f'/sprites/{sprite_dir}/shiny/back_gba.png'
+
+            # Look up parsed game data (use base name for lookup)
+            base_name = baseName(name)
+            parsed = parsed_species.get(base_name, {})
+            learnset = parsed_learnsets.get(base_name, [])
+
             entries.append({
                 'dex_number':  int(row['dex_number']),
                 'name':        name,
@@ -83,6 +107,12 @@ def load_pokedex() -> list:
                 'card_img_url':_card_img_url(row['card_image'].strip()),
                 'sprite_dir':  sprite_dir,
                 'sprites':     sprites,
+                # Game data from parser
+                'stats':       parsed.get('stats'),
+                'abilities':   parsed.get('abilities'),
+                'categoryName':parsed.get('categoryName'),
+                'evolution':   parsed.get('evolution'),
+                'movesets':    {'levelup': learnset},
             })
 
     validate_sprite_dirs(SPRITE_ROOT, entries)
