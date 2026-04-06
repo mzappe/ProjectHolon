@@ -27,25 +27,25 @@
   - [III.3 The Delta Biology — Zone by Zone](#iii3-the-delta-biology--zone-by-zone)
 - [Part IV — The Characters](#part-iv--the-characters)
   - [IV.1 Professor Cosmo](#iv1-professor-cosmo)
-  - [IV.2 Mr. Stone — Devon's President](#iv2-mr-stone--devons-president)
-  - [IV.3 Steven Stone](#iv3-steven-stone)
-  - [IV.4 Devon Corporation](#iv4-devon-corporation)
-  - [IV.5 Auren — The Champion](#iv5-auren--the-champion)
-  - [IV.6 The Castaway](#iv6-the-castaway)
-  - [IV.7 The Covert Team Lead](#iv7-the-covert-team-lead)
-  - [IV.8 Mew ☆ δ](#iv8-mew--δ)
-  - [IV.9 Mewtwo](#iv9-mewtwo)
-  - [IV.10 Rayquaza](#iv10-rayquaza)
-  - [IV.11 Starter Pokémon](#iv11-starter-pokémon)
-  - [IV.12 Legendaries & Mythicals — Placement Overview](#iv12-legendaries--mythicals--placement-overview)
+  - [IV.2 Steven Stone](#iv2-steven-stone)
+  - [IV.3 Auren — The Champion](#iv3-auren--the-champion)
+  - [IV.4 The Castaway](#iv4-the-castaway)
+  - [IV.5 The Covert Team Lead](#iv5-the-covert-team-lead)
+  - [IV.6 Mew ☆ δ](#iv6-mew--δ)
+  - [IV.7 Mewtwo](#iv7-mewtwo)
+  - [IV.8 Rayquaza](#iv8-rayquaza)
+  - [IV.9 Devon Corporation](#iv9-devon-corporation)
+  - [IV.10 Mr. Stone](#iv10-mr-stone)
+  - [IV.11 Legendaries & Mythicals — Placement Overview](#iv11-legendaries--mythicals--placement-overview)
 - [Part V — Act Structure](#part-v--act-structure)
   - [V.1 Three-Act Overview](#v1-three-act-overview)
-  - [V.2 Crisis Two — The Crystal Network](#v2-crisis-two--the-crystal-network)
+  - [V.2 Crisis Two — The Solar Event](#v2-crisis-two--the-solar-event)
   - [V.3 Endgame — Resolution](#v3-endgame--resolution)
   - [V.4 The Floating Island](#v4-the-floating-island)
 - [Part VI — Postgame](#part-vi--postgame)
 - [Part VII — The Crichton/Crouch Framework](#part-vii--the-crichtoncrouch-framework)
 - [Part VIII — Thematic Spine](#part-viii--thematic-spine)
+- [Part IX — Systems Within Systems](#part-ix--systems-within-systems)
 - [Open Questions](#open-questions)
 - [Changelog](#changelog)
 
@@ -65,8 +65,12 @@ Every system in the game is complete and self-sufficient on its own terms:
 - Rayquaza's territorial response to the crisis is ecologically correct.
 - Mew's return to Holon is driven by the same ancient instinct that brought it here the first time.
 - Deoxys's Delta formes are a biological organism responding correctly to its environment.
+- Devon's underwater infrastructure follows the region's magnetic lines as a logical engineering decision — unaware those lines are the crystal network.
+- The sun runs its own cycle, indifferent to anything happening on Earth.
 
-None of these systems were designed to account for any of the others. The disaster is not the failure of any one system. It is what happens when several complete, self-sufficient systems interact without any of them knowing the others exist. Each one is whole. Together they produce something none of them intended and none of them can resolve alone. This is why nobody saw it coming. This is why the player — the only character who talks to everyone and moves across all five zones — is the only one who can assemble the full picture. Every other character is inside their own complete system, unable to see what they're part of.
+None of these systems were designed to account for any of the others — and more precisely, none of them can see the level above them. The disaster is not the failure of any one system. It is what happens when systems nested within larger systems each operate correctly at their own scale, blind to what they are part of. The covert team understands the crystal network as infrastructure for speciation. They cannot see that the network is also a planetary antenna. The researchers understand the Tower as a scientific instrument. They cannot see that it is sitting on top of a cosmic stabilizer. The ancient civilization understood Deoxys's ecological function. Their deepest records suggest they glimpsed something larger — but they could not fully read it either.
+
+This is why nobody saw it coming. This is why the player — the only character who talks to everyone and moves across all five zones — is the only one who can assemble the full picture. Every other character is operating correctly inside their own complete system. None of them can see what that system is part of.
 
 The five canonical locations map directly to the five TCG sets and define where the story is anchored. Connective zones (Mountain Zone, Coastal/Port Zone) sit between them in the progression spine but are not TCG-sourced.
 
@@ -77,6 +81,10 @@ The five canonical locations map directly to the five TCG sets and define where 
 The people who lived in Holon before the researchers arrived. They are gone — the TCG offers no explanation for their disappearance, and that silence is preserved here. What they left behind is the evidence of how they understood the place they lived.
 
 **What they knew:** Deoxys crashed in the ancient past. Over centuries its passive radiation produced the first Delta Pokémon and caused crystal formations to grow across the region. The ancient civilization didn't create the Delta phenomenon — they found it, recognized its source, and built an entire culture around stewarding it responsibly. They understood what was buried beneath the power spot. They chose not to disturb it.
+
+Their understanding operated on two layers. The first — ecological — is legible in everything they built: the crystal network managed Delta radiation, contained the phenomenon within the region's borders, and maintained species stability across the landscape. This layer is recoverable by the expedition's researchers given enough time and attention.
+
+The second layer is deeper and less legible. The civilization understood the crystal network as connected to something beyond the region — that the network's reach extended upward, that Deoxys's presence was not only an ecological fact but a cosmic one, and that the protection Deoxys provided was not only for the ecosystems beneath its influence. Their records describing this layer are distributed across the furthest and most hidden sites, written in a framework no modern researcher has a ready translation for. No character in the game fully understands this layer. The player encounters it at Dragon Frontiers and on the Floating Island, late enough that the Castaway's instruments are already confirming what the carvings describe.
 
 **What they built:** Their sites span the entire region — Mirage Forest through Dragon Frontiers — connected by the crystal network they cultivated. Every structure they left reflects the same principle: build around power, not through it.
 
@@ -100,13 +108,15 @@ The people who lived in Holon before the researchers arrived. They are gone — 
 
 A mutation of an extraterrestrial virus. Not a Pokémon in the conventional sense — no evolutionary relatives anywhere on Earth. Can rewrite its own DNA in real time, cycling between four formes. While inactive, takes the form of a triangular stone tablet. The ancient civilization that pre-dated the expedition built around the power spot rather than through it — they knew something was there.
 
+**Deoxys as planetary stabilizer:** A whole, functioning Deoxys naturally regulates the regional magnetic field as a consequence of its own biology — not a choice it makes, simply what it does. The ancient civilization observed across generations that the region was stable when the power spot was undisturbed. They built their stewardship around maintaining that condition without needing to understand the mechanism. What nobody in the expedition understands is that this stabilizing influence extended beyond the regional ecosystem — Deoxys's intact presence was a form of protection at a scale none of the researchers were looking for. Its destabilization by the Tower event removed that protection without anyone knowing it had existed.
+
 **What the TCG cards represent:** Four documented sightings of the same organism at different times, in different formes, at different locations across the region.
 
 **The accident — locked:** Thousands of years ago, Mew came to the crash site. As the genetic ancestor of all Pokémon life on Earth, Mew was drawn to Deoxys — the only life form on the planet with no connection to its genetic tree. First contact between life from Earth and life from space. The ancient civilization witnessed this and recorded it in the diamond carvings found at Mirage Forest and Dragon Frontiers. Then Deoxys went dormant. Mew left. The ancient civilization built their entire stewardship culture around protecting what was buried there.
 
 Mew has returned. Drawn by the same ancient instinct, it has come back to Holon — back to the only thing on Earth it has never been able to understand. Its proximity wakes Deoxys. Deoxys stirs back to life inside a completely different magnetic environment than it went dormant in — the Tower has been broadcasting for years, corrupting the regional magnetic field. The Metal secondary typing on Tower-area Delta Pokémon is the physical proof of this altered field. Deoxys wakes into it and its Delta formes are the direct result — its biology expressing itself through a contaminated magnetic environment it has no framework for. The explosion and Deoxys's escape from beneath the Tower are covered up by Devon.
 
-**Late-game revelation — locked:** The covert team already knew Deoxys was beneath the Tower. Their escalating power tests were not just about the device or searching for Mew — they were deliberate attempts to wake Deoxys. The "experiment gone wrong" narrative the public and most researchers accept was their plan, just not the outcome they intended. Every institutional escalation, every overruling of Cosmo, every seemingly reasonable next step was oriented toward this. The player doesn't know this until late in Act 3.
+**Late-game revelation — locked:** The covert team already knew Deoxys was beneath the Tower. They did not want it woken — an uncontrolled Deoxys is a liability to their network expansion program, not an asset. But their escalating pressure on the Tower's operation, pushing for conditions that served their crystal network seeding agenda, was a contributing factor in the accident's timing. The "experiment gone wrong" narrative the public and most researchers accept is partially true — it did go wrong, just not in the way anyone is saying, and the covert team's institutional pressure was part of what made it happen. The player doesn't know this until late in Act 3.
 
 **The four Delta formes encountered across the game:**
 
@@ -121,8 +131,6 @@ Mew has returned. Drawn by the same ancient instinct, it has come back to Holon 
 
 **[TBD — What the Tower's magnetic field specifically did to Deoxys: how its forme-shifting mechanism was affected, why every forme now presents as Delta.]**
 
-**[TBD — What the escalating catastrophe is: what is getting worse across the game that the player needs to stop, what specifically is about to happen at Dragon Frontiers.]**
-
 ---
 
 ### I.4 The Crystal Network
@@ -135,13 +143,15 @@ The Tower's magnetic field and the crystal network now interact in ways the expe
 
 The crystals are the evidence that someone was here before and understood something the researchers don't. The ancient civilization built a living containment system. The expedition inherited it and treated it as geology.
 
+Devon's underwater infrastructure — the submerged machinery visible at Holon Lake, the pipes and rigs extending toward the Crystal Isles — was built along the region's strongest magnetic lines as a straightforward engineering decision. Those lines are the crystal network's deep pathways. Devon has been threading infrastructure through an ancient system without knowing the system exists. At sufficient scale, a crystal network wired into modern equipment becomes the most sensitive EM detection array in the region. The covert team's expansion program will build that scale — and detect something nobody intended to find.
+
 ---
 
 ## Part II — The World the Player Enters
 
 ### II.1 The Region at a Glance
 
-The Holon Research Tower has been broadcasting for years. Its magnetic field has slowly transformed local Pokémon into Delta Species — a side effect the research team discovered without understanding they caused it. The covert team has been pushing for escalating power output, using better research readings as institutional cover. Cosmo has resisted. Devon's authority overrules him. Each escalation seems reasonable in isolation.
+The Holon Research Tower has been broadcasting for years. Its magnetic field has slowly transformed local Pokémon into Delta Species — a side effect the research team discovered without understanding they caused it. The covert team has been using the expedition's institutional infrastructure to advance their own program — pushing for conditions and access that serve the crystal network expansion agenda while appearing to serve the public mission. Cosmo has resisted certain escalations without fully understanding what they were for. Each decision seemed reasonable in isolation.
 
 Deoxys — dormant beneath the Tower as a stone tablet — is the true ancient source of the Delta phenomenon and the region's power spots. Its crashed meteorite body has been radiating passively for thousands of years, producing the power spots and propagating the crystal network beneath the region. It has been dormant the entire time the Tower has been broadcasting.
 
@@ -237,12 +247,16 @@ The **Holon Circle** — a circular crater containing three tall pink-purple cry
 
 **Narrative function:** Attack δ's territory. The covert team has observed something about how the crystal formations respond to Attack δ's presence — they find it extremely interesting. The Volcano Observatory on the rim of the largest active volcano is the story's observatory throughline, visited three times across the main game, each visit adding to the picture.
 
+The observatory was built on volcanic rock with an unusually low magnetic signature — the crystals here act as natural EM amplifiers, making it the most sensitive observation site in the region. As the covert team's network expansion program grows the crystal infrastructure across the region, the observatory's sensitivity increases with it. By the second visit, the Castaway is tracking a signal he cannot explain — it doesn't match the comet trajectory. By the third visit, the expanded network has resolved it: the secondary signal is solar. A coronal mass ejection of unusual magnitude is incoming. The covert team built the antenna that detected it without knowing either thing was happening.
+
 ---
 
 #### Dragon Frontiers
 *TCG source: EX Dragon Frontiers (Japanese: さいはての攻防 — Offense and Defense of the Furthest Ends)*
 
 Two islands "beyond the horizon": a rocky lower island and a Floating Island above it, encircled by a ring of clouds. The lower island has little plant life and few beaches — rocky coastline, a valley of staggered red sandstone cliffs and pillar formations (Sedona-like), sparse scrub, a pine forest, and a swamp on the bank of an inland body of water. The Floating Island's surface is so high that the atmosphere transitions to a dark, starry outer-space void even in the middle of the day.
+
+This is not an artistic effect. Dragon Frontiers sits at the point of greatest cosmic exposure in the region — where the planetary magnetic shielding is thinnest, where the boundary between atmosphere and space is most directly felt. The ancient civilization understood this. They built their farthest stewardship node here not despite the thinning sky but because of it: this is where the connection between Deoxys's buried presence and what lies beyond the atmosphere is most directly readable. The Holon Legacy and the diamond carvings here carry the civilization's deepest records — the cosmic layer of their knowledge, placed at the one location where what they were describing could be directly observed.
 
 The only known human resident of the lower island is an old hermit. Ancient structures: diamond carvings matching those in Mirage Forest (separated by an ocean), a massive block of unnaturally square-cut stone half-submerged in the sea, and the **Holon Legacy** — a stone circle of three tall standing stones in a triangle around a shorter central stone. The Japanese name translates as *Holon's Holy Site*. The furthest point from Holon that still carries the Holon name.
 
@@ -273,36 +287,36 @@ Holon Village is the player's recurring anchor across the entire game. It does n
 
 **The public mission** — real, legitimate, believed in by most participants including Steven: document the Delta phenomenon, fill the Pokédex, staff research stations across the region. Central to this mission is the development of the device — referenced in TCG card art as *Mr. Stone's Project* — a portable, directed Delta transformation tool. The stated goal is ecological: a technology that could safely induce controlled Delta transformations to restore damaged ecosystems, protect endangered species, and help nature adapt to environments humanity has degraded. Steven believes in this completely. Most of the expedition's researchers do too. The science behind it is genuine.
 
-**The covert program** — authorized by Devon's board without Steven's or Mr. Stone's knowledge: repurpose the same device to extract and weaponize Deoxys's DNA-rewriting mechanism for directed evolution at planetary scale. Their belief: humanity broke the natural world and owes it a debt. Deoxys's ability to rewrite biology in real time is how that debt gets paid — not incrementally, not through consensus, but unilaterally and in secret before anyone else can object. They are not cynical men. They are catastrophically wrong about their right to act on behalf of every living thing that had no say in any of it.
+**The covert program** — authorized by Devon's board without Steven's or Mr. Stone's knowledge: deliberately expand the crystal network at planetary scale to force speciation across all regions. Their belief: humanity broke the natural world and owes it a debt. The crystal network, if seeded and grown beyond Holon's historical boundaries, becomes infrastructure for directed Delta transformation deployed globally — every ecosystem reshaped faster than natural selection could manage, on Devon's board's timeline, without consent from anyone. They are not cynical men. They are catastrophically wrong about their right to act on behalf of every living thing that had no say in any of it.
 
-The covert team has been running experiments on living Pokémon to make the mechanism measurable. Mewtwo — the closest thing in existence to a biological system built around genetic rewriting — is their primary subject. By the time the player reaches Holon Lake, Mewtwo has already been taken. It is not an encounter. It is an absence.
+Deoxys is a liability to this plan, not an asset — an unpredictable organism at the network's origin point whose behavior the covert team cannot model or control. The device is their primary instrument for network expansion. Mewtwo — the closest thing in existence to a biological system built around genetic rewriting — is their primary research subject for understanding directed transformation at the biological level. By the time the player reaches Holon Lake, Mewtwo has already been taken. It is not an encounter. It is an absence.
 
 ---
 
 ### III.2 The Device
 
-*Mr. Stone's Project* — built by Devon's research team as the public mission's central deliverable: a portable, directed Delta transformation tool for ecological restoration. The covert team has been quietly redirecting its development toward extraction of Deoxys's rewriting mechanism instead. Most researchers building it don't know this.
+*Mr. Stone's Project* — built by Devon's research team as the public mission's central deliverable: a portable, directed Delta transformation tool for ecological restoration. In practice, the covert team has been developing it as the instrument of their network expansion program — a tuned EM broadcaster/receiver built on the same research lineage as the Tower itself, designed to lock onto the crystal network's frequency signature and broadcast through its nodes to seed, amplify, and direct Delta transformation at scale. The covert team lead carries it to Dragon Frontiers to interface with the network at its deepest and oldest node — the final stage of the expansion plan.
 
-Late in Act 2 / early Act 3, the player and allies discover the device's true dual purpose and determine they need to steal and modify it. Modified correctly, it becomes a stabilization tool — the same object, the opposite intent. A device built to reshape life used instead to stop an uncontrolled reshaping.
+Most researchers building it don't know its true purpose. It is presented internally as the ecological restoration tool the public mission describes.
 
-This leads to a break-in sequence at the covert team's headquarters. The player fights through it. The covert team lead flees to Dragon Frontiers with the device, intending to use it on Deoxys before the player can intervene.
+The player confronts the covert team lead at Dragon Frontiers, stops the expansion plan, and takes the device. Cosmo then modifies it — changing its target frequency from the crystal network to Deoxys directly. The device already speaks the electromagnetic language the Tower speaks, which is the same language Deoxys responds to. The modification is a repurposing, not a reinvention. This is Cosmo's defining moment: everything he knows about the Tower's original research purpose and Deoxys's biology converges in a single technical act. A device built to force transformation on living systems without their knowledge becomes the instrument that restores the one organism the planet needs whole.
 
 ---
 
 ### III.3 The Delta Biology — Zone by Zone
 
-The progression of the Delta mutation across the five zones correlates directly to distance from the Holon Research Tower, complicated by the crystal network and each Deoxys fragment's sustained presence.
+The progression of the Delta mutation across the five zones correlates directly to distance from the Holon Research Tower, complicated by the crystal network and each Deoxys Delta forme's sustained presence.
 
 | Zone | Delta Saturation | Metal Secondary | Primary Cause |
 |---|---|---|---|
 | Holon Village | 50% of families | 100% of Delta | Tower EM broadcast (direct) |
-| Holon Lake | 96% of families | 39% of Delta | Tower + crystal network + fragment (anomalous) |
+| Holon Lake | 96% of families | 39% of Delta | Tower + crystal network + Delta forme (anomalous) |
 | Crystal Isles | 26% of families | 40% of Delta (late-onset only) | Crystal network amplification |
 | Dragon Frontiers | 100% of families | 0% | Speed δ sustained presence; natural speciation |
 
-**Tower-fingerprint rule:** The Metal secondary type is the Tower's specific signature. It appears wherever the Tower's broadcast is the primary cause and fades as the crystal network or fragment influence takes over. Dragon Frontiers, furthest from the Tower and longest under fragment influence, carries none of it. The transformation there is not Tower-caused Delta — it is something closer to genuine biological divergence.
+**Tower-fingerprint rule:** The Metal secondary type is the Tower's specific signature. It appears wherever the Tower's broadcast is the primary cause and fades as the crystal network or Delta forme influence takes over. Dragon Frontiers, furthest from the Tower and longest under Delta forme influence, carries none of it. The transformation there is not Tower-caused Delta — it is something closer to genuine biological divergence.
 
-**Fragment-imposed vs. organism-adapted:** Tower-caused Delta is stable — a change in the environment that organisms have adapted to. Fragment-caused Delta is self-amplifying and reflects the fragment's behavioral extreme on the surrounding ecosystem. Each fragment imposes its locked behavioral state on the life around it. The game's sharpest argument against Devon's board is this distinction: adaptation driven by an organism is life finding a way; transformation imposed by external trauma is something else entirely.
+**Tower-imposed vs. organism-adapted:** Tower-caused Delta is stable — a change in the environment that organisms have adapted to over years of continuous broadcast. Delta caused by a Deoxys forme's sustained presence reflects that forme's behavioral state on the surrounding ecosystem — the environment reorganizing around an external force rather than adapting to it. The game's sharpest argument against Devon's board is this distinction: adaptation driven by an organism is life finding a way; transformation imposed by an external source is something else entirely.
 
 ---
 
@@ -312,117 +326,82 @@ The progression of the Delta mutation across the five zones correlates directly 
 
 Senior Devon researcher. The player's direct superior. Quietly skeptical of the covert team's agenda; trusts the science but not the leadership. Has spent his career documenting the ancient civilization's sites without grasping what they were actually built to do. This is not incompetence — it is the precise failure his expertise produces. He is the story's most complete illustration of the expertise-as-blind-spot principle. He has the most information and the least ability to assemble it into a picture that threatens the institution he works inside.
 
----
-
-### IV.2 Mr. Stone — Devon's President
-
-Devon Corporation's president and Steven's father. Appears on a card in EX Holon Phantoms alongside Professor Cosmo, establishing his direct involvement with the Holon expedition at the institutional level. He also appears on Dragon Frontiers cards — the furthest point from Holon — suggesting Devon's reach into the region extends to its edges.
-
-He is not a cynical figure. He built something large and trusted the people around him to run it responsibly. Devon's fossil restoration program — among the company's most visible public work — reflects his genuine belief that science can and should repair what time has erased. That belief, scaled up, is also the philosophical foundation for everything Devon's board is attempting without his full knowledge.
-
-His direct awareness of the covert program's scope is limited. Devon's board operates with a degree of autonomy he has long permitted, believing in their judgment. The distance between what he believes Devon is doing in Holon and what Devon's board has actually authorized is the gap his son Steven is crossing, in real time, across the events of the game.
-
-Mr. Stone's Project — the device — was sanctioned by him as the expedition's central public deliverable: a portable Delta transformation tool for ecological restoration. That it has been redirected toward something else is not something he knows.
-
-Whether he learns what was done in Devon's name — and what he does about it — is [TBD].
+His defining moment is the modification of the device at Dragon Frontiers. Everything he knows — the Tower's original research purpose, Deoxys's biology, the crystal network's frequency — converges in a single technical act that no other character in the game could perform.
 
 ---
 
-### IV.3 Steven Stone
+### IV.2 Steven Stone
 
-Steven Stone is the son of Mr. Stone, Devon Corporation's president — and the person who personally recruited the player to the Holon expedition. He is a hands-on geologist and collector, not a corporate figure, and his presence in Holon is his own initiative rather than his father's directive. The Delta phenomenon is the most significant geological and biological discovery Devon has ever been adjacent to, and Steven came because he couldn't stay away from it.
+Son of Devon's president, Mr. Stone. A genuine believer in the ecological mission. Recruited the player personally. Utterly unaware of the covert program authorized by his father's board. When confronted with evidence at Holon Lake, he begins investigating his own organization rather than defending it — this is the most important thing about him. His arc is not a fall from grace; it is the story of someone discovering that good intentions do not guarantee good outcomes, and that loyalty to an institution is not the same as loyalty to what the institution is supposed to stand for.
 
-His relationship to Devon is genuine but complicated. He grew up inside the company, believes in what his father has built, and sees the expedition's public mission — documenting Delta, helping ecosystems, advancing the science — as something worth doing. He is not his father's representative in Holon. He is here on his own terms. But he carries Devon's name, has Devon's resources, and has been vouching for Devon's people throughout — which means he is implicated in what Devon's board authorized, even though he didn't know about it.
-
-The covert program is unknown to him. Devon's board established it through a channel that bypasses both his oversight and his father's direct knowledge — the board operates with a degree of autonomy that Mr. Stone has allowed, believing in their judgment. Steven discovers its existence the same way the player does: through accumulating evidence that cannot be explained any other way. The organization he has defended, in his father's name, has been running experiments on living Pokémon in secret, without consent, toward an end nobody told him was the real one.
-
-What makes his position genuinely tragic is that he is caught between two loyalties that cannot both survive what he finds out. His father's company. And what he knows is right.
-
-He appears at key moments throughout the game — never traveling with the player, always having arrived somewhere first or turning up unexpectedly at a significant location. Each appearance reframes something the player has already seen. He shares observations without stating conclusions. He is the one who identifies what the Holon Ruins actually are. He is the one who locates the Regi chambers and leaves the decision of opening them to the player. By the endgame he understands more about what caused the accident than anyone — not because he was told, but because he read the physical evidence that everyone else dismissed as noise.
-
-What he does when he understands the full scope of what was authorized in Devon's name — and what it costs him — is [TBD].
+His final scene is [TBD], but what is locked: Steven has to reckon with what was done in his family's company's name without his knowledge, and the reckoning is not clean.
 
 ---
 
-### IV.4 Devon Corporation
+### IV.3 Auren — The Champion
 
-The institutional backer and owner of the entire Holon expedition. Mr. Stone and Professor Cosmo both appear on cards in EX Holon Phantoms, establishing Devon's involvement in canon. Devon has the resources, technology, and scientific expertise to mount an expedition of this scale — the permanent settlement with infrastructure, agriculture, and communication back to the outside world that the trainer cards document (Holon Mentor, Holon Farmer, Holon Transceiver) reflects a well-funded, long-term operation rather than a hasty field survey.
-
-Devon's involvement in the region predates the Holon expedition itself. Devon has a long-standing program funding the restoration and study of fossil Pokémon — a program canonically associated with the company and one that has been operating at Fossil Village for years before the player arrives. This is Devon's most visible public-facing work: bringing back what was lost, restoring species that time had erased, demonstrating that science can reverse extinction. It is also, in Devon's board's internal logic, the proof of concept for everything larger they intend to do. If you can restore what was lost to deep time, the argument that you can direct what comes next does not seem so radical.
-
-Devon is not simply a backer. The research organization the player joins — and the expedition they are part of — is Devon's organization. Devon funds it, staffs it, and sets its agenda. The public mission — documenting the Delta phenomenon, filling the regional Pokédex, completing the research stations — is real and the researchers genuinely pursue it. But Devon's board has a purpose the public mission serves as cover for. See §III.1 for the full structure.
-
-Devon's board is not made up of cynical profiteers. They are people who looked at what humanity has done to the natural world — the extinctions, the habitat collapse, the climate destabilization — and concluded that the species responsible cannot simply wait for nature to absorb the damage. Natural selection is not too slow in the abstract. It is too slow given what humans specifically did to the conditions it operates in. In their framing, directed evolution is not exploitation. It is restitution: the most capable people on Earth using the most powerful tool ever discovered to repair what human civilization broke. The secrecy is not shame. It is strategic — if the world knew what Devon was attempting before the outcome was secured, the ability to act would be lost to politics and committees and the same institutional inertia that failed to prevent the damage in the first place. In their minds, the stakes are too high for the world to be consulted before the decision is made.
-
-Devon is not present in Holon. They are remote, institutional, and certain. By Act 3 there is credible reason to believe Devon's board has already determined that the Holon operation — and everyone in it — has served its purpose and become a liability. The covert team's lead either doesn't know this or won't admit it.
-
-**The buried evidence:** The clearest piece of evidence is Auren's original power spot assessment — a geological survey she submitted to Devon years before the settlement was built, which identified an anomalous buried formation at the future Tower site and explicitly recommended the area be left undisturbed. Devon shelved it and funded the Tower to be built directly above the anomaly they had been warned about. That document exists. The player can find it. It is not the only thing Devon buried, but it is the one that makes the full shape of their decision-making legible: Devon does not let inconvenient conclusions interfere with what they have decided to do.
+Devon's original survey lead for the Holon expedition. Knew from the start what was under the surface. Walked away. Now holds the Holon Champion title. The full significance of what Auren knew and when they knew it, and why they chose to stay in Holon rather than leave entirely, is the question the player slowly answers across the game.
 
 ---
 
-### IV.5 Auren — The Champion
+### IV.4 The Castaway
 
-Auren arrived in Holon years before the research settlement existed — one of Devon Corporation's original survey leads, contracted to assess the region's geological and ecological potential before the expedition was formally approved. She delivered her report. Devon wanted more. She disagreed with the direction they were taking and walked away from the contract before anyone else arrived.
+A researcher stationed at the Volcano Observatory on Crystal Isles. Has been watching the disaster scale up since before anyone else knew to watch. The Castaway is the person who has been keeping records nobody else knew to keep.
 
-She never left Holon.
-
-She has been here since before the Tower was built, before the researchers moved in, before the accident. She knows this region not as a phenomenon to study but as a place she has lived in — its routes, its biomes, its Pokémon, the way the Delta mutations changed things progressively as each zone shifted under the Tower's magnetic field. She watched the Delta Pokémon transform and trained the ones that would have her. Her team is built entirely of Delta Species sourced from across Holon's five zones — each one a partner she found before most researchers even understood what they were looking at.
-
-She holds the Champion seat at the Pokémon League. She didn't take it by political process. She took it by beating everyone who came before her and no one has beaten her since. She has no particular interest in the research team's politics or Devon's ambitions. She respects the work. She doesn't consider it her fight.
-
-Her team reflects the full span of Holon's Delta ecosystem — from the Tower-caused Metal mutations of the mainland to the natural, clean Delta forms of Dragon Frontiers. Her signature is **Salamence δ** — Water-type, Dragon Frontiers. An apex predator of the most remote zone in the region, raised from a Bagon she found in the swamp before anyone else had charted the island. It is the most purely natural Delta Pokémon in the game, born into a changed world rather than altered by one, and the clearest expression of Auren's philosophy: the phenomenon isn't a crisis. It's what this region is now.
-
-Her history with Devon Corporation is not something she discusses. What she disagreed about and when — the archaeological records, the power spot assessment she submitted that Devon's board quietly shelved — is background texture for the player to uncover if they look for it. It is not a plot. It is context.
-
-The player battles Auren as the final League challenge, after defeating the eight station chiefs. She is not involved in the ending sequence — that is not her role. She is the Champion, and beating her is proof the player belongs in this region as much as anyone.
+**The observatory throughline across the main game:**
+- *First visit* — the observatory is locked. The Castaway is outside. He tells the player the accident sent a signal into space. He chose to stay because his instruments showed something nobody at Holon came to collect.
+- *Second visit* — unlocked with an access code recovered mid-game. The logbooks show the outward pulse and a return signal growing stronger — consistent with a comet on approach. But a secondary signal is also present and growing, one that doesn't match the comet's trajectory. The Castaway cannot explain the discrepancy.
+- *Third visit* — the covert team's expanded network has dramatically increased the observatory's sensitivity. The secondary signal resolves: it is solar. A coronal mass ejection of unusual magnitude is incoming. The Castaway's data is now unambiguous. The Castaway transmits it before the climax.
 
 ---
 
-### IV.6 The Castaway
+### IV.5 The Covert Team Lead
 
-A researcher stationed at the Volcano Observatory on Crystal Isles. Has been watching the disaster scale up since before anyone else knew to watch. The Volcano Observatory throughline visits the Castaway three times across the main game, each visit adding to the picture. Their final data — transmitted before the game's climax — is unambiguous. The Castaway is the person who has been keeping records nobody else knew to keep.
-
----
-
-### IV.7 The Covert Team Lead
-
-Runs Devon's covert program under institutional cover. Flees to Dragon Frontiers with the device when the operation is exposed. The personal drive behind their commitment to the covert agenda is [TBD]. Identity and name are [TBD]. What is locked: they are not a villain in the conventional sense. Their diagnosis of the natural world — humanity has broken enormous things — is correct. Their conviction that unilateral action is the only remaining option is the catastrophic error.
+Runs Devon's covert program under institutional cover. Flees to Dragon Frontiers with the device when the operation is exposed — Dragon Frontiers is the target, the oldest and deepest node of the crystal network, the intended final stage of the expansion plan. The personal drive behind their commitment to the covert agenda is [TBD]. Identity and name are [TBD]. What is locked: they are not a villain in the conventional sense. Their diagnosis of the natural world — humanity has broken enormous things — is correct. Their conviction that unilateral action is the only remaining option is the catastrophic error. They do not know, when the player confronts them, that the network they built to reshape the world has been reading a solar signal that changes every calculation they made.
 
 ---
 
-### IV.8 Mew ☆ δ
+### IV.6 Mew ☆ δ
 
 Permanently transformed by the accident — Mew's proximity to Deoxys when it woke produced a Delta transformation that did not revert. Mew ☆ δ is the physical proof that the accident changed everything, including the organism that caused it. Moves ahead of the spread. Found at Dragon Frontiers, naturally mutated as a Water-type Delta Species — the researchers came to Mirage Forest to find Mew and find it at the furthest possible point from where they started.
 
 ---
 
-### IV.9 Mewtwo
+### IV.7 Mewtwo
 
 Captured and experimented on by the covert team at Holon Lake. The closest thing in existence to a biological system built around genetic rewriting — which is why the covert team selected it. The player does not encounter Mewtwo in Holon Lake. They encounter its absence. Recovering Mewtwo and confronting what was done to it is the Holon Lake arc's central thread and the moment the covert operation becomes impossible to explain away.
 
 ---
 
-### IV.10 Rayquaza
+### IV.8 Rayquaza
 
-Territorial guardian destabilised by the crisis. Rayquaza's aggression across the game is ecologically appropriate — it is responding correctly to the largest biological disruption the region has experienced. The player's relationship with Rayquaza, built across the whole game, becomes an alliance at Dragon Frontiers. The exact mechanism of this shift is [TBD], but what is locked: Rayquaza is not an enemy. It has never been doing anything wrong.
-
----
-
-### IV.11 Starter Pokémon
-
-Three Delta Pokémon given to the player by Professor Cosmo at Entrance Town, framed as local field research partners. Each represents a distinct vector of the Delta phenomenon and a different zone of the region.
-
-| Starter | Type | Evolution | Notes |
-|---|---|---|---|
-| Dratini δ | Grass | → Dragonair δ (Grass/Dragon) → Dragonite δ (Grass/Dragon) | Distinct from the Electric Dratini line found wild near Holon Village. The Grass typing originates in Mirage Forest's deep biome — an older mutation sourced from proximity to the power spot rather than the Tower's magnetic field. Professor Cosmo has studied this line longer than any other. |
-| Bagon δ | Water | → Shelgon δ (Water) → Salamence δ (Water/Fire) | The natural Delta form endemic to Dragon Frontiers, transformed by Speed δ's sustained presence rather than Tower magnetic field. Cosmo obtained specimens before the accident sealed off easy island access. Auren raised her own Salamence δ from a Bagon found in the Dragon Frontiers Swamp; the player's starter and the Champion's signature share an origin. |
-| Ralts δ | Fire | → Kirlia δ (Fire/Fairy) → Gardevoir δ (Fire/Fairy) | Distinct from the Psychic/Steel Ralts found near Holon Village (Tower-caused). The Fire/Fairy typing suggests a fragment-caused origin rather than Tower magnetic field — closer in character to the Delta Species of the southern zones. This mutation should not exist this far north if the phenomenon propagated the way the researchers originally believed. |
-
-These are the player's first direct encounter with what Delta Species actually are — three different causes, three different zones, provided before the researcher community has fully understood what they're looking at. Professor Cosmo frames them as field research partners. What he already knows about their origins is more than he shares.
+Territorial guardian destabilised by the crisis. Rayquaza's aggression across the game is ecologically appropriate — it is responding correctly to the largest biological disruption the region has experienced. The player's relationship with Rayquaza, built across the whole game, becomes an alliance at Dragon Frontiers. The exact mechanism of this shift is [TBD], but what is locked: Rayquaza is not an enemy. It has never been doing anything wrong. At the climax, the alliance with Rayquaza is part of how Deoxys — restored via the modified device — reaches the edge of the atmosphere. Rayquaza's territory extends to the boundary of space. That boundary is where Deoxys needs to be.
 
 ---
 
-### IV.12 Legendaries & Mythicals — Placement Overview
+### IV.9 Devon Corporation
+
+The institutional backer and owner of the entire Holon expedition. Not a corrupt company — a company whose board convinced itself that the stakes were too high for the normal rules to apply. Devon's public face is genuine: fossil restoration, ecological science, the development of tools to help nature recover from damage humanity caused. The researchers who believe in this mission are not wrong to believe in it. The science is real.
+
+Devon's board holds a longer and darker view. They have watched ecosystems collapse for decades — accelerating extinction, habitat destruction, failing food chains — and concluded that waiting for political consensus is the same as not acting at all. In their framing, the species that broke the natural order owes it a debt, and Deoxys's biology represents the instrument that could pay it: directed transformation at planetary scale, deployed before anyone can object. The secrecy is not shame. It is strategy. They are not cynical men. They are certain ones, which is more dangerous.
+
+The covert program runs through a channel that bypasses both Mr. Stone's direct oversight and Steven's knowledge. Devon's board authorized this autonomy long ago, and Mr. Stone trusted their judgment. That trust is the structural crack everything falls through.
+
+Devon is never physically present in Holon. They are remote, institutional, and certain. By Act 3 there is credible reason to believe Devon's board has already determined that the Holon operation has served its purpose and become a liability. The covert team lead either doesn't know this or won't admit it.
+
+---
+
+### IV.10 Mr. Stone
+
+Devon's president. Steven's father. Appears on Dragon Frontiers cards — physically present at the furthest point from Holon at the end of the arc. That presence is not explained in the TCG and is not explained cleanly in the game. He is there. What he knows by the time he arrives is a question the game holds rather than answers directly.
+
+Mr. Stone is not the architect of the covert program. He authorized the board's autonomy that made it possible — a degree of institutional trust he extended over years, believing in their judgment, not asking the questions that would have told him what they were doing with it. The distance between what he believes Devon is doing in Holon and what his board actually authorized is the gap his son Steven is crossing in real time. Steven's arc is partly the story of a son discovering that his father's company contains something his father doesn't know about — and reckoning with what that means for both of them.
+
+Whether Mr. Stone learns the full scope of what was authorized in his name, and what he does with that knowledge, is [TBD]. What is locked: he is not absolved by ignorance, and he knows it.
+
+---
+
+### IV.11 Legendaries & Mythicals — Placement Overview
 
 | Legendary | Forme | Location | Notes |
 |---|---|---|---|
@@ -480,49 +459,54 @@ The player follows. **Speed δ** is here — the one that ran furthest, the last
 
 Rayquaza's arc reaches its climax. The player's relationship with Rayquaza, built across the whole game, becomes an alliance. **[TBD — exact mechanism.]**
 
-The covert team lead is confronted. The player defeats them and takes the device.
+The covert team lead is confronted at Dragon Frontiers — the intended final stage of the network expansion plan. The player defeats them and takes the device. Cosmo modifies it on the spot: target frequency changed from the crystal network to Deoxys.
 
 **[TBD — Exact climax sequence: how the player uses the modified device on Deoxys, what the battle sequence looks like, how Deoxys becomes catchable.]**
 
-**What the player knows by the end of Act 3:** Everything about Deoxys and the covert team. The accident, the experiments, what was done to Mewtwo, the covert team's true agenda. The full picture — or what feels like the full picture.
+**What the player knows by the end of Act 3:** Everything about Deoxys and the covert team. The accident, the experiments, what was done to Mewtwo, the covert team's true agenda. The Castaway's data. The solar event incoming. The full picture — and this time it actually is the full picture.
 
 ---
 
-### V.2 Crisis Two — The Crystal Network
+### V.2 Crisis Two — The Solar Event
 
-The player resolves the Deoxys crisis and believes the story is over. It isn't.
+The player resolves the Deoxys crisis and believes the story is over. The Castaway's data says otherwise.
 
-Something the player has been observing all game — accelerating Delta spread, crystal formations behaving strangely, ecological anomalies that didn't fit the Deoxys explanation — snaps into focus. The crystal network, naturally grown from Deoxys's passive radiation over thousands of years and stewardship-managed by the ancient civilization until they disappeared, has been expanding beyond its historical boundaries. Deoxys waking was a catalyst. The Tower's interaction with the network was a catalyst. But the growth was already happening before either of those things, and it has now passed a threshold.
+The Volcano Observatory — made dramatically more sensitive by the covert team's expanded crystal network — has resolved a secondary signal that has been building across all three visits. It is not the comet. It is the sun. A coronal mass ejection of unusual magnitude is incoming, large enough to overwhelm planetary magnetic shielding. The region — and potentially far beyond it — is exposed.
 
-Delta is beginning to propagate beyond the Holon region. If the network continues expanding unchecked it will reach other regions and transform ecosystems that have no relationship to Holon, no ancient stewardship infrastructure, and no preparation for what that means.
+The irony is precise: the covert team's expansion program, built to reshape ecosystems without consent, inadvertently constructed the most sensitive EM detection array in the region. The instrument that detected the crisis was built by the people whose actions created the vulnerability for it. They do not know this. Nobody does, yet.
 
-This is the crisis nobody modeled because nobody knew the crystal network was a contained system in the first place. The ancient civilization knew. They built their sites at the key nodes specifically to manage this. Their sites are still there. Their knowledge is not.
+**What the player thought was the whole story was one part of something larger.** Deoxys was real. The covert team was real. The solar event was running its own cycle underneath all of it, indifferent to everything happening in Holon.
 
-**What the player thought was the whole story was one part of something larger.** Deoxys was real. The covert team was real. The crystal network was running underneath all of it the entire time.
+**What makes Deoxys necessary:** A whole, functioning Deoxys naturally extends the regional magnetic field as a consequence of its own complete biology. The ancient civilization observed this across generations and built their stewardship around it. Deoxys destabilized — cycling through uncontrolled Delta formes, unable to regulate its own output — is a gap in planetary shielding at the point of greatest cosmic exposure. Restored, it can do what it has always done. The ancient civilization's cosmic records, placed at Dragon Frontiers where the sky goes thin, describe exactly this — in a framework no modern researcher has fully translated, but which the Castaway's instruments are now confirming in real time.
 
-**[TBD — Why the network is accelerating now.]**
-**[TBD — How the player resolves the crystal network crisis. What role Mew ☆ δ plays, if any.]**
+**[TBD — Exact mechanism of how Deoxys shields the planet. What the player and Deoxys do together at the edge of the atmosphere.]**
 
 ---
 
 ### V.3 Endgame — Resolution
 
-**[TBD — Exact resolution of both crises.]**
+Everything converges at Dragon Frontiers simultaneously. The player stops the covert team lead's network expansion plan and takes the device. Cosmo modifies it — repurposing the covert team's instrument of forced transformation into a tool of restoration. Deoxys is restored via the modified device. The Rayquaza alliance, earned across the whole game, enables Deoxys to reach the edge of the atmosphere — Rayquaza's territory extends to the boundary of space, and that boundary is where Deoxys needs to be. Deoxys shields the planet from the incoming solar event.
+
+The ancient civilization's records, the Castaway's instruments, and the player's journey across all five zones point at the same moment. The surface crisis and the planetary crisis resolve together.
 
 **What is locked:**
 - The region's Delta Pokémon do not revert. The transformation is permanent.
-- The Deoxys crisis is resolved at Dragon Frontiers. Deoxys becomes catchable.
+- Deoxys is restored at Dragon Frontiers. Deoxys becomes catchable.
 - The covert operation is exposed.
-- The crystal network crisis is the second and larger catastrophe, revealed after Dragon Frontiers.
-- The network's expansion is stopped or contained — but the cause is not fully understood. The conditions remain.
+- The solar event is survived because Deoxys is restored in time.
+- The covert team's network expansion is stopped — but the nodes they seeded outside Holon's historical boundaries remain. The Delta spread they caused is permanent. The tool of exploitation became the instrument of salvation. Nobody gets to be simply right or simply wrong.
 - Steven has to reckon with what was done in his organization's name without his knowledge.
 - The ending is not clean. Devon's board faces no visible consequence within the game's timeframe. Some researchers remain convinced they were right and only the method was wrong.
+
+**[TBD — Exact climax sequence: what the player and Deoxys do together at the edge of the atmosphere. What the visual of Deoxys shielding the planet looks like.]**
+
+**[TBD — Steven's final scene.]**
 
 ---
 
 ### V.4 The Floating Island
 
-The Floating Island above Dragon Frontiers is where the climax sequence begins. Its surface is entirely undefined in the TCG — what is up there is for the game to define. It becomes fully accessible in the postgame, where the ancient civilization's presence at the absolute edge of the known world is revealed.
+The Floating Island above Dragon Frontiers sits above the lower island where the climax sequence takes place. Its surface is entirely undefined in the TCG. During the main story its lower reaches are accessible — the ancient civilization's cosmic records are here, at the highest point of the known world, where the sky is already transitioning to space. This is where the civilization's deepest knowledge was placed, at maximum cosmic exposure, where what they were describing could be directly observed. The surface opens fully in the postgame, where the full extent of what the ancient civilization understood and left behind is revealed.
 
 ---
 
@@ -532,40 +516,12 @@ The player completes the Pokémon League and defeats Auren as Champion. The regi
 
 **Primary postgame content:**
 
-- **Jirachi δ (Dark/Fire) — Jirachi Doombringer**
-
-  Jirachi's dormancy cycle was already stirring when the outward pulse reached it in deep space. The pulse mimicked the comet's trigger frequency closely enough to begin the awakening, but the Delta radiation saturating it reached Jirachi before it had fully oriented — transforming it in transit, mid-cycle, before it understood where it was or what was happening. It arrived in Holon already changed, having woken wrong.
-
-  Jirachi δ is not a corrupted or broken Jirachi. It is a fundamental transformation of its nature — wish-granting replaced entirely by disaster and doom. A comet has always carried two faces: shooting star for a wish, vehicle for destruction. The Delta radiation woke the doom side. Its presence on the Crystal Isles has been causing volcanic eruptions, destabilising the island's crystals, and driving Pokémon from the volcano area. It is dormant inside the caldera, drawn to the Holon Circle crystals as the closest frequency in the region to what its comet should have felt like.
-
-  **Type:** Dark / Fire. **Visual:** Charcoal and ember-red replacing gold and white. Star points jagged like cracked volcanic rock with heat visible underneath. The three body dots glowing molten orange. The wish tags burnt black and curled at the edges. The crystals in the caldera chamber around it have gone dark red from the heat.
-
-  **Mission:** A classic legendary dungeon mission. The volcano's eruption activity has opened new passages into the caldera. The dungeon is the volcano interior. The final chamber is the Holon Circle at the caldera base. **Quest giver:** The Castaway.
+- **Jirachi δ (Dark/Fire)** — Woken by the outward pulse; locked inside the Unnamed Island volcano. Primary postgame mission. Quest giver TBD.
 - **The Floating Island surface** — Now fully accessible; what the ancient civilization left at the absolute edge of the world.
 - **Mew ☆ δ mission** — Follow the ecological trail Mew left across all five zones after the resolution. Final encounter in Mirage Forest, where the story began.
 - **Regi Chambers** — Mirage Forest ruins; Steven has left notes.
 - **Rayquaza δ, Latias δ + Latios δ** — Postgame legendary encounters; placements TBD.
-- **Shadow Lugia δ / XD001 — XD: Gale of Darkness**
-
-  Lugia δ departs from the established pattern for space-origin Delta legendaries. It did not arrive transformed by Delta radiation in transit and settle into the region's ecology. By the time Lugia reached Holon's waters, the covert team had already intercepted it.
-
-  The covert team, in the months between the accident and their exposure, had been developing an experimental process based on prior research into Shadow Pokémon methodology: artificially driving a Pokémon's Delta transformation to an extreme by severing its emotional connection — forcing it into a permanently closed behavioral state that maximised certain outputs while eliminating others entirely. Their experimental logs refer to it as "sealed core" research. They had tested components of the process on smaller Pokémon across several zones. They never had a subject large enough to prove the concept. Lugia was large enough.
-
-  What arrived in Holon's waters was a Lugia already changed by the transit radiation. What the covert team made from it is something else. The researchers in Holon working from a distance call it Lugia δ. Auren, who encountered it once in coastal waters and has not forgotten the experience, calls it what it is.
-
-  **Type:** Dark / Flying. **Visual:** XD001's coloration — obsidian where Lugia is white, wing spines extended and asymmetrical, glowing an unstable violet-red at the edges. Its eyes do not track normally. Its wingbeats produce no sound. It moves over the water at a scale and speed that registers as wrong before the mind processes what it is seeing. The Delta mutation runs deeper here than anywhere else in the game, driven past transformation into something that closed.
-
-  Shadow Lugia δ drifts through the region's coastal waters without pattern. The sealed core process removed its orientation along with its connection. It is not hunting, not fleeing, not resting. The Castaway's instruments detect its EM signature intermittently. Coastal NPCs report sightings that don't match anything in the research team's documentation. Auren has one account and is not eager to discuss it.
-
-  **The player must:**
-  1. **Recover the covert team's experimental research** — scattered field station logs across the five zones, abandoned after the covert team's exposure, incomplete by design. Enough to reconstruct what was done. The research references Shadow Pokémon methodology explicitly. The covert team knew what Cipher had built. They considered it a starting point.
-  2. **Track Shadow Lugia δ through the region** — a multi-zone survey: the Castaway's readings, sighting accounts from the Coastal Zone, unusual water-surface phenomena near Dragon Frontiers. Each data point narrows the location.
-  3. **Find the counter-process** — Auren knows what counteracts the covert team's sealed core method. It comes from the same buried research Devon shelved when they received her original power spot assessment. She pulls it from her own records. She does not explain how she has it. She gives it to the player.
-  4. **The final encounter** takes place on open water off Dragon Frontiers — the Floating Island above, the lower island behind, nothing else visible. Shadow Lugia δ is encountered drifting on the surface. The player battles it in its sealed state. The purification follows the battle.
-
-  The purification is not clean and it is not instant. What stabilises is a Lugia δ still carrying the mark of what was done to it — the dark coloration doesn't fully reverse — but oriented again. Its heart is open. The player has the opportunity to catch it.
-
-  **Quest giver:** Auren. **Role:** The emotional throughline is accountability — the cost of what the covert team left behind and what it takes to undo it. Auren's involvement is the mission's conscience. She knows exactly how this happened. She helped prevent it happening the first time, and Devon made sure that didn't matter.
+- **Shadow Lugia δ / XD001** — Major postgame mission.
 - **Groudon ☆ and Kyogre ☆** — Deep wilderness around Holon; non-Delta; drawn by the magnetic field disruption.
 - **Mewtwo δ** — Holon Lake; still present; catchable postgame.
 - **The Satellite Islets** — Secrets not accessible during the main story.
@@ -576,11 +532,11 @@ The player completes the Pokémon League and defeats Auren as Champion. The regi
 
 The story operates in the tradition of Michael Crichton and Blake Crouch — not as stylistic homage but as a structural commitment. What that means in practice:
 
-**The disaster is never caused by evil.** Every person in this story is operating from a coherent, internally justified position. The covert team's diagnosis of the natural world is correct — humanity has broken enormous things. Devon's board genuinely believes unilateral action is the only option left. Cosmo genuinely believes in the expedition's science. Steven genuinely believes in his organization. Rayquaza's aggression is ecologically appropriate. None of them are villains. The catastrophe is the collision of their separate coherent systems.
+**The disaster is never caused by evil.** Every person in this story is operating from a coherent, internally justified position. The covert team's diagnosis of the natural world is correct — humanity has broken enormous things. Devon's board genuinely believes unilateral action is the only option left. Cosmo genuinely believes in the expedition's science. Steven genuinely believes in his organization. Rayquaza's aggression is ecologically appropriate. None of them are villains. The catastrophe is not a collision — it is a consequence of every system operating correctly at its own scale while remaining blind to the scale above it.
 
-**The warning signs are always present.** The Metal typing on Tower-area Delta is evidence of a corrupted magnetic field — visible to anyone who knew what to look for. The ancient civilization's stewardship sites are evidence that someone understood what was buried there. The anomalous Delta behavior at Holon Lake is evidence that something other than the Tower is causing it. The covert team's escalating power tests are evidence of an agenda beyond the stated mission. Every piece of the picture is in the world. The player assembles it at the same rate it becomes too late to use cleanly.
+**The warning signs are always present.** The Metal typing on Tower-area Delta is evidence of a corrupted magnetic field — visible to anyone who knew what to look for. The ancient civilization's stewardship sites are evidence that someone understood what was buried there. The anomalous Delta behavior at Holon Lake is evidence that something other than the Tower is causing it. The Castaway's data, unread in Holon's chaos, contained the picture nobody was looking for. Every piece of the picture is in the world. The player assembles it at the same rate it becomes too late to use cleanly.
 
-**Expertise is the blind spot.** The researchers who missed the Tower's effect on Deoxys were not incompetent — they were experts in electromagnetic field propagation, not extraterrestrial biology. The covert team understood the device but not the organism. Cosmo documented the ancient civilization's sites without grasping their purpose. Each character's failure is a direct consequence of what makes them good at their specific job.
+**Expertise is the blind spot.** The researchers who missed the Tower's effect on Deoxys were not incompetent — they were experts in electromagnetic field propagation, not extraterrestrial biology. The covert team understood the crystal network as a speciation tool without understanding what the network was originally for. Cosmo documented the ancient civilization's sites without grasping their purpose. Each character's failure is a direct consequence of what makes them good at their specific job.
 
 **The slow burn with moments of sharp action.** The dread accumulates quietly — strange ecological readings, an absence where Mewtwo should be, a researcher who seems nervous about the wrong things. Then something breaks open. Then quiet again, but the quiet is different now. Crichton and Crouch both understand that sustained tension requires breathing room, and that the most frightening moments land hardest after silence.
 
@@ -589,9 +545,9 @@ The story operates in the tradition of Michael Crichton and Blake Crouch — not
 ## Part VIII — Thematic Spine
 
 - **Preservation of all life** — the right to exist without being rewritten by someone else's agenda.
-- **Adaptation vs. imposed transformation** — organisms adapting to their environment vs. transformation inflicted by outside force. The game's sharpest argument against Devon's board. The distinction between Tower-caused stable Delta and fragment-imposed behavioral extremes is where this theme lives in the mechanics.
+- **Adaptation vs. imposed transformation** — organisms adapting to their environment vs. transformation inflicted by outside force. The game's sharpest argument against Devon's board. The distinction between Tower-caused stable Delta and the behavioral disruption caused by Deoxys's destabilized Delta formes is where this theme lives in the mechanics.
 - **Scientific curiosity vs. restraint and unintended consequences** — every layer of the story contains a human hand reshaping something that was operating without it. Every hand believed it was helping.
-- **Human effect on ecosystems and the natural order** — the disaster is not evil. It is the collision of four internally coherent agendas, none designed to account for the whole system. This theme centers the non-human world as subject, not just the backdrop to the researchers' choices.
+- **Human effect on ecosystems and the natural order** — the disaster is not evil. It is the consequence of every system operating correctly within its own frame while blind to what that frame is part of. This theme centers the non-human world as subject, not just the backdrop to the researchers' choices.
 
 ---
 
@@ -599,7 +555,42 @@ The story operates in the tradition of Michael Crichton and Blake Crouch — not
 
 ---
 
-## Open Questions
+## Part IX — Systems Within Systems
+
+The holon principle — something simultaneously whole and part of something larger — is not only a narrative theme. It is the literal structure of how the game's disaster operates. Every system in Holon is complete and self-sufficient at its own level and blind to the level above it. The player is the only entity that moves across all of them.
+
+**All systems in play:**
+
+The solar system and the sun's natural cycle, running indifferent to anything on Earth. Deoxys, a complete extraterrestrial organism whose intact biology naturally stabilizes the regional magnetic field — and whose destabilization removes protection nobody knew existed. The crystal network, a region-spanning electromagnetic infrastructure cultivated by the ancient civilization to contain Delta radiation and connect the power spot's energy across the landscape. The ancient civilization's stewardship program, built around two layers of understanding: ecological regulation of species and Delta containment at the surface level, and a deeper cosmic knowledge — that the network connected to something beyond the region, and that Deoxys's presence was protection at a scale they recorded but never fully explained. Devon's covert agenda, deliberately expanding the crystal network to force speciation at planetary scale, without knowing the network's original purpose or what expanding it would detect. Devon's public research program, legitimate science operating directly above the power spot without knowing what's there. Devon's underwater infrastructure, threading through the ancient magnetic lines as an engineering decision, unknowingly wired into the network's deep pathways. Rayquaza, a territorial guardian responding correctly to the largest ecological disruption its territory has experienced. Mew, drawn back to Holon by the same instinct that brought it the first time, now transformed and present at the deepest and oldest node of the network at the point of maximum cosmic exposure. The Volcano Observatory, the most sensitive EM detection site in the region — accidentally made dramatically more powerful by the covert team's expansion program, resolving a signal nobody intended to find.
+
+**Nested structure — smallest to largest:**
+
+- The solar system
+    - The sun's natural cycle
+        - The planetary magnetic field
+            - Deoxys as the regional magnetic stabilizer
+                - The crystal network as regional EM infrastructure
+                    - The ancient civilization's stewardship nodes as observation and containment points
+                        - Devon's underwater infrastructure following the same magnetic lines unknowingly
+                            - The covert team's expansion program seeding new nodes
+                                - The Volcano Observatory reading the expanded network's signal
+                    - The power spot as the network's origin point
+                        - Deoxys dormant beneath the Tower
+                            - The Tower broadcasting into the power spot
+                                - Deoxys destabilized and Delta transformed
+                                    - Ecological crisis across all five zones
+                                        - Rayquaza responding territorially
+                                        - Mew transformed and drawn to the network's deepest node
+                                        - Devon's covert team exploiting the destabilization
+                                            - The device
+                                            - Mewtwo captured
+                                        - The player assembling the full picture across all five zones
+
+Every system is complete at its own level. Every system is blind to the one above it. The player is the only one who traverses all of them.
+
+---
+
+
 
 Collected design questions that are not yet resolved and are preserved here rather than invented. These are distinct from the [TBD] markers in the main document — those flag gaps in the locked narrative; these flag questions where the answer has meaningful downstream consequences and deserves dedicated exploration before a decision is made.
 
@@ -611,15 +602,25 @@ The TCG establishes that Mew ☆ δ is found swimming in a pristine underwater s
 
 Several questions branch from this image that the game needs to answer or deliberately leave open:
 
-*Why underwater?* Mew ☆ δ is a Water-type Delta — its transformation gave it an affinity for deep water. Whether this is purely a consequence of Dragon Frontiers' natural Delta environment, a response to the crystal network's behavior at that depth, or something Mew sought deliberately is unresolved. The crystal network propagates along magnetic lines that connect back to the buried meteorite; those lines run through the ocean floor. The underwater environment at Dragon Frontiers may be where the network's reach is densest and oldest — which raises the question of whether Mew went there because the water is safe, or because the network drew it.
+*Why underwater?* Mew ☆ δ is a Water-type Delta — its transformation gave it an affinity for deep water. The crystal network's magnetic lines run through the ocean floor, and the underwater environment at Dragon Frontiers is where the network is oldest and densest. Dragon Frontiers is also the point of greatest cosmic exposure — where the planetary shielding is thinnest and the signal from above comes through clearest. Whether Mew went there because the water is safe, because the network drew it, or because it was responding to something coming from above before any instrument could detect it remains unresolved. All three may be true simultaneously.
 
-*What does Devon know about Mew's location?* The expedition's stated purpose was finding Mew. If any part of the covert team has tracked Mew to Dragon Frontiers — and Mr. Stone himself appears on Dragon Frontiers cards — the question of whether Devon has already documented Mew ☆ δ's location becomes significant. A transformed Mew is both a proof of concept for the covert team's thesis (stable directed Delta transformation is biologically possible) and a living record of the accident's reach. Devon's interest in it may not be scientific curiosity. It may be the same interest they had in Mewtwo.
+*What does Devon know about Mew's location?* The expedition's stated purpose was finding Mew. If any part of the covert team has tracked Mew to Dragon Frontiers — and Mr. Stone himself appears on Dragon Frontiers cards — the question of whether Devon has already documented Mew ☆ δ's location becomes significant. A transformed Mew is both a proof of concept for the covert team's thesis and a living record of the accident's reach. Devon's interest in it may not be scientific curiosity.
 
-*Devon's technological spread and the crystal network as connected threads:* The submerged industrial machinery visible at Holon Lake establishes that Devon has been building infrastructure beneath the water across the region. If that infrastructure extends toward or beyond Dragon Frontiers — following the same magnetic lines the crystal network runs along — then the network's accelerating expansion and Devon's physical footprint may be interacting in ways nobody has modeled. The ancient civilization's stewardship nodes were built at the network's key surface points. Nobody has been managing what runs beneath the water. Devon may have been inadvertently (or deliberately) interfering with the network's deep-water nodes without knowing those nodes exist.
-
-*The postgame mission framing:* The Mew ☆ δ mission as currently described has the player following Mew's ecological trail across all five zones, ending in Mirage Forest. Whether Mew ☆ δ is still at Dragon Frontiers when the player arrives during the main game, or has already moved on, affects both what the player finds there and what the mission structure looks like. If Mew ☆ δ was present underwater during the Dragon Frontiers climax and the player didn't know it — if the final discovery echoes the TCG's closing image — that's a different emotional register than Mew already being gone by then.
+*The postgame mission framing:* Whether Mew ☆ δ is still at Dragon Frontiers when the player arrives during the main game, or has already moved on, affects both what the player finds there and what the mission structure looks like. If Mew ☆ δ was present underwater during the Dragon Frontiers climax and the player didn't know it — if the final discovery echoes the TCG's closing image — that's a different emotional register than Mew already being gone by then.
 
 These questions are connected. The answer to one constrains the others. They should be resolved together rather than piecemeal.
+
+*Mew as a source of mystery and lore for the player:* Mew has always been the original Pokémon mystery — something that exists at the edge of what can be known, never fully catchable, never fully explained. That quality should be preserved and deepened here rather than resolved. The player should encounter traces of Mew throughout the game — evidence of its passage, ecological disturbances it left behind, researchers who came close but never found it, ancient carvings that recorded it thousands of years ago — building a picture of something that has been present in this story far longer than anyone realized, at every scale of it. Mew was here before the researchers. Mew was here before the ancient civilization. Mew came to Deoxys once before and the civilization recorded it. Now it has come back and been transformed by what it couldn't stay away from. That is not a side story. That is the emotional spine of the entire arc — curiosity as the force that changes everything, including the one doing the searching. The player should feel, when they finally find Mew ☆ δ in the postgame, that they have been reading a story about Mew the whole time without knowing it. Every trace, every carving, every researcher who almost found it was a chapter. The final encounter in Mirage Forest — where the story began, where the researchers first came looking — should feel like the last page of something that was always going to end there.
+
+---
+
+**The Floating Island — main story function**
+
+The Floating Island above Dragon Frontiers is currently defined as fully accessible only in the postgame, where the ancient civilization's presence at the absolute edge of the world is revealed. The question is whether it also carries a main story function.
+
+The ancient civilization's cosmic knowledge layer — their records of Deoxys's protective role and what the thinning sky at Dragon Frontiers means — needs to exist somewhere the player can encounter it before or during the climax, not only after. The Floating Island is the logical location for the most complete version of that record. If Steven has been assembling fragments across the game and reads the complete picture here, the Floating Island becomes the moment the ancient civilization's warning and the Castaway's data converge. That gives it a role in the main story before the postgame opens its surface fully.
+
+This question has meaningful consequences for Steven's final scene and for how the climax's second crisis is communicated to the player. It should be resolved before the act structure is written in full detail.
 
 ---
 
@@ -629,4 +630,7 @@ These questions are connected. The answer to one constrains the others. They sho
 |---|---|---|
 | 1.0 | 2026-03-28 | Initial document created from HL Story Framework and HL-104. Eight parts: Foundation, World, Disaster, Characters, Act Structure, Postgame, Crichton/Crouch Framework, Thematic Spine. |
 | 1.1 | 2026-03-28 | Normal δ behavioral description revised — changed from disoriented/lost to present/watchful/communicative. Card-level visual reference blocks added to all five zone entries. Table of contents added. Open Questions section added with Mew ☆ δ Dragon Frontiers question. Changelog added. |
-| 1.2 | 2026-03-29 | Part IV restructured: Mr. Stone added as new IV.2 (Devon's president); Steven Stone updated to IV.3 (corrected from president to son of president, expanded from HL-100); Devon Corporation added as new IV.4; Auren expanded to IV.5 with full survey history and team detail; IV.6–IV.10 renumbered accordingly. IV.11 Starter Pokémon added (Dratini δ, Bagon δ, Ralts δ). IV.12 Legendaries renumbered. Part VI postgame: Jirachi δ and Shadow Lugia δ bullets expanded to full mission descriptions sourced from HL-100. |
+| 1.2 | 2026-03-30 | Major structural revision to crisis two and ending. Covert team secret mission revised from Deoxys DNA extraction to crystal network expansion at planetary scale. The Device revised as tuned EM broadcaster/receiver; Cosmo's modification as his defining moment. Crisis two replaced: crystal network expansion crisis removed, solar event crisis added. V.3 Endgame revised with simultaneous Dragon Frontiers climax — covert team confrontation, device modification, Deoxys restoration, Rayquaza alliance, planetary shielding. Deoxys established as regional magnetic stabilizer whose destabilization removed protection nobody knew existed. Ancient civilization given two-layer knowledge structure: ecological stewardship (visible) and cosmic protection understanding (deeper, less legible). Dragon Frontiers sky phenomenon locked as in-world fact — point of greatest cosmic exposure. Crystal Isles observatory throughline revised across three visits with solar signal resolution. Devon underwater infrastructure connected to crystal network magnetic lines. Castaway character entry revised with full three-visit throughline. Covert team lead entry revised with new motivation and irony of the detection they enabled. Rayquaza entry updated with climax role. I.1 systems list expanded. Part IX — Systems Within Systems added with full system list and nested structure. Open Questions updated: Mew ☆ δ question revised to incorporate cosmic exposure angle; Floating Island main story function added as new open question. |
+| 1.3 | 2026-03-30 | Consistency pass across full document. I.1 holon framing rewritten from horizontal collision to nested layers — each system blind to the scale above it. I.3 late-game revelation revised — covert team was not trying to wake Deoxys; Deoxys is a liability to their network expansion program. Third TBD removed from I.3 — escalating catastrophe is now answered by the solar event. II.1 Region at a Glance revised — covert team pushing Tower power output replaced with covert team using expedition infrastructure to advance network expansion agenda. III.3 all fragment language replaced with Delta forme language throughout; section header revised to Tower-imposed vs. organism-adapted. IV.2 Steven Stone corrected — son of Devon's president, not president himself. Part VII Crichton/Crouch revised — collision framing replaced with nested layers framing; escalating power tests language removed; covert team device line updated to reflect new mission. Part VIII Thematic Spine revised — fragment language removed; collision framing updated. V.2 TOC entry updated to The Solar Event. V.4 Floating Island revised — no longer described as where the climax begins; role in main story and postgame clarified. |
+| 1.4 | 2026-03-30 | Mew ☆ δ open question expanded — added section on Mew's role as source of mystery and lore for the player across the full game, from trace evidence through ancient carvings to final postgame encounter. |
+| 1.5 | 2026-03-30 | Added IV.9 Devon Corporation and IV.10 Mr. Stone to characters section. Legendaries table renumbered to IV.11. TOC updated. |
