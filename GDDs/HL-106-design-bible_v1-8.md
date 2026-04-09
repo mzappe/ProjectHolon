@@ -26,7 +26,7 @@
   - [III.2 The Device](#iii2-the-device)
   - [III.3 The Delta Biology — Zone by Zone](#iii3-the-delta-biology--zone-by-zone)
 - [Part IV — The Characters](#part-iv--the-characters)
-  - [IV.1 Professor Cosmo](#iv1-professor-cosmo)
+  - [IV.1 Professor Cozmo](#iv1-professor-cozmo)
   - [IV.2 Steven Stone](#iv2-steven-stone)
   - [IV.3 Auren — The Champion](#iv3-auren--the-champion)
   - [IV.4 The Castaway](#iv4-the-castaway)
@@ -55,22 +55,15 @@
 
 ### I.1 What Holon Is
 
-Holon takes its name from the philosophical concept of a holon — something that is simultaneously a whole and a part of something larger. This is not flavor. It is the operating principle of how the game's disaster happens.
+Holon takes its name from the philosophical concept of a holon — something that is simultaneously a whole and a part of something larger. This is not flavor. It is the precise dynamical reality of how the game's disaster unfolds.
 
-Every system in the game is complete and self-sufficient on its own terms:
+Every system in Holon is complete and self-sufficient at its own scale. The Tower's research program is legitimate science. The covert team's methodology is internally rigorous. The ancient civilization's crystal stewardship maintained regional stability for thousands of years. Rayquaza's territorial aggression is ecologically correct. The sun runs its own cycle, indifferent to anything on Earth. Each of these systems, examined within its own frame, is working exactly as intended. This is the first problem: a system operating correctly at its own scale has no internal signal that it is embedded in something larger. Success removes the pressure to look outward. The blind spot is not a failure of intelligence — it is a structural consequence of competence within a bounded frame.
 
-- The Holon Tower's research program is legitimate and producing real science.
-- The covert team's experiments are rigorous within their own methodology.
-- The ancient civilization's crystal stewardship worked for thousands of years.
-- Rayquaza's territorial response to the crisis is ecologically correct.
-- Mew's return to Holon is driven by the same ancient instinct that brought it here the first time.
-- Deoxys's Delta formes are a biological organism responding correctly to its environment.
-- Devon's underwater infrastructure follows the region's magnetic lines as a logical engineering decision — unaware those lines are the crystal network.
-- The sun runs its own cycle, indifferent to anything happening on Earth.
+But scale-blindness alone does not produce the disaster. The second principle is sensitivity. Complex systems — networks of interacting agents, feedback loops, coupled dynamics — do not respond to perturbations proportionally. A small disturbance introduced at the right point, in the right conditions, does not stay small. It propagates. It amplifies. It crosses scales. Mew's return to the power spot is, in isolation, the behavior of a single organism following an ancient instinct. Introduced into a system already stressed by years of Tower broadcast, it becomes the event that wakes Deoxys. Deoxys destabilizing inside a corrupted magnetic field becomes an ecological crisis across five zones. The covert team exploiting that crisis becomes an accidental planetary detection instrument. None of these outcomes were latent in their causes. They emerged from the interactions between agents operating at different scales simultaneously — each one doing exactly what it does, none of them intending what results.
 
-None of these systems were designed to account for any of the others — and more precisely, none of them can see the level above them. The disaster is not the failure of any one system. It is what happens when systems nested within larger systems each operate correctly at their own scale, blind to what they are part of. The covert team understands the crystal network as infrastructure for speciation. They cannot see that the network is also a planetary antenna. The researchers understand the Tower as a scientific instrument. They cannot see that it is sitting on top of a cosmic stabilizer. The ancient civilization understood Deoxys's ecological function. Their deepest records suggest they glimpsed something larger — but they could not fully read it either.
+The flip side of sensitivity is emergence. The same complexity that makes a system catastrophically sensitive to perturbation also allows it to produce behaviors and capacities that none of its components contain alone. The crystal network wired into Devon's underwater infrastructure becomes the most sensitive EM array in the region — not because anyone designed it that way, but because the interaction between two systems, neither aware of the other, produced a third capability that belonged to neither. The disaster and its detection are products of the same interconnection. The connections that generate the crisis run in both directions.
 
-This is why nobody saw it coming. This is why the player — the only character who talks to everyone and moves across all five zones — is the only one who can assemble the full picture. Every other character is operating correctly inside their own complete system. None of them can see what that system is part of.
+This is why the player is the only one who can assemble the full picture. Every other character operates at their own resolution, correctly, within their own frame. The player is the only agent that traverses all scales — and traversal is the only way to see what the systems are doing to each other.
 
 The five canonical locations map directly to the five TCG sets and define where the story is anchored. Connective zones (Mountain Zone, Coastal/Port Zone) sit between them in the progression spine but are not TCG-sourced.
 
@@ -98,7 +91,7 @@ The second layer is deeper and less legible. The civilization understood the cry
 | Regi Chambers | Mirage Forest | Three sealed chambers housing Regirock, Regice, and Registeel. Deliberately sealed. The same people who built around the power spot understood that some things should be left undisturbed. |
 | The Holon Circle | Crystal Isles | A shaped ring of crystals — the most visible surviving example of active crystal management. A boundary structure designed to lock energy within a specific area. |
 
-**What they understood that the expedition doesn't:** The crystal network is a living system requiring stewardship, not passive geology. The phenomenon contained itself for thousands of years because someone was tending it. The researchers inherited that system without knowing it existed. Cosmo spent his career documenting these sites and never grasped what they were actually built to do — the irony of his arc.
+**What they understood that the expedition doesn't:** The crystal network is a living system requiring stewardship, not passive geology. The phenomenon contained itself for thousands of years because someone was tending it. The researchers inherited that system without knowing it existed.
 
 **Their relationship to Deoxys and Mew:** The diamond carvings document both. They witnessed the crash and the crystal growth that followed. They also witnessed Mew's ancient visit to the power spot — the same instinct that brought Mew back to Holon in the present. The ancient civilization recorded what happened without interfering with it. That choice is the sharpest possible contrast to Devon's board.
 
@@ -151,11 +144,17 @@ Devon's underwater infrastructure — the submerged machinery visible at Holon L
 
 ### II.1 The Region at a Glance
 
-The Holon Research Tower has been broadcasting for years. Its magnetic field has slowly transformed local Pokémon into Delta Species — a side effect the research team discovered without understanding they caused it. The covert team has been using the expedition's institutional infrastructure to advance their own program — pushing for conditions and access that serve the crystal network expansion agenda while appearing to serve the public mission. Cosmo has resisted certain escalations without fully understanding what they were for. Each decision seemed reasonable in isolation.
+The Holon Research Tower has been broadcasting for years. Its magnetic field has slowly transformed local Pokémon into Delta Species — a side effect the research team discovered without understanding they caused it. The covert team has been using the expedition's institutional infrastructure to advance their own program — pushing for conditions and access that serve the crystal network expansion agenda while appearing to serve the public mission. Cozmo has resisted certain escalations, reading the institutional pressure clearly even when he cannot identify its source. Each decision seemed reasonable in isolation.
 
 Deoxys — dormant beneath the Tower as a stone tablet — is the true ancient source of the Delta phenomenon and the region's power spots. Its crashed meteorite body has been radiating passively for thousands of years, producing the power spots and propagating the crystal network beneath the region. It has been dormant the entire time the Tower has been broadcasting.
 
-The player arrives at Entrance Town as a Devon expedition participant, recruited by a personal letter from Steven Stone. Everything looks like a legitimate research posting. Most of the people here believe that's what it is.
+**The opening:** The player arrives by boat to a coastal entrance town [name TBD] as a Devon expedition participant, recruited by a personal letter from Steven Stone. Steven recruited the player directly and specifically — the letter is warm but precise, carrying the weight of someone who suspects the expedition is more complicated than its official framing and wants someone he trusts in the field. Everything on arrival looks like a legitimate research posting. Most of the people here believe that's what it is.
+
+Professor Cozmo receives the player and sets the expedition's framing. He covers three things: the power spot discovered at the heart of Mirage Forest and the reason Holon was built on top of it; the Tower's original and still-stated purpose — tracking Mew, the Pokémon the expedition came here to find — and the Delta phenomenon that grew as a consequence of the Tower's broadcast. He does not present Delta as secondary. It emerged from the Mew search and became its own serious science. He does not mention the accident.
+
+Cozmo presents the player with their starter — one of three rare Delta specimens collected from the farthest reaches of the region: **Delta Dratini (Grass-type)**, **Delta Ralts (Fire-type)**, or **Delta Bagon (Water-type)**. A field researcher needs a partner; these three are ready.
+
+The player's stated goals from the opening: document the Delta phenomenon across all five zones, fill the Pokédex, pursue the Mew search that started all of this, and complete the regional league challenge — which doubles as the access structure for restricted field areas across the region.
 
 ---
 
@@ -299,7 +298,7 @@ Deoxys is a liability to this plan, not an asset — an unpredictable organism a
 
 Most researchers building it don't know its true purpose. It is presented internally as the ecological restoration tool the public mission describes.
 
-The player confronts the covert team lead at Dragon Frontiers, stops the expansion plan, and takes the device. Cosmo then modifies it — changing its target frequency from the crystal network to Deoxys directly. The device already speaks the electromagnetic language the Tower speaks, which is the same language Deoxys responds to. The modification is a repurposing, not a reinvention. This is Cosmo's defining moment: everything he knows about the Tower's original research purpose and Deoxys's biology converges in a single technical act. A device built to force transformation on living systems without their knowledge becomes the instrument that restores the one organism the planet needs whole.
+The player confronts the covert team lead at Dragon Frontiers, stops the expansion plan, and takes the device. **[TBD — what happens to the device after the player takes it, and who does what with it.]**
 
 ---
 
@@ -322,11 +321,15 @@ The progression of the Delta mutation across the five zones correlates directly 
 
 ## Part IV — The Characters
 
-### IV.1 Professor Cosmo
+### IV.1 Professor Cozmo
 
-Senior Devon researcher. The player's direct superior. Quietly skeptical of the covert team's agenda; trusts the science but not the leadership. Has spent his career documenting the ancient civilization's sites without grasping what they were actually built to do. This is not incompetence — it is the precise failure his expertise produces. He is the story's most complete illustration of the expertise-as-blind-spot principle. He has the most information and the least ability to assemble it into a picture that threatens the institution he works inside.
+Senior Devon researcher. The player's direct superior and one of the game's core investigative team alongside the player and Steven. Curious, inquisitive, and sharp — the kind of scientist who asks the next question before the last one is fully answered. He works for Devon's public mission and believes in it genuinely, but operates with clear-eyed distance from the institution's internal politics. He is not a company man. He is a researcher who happens to work for a company, and the distinction matters to him.
 
-His defining moment is the modification of the device at Dragon Frontiers. Everything he knows — the Tower's original research purpose, Deoxys's biology, the crystal network's frequency — converges in a single technical act that no other character in the game could perform.
+Cozmo receives the player at the start of the game and sets the expedition's framing: the power spot, the Tower's original purpose searching for Mew, and the Delta phenomenon that grew from that work. He is the player's most consistent ally — present, engaged, and willing to follow the evidence wherever it leads even when the destination is uncomfortable for Devon. As the investigation deepens, his collaboration with the player and Steven forms the backbone of what the game's core team is able to piece together.
+
+**[TBD — Cozmo's defining moment and arc endpoint.]**
+
+**[TBD — How much Cozmo knows or discovers about the buried meteorite, Deoxys, and the crystal network across the game's progression.]**
 
 ---
 
@@ -421,7 +424,7 @@ Whether Mr. Stone learns the full scope of what was authorized in his name, and 
 
 #### Act 1 — Mirage Forest to Holon Village
 
-The player arrives. Everything looks legitimate. Professor Cosmo assigns field research. The expedition is institutional, not yet clearly compromised.
+The player arrives. Everything looks legitimate. Professor Cozmo assigns field research. The expedition is institutional, not yet clearly compromised.
 
 The player encounters **Normal δ** — present, watchful, clearly anomalous but not dangerous. Of the four formes, this is the most communicative — it does not flee, does not attack, and seems to register the player's presence in a way the others won't. What it is trying to convey is not yet legible. The emotional register is established: something is reaching out, and the player cannot yet understand it.
 
@@ -453,13 +456,13 @@ The player encounters **Attack δ** at the Crystal Isles — aggressive, dangero
 
 The Volcano Observatory throughline reaches its third and final beat. The Castaway's data is now unambiguous.
 
-The player, Steven, and Cosmo determine they need the device. The break-in sequence. The covert team lead flees to Dragon Frontiers.
+The player, Steven, and Cozmo determine they need the device. The break-in sequence. The covert team lead flees to Dragon Frontiers.
 
 The player follows. **Speed δ** is here — the one that ran furthest, the last one found, never staying in one place.
 
 Rayquaza's arc reaches its climax. The player's relationship with Rayquaza, built across the whole game, becomes an alliance. **[TBD — exact mechanism.]**
 
-The covert team lead is confronted at Dragon Frontiers — the intended final stage of the network expansion plan. The player defeats them and takes the device. Cosmo modifies it on the spot: target frequency changed from the crystal network to Deoxys.
+The covert team lead is confronted at Dragon Frontiers — the intended final stage of the network expansion plan. The player defeats them and takes the device. **[TBD — what happens to the device next.]**
 
 **[TBD — Exact climax sequence: how the player uses the modified device on Deoxys, what the battle sequence looks like, how Deoxys becomes catchable.]**
 
@@ -485,7 +488,7 @@ The irony is precise: the covert team's expansion program, built to reshape ecos
 
 ### V.3 Endgame — Resolution
 
-Everything converges at Dragon Frontiers simultaneously. The player stops the covert team lead's network expansion plan and takes the device. Cosmo modifies it — repurposing the covert team's instrument of forced transformation into a tool of restoration. Deoxys is restored via the modified device. The Rayquaza alliance, earned across the whole game, enables Deoxys to reach the edge of the atmosphere — Rayquaza's territory extends to the boundary of space, and that boundary is where Deoxys needs to be. Deoxys shields the planet from the incoming solar event.
+Everything converges at Dragon Frontiers simultaneously. The player stops the covert team lead's network expansion plan and takes the device. **[TBD — what happens to the device and who acts on it.]** Deoxys is restored. The Rayquaza alliance, earned across the whole game, enables Deoxys to reach the edge of the atmosphere — Rayquaza's territory extends to the boundary of space, and that boundary is where Deoxys needs to be. Deoxys shields the planet from the incoming solar event.
 
 The ancient civilization's records, the Castaway's instruments, and the player's journey across all five zones point at the same moment. The surface crisis and the planetary crisis resolve together.
 
@@ -532,11 +535,11 @@ The player completes the Pokémon League and defeats Auren as Champion. The regi
 
 The story operates in the tradition of Michael Crichton and Blake Crouch — not as stylistic homage but as a structural commitment. What that means in practice:
 
-**The disaster is never caused by evil.** Every person in this story is operating from a coherent, internally justified position. The covert team's diagnosis of the natural world is correct — humanity has broken enormous things. Devon's board genuinely believes unilateral action is the only option left. Cosmo genuinely believes in the expedition's science. Steven genuinely believes in his organization. Rayquaza's aggression is ecologically appropriate. None of them are villains. The catastrophe is not a collision — it is a consequence of every system operating correctly at its own scale while remaining blind to the scale above it.
+**The disaster is never caused by evil.** Every person in this story is operating from a coherent, internally justified position. The covert team's diagnosis of the natural world is correct — humanity has broken enormous things. Devon's board genuinely believes unilateral action is the only option left. Cozmo genuinely believes in the expedition's science. Steven genuinely believes in his organization. Rayquaza's aggression is ecologically appropriate. None of them are villains. The catastrophe is not a collision — it is a consequence of every system operating correctly at its own scale while remaining blind to the scale above it.
 
 **The warning signs are always present.** The Metal typing on Tower-area Delta is evidence of a corrupted magnetic field — visible to anyone who knew what to look for. The ancient civilization's stewardship sites are evidence that someone understood what was buried there. The anomalous Delta behavior at Holon Lake is evidence that something other than the Tower is causing it. The Castaway's data, unread in Holon's chaos, contained the picture nobody was looking for. Every piece of the picture is in the world. The player assembles it at the same rate it becomes too late to use cleanly.
 
-**Expertise is the blind spot.** The researchers who missed the Tower's effect on Deoxys were not incompetent — they were experts in electromagnetic field propagation, not extraterrestrial biology. The covert team understood the crystal network as a speciation tool without understanding what the network was originally for. Cosmo documented the ancient civilization's sites without grasping their purpose. Each character's failure is a direct consequence of what makes them good at their specific job.
+**Expertise is the blind spot.** The researchers who missed the Tower's effect on Deoxys were not incompetent — they were experts in electromagnetic field propagation, not extraterrestrial biology. The covert team understood the crystal network as a speciation tool without understanding what the network was originally for. Each character's failure is a direct consequence of what makes them good at their specific job.
 
 **The slow burn with moments of sharp action.** The dread accumulates quietly — strange ecological readings, an absence where Mewtwo should be, a researcher who seems nervous about the wrong things. Then something breaks open. Then quiet again, but the quiet is different now. Crichton and Crouch both understand that sustained tension requires breathing room, and that the most frightening moments land hardest after silence.
 
@@ -544,10 +547,21 @@ The story operates in the tradition of Michael Crichton and Blake Crouch — not
 
 ## Part VIII — Thematic Spine
 
-- **Preservation of all life** — the right to exist without being rewritten by someone else's agenda.
-- **Adaptation vs. imposed transformation** — organisms adapting to their environment vs. transformation inflicted by outside force. The game's sharpest argument against Devon's board. The distinction between Tower-caused stable Delta and the behavioral disruption caused by Deoxys's destabilized Delta formes is where this theme lives in the mechanics.
-- **Scientific curiosity vs. restraint and unintended consequences** — every layer of the story contains a human hand reshaping something that was operating without it. Every hand believed it was helping.
-- **Human effect on ecosystems and the natural order** — the disaster is not evil. It is the consequence of every system operating correctly within its own frame while blind to what that frame is part of. This theme centers the non-human world as subject, not just the backdrop to the researchers' choices.
+**Primary themes — dynamical:**
+
+- **Scale and blindness** — every system in this story is complete and correct within its own frame. The disaster is not caused by failure, malice, or incompetence. It is the structural consequence of agents operating at their own resolution, unable to perceive the scale above them. This is not a moral failing — it is a property of how complex nested systems work. The theme runs through every character and every zone.
+
+- **Sensitivity and emergence** — small perturbations in coupled systems produce disproportionate, unpredictable effects. Mew returning. The Tower's output interacting with a network nobody mapped. A single organism waking inside a corrupted field. None of these causes contain their consequences. The flip side is equally true: the same interconnection that produces catastrophe produces the capacity to resolve it. The detection of the solar event, the Rayquaza alliance, the device's repurposing — all emergent from the same network that generated the crisis. The theme asks the player to hold both truths simultaneously.
+
+**Major emotional theme:**
+
+- **Curiosity as transformation** — the act of seeking changes what is found, and changes the seeker. This runs through every layer of the story simultaneously. Mew came back to the power spot because it has never been able to stay away from the only thing on Earth it cannot understand — and its return woke Deoxys and transformed Mew itself. The researchers came to Holon to find Mew and found something that reorganized everything they understood about Pokémon biology. The player follows the same thread across five zones and arrives somewhere none of the characters who came before them reached. The ancient civilization recorded what they witnessed without interfering — curiosity held at the edge of restraint. The emotional register is not triumph or tragedy. It is the particular feeling of having followed something true all the way to where it leads, and finding that the journey changed you as much as it changed the destination.
+
+**Minor themes — human and ethical:**
+
+- **Scientific curiosity vs. restraint and unintended consequences** — every hand that reshaped something in this story believed it was helping. The ethical weight is not in the intention but in the failure to account for what a coupled system does with an intervention.
+
+- **Human effect on ecosystems and the natural order** — the Delta phenomenon is permanent. The network nodes seeded outside Holon's historical boundaries remain. The ending is not a restoration. It is a survival, and the world after it is genuinely different from the world before. This theme centers the non-human world as subject, not backdrop.
 
 ---
 
@@ -557,27 +571,35 @@ The story operates in the tradition of Michael Crichton and Blake Crouch — not
 
 ## Part IX — Systems Within Systems
 
-The holon principle — something simultaneously whole and part of something larger — is not only a narrative theme. It is the literal structure of how the game's disaster operates. Every system in Holon is complete and self-sufficient at its own level and blind to the level above it. The player is the only entity that moves across all of them.
+The holon principle is not only a narrative theme. It is the literal dynamical structure of the game's disaster. Two principles govern how that structure behaves.
+
+**Scale and blindness.** Every system in Holon is complete and self-sufficient at its own level. Each is blind to the level above it — not through failure, but because a system that works has no internal signal that it is part of something larger. The disaster is not the failure of any single system. It is what happens when systems operating correctly at their own scale become components of a mechanism that only exists at the scale above them.
+
+**Sensitivity and emergence.** Complex systems do not respond to perturbations proportionally. A small disturbance introduced at the right point propagates, amplifies, and crosses scales — producing effects qualitatively different from and not predictable from the original cause. The same complexity that makes a system sensitive to perturbation also allows interactions between its agents to produce emergent behaviors that no single component contains. The catastrophe and its resolution are both emergent properties of the same network.
+
+---
 
 **All systems in play:**
 
-The solar system and the sun's natural cycle, running indifferent to anything on Earth. Deoxys, a complete extraterrestrial organism whose intact biology naturally stabilizes the regional magnetic field — and whose destabilization removes protection nobody knew existed. The crystal network, a region-spanning electromagnetic infrastructure cultivated by the ancient civilization to contain Delta radiation and connect the power spot's energy across the landscape. The ancient civilization's stewardship program, built around two layers of understanding: ecological regulation of species and Delta containment at the surface level, and a deeper cosmic knowledge — that the network connected to something beyond the region, and that Deoxys's presence was protection at a scale they recorded but never fully explained. Devon's covert agenda, deliberately expanding the crystal network to force speciation at planetary scale, without knowing the network's original purpose or what expanding it would detect. Devon's public research program, legitimate science operating directly above the power spot without knowing what's there. Devon's underwater infrastructure, threading through the ancient magnetic lines as an engineering decision, unknowingly wired into the network's deep pathways. Rayquaza, a territorial guardian responding correctly to the largest ecological disruption its territory has experienced. Mew, drawn back to Holon by the same instinct that brought it the first time, now transformed and present at the deepest and oldest node of the network at the point of maximum cosmic exposure. The Volcano Observatory, the most sensitive EM detection site in the region — accidentally made dramatically more powerful by the covert team's expansion program, resolving a signal nobody intended to find.
+The solar system and the sun's natural cycle, running indifferent to anything on Earth. Deoxys — a complete extraterrestrial organism whose intact biology naturally stabilizes the regional magnetic field, and whose destabilization removes protection nobody knew existed. The crystal network — a region-spanning EM infrastructure cultivated by the ancient civilization to contain Delta radiation and connect the power spot's energy across the landscape. The ancient civilization's stewardship program, operating on two layers: ecological containment at the surface, and a deeper cosmic knowledge that the network connected to something beyond the region. Devon's public research program — legitimate science operating above the power spot without knowing what's there. Devon's covert agenda — deliberately expanding the crystal network at planetary scale without knowing the network's original purpose or what expanding it would detect. Devon's underwater infrastructure — threading through the ancient magnetic lines as an engineering decision, unknowingly wired into the network's deep pathways. Rayquaza — a territorial guardian responding correctly to the largest ecological disruption its territory has experienced. Mew — drawn back by the same ancient instinct that brought it the first time, now transformed, present at the deepest node of the network at the point of maximum cosmic exposure. The Volcano Observatory — accidentally made dramatically more sensitive by the covert team's expansion program, resolving a signal nobody intended to find.
 
-**Nested structure — smallest to largest:**
+---
+
+**Nested structure — scale hierarchy:**
 
 - The solar system
     - The sun's natural cycle
         - The planetary magnetic field
-            - Deoxys as the regional magnetic stabilizer
+            - Deoxys as regional magnetic stabilizer
                 - The crystal network as regional EM infrastructure
-                    - The ancient civilization's stewardship nodes as observation and containment points
+                    - The ancient civilization's stewardship nodes
                         - Devon's underwater infrastructure following the same magnetic lines unknowingly
                             - The covert team's expansion program seeding new nodes
                                 - The Volcano Observatory reading the expanded network's signal
                     - The power spot as the network's origin point
                         - Deoxys dormant beneath the Tower
                             - The Tower broadcasting into the power spot
-                                - Deoxys destabilized and Delta transformed
+                                - Deoxys destabilized — Delta formes expressed
                                     - Ecological crisis across all five zones
                                         - Rayquaza responding territorially
                                         - Mew transformed and drawn to the network's deepest node
@@ -586,7 +608,19 @@ The solar system and the sun's natural cycle, running indifferent to anything on
                                             - Mewtwo captured
                                         - The player assembling the full picture across all five zones
 
-Every system is complete at its own level. Every system is blind to the one above it. The player is the only one who traverses all of them.
+---
+
+**Perturbation chain — how small causes produce large effects:**
+
+| Perturbation | Entry point | Propagates to | Scale crossed |
+|---|---|---|---|
+| Mew returns to the power spot | Regional biosphere | Deoxys woken inside a corrupted magnetic field | Organism → planetary stabilizer |
+| Deoxys destabilizes | Regional magnetic field | Delta formes expressed across five zones; ecological cascade | Regional → civilizational |
+| Tower broadcast interacts with crystal network | Local EM field | Network amplification reaches Crystal Isles and beyond | Local → regional |
+| Covert team expands crystal network | Regional infrastructure | Volcano Observatory sensitivity dramatically increased | Regional → cosmic detection |
+| Observatory detects secondary signal | Instrument reading | Solar event identified — crisis scale jumps from regional to planetary | Regional → planetary |
+
+The disaster is not proportional to any of its causes. No single agent intended the outcome at the scale it arrived. The same network that produced the vulnerability produced the warning.
 
 ---
 
@@ -634,3 +668,6 @@ This question has meaningful consequences for Steven's final scene and for how t
 | 1.3 | 2026-03-30 | Consistency pass across full document. I.1 holon framing rewritten from horizontal collision to nested layers — each system blind to the scale above it. I.3 late-game revelation revised — covert team was not trying to wake Deoxys; Deoxys is a liability to their network expansion program. Third TBD removed from I.3 — escalating catastrophe is now answered by the solar event. II.1 Region at a Glance revised — covert team pushing Tower power output replaced with covert team using expedition infrastructure to advance network expansion agenda. III.3 all fragment language replaced with Delta forme language throughout; section header revised to Tower-imposed vs. organism-adapted. IV.2 Steven Stone corrected — son of Devon's president, not president himself. Part VII Crichton/Crouch revised — collision framing replaced with nested layers framing; escalating power tests language removed; covert team device line updated to reflect new mission. Part VIII Thematic Spine revised — fragment language removed; collision framing updated. V.2 TOC entry updated to The Solar Event. V.4 Floating Island revised — no longer described as where the climax begins; role in main story and postgame clarified. |
 | 1.4 | 2026-03-30 | Mew ☆ δ open question expanded — added section on Mew's role as source of mystery and lore for the player across the full game, from trace evidence through ancient carvings to final postgame encounter. |
 | 1.5 | 2026-03-30 | Added IV.9 Devon Corporation and IV.10 Mr. Stone to characters section. Legendaries table renumbered to IV.11. TOC updated. |
+| 1.6 | 2026-04-05 | I.1 What Holon Is rewritten. Core philosophical framing revised: nested-layers structure now grounded in the idea that a system that works completely has no reason to look outside itself — success produces the blind spot. Single-machine principle added: crises arrive as consequences of each other through shared connections, and those same connections make resolution possible. Language tightened throughout; over-specific examples removed in favour of the structural principle. |
+| 1.7 | 2026-04-08 | IV.1 Professor Cozmo rewritten — name corrected from Cosmo throughout document; expertise-as-blind-spot framing removed; character rewritten as curious, inquisitive, smart outsider who works for Devon's good side and operates as active collaborator with the player and Steven across the game; defining moment and knowledge arc (meteorite, Deoxys, crystal network) marked [TBD]. I.2 Ancient Civilization — removed sentence attributing expertise-as-blind-spot arc to Cozmo. II.1 Region at a Glance — updated Cozmo framing to reflect active skepticism; expanded with full opening sequence: player arrives by boat to coastal entrance town [name TBD], recruited by Steven's personal letter, briefed by Cozmo on power spot/Tower/Delta/Mew, receives one of three Delta starter specimens (Delta Dratini Grass, Delta Ralts Fire, Delta Bagon Water), player goals established. III.2 The Device — Cozmo's defining moment language replaced with [TBD]. Part VII — removed Cozmo from expertise-as-blind-spot example; corrected name. |
+| 1.8 | 2026-04-08 | I.1 What Holon Is fully rewritten — two dynamical principles introduced as the structural foundation: scale and blindness (nested systems each blind to the level above), and sensitivity and emergence (perturbations propagate and amplify across scales; coupled complexity produces emergent behaviors). Part VIII Thematic Spine restructured into three tiers: primary dynamical themes (scale/blindness, sensitivity/emergence), major emotional theme (curiosity as transformation — the act of seeking changes what is found and changes the seeker, running through Mew, researchers, player, and ancient civilization), minor ethical themes (scientific curiosity vs. restraint, human effect on ecosystems). Part IX Systems Within Systems fully rewritten — two-principle framing added as intro; systems inventory retained and tightened; nested hierarchy diagram preserved; new perturbation chain table added tracing how each small cause crosses scales to produce disproportionate effects. |
