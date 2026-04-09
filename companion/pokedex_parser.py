@@ -194,17 +194,17 @@ def parse_gen3_species(pokemon_names):
             }
 
             # Extract abilities: .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
+            # Keep 3-slot structure [slot1, slot2, hidden] with None for empty slots
             abilities_match = re.search(r'\.abilities\s*=\s*\{\s*([A-Z_]+)\s*,\s*([A-Z_]+)\s*,\s*([A-Z_]+)\s*\}', species_body)
-            abilities = []
+            abilities = [None, None, None]
             if abilities_match:
                 ab1 = ability_map.get(abilities_match.group(1), abilities_match.group(1))
                 ab2 = ability_map.get(abilities_match.group(2), abilities_match.group(2))
                 ab3 = ability_map.get(abilities_match.group(3), abilities_match.group(3))
-                # Only include non-None abilities
+                # Preserve position: slot1, slot2, hidden (with None for ABILITY_NONE)
                 abilities = [ab1 if 'None' not in ab1 else None,
                             ab2 if 'None' not in ab2 else None,
                             ab3 if 'None' not in ab3 else None]
-                abilities = [ab for ab in abilities if ab is not None]
 
             # Extract categoryName: .categoryName = _("Seed"),
             cat_match = re.search(r'\.categoryName\s*=\s*_\("([^"]+)"\)', species_body)

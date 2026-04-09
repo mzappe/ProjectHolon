@@ -1,138 +1,154 @@
 ---
 title: "Pokémon Holon Legends — GDD Index"
 doc-id: HL-IDX-001
-version: 1.0
+version: 1.2
 status: In Progress
 category: Meta
-last-updated: 2026-03-22
+last-updated: 2026-04-08
 author: Matt Zappe
 ---
 
 # Pokémon Holon Legends — GDD Index
 
-> **Status:** In Progress | **Version:** 1.0 | **Updated:** 2026-03-22
+> **Status:** In Progress | **Version:** 1.2 | **Updated:** 2026-04-08
 
 ---
 
 ## Table of Contents
 
 - [1. Project Summary](#1-project-summary)
-- [2. Document Registry](#2-document-registry)
-  - [2.1 Lore](#21-lore)
+- [2. Current Document Registry](#2-current-document-registry)
+  - [2.1 Canon & Narrative](#21-canon--narrative)
   - [2.2 Technical](#22-technical)
-  - [2.3 Art](#23-art)
+  - [2.3 Art, World, and Postgame](#23-art-world-and-postgame)
+  - [2.4 Data & Tracking Files](#24-data--tracking-files)
 - [3. Suggested Reading Order](#3-suggested-reading-order)
-- [4. Open Decisions Tracker](#4-open-decisions-tracker)
-  - [4.1 Characters & Narrative](#41-characters--narrative)
-  - [4.2 World & Locations](#42-world--locations)
-  - [4.3 Gameplay & Mechanics](#43-gameplay--mechanics)
-  - [4.4 Art & Design](#44-art--design)
-  - [Changelog](#changelog)
+- [4. Current Open Decisions](#4-current-open-decisions)
+  - [4.1 Story & Character](#41-story--character)
+  - [4.2 World Structure](#42-world-structure)
+  - [4.3 Postgame & Encounter Design](#43-postgame--encounter-design)
+- [Changelog](#changelog)
 
 ---
 
 ## 1. Project Summary
 
-**Pokémon Holon Legends** is a ROM hack built on [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) (Pokémon Emerald decomp), set in the **Holon region** from the TCG Delta Species arc (EX Legend Maker through EX Dragon Frontiers).
+**Pokémon Holon Legends** is a ROM hack built on [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), set in the **Holon region** from the TCG Delta Species arc.
 
-The game tells the story of a scientific accident, an ancient mystery, and a living organism from space that has been dormant beneath a research tower for thousands of years. The Holon Research Tower has been broadcasting electromagnetic energy for years, slowly transforming local Pokémon into **Delta Species** — creatures with different elemental types than their species would normally carry. Then something went wrong.
+The current documentation set is organized around a layered workflow:
 
-The player travels outward from Mirage Forest through five locations that mirror the five TCG sets of the Delta Species arc, piecing together what happened, what is still happening, and how to stop it before the region's ecosystems collapse entirely.
+- **HL-104** establishes the synthesized canonical lore and environmental reference.
+- **HL-106 v1.8** is the active design bible and current primary narrative design document.
+- **HL-200 through HL-203** define the technical baseline, expansion strategy, change tracking, and implementation order.
+- **HL-300, HL-400, and HL-500** cover sprite workflow, location production, and postgame expansion planning.
+- Supporting CSVs track implementation changes and the working Holon Pokédex dataset.
 
 | Detail | Value |
-|--------|-------|
+|---|---|
 | **Base ROM** | pokeemerald-expansion (Pokémon Emerald decomp) |
-| **Region** | Holon — from the TCG Delta Species arc |
-| **TCG source** | EX Legend Maker · EX Delta Species · EX Holon Phantoms · EX Crystal Guardians · EX Dragon Frontiers |
-| **Platform** | Game Boy Advance (GBA) |
-| **Development** | Solo, AI-assisted, macOS |
-| **Lore source** | Bulbapedia / TCG Delta Species arc; invented content marked in docs |
+| **Setting** | Holon region / Delta Species arc |
+| **Platform** | Game Boy Advance |
+| **Development model** | Solo, AI-assisted |
+| **Primary narrative design doc** | HL-106 Design Bible v1.8 |
+| **Primary lore synthesis doc** | HL-104 Complete Canonical Lore Guide |
 
 ---
 
-## 2. Document Registry
+## 2. Current Document Registry
 
-### 2.1 Lore
+### 2.1 Canon & Narrative
 
-| ID | File | Title | Status | Version | Description |
-|----|------|-------|--------|---------|-------------|
-| HL-LOR-001 | [HL-100-story-bible.md](HL-100-story-bible.md) | Story & Lore Bible | Draft | 4.0 | Full narrative, world, characters, accident sequence, ending, postgame, themes, and open questions |
-| HL-LOR-002 | [HL-101-delta-species-lore.md](HL-101-delta-species-lore.md) | Holon & Delta Species TCG Lore Reference | Stable | 1.0 | TCG card-sourced lore, Delta mechanics, Holon's Pokémon rules, and canonical type reference |
+| ID | File | Title | Status | Version | Purpose |
+|---|---|---|---|---|---|
+| HL-104 | [HL-104-complete-holon-lore-guide.md](HL-104-complete-holon-lore-guide.md) | Complete Canonical Lore Guide | Active reference | Not declared | Unified canon synthesis for Holon, Delta biology, geography, and TCG-grounded world logic |
+| HL-106 | [HL-106-design-bible_v1-8.md](HL-106-design-bible_v1-8.md) | Design Bible | Working document | 1.8 | Current master narrative and game-structure document |
 
 ### 2.2 Technical
 
-| ID | File | Title | Status | Version | Description |
-|----|------|-------|--------|---------|-------------|
-| HL-TEC-001 | [HL-200-technical-guide.md](HL-200-technical-guide.md) | Master Technical Guide | Stable | 1.0 | macOS dev environment, build pipeline, tool stack, branch strategy, production pipelines, roadmap |
-| HL-TEC-002 | [HL-201-expansion-features.md](HL-201-expansion-features.md) | pokeemerald-expansion Features & Branch Guide | Stable | 1.0 | Expansion branch selection, key features, integration workflow, and feature flags |
-| HL-TEC-003 | [HL-202-feature-config-log.csv](HL-202-feature-config-log.csv) | Feature & Config Change Log | In Progress | 1.0 | A record of all base engine modifications, feature additions, and configuration changes |
+| ID | File | Title | Status | Version | Purpose |
+|---|---|---|---|---|---|
+| HL-TEC-001 | [HL-200-technical-guide.md](HL-200-technical-guide.md) | Master Technical Guide | Stable | 1.0 | Core environment setup, build workflow, tooling, and project operating model |
+| HL-TEC-002 | [HL-201-expansion-features.md](HL-201-expansion-features.md) | pokeemerald-expansion Features & Branch Guide | Stable | 1.0 | Expansion config reference and community branch catalog |
+| HL-TEC-003 | [HL-202-feature-config-log.csv](HL-202-feature-config-log.csv) | Feature & Config Change Log | In Progress | 1.0 | Running record of engine and config changes already made |
+| HL-TEC-004 | [HL-203-feature-implementation-plan.md](HL-203-feature-implementation-plan.md) | Feature Implementation Master Plan | In Progress | 1.0 | Dependency-aware execution plan for feature rollout |
 
-### 2.3 Art
+### 2.3 Art, World, and Postgame
 
-| ID | File | Title | Status | Version | Description |
-|----|------|-------|--------|---------|-------------|
-| HL-ART-001 | [HL-300-sprite-palette-guide.md](HL-300-sprite-palette-guide.md) | Delta Species Sprite Palette Swapping Guide | Stable | 1.0 | Step-by-step Pixelorama workflow for Delta recolors; palette conventions, export settings, verification |
+| ID | File | Title | Status | Version | Purpose |
+|---|---|---|---|---|---|
+| HL-ART-001 | [HL-300-sprite-palette-guide.md](HL-300-sprite-palette-guide.md) | Delta Species Sprite Palette Swapping Guide | Stable | 1.0 | Pixelorama recolor workflow and palette rules for Delta placeholder sprites |
+| HL-400 | [HL-400-location-build-guide.md](HL-400-location-build-guide.md) | Location Build Guide | Working Template | 1.0 | Production template and location registry for area-by-area content buildout |
+| HL-500 | [HL-500-delta-horizon.md](HL-500-delta-horizon.md) | Delta Horizon | Draft | 0.1 | Battle-Frontier-style postgame island concept and facility plan |
+
+### 2.4 Data & Tracking Files
+
+| ID | File | Title | Status | Version | Purpose |
+|---|---|---|---|---|---|
+| DATA-001 | [holon_pokedex_v2.csv](holon_pokedex_v2.csv) | Holon Pokédex Dataset | Working data | v2 | Species/location/type dataset derived from TCG card coverage |
+| DATA-002 | [HL-202-feature-config-log.csv](HL-202-feature-config-log.csv) | Feature Change Ledger | Active log | 1.0 | Lightweight implementation audit trail for engine changes |
 
 ---
 
 ## 3. Suggested Reading Order
 
-For a new contributor or collaborator coming to the project cold:
+For the current documentation set, this is the shortest path to full project context:
 
 | Step | Document | Why |
-|------|----------|-----|
-| 1 | **HL-100** — Story Bible (§1–§7) | Understand the setting, the accident, and the central conflict before anything else |
-| 2 | **HL-101** — Delta Species Lore | Get grounded in the TCG source material the game is built on |
-| 3 | **HL-100** — Story Bible (§8–§16) | Fragments, locations, characters, ending, postgame, and open questions |
-| 4 | **HL-200** — Technical Guide (§1–§3) | Project model, mental framework, and environment setup |
-| 5 | **HL-201** — Expansion Features | Understand the expansion branch before diving deeper into technical work |
-| 6 | **HL-200** — Technical Guide (§4–§13) | Branch strategy, tool stack, pipelines, and working rules |
-| 7 | **HL-300** — Sprite Palette Guide | Start producing Delta sprite assets |
+|---|---|---|
+| 1 | **HL-104** — Complete Canonical Lore Guide | Start with the TCG-grounded world, environmental logic, and Delta distribution rules |
+| 2 | **HL-106 v1.8** — Design Bible | Read the active game interpretation of that lore: structure, cast, acts, climax, and postgame |
+| 3 | **HL-400** — Location Build Guide | Translate narrative/world intent into actual production units and area planning |
+| 4 | **HL-500** — Delta Horizon | Understand the current postgame frontier concept and where it sits relative to the main arc |
+| 5 | **HL-200** — Master Technical Guide | Ground the project in its actual build environment and workflow |
+| 6 | **HL-201** — Expansion Features & Branch Guide | Review the available engine capabilities before implementation decisions |
+| 7 | **HL-203** — Feature Implementation Master Plan | Use the phased execution order when moving from planning into engine work |
+| 8 | **HL-300** — Sprite Palette Guide | Use once art production or placeholder Delta sprite work begins |
+| 9 | **holon_pokedex_v2.csv** | Reference species/location coverage when validating encounter plans and Delta distribution |
 
 ---
 
-## 4. Open Decisions Tracker
+## 4. Current Open Decisions
 
-All items sourced from [HL-100 §16 — Open Questions](HL-100-story-bible.md#16-open-questions-pending-decisions). This tracker mirrors that section; update both when a decision is made.
+These reflect the unresolved design questions and explicit `[TBD]` items in the current design bible, especially [HL-106-design-bible_v1-8.md](HL-106-design-bible_v1-8.md).
 
-### 4.1 Characters & Narrative
-
-| Decision | Status | Notes |
-|----------|--------|-------|
-| **Starter Pokémon** — three Delta Species | ❌ Open | Specific choices not yet made |
-| **Player character** — name, appearance, backstory | ❌ Open | Specific details not yet decided |
-| **Rival** — identity, relationship to player, team | ❌ Open | Not yet designed |
-| **Faction name and leadership** — group name; who leads and what drives them | ❌ Open | Character not yet designed |
-
-### 4.2 World & Locations
+### 4.1 Story & Character
 
 | Decision | Status | Notes |
-|----------|--------|-------|
-| **The floating island surface** — what is up there; what the ancient civilization left | ❌ Open | TCG source material undefined; game to define |
+|---|---|---|
+| **Entrance town name** | Open | Opening town is defined structurally but still unnamed |
+| **Professor Cozmo's defining moment / knowledge arc** | Open | Meteorite, Deoxys, and crystal network realization path still unresolved |
+| **Steven's final scene** | Open | Emotional resolution is not fully locked |
+| **Auren's full prior knowledge and motive for staying in Holon** | Open | Backstory implications remain important to late-game reveals |
+| **Covert team lead identity, name, and personal drive** | Open | Function is defined; personal specifics remain intentionally unresolved |
+| **Mr. Stone's final knowledge and response** | Open | Degree of awareness and consequence is still undecided |
 
-### 4.3 Gameplay & Mechanics
-
-| Decision | Status | Notes |
-|----------|--------|-------|
-| **Gym leader identities** — eight station chiefs; specialisms, teams, Delta connection | ❌ Open | Not yet designed |
-| **Deoxys encounter design** — four-fragment battle beneath the Tower | ❌ Open | Mechanical approach not decided |
-| **Postgame Delta legendary placement** — Rayquaza δ, Latias δ + Latios δ, Lugia δ | ❌ Open | Locations and encounter structures TBD |
-| **Specific postgame details** — satellite islets secrets; faction researcher side content | ❌ Open | Full scope TBD |
-
-### 4.4 Art & Design
+### 4.2 World Structure
 
 | Decision | Status | Notes |
-|----------|--------|-------|
-| **Lugia δ typing and design** — invented form, not yet designed | ❌ Open | No TCG canon form exists; full design needed |
+|---|---|---|
+| **Floating Island main-story function** | Open | Needs resolution before act structure is fully finalized |
+| **How the player accesses and understands the civilization's deepest cosmic records** | Open | Tied to Dragon Frontiers, Steven's arc, and climax communication |
+
+### 4.3 Postgame & Encounter Design
+
+| Decision | Status | Notes |
+|---|---|---|
+| **Mew ☆ δ meaning at Dragon Frontiers** | Open | Underwater placement, Devon's knowledge, and mission framing are linked questions |
+| **Rayquaza alliance mechanism at the climax** | Open | Outcome is locked; exact turn from hostility to alliance is not |
+| **Jirachi δ postgame quest framing** | Open | Quest giver and exact mission structure remain undecided |
+| **Floating Island surface content** | Open | Postgame destination is locked; specific reveal/content payload is not |
+| **Shadow Lugia δ / XD001 mission design** | Open | Major postgame content is named but not yet fully designed |
 
 ---
 
 ## Changelog
 
 | Version | Date | Summary |
-|---------|------|---------|
-| 1.0 | 2026-03-22 | Initial index created; all five v2 docs registered; open decisions tracker seeded from HL-100 §16 |
+|---|---|---|
+| 1.0 | 2026-03-22 | Initial index created around the earlier documentation set |
+| 1.1 | 2026-04-05 | Registered HL-TEC-004 (Feature Implementation Master Plan) |
+| 1.2 | 2026-04-08 | Rebuilt index for the current documentation set; removed dead HL-100/101 references; registered HL-104, HL-106 v1.8, HL-400, HL-500, and data files; updated reading order and open decisions to match active docs |
 
 ---
 
-*Pokémon Holon Legends — GDD Index | HL-IDX-001 v1.0 | Last updated 2026-03-22*
+*Pokémon Holon Legends — GDD Index | HL-IDX-001 v1.2 | Last updated 2026-04-08*

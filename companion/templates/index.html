@@ -21,6 +21,10 @@
   <nav class="tab-bar">
     <button class="tab active" data-tab="pokedex">Pokédex</button>
     <button class="tab" data-tab="tcg">TCG Cards</button>
+    <div class="view-toggle">
+      <button class="toggle-btn active" data-view="gallery">⊞</button>
+      <button class="toggle-btn" data-view="table">≡</button>
+    </div>
   </nav>
 
   <main>
@@ -45,6 +49,8 @@
   <!-- TCG card lightbox -->
   <div id="card-lightbox-overlay" class="lightbox-overlay hidden">
     <button id="card-lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <button id="card-lightbox-prev" class="lightbox-nav lightbox-prev" aria-label="Previous card">‹</button>
+    <button id="card-lightbox-next" class="lightbox-nav lightbox-next" aria-label="Next card">›</button>
     <img id="card-lightbox-img" src="" alt="card" class="lightbox-img">
   </div>
 
