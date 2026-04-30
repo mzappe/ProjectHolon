@@ -21,22 +21,24 @@
     - [Crystal Isles](#crystal-isles)
     - [Dragon Frontiers](#dragon-frontiers)
   - [II.3 Holon Village as a Living Town](#ii3-holon-village-as-a-living-town)
+  - [II.4 The Holon League](#ii4-the-holon-league)
 - [Part III — The Disaster](#part-iii--the-disaster)
   - [III.1 Devon's Two Agendas](#iii1-devons-two-agendas)
   - [III.2 The Device](#iii2-the-device)
   - [III.3 The Delta Biology — Zone by Zone](#iii3-the-delta-biology--zone-by-zone)
 - [Part IV — The Characters](#part-iv--the-characters)
   - [IV.1 Professor Cozmo](#iv1-professor-cozmo)
-  - [IV.2 Steven Stone](#iv2-steven-stone)
-  - [IV.3 Auren — The Champion](#iv3-auren--the-champion)
-  - [IV.4 The Castaway](#iv4-the-castaway)
-  - [IV.5 The Covert Team Lead](#iv5-the-covert-team-lead)
-  - [IV.6 Mew ☆ δ](#iv6-mew--δ)
-  - [IV.7 Mewtwo](#iv7-mewtwo)
-  - [IV.8 Rayquaza](#iv8-rayquaza)
-  - [IV.9 Devon Corporation](#iv9-devon-corporation)
-  - [IV.10 Mr. Stone](#iv10-mr-stone)
-  - [IV.11 Legendaries & Mythicals — Placement Overview](#iv11-legendaries--mythicals--placement-overview)
+  - [IV.2 Ty](#iv2-ty)
+  - [IV.3 Steven Stone](#iv3-steven-stone)
+  - [IV.4 Auren — The Champion](#iv4-auren--the-champion)
+  - [IV.5 The Castaway](#iv5-the-castaway)
+  - [IV.6 The Covert Team Lead](#iv6-the-covert-team-lead)
+  - [IV.7 Mew ☆ δ](#iv7-mew--δ)
+  - [IV.8 Mewtwo](#iv8-mewtwo)
+  - [IV.9 Rayquaza](#iv9-rayquaza)
+  - [IV.10 Devon Corporation](#iv10-devon-corporation)
+  - [IV.11 Mr. Stone](#iv11-mr-stone)
+  - [IV.12 Legendaries & Mythicals — Placement Overview](#iv12-legendaries--mythicals--placement-overview)
 - [Part V — Act Structure](#part-v--act-structure)
   - [V.1 Three-Act Overview](#v1-three-act-overview)
   - [V.2 Crisis Two — The Solar Event](#v2-crisis-two--the-solar-event)
@@ -47,6 +49,7 @@
 - [Part VIII — Thematic Spine](#part-viii--thematic-spine)
 - [Part IX — Systems Within Systems](#part-ix--systems-within-systems)
 - [Open Questions](#open-questions)
+- [Part X — Notes & Works in Progress](#part-x--notes--works-in-progress)
 - [Changelog](#changelog)
 
 ---
@@ -109,7 +112,11 @@ A mutation of an extraterrestrial virus. Not a Pokémon in the conventional sens
 
 Mew has returned. Drawn by the same ancient instinct, it has come back to Holon — back to the only thing on Earth it has never been able to understand. Its proximity wakes Deoxys. Deoxys stirs back to life inside a completely different magnetic environment than it went dormant in — the Tower has been broadcasting for years, corrupting the regional magnetic field. The Metal secondary typing on Tower-area Delta Pokémon is the physical proof of this altered field. Deoxys wakes into it and its Delta formes are the direct result — its biology expressing itself through a contaminated magnetic environment it has no framework for. The explosion and Deoxys's escape from beneath the Tower are covered up by Devon.
 
-**Late-game revelation — locked:** The covert team already knew Deoxys was beneath the Tower. They did not want it woken — an uncontrolled Deoxys is a liability to their network expansion program, not an asset. But their escalating pressure on the Tower's operation, pushing for conditions that served their crystal network seeding agenda, was a contributing factor in the accident's timing. The "experiment gone wrong" narrative the public and most researchers accept is partially true — it did go wrong, just not in the way anyone is saying, and the covert team's institutional pressure was part of what made it happen. The player doesn't know this until late in Act 3.
+**Late-game revelation — locked:** The Tower was built to find Mew. During operation, Devon's researchers discovered something unexpected: the Tower's broadcast was amplifying a deep magnetic field already present in the landscape — one that was actively accelerating crystal formation across the region. Tracing the source led them to Deoxys, dormant beneath the Tower, its passive EM biology the origin of everything the crystal network had become. The public mission continued unchanged. Epsilon recognized what they had found.
+
+The covert program's logic shifted completely at that point. The crystal network didn't need to be built from scratch — it already existed, already reached across the region, and Devon's own Tower was amplifying the organism that sustained it. Epsilon's task became one of exploitation rather than construction: push the Tower harder, amplify Deoxys's field further, accelerate the network's growth beyond the region's historical boundaries. Every escalation was presented through legitimate research framing. Cozmo pushed back on several of them. He was overruled.
+
+They pushed too far. The accident released Deoxys — an outcome Epsilon didn't intend and couldn't control. The "experiment gone wrong" narrative the public and most researchers accept is true in the narrow sense. What it conceals is that the experiment was Epsilon's, the pressure was deliberate, and the organism that escaped was the one they had been quietly exploiting. The player doesn't know this until late in Act 3.
 
 **The four Delta formes encountered across the game:**
 
@@ -130,11 +137,11 @@ Mew has returned. Drawn by the same ancient instinct, it has come back to Holon 
 
 **What TCG canon establishes:** A mysterious island in the Crystal Isles bears naturally growing crystals said to grant special powers if used correctly. The Holon Circle — a shaped ring of crystals — is a named canonical artifact from the same location. The Crystal Isles is the last set in the Delta Species arc to feature dual-type Delta Pokémon, suggesting the crystals have a specific relationship to how the phenomenon expresses there.
 
-**What the game establishes from that foundation:** The crystals are not native to the Crystal Isles alone — they appear across the region as a pre-existing network, predating the expedition and the Tower entirely. They grow near power spots and along magnetic lines that connect back to the buried meteorite. The ancient civilization cultivated them deliberately as dual-purpose infrastructure: conducting the power spot's energy through the landscape via magnetic resonance, while managing growth configurations to contain the Delta phenomenon within the region's borders. The Holon Circle is the most visible surviving example — a boundary designed to lock energy within a specific area. Without active stewardship, the network propagates the phenomenon outward.
+**What the game establishes from that foundation:** The crystals are not native to the Crystal Isles alone — they appear across the region as a pre-existing network, predating the expedition and the Tower entirely. They are not the ancient civilization's construction. They grew — passively, over thousands of years — as a natural consequence of Deoxys's dormant EM biology expressing itself through the local geology. The ancient civilization didn't build the network. They found it, recognized what it was, and built their entire stewardship culture around maintaining the conditions that sustained it. The Holon Circle is the most visible surviving example — a management structure imposed on growth that was already happening, designed to lock energy within a specific area. Without active stewardship, the network propagates the phenomenon outward.
 
-The Tower's magnetic field and the crystal network now interact in ways the expedition didn't model. The crystals amplify and extend the Tower's frequency into areas the broadcast alone wouldn't reach. The covert team has noticed that crystal formations near Attack δ at the Crystal Isles respond to the fragment's presence in unusual ways. They find this extremely interesting. They are not wrong to notice it.
+Crystal Isles has the densest concentration of crystal growth in the region — but this is a geological accident, not an origin point. The mineral composition of Crystal Isles was already maximally receptive to Deoxys's EM field, meaning the same passive radiation that produced modest crystal growth elsewhere produced dramatic formations there. The ancient civilization settled Crystal Isles and built their most visible management structures there because it was the most legible expression of something whose true source lay elsewhere — beneath the power spot at the region's center. They were tending the most visible symptom of a cause they may not have fully understood themselves.
 
-The crystals are the evidence that someone was here before and understood something the researchers don't. The ancient civilization built a living containment system. The expedition inherited it and treated it as geology.
+The Tower's amplification of Deoxys's field accelerated crystal growth across the entire region. Crystal Isles responded most dramatically because the substrate was already receptive — the geology did what it was always inclined to do, faster. Epsilon chose Crystal Isles as the trigger point for the device because crystal density means maximum propagation through the rest of the network. The origin is under the Tower. The lever is Crystal Isles.
 
 Devon's underwater infrastructure — the submerged machinery visible at Holon Lake, the pipes and rigs extending toward the Crystal Isles — was built along the region's strongest magnetic lines as a straightforward engineering decision. Those lines are the crystal network's deep pathways. Devon has been threading infrastructure through an ancient system without knowing the system exists. At sufficient scale, a crystal network wired into modern equipment becomes the most sensitive EM detection array in the region. The covert team's expansion program will build that scale — and detect something nobody intended to find.
 
@@ -144,7 +151,7 @@ Devon's underwater infrastructure — the submerged machinery visible at Holon L
 
 ### II.1 The Region at a Glance
 
-The Holon Research Tower has been broadcasting for years. Its magnetic field has slowly transformed local Pokémon into Delta Species — a side effect the research team discovered without understanding they caused it. The covert team has been using the expedition's institutional infrastructure to advance their own program — pushing for conditions and access that serve the crystal network expansion agenda while appearing to serve the public mission. Cozmo has resisted certain escalations, reading the institutional pressure clearly even when he cannot identify its source. Each decision seemed reasonable in isolation.
+The Holon Research Tower has been broadcasting for years. Its magnetic field has slowly transformed local Pokémon into Delta Species — a side effect the research team discovered without understanding they caused it. The covert team has been using the expedition's institutional infrastructure to advance their own program — pushing for conditions and access that serve the crystal network expansion agenda while appearing to serve the public mission. The Tower was built to find Mew. What Devon found instead was that the Tower's broadcast was amplifying a magnetic field already present in the landscape — Deoxys, dormant beneath the Tower, its passive biology the source of every crystal formation in the region. Epsilon recognized the opportunity. Cozmo has resisted certain escalations, reading the institutional pressure clearly even when he cannot identify its source. Each decision seemed reasonable in isolation.
 
 Deoxys — dormant beneath the Tower as a stone tablet — is the true ancient source of the Delta phenomenon and the region's power spots. Its crashed meteorite body has been radiating passively for thousands of years, producing the power spots and propagating the crystal network beneath the region. It has been dormant the entire time the Tower has been broadcasting.
 
@@ -154,7 +161,7 @@ Professor Cozmo receives the player and sets the expedition's framing. He covers
 
 Cozmo presents the player with their starter — one of three rare Delta specimens collected from the farthest reaches of the region: **Delta Dratini (Grass-type)**, **Delta Ralts (Fire-type)**, or **Delta Bagon (Water-type)**. A field researcher needs a partner; these three are ready.
 
-The player's stated goals from the opening: document the Delta phenomenon across all five zones, fill the Pokédex, pursue the Mew search that started all of this, and complete the regional league challenge — which doubles as the access structure for restricted field areas across the region.
+The player's stated goals from the opening: document the Delta phenomenon across all five zones, fill the Pokédex, pursue the Mew search that started all of this, and complete the regional Pokémon League challenge — the region's established competitive institution, independent of Devon, that structures access to the broader landscape through eight gym leaders whose authority predates the expedition.
 
 ---
 
@@ -280,25 +287,51 @@ Holon Village is the player's recurring anchor across the entire game. It does n
 
 ---
 
+### II.4 The Holon League
+
+Holon's Pokémon League is not Devon's institution. It grew alongside the expedition — shaped by the same period that built the Tower and expanded the village — but it belongs to the region, not the company. Its eight gym leaders hold local authority: field specialists, zone ecologists, trainers whose expertise is specific to the terrain they occupy. Some have formal or informal arrangements with Devon; others operate at deliberate arm's length. The league as a whole is neither aligned with nor opposed to the expedition. It is a parallel system that developed in the same environment and has its own logic.
+
+For the player, the league is the structure that opens the region. Gym credentials are not Devon clearance — they are recognition from the people who actually know each zone, earned through demonstrated competence in their terrain. Auren holds the Champion title and sits at the top of that structure, in a position Devon cannot appoint or revoke.
+
+The gym leaders' individual relationships to Devon — cooperative, neutral, or quietly resistant — are part of what the player reads as they move through the region. No leader announces their position. It accumulates through dialogue, through what they know, through what they choose to say and leave unsaid.
+
+---
+
 ## Part III — The Disaster
 
 ### III.1 Devon's Two Agendas
 
 **The public mission** — real, legitimate, believed in by most participants including Steven: document the Delta phenomenon, fill the Pokédex, staff research stations across the region. Central to this mission is the development of the device — referenced in TCG card art as *Mr. Stone's Project* — a portable, directed Delta transformation tool. The stated goal is ecological: a technology that could safely induce controlled Delta transformations to restore damaged ecosystems, protect endangered species, and help nature adapt to environments humanity has degraded. Steven believes in this completely. Most of the expedition's researchers do too. The science behind it is genuine.
 
-**The covert program** — authorized by Devon's board without Steven's or Mr. Stone's knowledge: deliberately expand the crystal network at planetary scale to force speciation across all regions. Their belief: humanity broke the natural world and owes it a debt. The crystal network, if seeded and grown beyond Holon's historical boundaries, becomes infrastructure for directed Delta transformation deployed globally — every ecosystem reshaped faster than natural selection could manage, on Devon's board's timeline, without consent from anyone. They are not cynical men. They are catastrophically wrong about their right to act on behalf of every living thing that had no say in any of it.
+**The covert program** — authorized by Devon's board without Steven's or Mr. Stone's knowledge: deliberately expand the crystal network at planetary scale to force speciation across all regions. Internally designated the **Epsilon Division** — presented on Devon's org chart as the applied scaling arm of the ecological restoration mission, the team responsible for taking the public program's science and building the infrastructure to deploy it at magnitude. The name is chosen deliberately: Delta is the observed phenomenon; Epsilon is the next step. On a budget line or a document header it raises no flags.
 
-Deoxys is a liability to this plan, not an asset — an unpredictable organism at the network's origin point whose behavior the covert team cannot model or control. The device is their primary instrument for network expansion. Mewtwo — the closest thing in existence to a biological system built around genetic rewriting — is their primary research subject for understanding directed transformation at the biological level. By the time the player reaches Holon Lake, Mewtwo has already been taken. It is not an encounter. It is an absence.
+**The board's underlying motive** is energy. The Delta phenomenon and its relationship to Pokémon biology has revealed something Devon's board has been quietly studying: Delta Pokémon produce and conduct energy in ways normal Pokémon do not. The TCG establishes this directly — Holon's Pokémon function as living energy sources; δ Energy itself operates on a different principle than standard Pokémon energy. Devon's board sees the crystal network expansion as infrastructure for two things simultaneously: the ecological transformation they present publicly, and a resource extraction program at planetary scale. More Delta Pokémon, everywhere, means more biological energy infrastructure. The board tasked Epsilon with building the network that makes both possible.
+
+**The Epsilon Division leader's ideology diverges from the board's.** He knew what the board wanted when he was recruited — the energy agenda was not hidden from him. He took the role anyway because the ecological mission he believes in is real and the public program is insufficient to address it. Somewhere between his recruitment and the present, his belief in forced speciation as genuine ecological salvation calcified into something the board did not authorize and cannot control. By Act 3 he is pursuing his own agenda using Devon's resources and infrastructure. Whether the board knows he has gone rogue is [TBD]. What is locked: his diagnosis of the natural world — humanity has broken enormous things and the remaining time to act is short — is not wrong. His certainty that unilateral action at planetary scale is the only remaining option is the catastrophic error. What radicalized him from Devon's instrument into something the board cannot direct is [TBD] — something the player uncovers gradually across the investigation.
+
+Devon built the Tower to find Mew. During its operation, the Tower's broadcast interacted with a deep magnetic field already present in the landscape — Deoxys, dormant beneath the power spot, its passive EM biology the source of every crystal formation in the region. Epsilon's program reoriented around this discovery: the crystal network didn't need to be constructed, only amplified and expanded. The Tower was the instrument. Deoxys was the engine. Epsilon pushed the Tower's output harder and harder under legitimate research cover until the accident released what they had been exploiting — an outcome they did not intend and could not control.
+
+Mewtwo — captured from Holon Lake by the covert team — was used to test the device at the individual organism level before Epsilon committed to triggering it at planetary scale. The test worked. What the player finds at Holon Lake is not Mewtwo. It is Delta Mewtwo — the proof that the device does exactly what Epsilon intends, on the most powerful organism they could capture. Its type is [TBD].
 
 ---
 
 ### III.2 The Device
 
-*Mr. Stone's Project* — built by Devon's research team as the public mission's central deliverable: a portable, directed Delta transformation tool for ecological restoration. In practice, the covert team has been developing it as the instrument of their network expansion program — a tuned EM broadcaster/receiver built on the same research lineage as the Tower itself, designed to lock onto the crystal network's frequency signature and broadcast through its nodes to seed, amplify, and direct Delta transformation at scale. The covert team lead carries it to Dragon Frontiers to interface with the network at its deepest and oldest node — the final stage of the expansion plan.
+*Mr. Stone's Project* — built by Devon's research team as the public mission's central deliverable: a portable, directed Delta transformation tool for ecological restoration. Most researchers building it genuinely believe that is what it is. The science behind it is real.
 
-Most researchers building it don't know its true purpose. It is presented internally as the ecological restoration tool the public mission describes.
+Devon's research identified that the Tower's EM broadcast — despite years of operation — only produces Metal-type Delta. The Tower is a crude approximation of what the crystal network and Deoxys actually do. It generates a magnetic field, but not the right kind — not precise enough, not structured the way the network's field is. Devon recognized this gap and designed the Device to close it: a purpose-built magnetic field instrument that replicates the crystal network's mechanism precisely enough to induce genuine, non-Metal Delta transformation in a targeted Pokémon. Where the Tower produces a blunt signal, the Device produces a structured one. The stated goal is mass production — a deployable tool that could induce controlled Delta transformation for ecological restoration anywhere in the world.
 
-The player confronts the covert team lead at Dragon Frontiers, stops the expansion plan, and takes the device. **[TBD — what happens to the device after the player takes it, and who does what with it.]**
+In practice, Epsilon has been developing it as something else entirely: a trigger. Fired from Crystal Isles — the network's densest, most structurally receptive node — it propagates an activation signal through every node Epsilon has seeded across the region, using the full expanded network as the antenna. One trigger at the densest point. Irreversible, global, instant. Every ecosystem reshaped on the Epsilon leader's timeline without consent from anyone.
+
+**The crystal inside:** At some point in the investigation — **[TBD — exact moment]** — the player discovers that each Device contains a crystal harvested directly from the ancient network. This is the moment the Device stops looking like Devon's invention. Devon didn't develop the mechanism from scratch. They extracted it. The crystal is what allows the Device to replicate the network's magnetic field structure precisely — without it, the Device is just another approximation like the Tower. Mass production of the Device means systematic harvesting of the infrastructure the ancient civilization spent generations cultivating. The board's plan consumes the very system it depends on.
+
+The covert team lead carries the device to Crystal Isles for this purpose. The confrontation happens at Crystal Isles — the Epsilon crisis closes there, at the network's origin, where it was always going to end.
+
+**The device's second life:** The same capability that makes it a trigger makes it capable of working in reverse — draining accumulated Delta energy from a targeted organism rather than inducing it. Deoxys has been saturated with Delta energy since waking inside the Tower's corrupted field, locked into behavioral extremes it cannot exit. The device, recalibrated, can restore it. Epsilon spent years building an instrument of imposition. It becomes the instrument that undoes what imposition caused.
+
+**[TBD — The exact recalibration mechanism and who is present for it.]**
+
+**[TBD — What happens to the device after Deoxys is restored.]**
 
 ---
 
@@ -333,7 +366,25 @@ Cozmo receives the player at the start of the game and sets the expedition's fra
 
 ---
 
-### IV.2 Steven Stone
+### IV.2 Ty
+
+The player's first real peer in Holon. Arrives on the same boat, recruited through the same Devon channel, believes in the same mission. The friendship is established early and naturally — two people dropped into an unfamiliar place who find each other immediately useful and then genuinely enjoyable. Ty is sharp, curious, and committed to the ecological work in a way that feels personal rather than institutional. He is not naive. He sees the same institutional friction the player sees and reads it clearly. In Act 1 he is the person the player compares notes with.
+
+The divergence is not an event. It is a gradient. Small differences in how they each weight the evidence, what they find tolerable, what they decide the stakes demand — and those differences compound. The bifurcation is the game's central dynamical principle at the human scale: identical starting conditions, small asymmetries, outcomes that grow further apart than either of them intended or could have predicted.
+
+**[TBD — The specific incident or revelation that marks the point where the player and Ty's interpretations of the evidence visibly diverge.]**
+
+Epsilon approaches Ty late enough that the recruitment happens in view rather than in secret — the player sees the moment he makes the choice, not just the aftermath. By Act 3 Ty is inside the operation he once would have condemned, doing work he can justify to himself because the justification was always available to him. He is not wrong that the ecological crisis is real. He is not wrong that the public mission is insufficient. What he has accepted is that those two correct observations license what Epsilon is doing — and that acceptance is the error.
+
+His final position in the story is unresolved. The distance between him and the player is real by the end and does not close. Whether he recognizes what the player recognizes about Epsilon's catastrophic miscalculation — that the network they built was reading a solar signal that changes every calculation they made — is [TBD]. What is locked: Ty is not a villain. He is someone who started in the same place as the player and is no longer there, and the path between those two points is completely visible and completely his own.
+
+**[TBD — Ty's specific role within Epsilon's operations and whether he appears in a direct confrontation with the player.]**
+
+**[TBD — Ty's endpoint and final scene.]**
+
+---
+
+### IV.3 Steven Stone
 
 Son of Devon's president, Mr. Stone. A genuine believer in the ecological mission. Recruited the player personally. Utterly unaware of the covert program authorized by his father's board. When confronted with evidence at Holon Lake, he begins investigating his own organization rather than defending it — this is the most important thing about him. His arc is not a fall from grace; it is the story of someone discovering that good intentions do not guarantee good outcomes, and that loyalty to an institution is not the same as loyalty to what the institution is supposed to stand for.
 
@@ -341,13 +392,17 @@ His final scene is [TBD], but what is locked: Steven has to reckon with what was
 
 ---
 
-### IV.3 Auren — The Champion
+### IV.4 Auren — The Champion
 
-Devon's original survey lead for the Holon expedition. Knew from the start what was under the surface. Walked away. Now holds the Holon Champion title. The full significance of what Auren knew and when they knew it, and why they chose to stay in Holon rather than leave entirely, is the question the player slowly answers across the game.
+Devon's original survey lead for the Holon expedition. Knew from the start what was under the surface. Walked away from Devon — but not from Holon.
+
+Auren understood both systems from the inside: the expedition and the league that grew alongside it. When they left Devon they already had standing in the local culture — enough, over time, to become Champion. The position carries the most regional authority that exists outside Devon's org chart. Whether that was a principled choice, a strategic one, or the need to stay close to something they couldn't walk away from entirely is the question the player slowly answers.
+
+What Auren knew about what was under the surface, and why they stayed in Holon after learning it, is what the player is always circling.
 
 ---
 
-### IV.4 The Castaway
+### IV.5 The Castaway
 
 A researcher stationed at the Volcano Observatory on Crystal Isles. Has been watching the disaster scale up since before anyone else knew to watch. The Castaway is the person who has been keeping records nobody else knew to keep.
 
@@ -358,31 +413,37 @@ A researcher stationed at the Volcano Observatory on Crystal Isles. Has been wat
 
 ---
 
-### IV.5 The Covert Team Lead
+### IV.6 The Covert Team Lead
 
-Runs Devon's covert program under institutional cover. Flees to Dragon Frontiers with the device when the operation is exposed — Dragon Frontiers is the target, the oldest and deepest node of the crystal network, the intended final stage of the expansion plan. The personal drive behind their commitment to the covert agenda is [TBD]. Identity and name are [TBD]. What is locked: they are not a villain in the conventional sense. Their diagnosis of the natural world — humanity has broken enormous things — is correct. Their conviction that unilateral action is the only remaining option is the catastrophic error. They do not know, when the player confronts them, that the network they built to reshape the world has been reading a solar signal that changes every calculation they made.
+Runs the **Epsilon Division** — Devon's covert program — under institutional cover. He knew Devon's board's energy agenda when he was recruited to lead Epsilon. He took the role not because he shares the board's interest in Delta Pokémon as an energy resource, but because the ecological mission underneath it is one he believes in completely — and the public program was never going to be sufficient. The board gave him infrastructure and cover; he used both to pursue something he believes supersedes what they hired him to do.
+
+What radicalized him — the specific event or accumulation that converted genuine ecological conviction into the willingness to act unilaterally at planetary scale — is **[TBD]**, and is something the player pieces together across the investigation. It predates the game's events. By Act 3 he is no longer serving the board's energy agenda. He is pursuing forced speciation as genuine salvation, using Devon's resources and Epsilon's infrastructure to do it. The board's awareness of how far he has gone off-mission is **[TBD]**.
+
+He flees to Crystal Isles with the device when the operation is exposed — Crystal Isles is the network's densest node, the intended trigger location, where maximum crystal concentration means maximum propagation. Identity and name are **[TBD]**. What is locked: his diagnosis of what humanity has done to the natural world is not wrong. His certainty that he has the right to act on behalf of every living thing that had no say in his plan is the catastrophic error. He does not know, when the player confronts him, that the network he built to reshape the world has been reading a solar signal that changes every calculation he made.
 
 ---
 
-### IV.6 Mew ☆ δ
+### IV.7 Mew ☆ δ
 
 Permanently transformed by the accident — Mew's proximity to Deoxys when it woke produced a Delta transformation that did not revert. Mew ☆ δ is the physical proof that the accident changed everything, including the organism that caused it. Moves ahead of the spread. Found at Dragon Frontiers, naturally mutated as a Water-type Delta Species — the researchers came to Mirage Forest to find Mew and find it at the furthest possible point from where they started.
 
 ---
 
-### IV.7 Mewtwo
+### IV.8 Mewtwo δ
 
-Captured and experimented on by the covert team at Holon Lake. The closest thing in existence to a biological system built around genetic rewriting — which is why the covert team selected it. The player does not encounter Mewtwo in Holon Lake. They encounter its absence. Recovering Mewtwo and confronting what was done to it is the Holon Lake arc's central thread and the moment the covert operation becomes impossible to explain away.
+Captured from Holon Lake by the covert team and used to test the device at the individual organism level — Epsilon's proof of concept before committing to something irreversible at planetary scale. The test worked. What the player finds at Holon Lake is not Mewtwo. It is Delta Mewtwo: the most powerful organism the covert team could capture, permanently transformed by the device, confirming exactly what Epsilon built it to do.
+
+The horror is not an absence. It is what's still there. Delta Mewtwo remains at Holon Lake after the resolution — the evidence nobody can remove — and is catchable in the postgame. Its type is **[TBD]**.
 
 ---
 
-### IV.8 Rayquaza
+### IV.9 Rayquaza
 
 Territorial guardian destabilised by the crisis. Rayquaza's aggression across the game is ecologically appropriate — it is responding correctly to the largest biological disruption the region has experienced. The player's relationship with Rayquaza, built across the whole game, becomes an alliance at Dragon Frontiers. The exact mechanism of this shift is [TBD], but what is locked: Rayquaza is not an enemy. It has never been doing anything wrong. At the climax, the alliance with Rayquaza is part of how Deoxys — restored via the modified device — reaches the edge of the atmosphere. Rayquaza's territory extends to the boundary of space. That boundary is where Deoxys needs to be.
 
 ---
 
-### IV.9 Devon Corporation
+### IV.10 Devon Corporation
 
 The institutional backer and owner of the entire Holon expedition. Not a corrupt company — a company whose board convinced itself that the stakes were too high for the normal rules to apply. Devon's public face is genuine: fossil restoration, ecological science, the development of tools to help nature recover from damage humanity caused. The researchers who believe in this mission are not wrong to believe in it. The science is real.
 
@@ -394,7 +455,7 @@ Devon is never physically present in Holon. They are remote, institutional, and 
 
 ---
 
-### IV.10 Mr. Stone
+### IV.11 Mr. Stone
 
 Devon's president. Steven's father. Appears on Dragon Frontiers cards — physically present at the furthest point from Holon at the end of the arc. That presence is not explained in the TCG and is not explained cleanly in the game. He is there. What he knows by the time he arrives is a question the game holds rather than answers directly.
 
@@ -404,13 +465,13 @@ Whether Mr. Stone learns the full scope of what was authorized in his name, and 
 
 ---
 
-### IV.11 Legendaries & Mythicals — Placement Overview
+### IV.12 Legendaries & Mythicals — Placement Overview
 
 | Legendary | Forme | Location | Notes |
 |---|---|---|---|
 | Regirock, Regice, Registeel | Standard | Mirage Forest | Sealed Regi Chambers; Steven leaves notes (postgame) |
-| Latias δ, Latios δ | Delta | Holon Village / Holon Lake | Placement TBD |
-| Mewtwo δ | Delta | Holon Lake | Remains in the lake after resolution (postgame catchable) |
+| Latias δ, Latios δ | Delta | Holon Village / Holon Lake | Postgame mission: The Heroes of Alto Mare. Placement TBD. |
+| Mewtwo δ | Delta | Holon Lake | Transformed by the device as Epsilon's proof of concept; remains after resolution (postgame catchable); type TBD |
 | Rayquaza δ | Delta | Dragon Frontiers | Postgame encounter; details TBD |
 | Groudon ☆, Kyogre ☆ | Gold Star (non-Delta) | Holon area deep wilderness | Drawn by the magnetic field disruption |
 | Jirachi δ | Delta (Dark/Fire) | Crystal Isles volcano | Woken by the outward pulse; primary postgame mission |
@@ -440,7 +501,7 @@ The ecological damage becomes serious and visible. Small things don't add up. Co
 
 The player encounters **Defense δ** at Holon Lake — completely static, anchored, the lake structure activating in its presence.
 
-Mewtwo has already been taken. The player pieces together what happened. Recovering Mewtwo — and confronting what was done to it — is the Holon Lake arc's central thread. This is the moment the covert operation becomes impossible to explain away.
+The covert team has already used the device here. The player doesn't find Mewtwo — they find Delta Mewtwo, permanently transformed, the proof that the device works exactly as Epsilon intended on the most powerful organism they could capture. This is the moment the covert operation becomes impossible to explain away. The question is no longer what Epsilon plans to do. It is what they have already done, and at what scale they intend to do it again.
 
 Steven, confronted with evidence, begins his own investigation. He starts to understand what his father's board authorized without his knowledge.
 
@@ -452,56 +513,64 @@ The Coastal Zone is the midgame milestone. Boat passage to the Crystal Isles is 
 
 #### Act 3 — Crystal Isles and Dragon Frontiers
 
-The player encounters **Attack δ** at the Crystal Isles — aggressive, dangerous, causing most of the collateral damage Rayquaza has been responding to. The covert team finds Attack δ's effect on the crystal formations extremely interesting. This encounter is the most directly contested.
+The player arrives at Crystal Isles. The Epsilon confrontation is here — this is where the device will be triggered if the player doesn't stop it. The covert team lead is at the network's densest node, ready to detonate.
 
-The Volcano Observatory throughline reaches its third and final beat. The Castaway's data is now unambiguous.
+The player encounters **Attack δ** at the Crystal Isles — aggressive, dangerous, causing most of the collateral damage Rayquaza has been responding to. The covert team has been watching how Attack δ's presence interacts with the crystal formations. They find it extremely interesting. They are not wrong to notice it.
 
-The player, Steven, and Cozmo determine they need the device. The break-in sequence. The covert team lead flees to Dragon Frontiers.
+The Volcano Observatory throughline reaches its third and final beat. The Castaway's data is now unambiguous — the secondary signal is solar. A coronal mass ejection of unusual magnitude is incoming.
 
-The player follows. **Speed δ** is here — the one that ran furthest, the last one found, never staying in one place.
+The player, Steven, and Cozmo stop the covert team lead before the detonator fires. The device is taken. The Epsilon crisis closes at Crystal Isles — the human story, everything that originated in Devon's decisions and institutional failures, resolves here at the network's origin point.
 
-Rayquaza's arc reaches its climax. The player's relationship with Rayquaza, built across the whole game, becomes an alliance. **[TBD — exact mechanism.]**
+Cozmo recalibrates the device. What Epsilon built as a detonator becomes the instrument of restoration. The player takes it to Dragon Frontiers.
 
-The covert team lead is confronted at Dragon Frontiers — the intended final stage of the network expansion plan. The player defeats them and takes the device. **[TBD — what happens to the device next.]**
+**Speed δ** is at Dragon Frontiers — the one that ran furthest, the last forme found, never staying in one place. The player's relationship with Rayquaza, built across the whole game, becomes an alliance here. **[TBD — exact mechanism.]**
 
-**[TBD — Exact climax sequence: how the player uses the modified device on Deoxys, what the battle sequence looks like, how Deoxys becomes catchable.]**
+The Floating Island. The recalibrated device restores Deoxys — Delta energy drained, natural formes returned. Rayquaza carries Deoxys to the edge of the atmosphere. The ancient civilization's records, placed at Dragon Frontiers because this is the threshold where what they were describing could be directly observed, describe exactly this moment. The Castaway's instruments confirm what the carvings say.
 
-**What the player knows by the end of Act 3:** Everything about Deoxys and the covert team. The accident, the experiments, what was done to Mewtwo, the covert team's true agenda. The Castaway's data. The solar event incoming. The full picture — and this time it actually is the full picture.
+**[TBD — Exact sequence of the Dragon Frontiers climax: the Deoxys restoration, the Rayquaza alliance mechanism, what the player does at the Floating Island threshold.]**
+
+**What the player knows by the end of Act 3:** Everything. The accident, the experiments, Mewtwo, Epsilon's true agenda, the device's real purpose, the Castaway's data. The human crisis is closed. The planetary crisis is resolved. The full picture — and this time it actually is the full picture.
 
 ---
 
 ### V.2 Crisis Two — The Solar Event
 
-The player resolves the Deoxys crisis and believes the story is over. The Castaway's data says otherwise.
+The Epsilon crisis closes at Crystal Isles. The player stops the detonator, takes the device, and believes the hardest part is over. The Castaway's data says otherwise.
 
-The Volcano Observatory — made dramatically more sensitive by the covert team's expanded crystal network — has resolved a secondary signal that has been building across all three visits. It is not the comet. It is the sun. A coronal mass ejection of unusual magnitude is incoming, large enough to overwhelm planetary magnetic shielding. The region — and potentially far beyond it — is exposed.
+The Volcano Observatory — made dramatically more sensitive by the covert team's expanded crystal network — has resolved a secondary signal building across all three visits. It is not the comet. It is the sun. A coronal mass ejection of unusual magnitude is incoming, large enough to overwhelm planetary magnetic shielding. The region — and potentially far beyond it — is exposed.
 
-The irony is precise: the covert team's expansion program, built to reshape ecosystems without consent, inadvertently constructed the most sensitive EM detection array in the region. The instrument that detected the crisis was built by the people whose actions created the vulnerability for it. They do not know this. Nobody does, yet.
+The irony is precise: the covert team's expansion program, built to reshape ecosystems without consent, inadvertently constructed the most sensitive EM detection array in the region. The instrument that detected the crisis was built by the people whose actions created the vulnerability for it. They do not know this when the player confronts them. Nobody does, yet.
 
-**What the player thought was the whole story was one part of something larger.** Deoxys was real. The covert team was real. The solar event was running its own cycle underneath all of it, indifferent to everything happening in Holon.
+**What the player thought was the whole story was one layer of something larger.** The Epsilon crisis was real. The solar event was running its own cycle underneath all of it, indifferent to everything happening in Holon. The Castaway's data is what connects the two — and the Castaway only has that data because Epsilon's network made the observatory sensitive enough to read it.
 
-**What makes Deoxys necessary:** A whole, functioning Deoxys naturally extends the regional magnetic field as a consequence of its own complete biology. The ancient civilization observed this across generations and built their stewardship around it. Deoxys destabilized — cycling through uncontrolled Delta formes, unable to regulate its own output — is a gap in planetary shielding at the point of greatest cosmic exposure. Restored, it can do what it has always done. The ancient civilization's cosmic records, placed at Dragon Frontiers where the sky goes thin, describe exactly this — in a framework no modern researcher has fully translated, but which the Castaway's instruments are now confirming in real time.
+**What makes Deoxys necessary:** A whole, functioning Deoxys naturally stabilizes the regional magnetic field as a consequence of its own biology. Deoxys destabilized — saturated with Delta energy, cycling through uncontrolled formes — is a gap in that shielding at the point of greatest cosmic exposure. Restored, it can do what it has always done. The ancient civilization's cosmic records at Dragon Frontiers describe exactly this, in a framework no modern researcher has fully translated — but which the Castaway's instruments are now confirming in real time.
 
-**[TBD — Exact mechanism of how Deoxys shields the planet. What the player and Deoxys do together at the edge of the atmosphere.]**
+The player carries the recalibrated device from Crystal Isles to Dragon Frontiers. The human crisis produced the instrument that resolves the planetary crisis. The nested structure is visible in the geography.
+
+**[TBD — Exact mechanism of how Deoxys shields the planet at the edge of the atmosphere.]**
 
 ---
 
 ### V.3 Endgame — Resolution
 
-Everything converges at Dragon Frontiers simultaneously. The player stops the covert team lead's network expansion plan and takes the device. **[TBD — what happens to the device and who acts on it.]** Deoxys is restored. The Rayquaza alliance, earned across the whole game, enables Deoxys to reach the edge of the atmosphere — Rayquaza's territory extends to the boundary of space, and that boundary is where Deoxys needs to be. Deoxys shields the planet from the incoming solar event.
+The endgame moves across two locations. Each carries its own crisis to resolution. The player crosses between them carrying what the first produced.
 
-The ancient civilization's records, the Castaway's instruments, and the player's journey across all five zones point at the same moment. The surface crisis and the planetary crisis resolve together.
+**Crystal Isles — the Epsilon crisis closes.** The player stops the covert team lead before the device detonates through the network. Every human-scale thread — Devon's institutional failures, Epsilon's agenda, Ty's divergence, Steven's reckoning, the device's dual life — converges here at the network's densest node. Cozmo recalibrates the device in the aftermath. The human story closes.
+
+**Dragon Frontiers — the planetary crisis resolves.** The player arrives with the recalibrated device. Speed δ is here — the last forme, the furthest point. The Rayquaza alliance, earned across the whole game, becomes active. On the Floating Island, at the threshold where the atmosphere goes thin and the ancient civilization placed their deepest records, Deoxys is restored — Delta energy drained, natural formes returned. Rayquaza carries Deoxys to the edge of the atmosphere. Deoxys shields the planet from the incoming solar event.
+
+The ancient civilization's records, the Castaway's instruments, and the player's journey across all five zones point at the same moment. The human crisis and the planetary crisis resolve in sequence, each one making the next possible.
 
 **What is locked:**
 - The region's Delta Pokémon do not revert. The transformation is permanent.
 - Deoxys is restored at Dragon Frontiers. Deoxys becomes catchable.
-- The covert operation is exposed.
+- The Epsilon operation is exposed and stopped — but the nodes seeded outside Holon's historical boundaries remain. The Delta spread is permanent.
 - The solar event is survived because Deoxys is restored in time.
-- The covert team's network expansion is stopped — but the nodes they seeded outside Holon's historical boundaries remain. The Delta spread they caused is permanent. The tool of exploitation became the instrument of salvation. Nobody gets to be simply right or simply wrong.
+- The tool Epsilon built to impose transformation on the world became the instrument that undid what imposition caused. Nobody gets to be simply right or simply wrong.
 - Steven has to reckon with what was done in his organization's name without his knowledge.
 - The ending is not clean. Devon's board faces no visible consequence within the game's timeframe. Some researchers remain convinced they were right and only the method was wrong.
 
-**[TBD — Exact climax sequence: what the player and Deoxys do together at the edge of the atmosphere. What the visual of Deoxys shielding the planet looks like.]**
+**[TBD — Exact Dragon Frontiers climax sequence: the Deoxys restoration beat, the Rayquaza alliance mechanism, what the player does at the Floating Island threshold.]**
 
 **[TBD — Steven's final scene.]**
 
@@ -523,7 +592,7 @@ The player completes the Pokémon League and defeats Auren as Champion. The regi
 - **The Floating Island surface** — Now fully accessible; what the ancient civilization left at the absolute edge of the world.
 - **Mew ☆ δ mission** — Follow the ecological trail Mew left across all five zones after the resolution. Final encounter in Mirage Forest, where the story began.
 - **Regi Chambers** — Mirage Forest ruins; Steven has left notes.
-- **Rayquaza δ, Latias δ + Latios δ** — Postgame legendary encounters; placements TBD.
+- **Rayquaza δ, Latias δ + Latios δ** — Postgame legendary encounters. Latias δ and Latios δ: *The Heroes of Alto Mare*. Placements TBD.
 - **Shadow Lugia δ / XD001** — Major postgame mission.
 - **Groudon ☆ and Kyogre ☆** — Deep wilderness around Holon; non-Delta; drawn by the magnetic field disruption.
 - **Mewtwo δ** — Holon Lake; still present; catchable postgame.
@@ -658,7 +727,47 @@ This question has meaningful consequences for Steven's final scene and for how t
 
 ---
 
-## Changelog
+## Part X — Notes & Works in Progress
+
+*Ideas in development. Nothing here is locked. These exist to be shaped through further dialogue before any integration into the main document.*
+
+---
+
+**Three Knowledge Layers**
+
+The player's picture of the disaster assembles from three distinct knowledge frameworks operating in the world simultaneously.
+
+The ancient civilization understood the crystal network, Deoxys's role, and the cosmic threat within their own complete framework — observational, generational, and internally consistent. Their records are precise on their own terms. The gap is not in what they knew but in what modern researchers can read: without the right context and tools, the carvings look like mythology rather than documentation.
+
+The good scientists — Cozmo, Steven, public Devon — have real mechanistic knowledge of crystal delta properties and understand Crystal Isles as the network's densest concentration point. Their knowledge is genuine but scoped: they are looking at part of a larger system without knowing the larger system exists.
+
+Epsilon has operational knowledge of the network's expansion capability and scale. They are not engaging with the ancient records at all.
+
+The player moves through all three frameworks across the game — starting at the good scientists' floor, discovering Epsilon's operational picture by chasing them, and decoding the ancient layer through ruins exploration. The gut-punch is that the ancients left their records at the exact nodes Epsilon is seeding.
+
+---
+
+**Information Architecture — Discovery Channels**
+
+The three threads the player assembles — crystal network scope, Epsilon's plan, Deoxys's planetary role — arrive through three distinct channels: ruins/ancient sites, Epsilon confrontations, and the Castaway's observatory data. How these channels interlock across acts, and which source delivers which piece of each revelation, is worth mapping explicitly before scene-level writing begins.
+
+---
+
+**The Holon Transceiver**
+
+An official TCG artifact with established in-world lore. Its role in the story — including whether and how it functions as a tool for reading ancient language and mathematics — is an open development question.
+
+Open question worth resolving: if the Device requires a harvested crystal to replicate the network's magnetic field structure, does the Transceiver also contain one? The answer determines how deep Devon's harvesting of the ancient network goes — whether it is limited to a single experimental instrument or baked into standard expedition equipment from the start.
+
+---
+
+**δ Energy and Pokémon-as-Energy**
+
+The TCG establishes that certain Pokémon in the Holon sets function as living energy sources — Holon's Electrode, Holon's Castform, Holon's Magneton — and that δ Energy operates on a different principle than standard Pokémon energy. This is established lore that hasn't yet been integrated into the game's world-building. Devon's board's energy extraction agenda connects directly to this lore layer and may inform how Devon's research culture looks in the field — what NPCs are measuring, what the day-to-day expedition work actually involves, and what Epsilon is quietly steering that research toward.
+
+---
+
+
 
 | Version | Date | Changes |
 |---|---|---|
@@ -671,3 +780,10 @@ This question has meaningful consequences for Steven's final scene and for how t
 | 1.6 | 2026-04-05 | I.1 What Holon Is rewritten. Core philosophical framing revised: nested-layers structure now grounded in the idea that a system that works completely has no reason to look outside itself — success produces the blind spot. Single-machine principle added: crises arrive as consequences of each other through shared connections, and those same connections make resolution possible. Language tightened throughout; over-specific examples removed in favour of the structural principle. |
 | 1.7 | 2026-04-08 | IV.1 Professor Cozmo rewritten — name corrected from Cosmo throughout document; expertise-as-blind-spot framing removed; character rewritten as curious, inquisitive, smart outsider who works for Devon's good side and operates as active collaborator with the player and Steven across the game; defining moment and knowledge arc (meteorite, Deoxys, crystal network) marked [TBD]. I.2 Ancient Civilization — removed sentence attributing expertise-as-blind-spot arc to Cozmo. II.1 Region at a Glance — updated Cozmo framing to reflect active skepticism; expanded with full opening sequence: player arrives by boat to coastal entrance town [name TBD], recruited by Steven's personal letter, briefed by Cozmo on power spot/Tower/Delta/Mew, receives one of three Delta starter specimens (Delta Dratini Grass, Delta Ralts Fire, Delta Bagon Water), player goals established. III.2 The Device — Cozmo's defining moment language replaced with [TBD]. Part VII — removed Cozmo from expertise-as-blind-spot example; corrected name. |
 | 1.8 | 2026-04-08 | I.1 What Holon Is fully rewritten — two dynamical principles introduced as the structural foundation: scale and blindness (nested systems each blind to the level above), and sensitivity and emergence (perturbations propagate and amplify across scales; coupled complexity produces emergent behaviors). Part VIII Thematic Spine restructured into three tiers: primary dynamical themes (scale/blindness, sensitivity/emergence), major emotional theme (curiosity as transformation — the act of seeking changes what is found and changes the seeker, running through Mew, researchers, player, and ancient civilization), minor ethical themes (scientific curiosity vs. restraint, human effect on ecosystems). Part IX Systems Within Systems fully rewritten — two-principle framing added as intro; systems inventory retained and tightened; nested hierarchy diagram preserved; new perturbation chain table added tracing how each small cause crosses scales to produce disproportionate effects. |
+| 2.5 | 2026-04-21 | Major coherence pass on Epsilon/Deoxys/crystal network relationship. I.3 late-game revelation fully rewritten — Tower built to find Mew; during operation Devon discovered the Tower amplifying Deoxys's dormant EM field and accelerating crystal growth; Epsilon exploited this, pushed Tower to limits, accidentally released Deoxys; "experiment gone wrong" reframed as deliberate escalation with unintended outcome. I.4 Crystal Network rewritten — network established as product of Deoxys's passive biology over thousands of years, not ancient civilization construction; ancient civilization reframed as stewards of organic growth rather than builders; Crystal Isles density explained by receptive mineral composition (geological accident, not origin point); "origin point" language replaced throughout document with "densest node." III.1 Devon's Two Agendas — Deoxys/Mewtwo paragraph fully rewritten: Tower-to-Deoxys-discovery sequence added; Mewtwo reframed as device proof-of-concept whose test succeeded, producing Delta Mewtwo; absence framing removed. II.1 Region at a Glance — Tower's Mew-search origin and Deoxys discovery added to covert team framing. IV.8 Mewtwo — entry fully rewritten as Mewtwo δ; horror reframed from absence to presence of Delta Mewtwo; type [TBD]. IV.12 table — Mewtwo δ notes updated. V.1 Act 2 — Mewtwo paragraph rewritten to reflect Delta Mewtwo discovery. V.1 Act 3, V.3 Endgame, IV.6 Covert Team Lead — "origin point" replaced with "densest node." Part X knowledge layers — Crystal Isles framing corrected. |
+| 2.4 | 2026-04-21 | III.2 The Device fully rewritten — Tower's Metal-only output established as the observation that motivated Device development; Device reframed as a precision magnetic field instrument replicating the crystal network's mechanism rather than the Tower's crude approximation; crystal harvested from the ancient network established as the component that makes precision replication possible, with exact discovery moment [TBD]; mass production implication added — scaling the Device consumes the network it depends on; Epsilon trigger framing retained; second life framing retained with Cozmo reference reduced. Part X — Transceiver crystal open question added. |
+| 2.3 | 2026-04-14 | III.1 Devon's Two Agendas — board's energy motive added as the underlying driver behind Epsilon's funding; δ Energy and Pokémon-as-energy established as the resource Devon's board is positioning for; Epsilon leader's ideology split from the board's agenda — he knew the energy plan, took the role for his own reasons, and has radicalized beyond Devon's authorization by Act 3; radicalization cause and board's awareness of his going rogue marked [TBD]. IV.6 Covert Team Lead fully rewritten — entry expanded to reflect known/unknown split, ideological divergence from board, rogue status by Act 3, and trigger location corrected to Crystal Isles. Part X Notes & Works in Progress added — three knowledge layers, information architecture discovery channels, Holon Transceiver, and δ Energy/Pokémon-as-energy held as development ideas. TOC updated. |
+| 2.2 | 2026-04-09 | III.2 The Device fully rewritten — device established as Epsilon's detonator triggering from Crystal Isles as network origin point; device's second life as Cozmo's restoration instrument added; Cozmo's defining moment locked; restoration mechanics held as TBD. V.1 Act 3 rewritten — Epsilon confrontation relocated to Crystal Isles; Dragon Frontiers established as planetary crisis location; two-beat structure explicit. V.2 Crisis Two revised — two-location sequence clarified; causal link between human and planetary crises made explicit. V.3 Endgame fully rewritten — two-location structure replacing single convergence; Crystal Isles and Dragon Frontiers each carry distinct crisis to resolution; locked points updated. IV.12 Legendaries table — Latias δ / Latios δ postgame mission named The Heroes of Alto Mare. Part VI Postgame — same name added. |
+| 2.1 | 2026-04-09 | IV.2 Ty added — rival character established as fellow Devon recruit, friend who gradually diverges from player ideologically and is recruited by Epsilon Division; bifurcation framed as the game's central dynamical principle at the human scale. All subsequent character entries renumbered IV.3–IV.12. TOC updated. |
+| 2.0 | 2026-04-09 | II.1 league challenge sentence revised — league reframed as independent regional institution predating Devon. II.4 The Holon League added as new section — league framed as co-developed alongside expedition, neither aligned with nor opposed to Devon; gym leaders hold local authority; Auren at top of structure in a position Devon cannot control. IV.3 Auren rewritten — expanded to reflect dual-system positioning; final scene language tightened. TOC updated. |
+| 1.9 | 2026-04-08 | Epsilon Division established as the internal Devon designation for the covert program. III.1 Devon's Two Agendas — covert program paragraph updated to name and describe the Epsilon Division: presented on Devon's org chart as the applied scaling arm of the ecological restoration mission, named deliberately as the step after Delta. IV.5 The Covert Team Lead — updated to establish that the covert team lead runs the Epsilon Division. |
