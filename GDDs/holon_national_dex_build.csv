@@ -1,0 +1,88 @@
+build_order,species_const,display_name,base_species_const,base_nat_dex_const,dex_model,form_family,form_index,primary_type,secondary_type,evolves_from_const,evo_stage,is_starter_family,source_set,game_location,implemented_in_game,needs_review,notes
+1,SPECIES_DRATINI_DELTA_GRASS,Dratini δ,SPECIES_DRATINI,NATIONAL_DEX_DRATINI,delta_species,,0,GRASS,, ,basic,yes,HL-106 v2.5,Dragon Frontiers,no,no,Starter candidate from HL-106 v2.5
+2,SPECIES_DRAGONAIR_DELTA_GRASS,Dragonair δ,SPECIES_DRAGONAIR,NATIONAL_DEX_DRAGONAIR,delta_species,,0,GRASS,,SPECIES_DRATINI_DELTA_GRASS,stage_1,yes,HL-106 v2.5,Dragon Frontiers,no,yes,Middle stage type needs final confirmation
+3,SPECIES_DRAGONITE_DELTA_GRASS,Dragonite δ,SPECIES_DRAGONITE,NATIONAL_DEX_DRAGONITE,delta_species,,0,GRASS,STEEL,SPECIES_DRAGONAIR_DELTA_GRASS,final,yes,HL-106 v2.5,Dragon Frontiers,no,no,Final stage follows CSV Grass/Steel interpretation
+4,SPECIES_RALTS_DELTA_FIRE,Ralts δ,SPECIES_RALTS,NATIONAL_DEX_RALTS,delta_species,,0,FIRE,, ,basic,yes,HL-106 v2.5,Dragon Frontiers,no,no,Starter candidate from HL-106 v2.5
+5,SPECIES_KIRLIA_DELTA_FIRE,Kirlia δ,SPECIES_KIRLIA,NATIONAL_DEX_KIRLIA,delta_species,,0,FIRE,,SPECIES_RALTS_DELTA_FIRE,stage_1,yes,HL-106 v2.5,Dragon Frontiers,no,no,Matches current source CSV
+6,SPECIES_GARDEVOIR_DELTA_FIRE,Gardevoir δ,SPECIES_GARDEVOIR,NATIONAL_DEX_GARDEVOIR,delta_species,,0,FIRE,,SPECIES_KIRLIA_DELTA_FIRE,final,yes,HL-106 v2.5,Dragon Frontiers,no,no,Using Fire final form for starter line consistency
+7,SPECIES_BAGON_DELTA_WATER,Bagon δ,SPECIES_BAGON,NATIONAL_DEX_BAGON,delta_species,,0,WATER,, ,basic,yes,HL-106 v2.5,Dragon Frontiers,no,no,Starter candidate from HL-106 v2.5
+8,SPECIES_SHELGON_DELTA_WATER,Shelgon δ,SPECIES_SHELGON,NATIONAL_DEX_SHELGON,delta_species,,0,WATER,,SPECIES_BAGON_DELTA_WATER,stage_1,yes,HL-106 v2.5,Dragon Frontiers,no,no,Matches current source CSV
+9,SPECIES_SALAMENCE_DELTA_WATER,Salamence δ,SPECIES_SALAMENCE,NATIONAL_DEX_SALAMENCE,delta_species,,0,WATER,,SPECIES_SHELGON_DELTA_WATER,final,yes,HL-106 v2.5,Dragon Frontiers,no,no,Using Water final form for starter line consistency
+10,SPECIES_LAPRAS,Lapras,SPECIES_LAPRAS,NATIONAL_DEX_LAPRAS,base_species,,0,WATER,ICE, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+11,SPECIES_ABSOL,Absol,SPECIES_ABSOL,NATIONAL_DEX_ABSOL,base_species,,0,DARK,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+12,SPECIES_GIRAFARIG,Girafarig,SPECIES_GIRAFARIG,NATIONAL_DEX_GIRAFARIG,base_species,,0,NORMAL,PSYCHIC, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+13,SPECIES_LUNATONE,Lunatone,SPECIES_LUNATONE,NATIONAL_DEX_LUNATONE,base_species,,0,ROCK,PSYCHIC, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+14,SPECIES_MAGMAR,Magmar,SPECIES_MAGMAR,NATIONAL_DEX_MAGMAR,base_species,,0,FIRE,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+15,SPECIES_PINSIR,Pinsir,SPECIES_PINSIR,NATIONAL_DEX_PINSIR,base_species,,0,BUG,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+16,SPECIES_SOLROCK,Solrock,SPECIES_SOLROCK,NATIONAL_DEX_SOLROCK,base_species,,0,ROCK,PSYCHIC, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+17,SPECIES_SPINDA,Spinda,SPECIES_SPINDA,NATIONAL_DEX_SPINDA,base_species,,0,NORMAL,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+18,SPECIES_TORKOAL,Torkoal,SPECIES_TORKOAL,NATIONAL_DEX_TORKOAL,base_species,,0,FIRE,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+19,SPECIES_WOBBUFFET,Wobbuffet,SPECIES_WOBBUFFET,NATIONAL_DEX_WOBBUFFET,base_species,,0,PSYCHIC,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+20,SPECIES_DUNSPARCE,Dunsparce,SPECIES_DUNSPARCE,NATIONAL_DEX_DUNSPARCE,base_species,,0,NORMAL,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+21,SPECIES_KECLEON,Kecleon,SPECIES_KECLEON,NATIONAL_DEX_KECLEON,base_species,,0,NORMAL,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+22,SPECIES_MISDREAVUS,Misdreavus,SPECIES_MISDREAVUS,NATIONAL_DEX_MISDREAVUS,base_species,,0,GHOST,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+23,SPECIES_ROSELIA,Roselia,SPECIES_ROSELIA,NATIONAL_DEX_ROSELIA,base_species,,0,GRASS,POISON, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+24,SPECIES_TANGELA,Tangela,SPECIES_TANGELA,NATIONAL_DEX_TANGELA,base_species,,0,GRASS,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+25,SPECIES_ARON,Aron,SPECIES_ARON,NATIONAL_DEX_ARON,base_species,,0,STEEL,ROCK, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+26,SPECIES_LAIRON,Lairon,SPECIES_LAIRON,NATIONAL_DEX_LAIRON,base_species,,0,STEEL,ROCK,SPECIES_ARON,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+27,SPECIES_AGGRON,Aggron,SPECIES_AGGRON,NATIONAL_DEX_AGGRON,base_species,,0,STEEL,ROCK,SPECIES_LAIRON,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Aggron and Aggron ex card coverage
+28,SPECIES_BELLSPROUT,Bellsprout,SPECIES_BELLSPROUT,NATIONAL_DEX_BELLSPROUT,base_species,,0,GRASS,POISON, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+29,SPECIES_WEEPINBELL,Weepinbell,SPECIES_WEEPINBELL,NATIONAL_DEX_WEEPINBELL,base_species,,0,GRASS,POISON,SPECIES_BELLSPROUT,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+30,SPECIES_VICTREEBEL,Victreebel,SPECIES_VICTREEBEL,NATIONAL_DEX_VICTREEBEL,base_species,,0,GRASS,POISON,SPECIES_WEEPINBELL,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+31,SPECIES_CHINCHOU,Chinchou,SPECIES_CHINCHOU,NATIONAL_DEX_CHINCHOU,base_species,,0,WATER,ELECTRIC, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+32,SPECIES_LANTURN,Lanturn,SPECIES_LANTURN,NATIONAL_DEX_LANTURN,base_species,,0,WATER,ELECTRIC,SPECIES_CHINCHOU,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+33,SPECIES_CLAMPERL,Clamperl,SPECIES_CLAMPERL,NATIONAL_DEX_CLAMPERL,base_species,,0,WATER,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Branching evolution line
+34,SPECIES_GOREBYSS,Gorebyss,SPECIES_GOREBYSS,NATIONAL_DEX_GOREBYSS,base_species,,0,WATER,,SPECIES_CLAMPERL,final,no,EX Legend Maker,Mirage Forest,no,no,Branching evolution line
+35,SPECIES_HUNTAIL,Huntail,SPECIES_HUNTAIL,NATIONAL_DEX_HUNTAIL,base_species,,0,WATER,,SPECIES_CLAMPERL,final,no,EX Legend Maker,Mirage Forest,no,no,Branching evolution line
+36,SPECIES_GASTLY,Gastly,SPECIES_GASTLY,NATIONAL_DEX_GASTLY,base_species,,0,GHOST,POISON, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+37,SPECIES_HAUNTER,Haunter,SPECIES_HAUNTER,NATIONAL_DEX_HAUNTER,base_species,,0,GHOST,POISON,SPECIES_GASTLY,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+38,SPECIES_GENGAR,Gengar,SPECIES_GENGAR,NATIONAL_DEX_GENGAR,base_species,,0,GHOST,POISON,SPECIES_HAUNTER,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+39,SPECIES_GEODUDE,Geodude,SPECIES_GEODUDE,NATIONAL_DEX_GEODUDE,base_species,,0,ROCK,GROUND, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+40,SPECIES_GRAVELER,Graveler,SPECIES_GRAVELER,NATIONAL_DEX_GRAVELER,base_species,,0,ROCK,GROUND,SPECIES_GEODUDE,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+41,SPECIES_GOLEM,Golem,SPECIES_GOLEM,NATIONAL_DEX_GOLEM,base_species,,0,ROCK,GROUND,SPECIES_GRAVELER,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+42,SPECIES_GRIMER,Grimer,SPECIES_GRIMER,NATIONAL_DEX_GRIMER,base_species,,0,POISON,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+43,SPECIES_MUK,Muk,SPECIES_MUK,NATIONAL_DEX_MUK,base_species,,0,POISON,,SPECIES_GRIMER,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+44,SPECIES_GROWLITHE,Growlithe,SPECIES_GROWLITHE,NATIONAL_DEX_GROWLITHE,base_species,,0,FIRE,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+45,SPECIES_ARCANINE,Arcanine,SPECIES_ARCANINE,NATIONAL_DEX_ARCANINE,base_species,,0,FIRE,,SPECIES_GROWLITHE,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Arcanine ex card coverage
+46,SPECIES_MACHOP,Machop,SPECIES_MACHOP,NATIONAL_DEX_MACHOP,base_species,,0,FIGHTING,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+47,SPECIES_MACHOKE,Machoke,SPECIES_MACHOKE,NATIONAL_DEX_MACHOKE,base_species,,0,FIGHTING,,SPECIES_MACHOP,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+48,SPECIES_MACHAMP,Machamp,SPECIES_MACHAMP,NATIONAL_DEX_MACHAMP,base_species,,0,FIGHTING,,SPECIES_MACHOKE,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+49,SPECIES_MAGBY,Magby,SPECIES_MAGBY,NATIONAL_DEX_MAGBY,base_species,,0,FIRE,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+50,SPECIES_MAGNEMITE,Magnemite,SPECIES_MAGNEMITE,NATIONAL_DEX_MAGNEMITE,base_species,,0,ELECTRIC,STEEL, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+51,SPECIES_MAGNETON,Magneton,SPECIES_MAGNETON,NATIONAL_DEX_MAGNETON,base_species,,0,ELECTRIC,STEEL,SPECIES_MAGNEMITE,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+52,SPECIES_SEEDOT,Seedot,SPECIES_SEEDOT,NATIONAL_DEX_SEEDOT,base_species,,0,GRASS,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+53,SPECIES_NUZLEAF,Nuzleaf,SPECIES_NUZLEAF,NATIONAL_DEX_NUZLEAF,base_species,,0,GRASS,DARK,SPECIES_SEEDOT,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+54,SPECIES_SHIFTRY,Shiftry,SPECIES_SHIFTRY,NATIONAL_DEX_SHIFTRY,base_species,,0,GRASS,DARK,SPECIES_NUZLEAF,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+55,SPECIES_SENTRET,Sentret,SPECIES_SENTRET,NATIONAL_DEX_SENTRET,base_species,,0,NORMAL,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+56,SPECIES_FURRET,Furret,SPECIES_FURRET,NATIONAL_DEX_FURRET,base_species,,0,NORMAL,,SPECIES_SENTRET,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+57,SPECIES_SHUPPET,Shuppet,SPECIES_SHUPPET,NATIONAL_DEX_SHUPPET,base_species,,0,GHOST,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+58,SPECIES_BANETTE,Banette,SPECIES_BANETTE,NATIONAL_DEX_BANETTE,base_species,,0,GHOST,,SPECIES_SHUPPET,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Banette ex card coverage
+59,SPECIES_SKITTY,Skitty,SPECIES_SKITTY,NATIONAL_DEX_SKITTY,base_species,,0,NORMAL,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+60,SPECIES_DELCATTY,Delcatty,SPECIES_DELCATTY,NATIONAL_DEX_DELCATTY,base_species,,0,NORMAL,,SPECIES_SKITTY,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+61,SPECIES_SPHEAL,Spheal,SPECIES_SPHEAL,NATIONAL_DEX_SPHEAL,base_species,,0,ICE,WATER, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+62,SPECIES_SEALEO,Sealeo,SPECIES_SEALEO,NATIONAL_DEX_SEALEO,base_species,,0,ICE,WATER,SPECIES_SPHEAL,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+63,SPECIES_WALREIN,Walrein,SPECIES_WALREIN,NATIONAL_DEX_WALREIN,base_species,,0,ICE,WATER,SPECIES_SEALEO,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Walrein ex card coverage
+64,SPECIES_TENTACOOL,Tentacool,SPECIES_TENTACOOL,NATIONAL_DEX_TENTACOOL,base_species,,0,WATER,POISON, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+65,SPECIES_TENTACRUEL,Tentacruel,SPECIES_TENTACRUEL,NATIONAL_DEX_TENTACRUEL,base_species,,0,WATER,POISON,SPECIES_TENTACOOL,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+66,SPECIES_TRAPINCH,Trapinch,SPECIES_TRAPINCH,NATIONAL_DEX_TRAPINCH,base_species,,0,GROUND,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+67,SPECIES_VIBRAVA,Vibrava,SPECIES_VIBRAVA,NATIONAL_DEX_VIBRAVA,base_species,,0,GROUND,DRAGON,SPECIES_TRAPINCH,stage_1,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+68,SPECIES_FLYGON,Flygon,SPECIES_FLYGON,NATIONAL_DEX_FLYGON,base_species,,0,GROUND,DRAGON,SPECIES_VIBRAVA,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Flygon ex card coverage
+69,SPECIES_VOLTORB,Voltorb,SPECIES_VOLTORB,NATIONAL_DEX_VOLTORB,base_species,,0,ELECTRIC,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+70,SPECIES_ELECTRODE,Electrode,SPECIES_ELECTRODE,NATIONAL_DEX_ELECTRODE,base_species,,0,ELECTRIC,,SPECIES_VOLTORB,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+71,SPECIES_WAILMER,Wailmer,SPECIES_WAILMER,NATIONAL_DEX_WAILMER,base_species,,0,WATER,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+72,SPECIES_WAILORD,Wailord,SPECIES_WAILORD,NATIONAL_DEX_WAILORD,base_species,,0,WATER,,SPECIES_WAILMER,final,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+73,SPECIES_WURMPLE,Wurmple,SPECIES_WURMPLE,NATIONAL_DEX_WURMPLE,base_species,,0,BUG,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+74,SPECIES_CASCOON,Cascoon,SPECIES_CASCOON,NATIONAL_DEX_CASCOON,base_species,,0,BUG,,SPECIES_WURMPLE,stage_1,no,EX Legend Maker,Mirage Forest,no,no,Keeping only Cascoon branch from current source coverage
+75,SPECIES_DUSTOX,Dustox,SPECIES_DUSTOX,NATIONAL_DEX_DUSTOX,base_species,,0,BUG,POISON,SPECIES_CASCOON,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Dustox ex card coverage
+76,SPECIES_WYNAUT,Wynaut,SPECIES_WYNAUT,NATIONAL_DEX_WYNAUT,base_species,,0,PSYCHIC,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,EX Legend Maker Mirage Forest
+77,SPECIES_PIKACHU_DELTA_STEEL,Pikachu δ,SPECIES_PIKACHU,NATIONAL_DEX_PIKACHU,delta_species,,0,STEEL,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Mirage Forest delta outlier from Legend Maker
+78,SPECIES_AERODACTYL,Aerodactyl,SPECIES_AERODACTYL,NATIONAL_DEX_AERODACTYL,base_species,,0,ROCK,FLYING, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+79,SPECIES_LILEEP,Lileep,SPECIES_LILEEP,NATIONAL_DEX_LILEEP,base_species,,0,ROCK,GRASS, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+80,SPECIES_CRADILY,Cradily,SPECIES_CRADILY,NATIONAL_DEX_CRADILY,base_species,,0,ROCK,GRASS,SPECIES_LILEEP,final,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+81,SPECIES_KABUTO,Kabuto,SPECIES_KABUTO,NATIONAL_DEX_KABUTO,base_species,,0,ROCK,WATER, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+82,SPECIES_KABUTOPS,Kabutops,SPECIES_KABUTOPS,NATIONAL_DEX_KABUTOPS,base_species,,0,ROCK,WATER,SPECIES_KABUTO,final,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+83,SPECIES_OMANYTE,Omanyte,SPECIES_OMANYTE,NATIONAL_DEX_OMANYTE,base_species,,0,ROCK,WATER, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+84,SPECIES_OMASTAR,Omastar,SPECIES_OMASTAR,NATIONAL_DEX_OMASTAR,base_species,,0,ROCK,WATER,SPECIES_OMANYTE,final,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+85,SPECIES_ANORITH,Anorith,SPECIES_ANORITH,NATIONAL_DEX_ANORITH,base_species,,0,ROCK,BUG, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Fossil line from EX Legend Maker
+86,SPECIES_ARMALDO,Armaldo,SPECIES_ARMALDO,NATIONAL_DEX_ARMALDO,base_species,,0,ROCK,BUG,SPECIES_ANORITH,final,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Armaldo ex card coverage
+87,SPECIES_MEW,Mew,SPECIES_MEW,NATIONAL_DEX_MEW,base_species,,0,PSYCHIC,, ,basic,no,EX Legend Maker,Mirage Forest,no,no,Collapsed from Mew and Mew ex card coverage
