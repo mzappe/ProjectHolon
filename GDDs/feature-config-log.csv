@@ -1,0 +1,3 @@
+ID,Date,Category,Change,Technical Details,Status,Notes
+1,2026-03-26,Engine,Remove Pokeemerald Title Sequence,Disabled EXPANSION_INTRO in include/config/general.h,Completed,
+2,2026-08-26,UI,Add Star and Lowercase Delta Naming Symbols,"Mapped ★ and δ to single-byte characters 0x7D and 0x92, added them to the naming keyboard, and created aligned glyphs across all Latin font variants",Completed,"Fine first pass with limited testing; review the symbol designs again later"

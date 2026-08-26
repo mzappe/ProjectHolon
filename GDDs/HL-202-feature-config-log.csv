@@ -1,2 +1,0 @@
-ID,Date,Category,Change,Technical Details,Status
-1,2026-03-26,Engine,Remove Pokeemerald Title Sequence,Disabled EXPANSION_INTRO in include/config/general.h,Completed
