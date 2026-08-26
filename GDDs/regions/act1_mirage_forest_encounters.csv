@@ -1,0 +1,95 @@
+area_id,area_name,species_display_name,species_const,evo_stage,encounter_method,rarity,level_range,notes
+MF01,Forest Entrance / Coastal Fringe,Wurmple,SPECIES_WURMPLE,basic,grass,common,2-4,Tutorial-tier
+MF01,Forest Entrance / Coastal Fringe,Sentret,SPECIES_SENTRET,basic,grass,common,2-4,Tutorial-tier
+MF01,Forest Entrance / Coastal Fringe,Wingull,SPECIES_WINGULL,basic,grass,common,2-4,NOT in current dex build CSV - needs adding if used; placeholder for coastal-flying flavor
+MF01,Forest Entrance / Coastal Fringe,Tentacool,SPECIES_TENTACOOL,basic,surf,common,3-5,Coastal water encounter
+MF01,Forest Entrance / Coastal Fringe,Chinchou,SPECIES_CHINCHOU,basic,fish (old rod-equiv),uncommon,3-6,
+MF02,Outer Mirage Forest,Wurmple,SPECIES_WURMPLE,basic,grass,common,3-5,
+MF02,Outer Mirage Forest,Cascoon,SPECIES_CASCOON,stage_1,grass,uncommon,5-7,Evolution only - review if should appear wild
+MF02,Outer Mirage Forest,Sentret,SPECIES_SENTRET,basic,grass,common,3-5,
+MF02,Outer Mirage Forest,Furret,SPECIES_FURRET,final,grass,rare,8-10,
+MF02,Outer Mirage Forest,Seedot,SPECIES_SEEDOT,basic,grass,common,3-5,
+MF02,Outer Mirage Forest,Skitty,SPECIES_SKITTY,basic,grass,common,3-5,
+MF02,Outer Mirage Forest,Dunsparce,SPECIES_DUNSPARCE,basic,grass,uncommon,4-6,
+MF02,Outer Mirage Forest,Girafarig,SPECIES_GIRAFARIG,basic,grass,uncommon,4-6,
+MF03,Sand Basin,Trapinch,SPECIES_TRAPINCH,basic,grass (sand),common,5-8,Named landmark area
+MF03,Sand Basin,Geodude,SPECIES_GEODUDE,basic,grass (sand)/rock,common,5-8,
+MF03,Sand Basin,Graveler,SPECIES_GRAVELER,stage_1,grass (sand)/rock,uncommon,9-11,Evolution only - review if should appear wild
+MF03,Sand Basin,Lunatone,SPECIES_LUNATONE,basic,grass (sand)/night-only,rare,10-14,Version/time-gated candidate (paired w/ Solrock)
+MF03,Sand Basin,Solrock,SPECIES_SOLROCK,basic,grass (sand)/day-only,rare,10-14,Version/time-gated candidate (paired w/ Lunatone)
+MF04,Ruins of Progress (Railway Belt),Voltorb,SPECIES_VOLTORB,basic,grass,uncommon,6-9,Card-art confirmed for this landmark
+MF04,Ruins of Progress (Railway Belt),Electrode,SPECIES_ELECTRODE,final,grass,rare,12-15,Card-art confirmed for this landmark
+MF04,Ruins of Progress (Railway Belt),Magnemite,SPECIES_MAGNEMITE,basic,grass,uncommon,6-9,Fits industrial-relic theme
+MF04,Ruins of Progress (Railway Belt),Magneton,SPECIES_MAGNETON,final,grass,rare,13-16,Fits industrial-relic theme
+MF04,Ruins of Progress (Railway Belt),Aron,SPECIES_ARON,basic,grass,uncommon,7-10,Steel/Rock fits rusted-metal theme
+MF05,Strange Cave,Geodude,SPECIES_GEODUDE,basic,cave,common,6-9,Named landmark
+MF05,Strange Cave,Graveler,SPECIES_GRAVELER,stage_1,cave,uncommon,10-12,Evolution only - review if should appear wild
+MF05,Strange Cave,Grimer,SPECIES_GRIMER,basic,cave,common,7-10,
+MF05,Strange Cave,Muk,SPECIES_MUK,final,cave,rare,15-18,Card art: "pockets of toxic marsh" adjacent theme
+MF05,Strange Cave,Gastly,SPECIES_GASTLY,basic,cave,uncommon,7-10,Soft yellow light = ghost-adjacent per card art
+MF05,Strange Cave,Haunter,SPECIES_HAUNTER,stage_1,cave,rare,13-16,Evolution only - review if should appear wild
+MF05,Strange Cave,Wobbuffet,SPECIES_WOBBUFFET,basic,cave,rare,8-11,
+MF06,Cursed Shrine,Shuppet,SPECIES_SHUPPET,basic,cave,uncommon,8-11,Story/atmosphere forward area - light encounter table
+MF06,Cursed Shrine,Banette,SPECIES_BANETTE,final,cave,rare,16-19,Evolution only - review if should appear wild
+MF06,Cursed Shrine,Misdreavus,SPECIES_MISDREAVUS,basic,cave,rare,9-12,
+MF06,Cursed Shrine,Absol,SPECIES_ABSOL,basic,cave (rare spawn),rare,12-15,Dark-type foreboding fits shrine tone
+MF07,Deep Mirage Forest,Pinsir,SPECIES_PINSIR,basic,grass,uncommon,10-13,Card art confirmed - "clings to massive tree trunks"
+MF07,Deep Mirage Forest,Machop,SPECIES_MACHOP,basic,grass,common,9-12,
+MF07,Deep Mirage Forest,Machoke,SPECIES_MACHOKE,stage_1,grass,uncommon,15-18,Evolution only - review if should appear wild
+MF07,Deep Mirage Forest,Machamp,SPECIES_MACHAMP,final,grass,rare,20+,Evolution only - review if should appear wild at all in Act 1
+MF07,Deep Mirage Forest,Bellsprout,SPECIES_BELLSPROUT,basic,grass,common,9-12,
+MF07,Deep Mirage Forest,Weepinbell,SPECIES_WEEPINBELL,stage_1,grass,uncommon,16-19,Evolution only - review if should appear wild
+MF07,Deep Mirage Forest,Victreebel,SPECIES_VICTREEBEL,final,grass,rare,20+,Card art confirmed - "dark upper canopies"; evolution only, review
+MF07,Deep Mirage Forest,Seedot,SPECIES_SEEDOT,basic,grass,common,9-12,
+MF07,Deep Mirage Forest,Nuzleaf,SPECIES_NUZLEAF,stage_1,grass,uncommon,15-18,Card art confirmed - "dark upper canopies"; evolution only, review
+MF07,Deep Mirage Forest,Shiftry,SPECIES_SHIFTRY,final,grass,rare,20+,Card art confirmed - "dark upper canopies"; evolution only, review
+MF07,Deep Mirage Forest,Tangela,SPECIES_TANGELA,basic,grass,uncommon,10-13,
+MF07,Deep Mirage Forest,Roselia,SPECIES_ROSELIA,basic,grass,uncommon,10-13,
+MF07,Deep Mirage Forest,Kecleon,SPECIES_KECLEON,basic,grass (camouflaged/rare),rare,11-14,
+MF07,Deep Mirage Forest,Spinda,SPECIES_SPINDA,basic,grass,uncommon,10-13,
+MF07,Deep Mirage Forest,Growlithe,SPECIES_GROWLITHE,basic,grass,uncommon,10-13,
+MF07,Deep Mirage Forest,Arcanine,SPECIES_ARCANINE,final,grass,rare,20+,Evolution only - review if should appear wild at all in Act 1
+MF07,Deep Mirage Forest,Magby,SPECIES_MAGBY,basic,grass,rare,10-13,Fire-type deep-forest rarity, precedes Volcanic Fringe proper
+MF07,Deep Mirage Forest,Magmar,SPECIES_MAGMAR,basic,grass,rare,12-15,Card art places in calderas but also listed flat in dex build - low-rarity deep-forest spawn until Volcanic Fringe unlocks
+MF07,Deep Mirage Forest,Wynaut,SPECIES_WYNAUT,basic,grass,rare,8-11,Pre-evo of Wobbuffet - consider pairing encounter rarity with MF05
+MF08,The Power Spot,Mew,SPECIES_MEW,basic,special/story,special,15 (fixed?),Narrative-critical - one-time or late unlock event encounter, not standard grass table
+MF08,The Power Spot,Gastly,SPECIES_GASTLY,basic,grass (dusk only),rare,10-13,"Ghost-types linger at the shadowy edges" per card art
+MF08,The Power Spot,Haunter,SPECIES_HAUNTER,stage_1,grass (dusk only),rare,16-19,Evolution only - review if should appear wild
+MF08,The Power Spot,Gengar,SPECIES_GENGAR,final,grass (night only/rare),very rare,22+,Card art confirmed at Power Spot; evolution only, review
+MF09,Fossil Grove,Lileep,SPECIES_LILEEP,basic,grass,uncommon,15-18,Roaming restored-fossil population per design decision
+MF09,Fossil Grove,Cradily,SPECIES_CRADILY,final,grass,rare,25+,Evolution only - review if should appear wild at all in Act 1
+MF09,Fossil Grove,Kabuto,SPECIES_KABUTO,basic,grass,uncommon,15-18,
+MF09,Fossil Grove,Kabutops,SPECIES_KABUTOPS,final,grass,rare,25+,Evolution only - review if should appear wild at all in Act 1
+MF09,Fossil Grove,Omanyte,SPECIES_OMANYTE,basic,grass,uncommon,15-18,
+MF09,Fossil Grove,Omastar,SPECIES_OMASTAR,final,grass,rare,25+,Evolution only - review if should appear wild at all in Act 1
+MF09,Fossil Grove,Anorith,SPECIES_ANORITH,basic,grass,uncommon,15-18,
+MF09,Fossil Grove,Armaldo,SPECIES_ARMALDO,final,grass,rare,25+,Evolution only - review if should appear wild at all in Act 1
+MF09,Fossil Grove,Aerodactyl,SPECIES_AERODACTYL,basic,grass/rare,rare,18-22,Basic stage in vanilla but Pseudo-legendary rarity tier - treat as rare spawn not basic-common
+MF10,Forest's Edge / Holon Approach,--,--,--,none (transition only),--,--,No wild encounters - pure story/transition beat per design decision
+MF11,Glacial Fringe (Ice Flows),Spheal,SPECIES_SPHEAL,basic,grass (ice)/surf,common,20-23,TIER 2 - locked until HM/badge gate TBD
+MF11,Glacial Fringe (Ice Flows),Sealeo,SPECIES_SEALEO,stage_1,grass (ice)/surf,uncommon,24-27,Evolution only - review if should appear wild
+MF11,Glacial Fringe (Ice Flows),Walrein,SPECIES_WALREIN,final,surf,rare,30+,Evolution only - review if should appear wild
+MF11,Glacial Fringe (Ice Flows),Lapras,SPECIES_LAPRAS,basic,surf,rare,25-30,Card art: floating ice sheets
+MF12,Volcanic Fringe (Calderas),Magmar,SPECIES_MAGMAR,basic,grass (ash),uncommon,22-25,TIER 2 - locked until HM/badge gate TBD; primary caldera spawn per card art
+MF12,Volcanic Fringe (Calderas),Torkoal,SPECIES_TORKOAL,basic,grass (ash),common,22-25,Card art confirmed - "live in volcanic calderas amid active lava streams"
+MF12,Volcanic Fringe (Calderas),Golem,SPECIES_GOLEM,final,grass (ash)/rock,rare,30+,Card art confirmed - "barren rocky craters"; evolution only, review
+MF12,Volcanic Fringe (Calderas),Geodude,SPECIES_GEODUDE,basic,grass (ash),common,20-23,Card art confirmed - "barren rocky craters"
+MF12,Volcanic Fringe (Calderas),Graveler,SPECIES_GRAVELER,stage_1,grass (ash)/rock,uncommon,26-29,Evolution only - review if should appear wild
+MF13,Coral Coast / Abyssal Trench,Clamperl,SPECIES_CLAMPERL,basic,surf,common,20-23,TIER 2 - locked until Surf+Dive gate; placement within zone geography TBD
+MF13,Coral Coast / Abyssal Trench,Gorebyss,SPECIES_GOREBYSS,final,surf,rare,30+,Card art confirmed - "swims through shallow reefs"; evolution only, review
+MF13,Coral Coast / Abyssal Trench,Huntail,SPECIES_HUNTAIL,final,surf,rare,30+,Evolution only - review if should appear wild
+MF13,Coral Coast / Abyssal Trench,Kabutops,SPECIES_KABUTOPS,final,dive,rare,28-32,Card art confirmed - "hunts among smooth blue rocks"; duplicate consideration vs MF09
+MF13,Coral Coast / Abyssal Trench,Wailmer,SPECIES_WAILMER,basic,surf,uncommon,22-25,
+MF13,Coral Coast / Abyssal Trench,Wailord,SPECIES_WAILORD,final,dive,rare,35+,Card art confirmed - "deep ocean drop-offs"; evolution only, review
+MF13,Coral Coast / Abyssal Trench,Tentacool,SPECIES_TENTACOOL,basic,surf,common,20-23,
+MF13,Coral Coast / Abyssal Trench,Tentacruel,SPECIES_TENTACRUEL,final,surf,uncommon,28-31,Evolution only - review if should appear wild
+MF13,Coral Coast / Abyssal Trench,Chinchou,SPECIES_CHINCHOU,basic,dive,uncommon,22-25,
+MF13,Coral Coast / Abyssal Trench,Lanturn,SPECIES_LANTURN,final,dive,rare,30+,Evolution only - review if should appear wild
+MF14a,Regi Chamber - Rock,Regirock,SPECIES_REGIROCK,basic,static encounter (one-time),special,40 (TBD),Postgame - hidden trigger TBD
+MF14b,Regi Chamber - Ice,Regice,SPECIES_REGICE,basic,static encounter (one-time),special,40 (TBD),Postgame - hidden trigger TBD
+MF14c,Regi Chamber - Steel,Registeel,SPECIES_REGISTEEL,basic,static encounter (one-time),special,40 (TBD),Postgame - hidden trigger TBD
+UNSORTED,Not yet placed,Wobbuffet,SPECIES_WOBBUFFET,basic,--,--,--,Duplicate listing check - also placed at MF05; confirm single home
+UNSORTED,Not yet placed,Wynaut,SPECIES_WYNAUT,basic,--,--,--,Duplicate listing check - also placed at MF07; confirm single home
+UNSORTED,Not yet placed,Pikachu δ,SPECIES_PIKACHU_DELTA_STEEL,basic,TBD,very rare,TBD,"Sparse Delta presence predates Tower per lore - needs a deliberate rare-spawn area, not yet assigned. Candidate: Power Spot or Ruins of Progress"
+UNSORTED,Not yet placed,Flygon,SPECIES_FLYGON,final,TBD,TBD,TBD,Vibrava/Flygon line tagged Mirage Forest in dex build but not yet placed - Sand Basin candidate given Trapinch placement
+UNSORTED,Not yet placed,Vibrava,SPECIES_VIBRAVA,stage_1,TBD,TBD,TBD,See Flygon note - Sand Basin candidate
