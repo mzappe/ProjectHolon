@@ -1,0 +1,21 @@
+species_display_name,species_const,primary_type,secondary_type,evolves_from,evo_stage,wild_base_present_in,wild_base_area_id,evo_method_note,obtain_path
+Golem,SPECIES_GOLEM,ROCK,GROUND,SPECIES_GRAVELER,final,Geodude (wild) / Graveler (wild),"MF02, MF04 (Geodude) / MF09 (Graveler)",Trade evolution from Graveler,Evolve from wild Geodude/Graveler then trade
+Machamp,SPECIES_MACHAMP,FIGHTING,,SPECIES_MACHOKE,final,Machop (wild) / Machoke (wild),"MF05 (Machop) / MF09 (Machoke)",Trade evolution from Machoke,Evolve from wild Machop/Machoke then trade
+Weepinbell,SPECIES_WEEPINBELL,GRASS,POISON,SPECIES_BELLSPROUT,stage_1,Bellsprout (wild),MF05,Level-up (Lv.21 in vanilla) - not low-level,Evolve from wild Bellsprout
+Victreebel,SPECIES_VICTREEBEL,GRASS,POISON,SPECIES_WEEPINBELL,final,Bellsprout (wild),MF05,Trade holding Leaf Stone / Leaf Stone in some games,Evolve from wild Bellsprout then item/trade
+Aggron,SPECIES_AGGRON,STEEL,ROCK,SPECIES_LAIRON,final,Aron (wild) / Lairon (wild),"MF03 (Aron) / MF09 (Lairon)",Level-up (Lv.42 in vanilla) via Lairon,Evolve from wild Aron/Lairon
+Magneton,SPECIES_MAGNETON,ELECTRIC,STEEL,SPECIES_MAGNEMITE,final,Magnemite (wild),MF03,Level-up (Lv.30 in vanilla) - not low-level,Evolve from wild Magnemite
+Shiftry,SPECIES_SHIFTRY,GRASS,DARK,SPECIES_NUZLEAF,final,Seedot (wild) -> Nuzleaf (wild),MF05,Leaf Stone,Evolve from wild Nuzleaf with item
+Banette,SPECIES_BANETTE,GHOST,,SPECIES_SHUPPET,final,Shuppet (wild),MF04,Level-up (Lv.37 in vanilla) - not low-level,Evolve from wild Shuppet
+Delcatty,SPECIES_DELCATTY,NORMAL,,SPECIES_SKITTY,final,Skitty (wild),MF01,Level-up (Lv.20 in vanilla) - not low-level,Evolve from wild Skitty
+Walrein,SPECIES_WALREIN,ICE,WATER,SPECIES_SEALEO,final,Spheal (wild) / Sealeo (wild),MF08,Level-up (Lv.44 in vanilla) via Sealeo,Evolve from wild Spheal/Sealeo (Tier 2 area)
+Electrode,SPECIES_ELECTRODE,ELECTRIC,,SPECIES_VOLTORB,final,Voltorb (wild),MF03,Level-up (Lv.30 in vanilla) - not low-level,Evolve from wild Voltorb
+Wailord,SPECIES_WAILORD,WATER,,SPECIES_WAILMER,final,Wailmer (wild),MF10,Level-up (Lv.40 in vanilla) - not low-level,Evolve from wild Wailmer (Tier 2 area)
+Dustox,SPECIES_DUSTOX,BUG,POISON,SPECIES_CASCOON,final,Wurmple (wild) -> Cascoon (wild),MF01,Level-up (Lv.10 from Cascoon - low-level but gated behind Wurmple's random split evo),Evolve from wild Wurmple (Cascoon path)
+Flygon,SPECIES_FLYGON,GROUND,DRAGON,SPECIES_VIBRAVA,final,Trapinch (wild) / Vibrava (wild),"MF02 (Trapinch) / MF09 (Vibrava)",Level-up (Lv.45 in vanilla) via Vibrava,Evolve from wild Trapinch/Vibrava
+Haunter,SPECIES_HAUNTER,GHOST,POISON,SPECIES_GASTLY,stage_1,Gastly (wild),"MF04, MF06",Level-up (Lv.25 in vanilla) - not low-level,Evolve from wild Gastly
+Gengar,SPECIES_GENGAR,GHOST,POISON,SPECIES_HAUNTER,final,Gastly (wild),"MF04, MF06",Trade evolution from Haunter,Evolve from wild Gastly then trade
+Kabutops,SPECIES_KABUTOPS,ROCK,WATER,SPECIES_KABUTO,final,Kabuto (wild),MF07,Level-up (Lv.40 in vanilla) - not low-level,Evolve from wild Kabuto
+Omastar,SPECIES_OMASTAR,ROCK,WATER,SPECIES_OMANYTE,final,Omanyte (wild),MF07,Level-up (Lv.40 in vanilla) - not low-level,Evolve from wild Omanyte
+Cradily,SPECIES_CRADILY,ROCK,GRASS,SPECIES_LILEEP,final,Lileep (wild),MF07,Level-up (Lv.40 in vanilla) - not low-level,Evolve from wild Lileep
+Armaldo,SPECIES_ARMALDO,ROCK,BUG,SPECIES_ANORITH,final,Anorith (wild),MF07,Level-up (Lv.45 in vanilla) - not low-level,Evolve from wild Anorith

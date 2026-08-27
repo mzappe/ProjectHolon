@@ -56,10 +56,10 @@
 - [Era 4 — Epsilon Is Assigned](#era-4--epsilon-is-assigned)
 - [Era 5 — The Incident](#era-5--the-incident)
 - [Era 6 — The Player Arrives](#era-6--the-player-arrives)
-- [Act 1 — Mirage Forest & Holon Village](#act-1--mirage-forest--holon-village)
-- [Act 2 — Holon Lake](#act-2--holon-lake)
-- [Act 3 — Coastal Zone & Crystal Isles (First Visit)](#act-3--coastal-zone--crystal-isles-first-visit)
-- [Act 4 — Crystal Isles (Confrontation)](#act-4--crystal-isles-confrontation)
+- [Act 1 — Mirage Forest](#act-1--mirage-forest)
+- [Act 2 — Holon Village & the Research Tower](#act-2--holon-village--the-research-tower)
+- [Act 3 — Holon Lake](#act-3--holon-lake)
+- [Act 4 — Crystal Isles](#act-4--crystal-isles)
 - [Act 5 — Dragon Frontiers & The Floating Island](#act-5--dragon-frontiers--the-floating-island)
 - [Plot Structure at a Glance](#plot-structure-at-a-glance)
 
@@ -382,7 +382,7 @@ The divergence between Ty and the player is not an event — it is a gradient. T
 
 By the finale Ty has internalized enough of Epsilon's logic to act on it himself — not as a member of the organization but as someone who reached the same conclusions independently and cannot see a reason not to act. He believes he is saving the world. He is the final confrontation.
 
-**Not yet developed:** His region of origin and personal background, what draws him to Holon specifically, his starter and what it reflects about his character, the specific incident in Act 3 that visibly marks the split with the player, the internal logic by which he moves from diverging peer to acting on Epsilon's conclusions without formally joining them, and his endpoint after Dragon Frontiers — reconciliation, permanent distance, or something else. See Open Questions.
+**Not yet developed:** His region of origin and personal background, what draws him to Holon specifically, his starter and what it reflects about his character, the specific incident in Act 4 that visibly marks the split with the player, the internal logic by which he moves from diverging peer to acting on Epsilon's conclusions without formally joining them, and his endpoint after Dragon Frontiers — reconciliation, permanent distance, or something else. See Open Questions.
 
 ---
 
@@ -416,8 +416,8 @@ He stayed at Crystal Isles after the Tower incident because his instruments show
 
 **His observatory throughline across the main game:**
 
-- *First visit (Act 3):* Observatory partially locked, Castaway outside. He tells the player the Tower incident sent a signal outward. He shares two observations: elevated solar activity over the past months — filed as interesting, not alarming — and a comet on distant approach. Neither means anything to the player yet.
-- *Second visit (Act 4):* The solar readings have continued climbing without plateau. A secondary signal the Castaway can't explain — its scale is wrong for normal solar variance, trending in one direction. The crystal network data and the ruins thread converge here: the player, Cozmo, and Steven conclude together that the network is a planetary EM observatory, and the team applies that conclusion to interpret what it's currently reading.
+- *First visit (Act 4):* Observatory partially locked, Castaway outside. He tells the player the Tower incident sent a signal outward. He shares two observations: elevated solar activity over the past months — filed as interesting, not alarming — and a comet on distant approach. Neither means anything to the player yet.
+- *Return visit (Act 4):* The solar readings have continued climbing without plateau. A secondary signal the Castaway can't explain — its scale is wrong for normal solar variance, trending in one direction. The crystal network data and the ruins thread converge here: the player, Cozmo, and Steven conclude together that the network is a planetary EM observatory, and the team applies that conclusion to interpret what it's currently reading.
 - *Final transmission (Act 5):* Confirms the CME timeline. The window is narrowing.
 
 **Not yet developed:** When and how the Island Hermit identity connects to the Castaway throughline — whether the Hermit is who the Castaway becomes after leaving Crystal Isles, whether the player encounters the Hermit before or after putting the connection together, what drove the move from Crystal Isles to Dragon Frontiers, and what the reveal actually looks like in play — environmental storytelling, a direct conversation, an item or detail that only makes sense in hindsight, or some combination. See Open Questions.
@@ -521,25 +521,29 @@ The story operates in the tradition of Michael Crichton and Blake Crouch — not
 
 ### V.2 Thematic Spine
 
+**Thesis:** Nature answers intrusion with force of its own — not to restore what was, but to find where it can stand again. The only way to meet that honestly is to keep looking instead of deciding you already understand.
+
 **Primary themes — dynamical:**
 
-- **Scale and blindness** — every system in this story is complete and correct within its own frame. The disaster is not caused by failure, malice, or incompetence. It is the structural consequence of agents operating at their own resolution, unable to perceive the scale above them.
+- **Scale and blindness** — every system in this story is complete and correct within its own frame. The disaster is not caused by failure, malice, or incompetence. It is the structural consequence of agents operating at their own resolution, unable to perceive the scale above them. Every whole thing is also a part; forgetting that is how disasters start, and remembering it is the only way to end one.
 
 - **Sensitivity and emergence** — small perturbations in coupled systems produce disproportionate, unpredictable effects. None of the causes in this story contain their consequences. The same interconnection that produces catastrophe produces the capacity to resolve it. The theme asks the player to hold both truths simultaneously.
 
+- **Equilibrium and reaction** — every technological intrusion into a living system provokes a countervailing correction, proportional not to the intrusion's intent but to its scale. Rayquaza's aggression, Deoxys's destabilization, the crystal network's amplification, the sun's own indifferent cycle converging on the exact moment humanity weakened the shield against it — none of these are malice. They are a system finding where it can stand again. Critically, the correction does not return the system to its prior state. It settles into a new equilibrium — colder, stranger, and permanently different from the one the intrusion disturbed. This is the mechanism behind the game's refusal of a restoration ending: the world after is not fixed, it is resettled.
+
 **Major emotional theme:**
 
-- **Curiosity as transformation** — the act of seeking changes what is found, and changes the seeker. Mew came back to the power spot because it has never been able to stay away from the only thing on Earth it cannot understand. The researchers came to Holon to find Mew and found something that reorganized everything they understood about Pokémon biology. The player follows the same thread across five zones and arrives somewhere none of the characters who came before them reached. The emotional register is not triumph or tragedy. It is the particular feeling of having followed something true all the way to where it leads, and finding that the journey changed you as much as it changed the destination.
+- **Curiosity vs. judgment** — judgment forecloses inquiry the moment it decides it already understands; curiosity keeps looking past that point. Mew came back to the power spot because it has never been able to stay away from the only thing on Earth it cannot understand, and that refusal to stop looking is what wakes Deoxys and transforms Mew itself. The researchers came to Holon to find Mew and found something that reorganized everything they understood about Pokémon biology. The player follows the same thread across five zones and arrives somewhere none of the characters who came before them reached — not because they are stronger, but because they never stopped asking the next question. The emotional register is not triumph or tragedy. It is the particular feeling of having followed something true all the way to where it leads, and finding that the journey changed you as much as it changed the destination.
 
 **The player/Ty divergence as thematic expression:**
 
-- Curiosity vs. hostility is the human-scale expression of the game's primary theme. Both the player and Ty encounter the same evidence. The player's response is to keep looking — more questions, more context, more picture. Ty's response is to act on what's already known — the evidence is sufficient, hesitation is complicity. Neither instinct is wrong in isolation. What the game asks is whether the curiosity that drives the player is the same thing that makes them capable of assembling the full picture before it's too late — and whether Ty's hostility, which is just urgency without patience, is the thing that makes him dangerous.
+- Curiosity vs. judgment is the human-scale expression of the game's primary themes. Both the player and Ty encounter the same evidence. The player's response is to keep looking — more questions, more context, more picture. Ty's response is to render a verdict on what's already known — the evidence is sufficient, hesitation is complicity, further inquiry is just delay. Neither instinct is wrong in isolation; judgment is what lets anyone act at all. What the game asks is whether the curiosity that drives the player is the same thing that makes them capable of assembling the full picture before it's too late — and whether Ty's judgment, which is urgency mistaken for clarity, is the thing that makes him dangerous. The Epsilon leader is Ty's endpoint: a man who stopped investigating his own conclusions a long time ago.
 
 **Minor themes — human and ethical:**
 
 - **Scientific curiosity vs. restraint and unintended consequences** — every hand that reshaped something in this story believed it was helping. The ethical weight is not in the intention but in the failure to account for what a coupled system does with an intervention. Devon's fossil restoration program is wonder. The same program pointed at apex predators to use as weapons is catastrophe. The technology is identical. The intent is everything, and intent is not enough.
 
-- **Human effect on ecosystems and the natural order** — the Delta phenomenon is permanent. The ending is not a restoration. It is a survival, and the world after it is genuinely different from the world before.
+- **Human effect on ecosystems and the natural order** — the Delta phenomenon is permanent. The ending is not a restoration. It is a survival, and the world after it is genuinely different from the world before — the new equilibrium the region settles into, not the one it left.
 
 ---
 
@@ -579,7 +583,7 @@ The sun — running its own cycle, indifferent to anything on Earth. Deoxys — 
 - **The Heroes of Alto Mare** — Latias δ and Latios δ postgame mission.
 - **Jirachi δ** — Dark/Fire; Crystal Isles volcano; woken by the incident's outward pulse, seeded by the comet the Castaway mentions at the first observatory visit.
 - **Rayquaza δ / Mewtwo δ** — Postgame catchable encounters; details TBD.
-- **Groudon ☆ and Kyogre ☆** — Resurrected by Epsilon in a witnessed Act 3 event, then lost when they couldn't be controlled. Now loose in the deep wilderness around Holon, drawn further by the ongoing magnetic disruption. Postgame encounters.
+- **Groudon ☆ and Kyogre ☆** — Resurrected by Epsilon in a witnessed Act 4 event, then lost when they couldn't be controlled. Now loose in the deep wilderness around Holon, drawn further by the ongoing magnetic disruption. Postgame encounters.
 - **Shadow Lugia / XD001** — Major postgame mission. Name and concept only; no other content yet established. See Open Questions.
 - **Delta Horizon** — A separate postgame Battle Frontier–equivalent island, detailed in HL-500. Four facilities (Delta Colosseum, Delta Preserve, Delta Labyrinth, Delta Passage), reached by boat then Fly, with a resident community of independent trainers unaffiliated with the Holon research effort. Reconciliation with current canon — particularly whether HL-500's "outward pulse" references the same Tower incident established here — has not yet been confirmed. See Open Questions.
 - **Ty's endpoint** — Where Ty goes after Dragon Frontiers, whether there is reconciliation or permanent distance. See Open Questions.
@@ -666,23 +670,33 @@ The sun — running its own cycle, indifferent to anything on Earth. Deoxys — 
 
 ---
 
-## Act 1 — Mirage Forest & Holon Village
+## Act 1 — Mirage Forest
 
 **The tone:** Everything is legitimate on the surface. The expedition is real science. The Delta phenomenon is genuinely fascinating. The region is strange and beautiful.
 
-- The player explores Mirage Forest — ancient, Jurassic, home to Fossil Pokémon roaming free thanks to Devon's restoration work. First contact with Delta Species in the wild. First glimpses of ancient ruins and diamond carvings, though their significance isn't yet legible.
-- The player reaches **Holon Village** and the Research Tower — now repaired and broadcasting again. They meet the research community, encounter the Tower's effects up close, and begin to understand the scale of the Delta phenomenon.
+- The player explores Mirage Forest — ancient, Jurassic, home to Fossil Pokémon roaming free thanks to Devon's restoration work. First contact with Delta Species in the wild, sparse and crystal-network-driven rather than Tower-caused.
+- First glimpses of ancient ruins and diamond carvings, though their significance isn't yet legible.
 - Ty is here too — comparing notes, battling, being the person the player naturally gravitates toward. The friendship establishes itself quickly and genuinely.
-- Devon researchers are actively developing the **D Ball (Delta Ball)** during this act — a new Poké Ball variant designed to capture and stabilize Delta Species, whose type-shifted biology makes standard containment unreliable. The player receives D Balls as field equipment. This is legitimate Devon technology, openly discussed, a direct and good-faith response to the Delta phenomenon — one of many examples of Devon's curiosity producing something genuinely useful.
-- The player also encounters early field reports on **Holon's Pokémon** — anomalous specimens (Holon's Castform, Holon's Electrode, Holon's Magneton) capable of converting their own biology into pure energy. Researchers treat this as a fascinating curiosity, the kind of thing that makes the expedition exciting. Nobody frames it as dangerous. It's presented to the player as one more example of how strange and rich the region's Pokémon biology has turned out to be.
-- First hints that something happened here before the player arrived: the Tower's exterior shows signs of recent repair. Certain researchers seem nervous about the wrong things. The Holon Ruins sit unexplained in the village, predating everything the researchers built. The player — implicitly alongside Cozmo, since Cozmo is their direct contact — starts to register that the official story doesn't quite account for what's visible. This is the first, informal version of the pattern that recurs across every act: the player's small science team noticing the evidence doesn't add up before they have enough to say why.
-- Late in the act, the region begins experiencing an unusual surge in **aurora borealis** activity — vivid, frequent, visible from Holon Village and soon from other zones. It's striking enough that researchers and NPCs comment on it directly. The working assumption, shared by the player's allies, is that this is connected to Deoxys — its EM biology, its disturbance, its movement through the region. It's a reasonable theory given what's known at this point, and nobody has reason to doubt it yet. The comet the Castaway will later mention in Act 3 is unrelated to this surge and arrives separately — the two threads stay distinct until much later.
-- [TBD: Act 1 gym leaders and their locations — how many in Mirage Forest and Holon Village, what types, what they reveal about Devon through their dialogue — see Open Questions.]
-- By the end of Act 1 the player understands: the Delta phenomenon is real and spreading, the expedition has layers beneath its official framing, and something happened at the Tower that nobody is talking about clearly.
+- [TBD: Act 1 gym leader — see Open Questions.]
+- By the end of Act 1 the player understands the shape of the expedition and has a peer they trust. Nothing yet suggests the expedition is anything other than what it claims to be.
 
 ---
 
-## Act 2 — Holon Lake
+## Act 2 — Holon Village & the Research Tower
+
+**The tone:** The expedition's institutional layer comes into view. The science is real. So are the first cracks.
+
+- The player reaches **Holon Village** and the Research Tower — now repaired and broadcasting again. They meet the research community, encounter the Tower's effects up close, and begin to understand the scale of the Delta phenomenon.
+- Devon researchers are actively developing the **D Ball (Delta Ball)** during this act — a new Poké Ball variant designed to capture and stabilize Delta Species, whose type-shifted biology makes standard containment unreliable. The player receives D Balls as field equipment. This is legitimate Devon technology, openly discussed, a direct and good-faith response to the Delta phenomenon — one of many examples of Devon's curiosity producing something genuinely useful.
+- The player also encounters early field reports on **Holon's Pokémon** — anomalous specimens (Holon's Castform, Holon's Electrode, Holon's Magneton) capable of converting their own biology into pure energy. Researchers treat this as a fascinating curiosity, the kind of thing that makes the expedition exciting. Nobody frames it as dangerous. It's presented to the player as one more example of how strange and rich the region's Pokémon biology has turned out to be.
+- First hints that something happened here before the player arrived: the Tower's exterior shows signs of recent repair. Certain researchers seem nervous about the wrong things. The Holon Ruins sit unexplained in the village, predating everything the researchers built. The player — implicitly alongside Cozmo, since Cozmo is their direct contact — starts to register that the official story doesn't quite account for what's visible. This is the first, informal version of the pattern that recurs across every act: the player's small science team noticing the evidence doesn't add up before they have enough to say why.
+- Late in the act, the region begins experiencing an unusual surge in **aurora borealis** activity — vivid, frequent, visible from Holon Village and soon from other zones. It's striking enough that researchers and NPCs comment on it directly. The working assumption, shared by the player's allies, is that this is connected to Deoxys — its EM biology, its disturbance, its movement through the region. It's a reasonable theory given what's known at this point, and nobody has reason to doubt it yet. The comet the Castaway will later mention on Crystal Isles is unrelated to this surge and arrives separately — the two threads stay distinct until much later.
+- [TBD: Act 2 gym leader(s) and their locations — how many in Holon Village, what types, what they reveal about Devon through their dialogue — see Open Questions.]
+- By the end of Act 2 the player understands: the Delta phenomenon is real and spreading, the expedition has layers beneath its official framing, and something happened at the Tower that nobody is talking about clearly.
+
+---
+
+## Act 3 — Holon Lake
 
 **The tone:** The ecological damage becomes serious and visible. The industrial machinery under the lake is wrong in a way that doesn't fit the public mission. Small things don't add up.
 
@@ -696,33 +710,31 @@ The sun — running its own cycle, indifferent to anything on Earth. Deoxys — 
 - Steven appears here — genuinely concerned, beginning to ask questions he can't easily ask inside Devon. The confrontation between what he believes Devon is and what the evidence suggests starts here.
 - Putting the Delta Mewtwo discovery together with everything else accumulated so far — the lake infrastructure, the aurora, the unexplained ruins — the player, Cozmo, and Steven conclude together: there is a covert operation inside Devon, distinct from the public mission. Delta Mewtwo is the proof; recognizing what it implies institutionally is the team's own deduction, not something handed to them. This is the moment the covert operation becomes impossible to explain away.
 - [TBD: Ty's trajectory at this point — still aligned with the player, beginning to drift, or already showing early divergence? — see Open Questions.]
-- [TBD: Act 2 gym leaders — see Open Questions.]
-- By the end of Act 2 the player understands: there is a covert operation inside Devon using the lake infrastructure for something the public mission doesn't explain. The Delta spread is being pushed, not just observed.
+- [TBD: Act 3 gym leader — see Open Questions.]
+- By the end of Act 3 the player understands: there is a covert operation inside Devon using the lake infrastructure for something the public mission doesn't explain. The Delta spread is being pushed, not just observed.
 
 ---
 
-## Act 3 — Coastal Zone & Crystal Isles (First Visit)
+## Act 4 — Crystal Isles
 
-**The tone:** The scope expands. The player reaches the ocean, crosses to Crystal Isles for the first time, and begins to encounter the ancient civilization's records in their most concentrated form.
+**The tone:** The scope expands, then the human crisis comes to a head. The player crosses to Crystal Isles, encounters the ancient civilization's records in their most concentrated form, and watches the ideological fault line with Ty become a rupture. The real antagonist is revealed to be someone the player thought they knew.
 
-- The **Coastal Zone** is the midgame milestone — a port town, passage earned, the ocean crossing ahead. [TBD: name, gym leader here or elsewhere — see Open Questions.]
+**First visit:**
+
+- The **Coastal Zone** opens the act as a midgame milestone — a port town, passage earned, the ocean crossing ahead. [TBD: name, whether a gym leader belongs here or elsewhere — see Open Questions.]
 - First arrival at **Crystal Isles** — volcanic, covered in glowing crystals, nothing like Holon. The Holon Circle is here. The crystals visibly respond to Delta Pokémon in ways the Tower's simple broadcast doesn't explain.
-- The **Volcano Observatory** on the rim of the largest volcano — the player meets the **Castaway** for the first time. The observatory is partially locked. The Castaway is outside, watching instruments that nobody from Holon has come to check. He tells the player the Tower incident sent a signal outward — he stayed because his readings showed something that nobody came to collect. He shares two things with the player at this visit: his instruments have been picking up **elevated solar activity** over the past months — nothing alarming on its own, the kind of thing that gets noted and filed — and separately, there is a comet on a long approach trajectory that his data has been tracking. It's distant, it's slow, it poses no threat. He mentions it almost as an afterthought, the other interesting thing in the sky. Neither signal means anything yet, and neither one is connected by the player to the aurora surge from Act 1 — they read as three separate, unremarkable threads at this point.
+- The **Volcano Observatory** on the rim of the largest volcano — the player meets the **Castaway** for the first time. The observatory is partially locked. The Castaway is outside, watching instruments that nobody from Holon has come to check. He tells the player the Tower incident sent a signal outward — he stayed because his readings showed something that nobody came to collect. He shares two things with the player at this visit: his instruments have been picking up **elevated solar activity** over the past months — nothing alarming on its own, the kind of thing that gets noted and filed — and separately, there is a comet on a long approach trajectory that his data has been tracking. It's distant, it's slow, it poses no threat. He mentions it almost as an afterthought, the other interesting thing in the sky. Neither signal means anything yet, and neither one is connected by the player to the aurora surge from Act 2 — they read as three separate, unremarkable threads at this point.
 - First visit to Crystal Isles establishes the observatory as a throughline — the player will return. The Castaway's data is building toward something but isn't yet complete enough to read. [TBD: the comet is a seed for the Jirachi postgame — it carries Jirachi toward Earth on a long approach, woken eventually by the outward pulse of the incident.]
 - Ancient civilization ruins are denser here than anywhere in the region. The Holon Circle. Records that are clearly part of the same system as the diamond carvings in Mirage Forest, but more elaborate.
 - The crystals on Crystal Isles interact with Holon Energy in ways the player hasn't seen before — researchers studying the Holon Circle find that proximity to dense crystal formations measurably increases the efficiency of Holon's Pokémon's energy conversion. Another genuine discovery, openly shared with the player, and another piece of the same puzzle Epsilon is quietly assembling for a very different purpose.
 - Epsilon's attempts to track and capture Deoxys directly have failed — Delta Deoxys is too fast, too unpredictable, too powerful for conventional approaches. So they reach for something bigger. Using Devon's own fossil restoration technology — the same program that filled Mirage Forest with living ancient Pokémon — Epsilon attempts to resurrect ancient legendary Pokémon from fossil or primal sources to use as weapons of capture: **Primal Groudon and Kyogre**, and potentially others. [TBD: exact legendary(ies) used, whether both or one — see Open Questions.] **The player is present for this.** This is not discovered as aftermath — the player witnesses the attempt and its failure directly: the resurrection process underway or just completing, the moment it becomes clear the awakened Groudon and Kyogre cannot be controlled or directed, and the breakout itself as they scatter into the deep wilderness around Holon. Devon's restoration technology used as intended is wonder. Devon's restoration technology pointed at an apex predator for use as a weapon is something else entirely — the same tools, a completely different purpose, witnessed in real time by the player rather than pieced together after the fact. This is one of the game's sharpest demonstrations of the Jurassic Park principle. Epsilon ends up further from Deoxys than before, and the region has two more apex-level threats loose in it. [TBD: the exact staging — whether the player arrives in time to see the resurrection itself, arrives as it's already destabilizing, or arrives specifically for the breakout and scattering — see Open Questions.]
-- Around this same point, the **aurora correction** begins: a specific color or pattern within the aurora activity is identified as attributable to Deoxys's Delta transformation specifically — distinguishable from the broader surge that's been building since Act 1. [TBD: whether the player witnesses this directly, an NPC identifies and explains it, or the player pieces it together by comparing sightings — see Open Questions.] Once Deoxys's actual contribution is understood as a narrow signature within the aurora rather than its dominant cause, the player has their first real reason to suspect the broader aurora surge was never primarily about Deoxys at all — though what it actually is remains unresolved for now.
+- Around this same point, the **aurora correction** begins: a specific color or pattern within the aurora activity is identified as attributable to Deoxys's Delta transformation specifically — distinguishable from the broader surge that's been building since Act 2. [TBD: whether the player witnesses this directly, an NPC identifies and explains it, or the player pieces it together by comparing sightings — see Open Questions.] Once Deoxys's actual contribution is understood as a narrow signature within the aurora rather than its dominant cause, the player has their first real reason to suspect the broader aurora surge was never primarily about Deoxys at all — though what it actually is remains unresolved for now.
 - Ty's divergence is becoming visible during this act. The differences in how they each read the evidence — what they find acceptable, what they decide the stakes demand — are compounding. [TBD: the specific incident or revelation that marks the visible split — see Open Questions.]
 - The shape of the divergence: the player's instinct is **curiosity** — keep looking, keep asking, withhold judgment until the picture is clearer. Ty's instinct is **hostility** — the evidence is damning enough already, someone is responsible, and responsibility demands a response now rather than more questions. Same evidence, same starting point, fundamentally different relationship to not yet knowing everything.
-- [TBD: Act 3 gym leaders across the coastal zone and Crystal Isles — see Open Questions.]
-- Pulling together everything gathered across the act — the ruins, the witnessed Groudon/Kyogre disaster, the aurora correction, the Castaway's still-inert data — the player, Cozmo, and Steven reach a joint conclusion: the crystal network is not passive geology. Someone built around it. And someone else is trying to use it for something much larger than Delta research. By the end of Act 3 this is what the player understands.
+- [TBD: gym leaders across the coastal zone and Crystal Isles — see Open Questions.]
+- Pulling together everything gathered so far — the ruins, the witnessed Groudon/Kyogre disaster, the aurora correction, the Castaway's still-inert data — the player, Cozmo, and Steven reach a joint conclusion: the crystal network is not passive geology. Someone built around it. And someone else is trying to use it for something much larger than Delta research.
 
----
-
-## Act 4 — Crystal Isles (Confrontation)
-
-**The tone:** The human crisis comes to a head. The ideological fault line between the player and Ty becomes a rupture. The real antagonist is revealed to be someone the player thought they knew.
+**The confrontation:**
 
 - The player returns to Crystal Isles for the decisive confrontation. The Epsilon operation has been traced here — Crystal Isles is where the crystal density is highest, where any activation signal would propagate most powerfully through the rest of the network.
 - The Castaway's solar readings are now clearly abnormal — definitely climbing, definitely outside normal variance — but his instruments alone can't explain why this is happening. The data itself is no longer ambiguous; what's missing is causal context, which instruments can't supply on their own.
@@ -780,28 +792,33 @@ The sun — running its own cycle, indifferent to anything on Earth. Deoxys — 
 | Era 5 | Epsilon, now aware Deoxys exists, begins developing capture technology in secret |
 | Era 6 | Months later, Steven recruits the player; Ty is recruited in parallel; both arrive by boat together |
 | Era 6 | Cozmo briefs the player and Ty, hands out starters, sets the expedition's stated goals |
-| Act 1 | Player explores Mirage Forest and Holon Village; meets Ty properly; receives D Balls as Devon's good-faith Delta tech |
-| Act 1 | First hints something's off — Tower repairs, nervous researchers, unexplained Holon Ruins; player/Cozmo start noticing the gap |
-| Act 1 | Aurora borealis surge begins late in the act, widely assumed to be Deoxys-related |
-| Act 2 | Player reaches Holon Lake; finds the submerged industrial infrastructure that doesn't match the public mission |
-| Act 2 | Epsilon secretly develops the E Ball in parallel; tests it on a captured Mewtwo, producing permanent Delta Mewtwo |
-| Act 2 | Holon Energy (FF/GL/WP) synthesized at scale — a real Devon triumph that's also exactly what Epsilon needed |
-| Act 2 | Team (player, Cozmo, Steven) concludes together: a covert operation exists inside Devon |
-| Act 3 | Player crosses to Crystal Isles for the first time; meets the Castaway at the Volcano Observatory |
-| Act 3 | Castaway shares two inert signals: elevated solar activity and a distant approaching comet |
-| Act 3 | Crystal density found to boost Holon Energy efficiency — another dual-use discovery |
-| Act 3 | Epsilon attempts to resurrect Primal Groudon and Kyogre as Deoxys-capture weapons — player witnesses the attempt and its failure directly; both escape into the wilderness |
-| Act 3 | Aurora correction begins — a Deoxys-specific signature is distinguished from the broader surge, casting doubt on the original Deoxys theory |
-| Act 3 | Ty's divergence becomes visible; team concludes together the crystal network is being deliberately used for something larger |
-| Act 4 | Player returns to Crystal Isles for the decisive confrontation; Castaway's solar data is now clearly abnormal but unexplained |
-| Act 4 | Team (player, Cozmo, Steven, with Auren and the Castaway) synthesizes the ruins evidence and the solar data: the crystal network is a planetary EM observatory, and a CME is incoming |
-| Act 4 | Team also recognizes Epsilon's full combined system — Tower, lake infrastructure, network, D/E Balls — as a deliberately unified weapon |
-| Act 4 | Ty confronts and defeats the Epsilon leader on ideological grounds, then captures Delta Deoxys himself, intending to detonate it at Dragon Frontiers for mass Delta transformation |
-| Act 5 | Player arrives at Dragon Frontiers; ancient civilization's deepest records confirm the threat in person; Castaway's final transmission confirms the CME timeline |
-| Act 5 | Rayquaza, destabilized throughout the game, is present at Dragon Frontiers |
-| Act 5 | Player reaches the Floating Island, battles Ty, and deals with the armed E Ball before detonation |
-| Act 5 | Delta Deoxys is restored to its natural form; with Rayquaza's help it's carried to the edge of the atmosphere and reconstitutes the planetary shield as the CME arrives |
-| Act 5 | Steven's arc closes — he becomes Devon's next president, inheriting both its genuine achievements and Epsilon's catastrophe |
+| Act 1 (Mirage Forest) | Player explores Mirage Forest; first wild Delta Species encountered, sparse and crystal-network-driven, predating the Tower |
+| Act 1 (Mirage Forest) | First glimpses of ancient ruins and diamond carvings; significance not yet legible |
+| Act 1 (Mirage Forest) | Friendship with Ty establishes quickly and genuinely |
+| Act 2 (Holon Village) | Player reaches Holon Village and the repaired, broadcasting Research Tower; meets the research community |
+| Act 2 (Holon Village) | Player receives D Balls as Devon's good-faith Delta tech; Holon's Pokémon field reports treated as fascinating curiosity |
+| Act 2 (Holon Village) | First hints something's off — Tower repairs, nervous researchers, unexplained Holon Ruins; player/Cozmo start noticing the gap |
+| Act 2 (Holon Village) | Aurora borealis surge begins late in the act, widely assumed to be Deoxys-related |
+| Act 3 (Holon Lake) | Player reaches Holon Lake; finds the submerged industrial infrastructure that doesn't match the public mission |
+| Act 3 (Holon Lake) | Epsilon secretly develops the E Ball in parallel; tests it on a captured Mewtwo, producing permanent Delta Mewtwo |
+| Act 3 (Holon Lake) | Holon Energy (FF/GL/WP) synthesized at scale — a real Devon triumph that's also exactly what Epsilon needed |
+| Act 3 (Holon Lake) | Steven appears, genuinely concerned, beginning to question his own company |
+| Act 3 (Holon Lake) | Team (player, Cozmo, Steven) concludes together: a covert operation exists inside Devon |
+| Act 4 (Crystal Isles) | Coastal Zone bridge opens the act; player crosses to Crystal Isles for the first time |
+| Act 4 (Crystal Isles) | Player meets the Castaway at the Volcano Observatory; he shares two inert signals — elevated solar activity and a distant approaching comet |
+| Act 4 (Crystal Isles) | Crystal density found to boost Holon Energy efficiency — another dual-use discovery |
+| Act 4 (Crystal Isles) | Epsilon attempts to resurrect Primal Groudon and Kyogre as Deoxys-capture weapons — player witnesses the attempt and its failure directly; both escape into the wilderness |
+| Act 4 (Crystal Isles) | Aurora correction begins — a Deoxys-specific signature is distinguished from the broader surge, casting doubt on the original Deoxys theory |
+| Act 4 (Crystal Isles) | Ty's divergence becomes visible |
+| Act 4 (Crystal Isles) | Player returns to Crystal Isles for the decisive confrontation; Castaway's solar data now clearly abnormal but unexplained |
+| Act 4 (Crystal Isles) | Team (player, Cozmo, Steven, with Auren and the Castaway) synthesizes the ruins evidence and the solar data: the crystal network is a planetary EM observatory, and a CME is incoming |
+| Act 4 (Crystal Isles) | Team also recognizes Epsilon's full combined system — Tower, lake infrastructure, network, D/E Balls — as a deliberately unified weapon |
+| Act 4 (Crystal Isles) | Ty confronts and defeats the Epsilon leader on ideological grounds, then captures Delta Deoxys himself, intending to detonate it at Dragon Frontiers for mass Delta transformation |
+| Act 5 (Dragon Frontiers) | Player arrives at Dragon Frontiers; ancient civilization's deepest records confirm the threat in person; Castaway's final transmission confirms the CME timeline |
+| Act 5 (Dragon Frontiers) | Rayquaza, destabilized throughout the game, is present at Dragon Frontiers |
+| Act 5 (Dragon Frontiers) | Player reaches the Floating Island, battles Ty, and deals with the armed E Ball before detonation |
+| Act 5 (Dragon Frontiers) | Delta Deoxys is restored to its natural form; with Rayquaza's help it's carried to the edge of the atmosphere and reconstitutes the planetary shield as the CME arrives |
+| Act 5 (Dragon Frontiers) | Steven's arc closes — he becomes Devon's next president, inheriting both its genuine achievements and Epsilon's catastrophe |
 
 ---
 
@@ -812,13 +829,13 @@ The sun — running its own cycle, indifferent to anything on Earth. Deoxys — 
 - Did the ancient civilization have a name for themselves or for Deoxys?
 - What caused the ancient civilization to disappear, and is this ever revealed?
 - Does the outward radiation pulse from the Tower incident have visible effects on the wider world that the player encounters as evidence?
-- What is the specific mechanism of the Act 3 aurora correction — witnessed directly, explained by an NPC, or pieced together by the player across sightings?
+- What is the specific mechanism of the Act 4 aurora correction — witnessed directly, explained by an NPC, or pieced together by the player across sightings?
 
 **Characters**
 - What is the Epsilon leader's name? What is his arc after Ty defeats him at Crystal Isles? What is the specific sequence of his radicalization?
 - How does Steven know the player, and what specifically made them the right choice to invite?
 - What is Ty's region of origin and background? What does he receive as a starter, and how does that choice reflect his character?
-- What is the specific incident in Act 3 that marks Ty's visible divergence from the player? Does he join Epsilon formally, or pursue the same ends through his own logic without joining them?
+- What is the specific incident in Act 4 that marks Ty's visible divergence from the player? Does he join Epsilon formally, or pursue the same ends through his own logic without joining them?
 - Where does Ty end up at the end? Is there reconciliation, permanent divergence, or something between?
 - Does Mr. Stone arrive at Dragon Frontiers during the main story or postgame, and what does he know?
 - What is the mechanism by which Steven becomes Devon's president — does Mr. Stone step down willingly, is it a generational handoff already in motion, does the scandal force it? What does Steven's Devon look like differently from his father's?
@@ -836,7 +853,7 @@ The sun — running its own cycle, indifferent to anything on Earth. Deoxys — 
 - What is the battle sequence at the Floating Island — how does the player stop the E Ball from detonating?
 - Does Rayquaza need to be caught, or is the alliance formed another way? Does the player encounter Rayquaza's Delta forme during the main story or only postgame? Are multiple Rayquaza sightings across the game the same individual or separate appearances until the climax?
 - Is Deoxys catchable in the postgame after being restored?
-- How does the curiosity vs. hostility framing play out concretely across the game — through dialogue choices, through specific story beats, through how each character treats Pokémon and people they don't yet understand?
+- How does the curiosity vs. judgment framing play out concretely across the game — through dialogue choices, through specific story beats, through how each character treats Pokémon and people they don't yet understand?
 
 **The Solar Crisis**
 - What is the Castaway's final transmission format — cutscene, message received mid-travel, or something read in the observatory on a return visit?

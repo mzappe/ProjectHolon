@@ -1,0 +1,68 @@
+area_id,area_name,species_display_name,species_const,evo_stage,encounter_method,rarity,level_range,notes
+R101,Route 101 - Mirage Forest Approach,Wurmple,SPECIES_WURMPLE,basic,grass,common,2-5,Forest Entrance merged in - lower end of range covers tutorial-tier
+R101,Route 101 - Mirage Forest Approach,Cascoon,SPECIES_CASCOON,stage_1,grass,uncommon,5-7,Low-level evolution (Wurmple evolves Lv.7) - kept wild per design decision
+R101,Route 101 - Mirage Forest Approach,Sentret,SPECIES_SENTRET,basic,grass,common,2-5,
+R101,Route 101 - Mirage Forest Approach,Seedot,SPECIES_SEEDOT,basic,grass,common,3-5,
+R101,Route 101 - Mirage Forest Approach,Skitty,SPECIES_SKITTY,basic,grass,common,3-5,
+R101,Route 101 - Mirage Forest Approach,Dunsparce,SPECIES_DUNSPARCE,basic,grass,uncommon,4-6,
+R101,Route 101 - Mirage Forest Approach,Girafarig,SPECIES_GIRAFARIG,basic,grass,uncommon,4-6,
+L-SANDBASIN,Sand Basin,Trapinch,SPECIES_TRAPINCH,basic,grass (sand),common,5-8,Named landmark area
+L-SANDBASIN,Sand Basin,Geodude,SPECIES_GEODUDE,basic,grass (sand)/rock,common,5-8,
+L-SANDBASIN,Sand Basin,Aron,SPECIES_ARON,basic,grass,uncommon,7-10,Steel/Rock fits rusted-metal theme,
+L-SANDBASIN,Sand Basin,Lunatone,SPECIES_LUNATONE,basic,grass (sand)/night-only,rare,10-14,Version/time-gated candidate (paired w/ Solrock)
+L-SANDBASIN,Sand Basin,Solrock,SPECIES_SOLROCK,basic,grass (sand)/day-only,rare,10-14,Version/time-gated candidate (paired w/ Lunatone)
+L-RUINS,Ruins of Progress (Railway Belt),Voltorb,SPECIES_VOLTORB,basic,grass,uncommon,6-9,Card-art confirmed for this landmark
+L-RUINS,Ruins of Progress (Railway Belt),Magnemite,SPECIES_MAGNEMITE,basic,grass,uncommon,6-9,Fits industrial-relic theme
+L-RUINS,Ruins of Progress (Railway Belt),Aron,SPECIES_ARON,basic,grass,uncommon,7-10,Steel/Rock fits rusted-metal theme
+L-RUINS,Ruins of Progress (Railway Belt),Pikachu δ,SPECIES_PIKACHU_DELTA_STEEL,basic,grass (very rare/hidden),very rare,8-10,Sparse pre-Tower Delta presence per lore; placed here as the dedicated rare Delta spawn - review placement choice vs Power Spot
+R102,Route 102 - Deep Mirage Forest (Outer Half),Machop,SPECIES_MACHOP,basic,grass,common,9-12,Lower-level half of former Deep Mirage Forest table
+R102,Route 102 - Deep Mirage Forest (Outer Half),Bellsprout,SPECIES_BELLSPROUT,basic,grass,common,9-12,Lower-level half of former Deep Mirage Forest table
+R102,Route 102 - Deep Mirage Forest (Outer Half),Seedot,SPECIES_SEEDOT,basic,grass,common,9-12,Lower-level half of former Deep Mirage Forest table
+R102,Route 102 - Deep Mirage Forest (Outer Half),Tangela,SPECIES_TANGELA,basic,grass,uncommon,10-13,Lower-level half of former Deep Mirage Forest table
+R102,Route 102 - Deep Mirage Forest (Outer Half),Spinda,SPECIES_SPINDA,basic,grass,uncommon,10-13,Lower-level half of former Deep Mirage Forest table
+R102,Route 102 - Deep Mirage Forest (Outer Half),Wynaut,SPECIES_WYNAUT,basic,grass,rare,8-11,Lower-level half of former Deep Mirage Forest table; pre-evo of Wobbuffet
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Geodude,SPECIES_GEODUDE,basic,cave,common,6-9,Named landmark - interior (Strange Cave) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Grimer,SPECIES_GRIMER,basic,cave,common,7-10,Interior (Strange Cave) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Gastly,SPECIES_GASTLY,basic,cave,uncommon,7-10,Soft yellow light = ghost-adjacent per card art; interior (Strange Cave) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Wobbuffet,SPECIES_WOBBUFFET,basic,cave,rare,8-11,Interior (Strange Cave) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Shuppet,SPECIES_SHUPPET,basic,cave,uncommon,8-11,Entrance/atmosphere (Cursed Shrine) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Misdreavus,SPECIES_MISDREAVUS,basic,cave,rare,9-12,Entrance/atmosphere (Cursed Shrine) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Absol,SPECIES_ABSOL,basic,cave (rare spawn),rare,12-15,Dark-type foreboding fits shrine tone; entrance (Cursed Shrine) zone
+L-CURSEDSHRINE,Cursed Shrine & Strange Cave,Furret,SPECIES_FURRET,final,cave,uncommon,10-13,Added per design decision
+R103,Route 103 - Deep Mirage Forest (Inner Half),Pinsir,SPECIES_PINSIR,basic,grass,uncommon,10-13,"Upper-level half of former Deep Mirage Forest table; card art confirmed - ""clings to massive tree trunks"""
+R103,Route 103 - Deep Mirage Forest (Inner Half),Nuzleaf,SPECIES_NUZLEAF,stage_1,grass,uncommon,14-16,"Upper-level half of former Deep Mirage Forest table; card art confirmed - ""dark upper canopies""; low-level evolution kept wild per design decision"
+R103,Route 103 - Deep Mirage Forest (Inner Half),Roselia,SPECIES_ROSELIA,basic,grass,uncommon,10-13,Upper-level half of former Deep Mirage Forest table
+R103,Route 103 - Deep Mirage Forest (Inner Half),Kecleon,SPECIES_KECLEON,basic,grass (camouflaged/rare),rare,11-14,Upper-level half of former Deep Mirage Forest table
+R103,Route 103 - Deep Mirage Forest (Inner Half),Growlithe,SPECIES_GROWLITHE,basic,grass,uncommon,10-13,Upper-level half of former Deep Mirage Forest table
+L-POWERSPOT,The Power Spot,Mew,SPECIES_MEW,basic,special/story,special,15 (fixed?),Narrative-critical - one-time or late unlock event encounter," not standard grass table"
+L-POWERSPOT,The Power Spot,Gastly,SPECIES_GASTLY,basic,grass (dusk only),rare,10-13,Ghost-types linger at the shadowy edges per card art
+L-FOSSILGROVE,Fossil Grove,Lileep,SPECIES_LILEEP,basic,grass,uncommon,15-18,Roaming restored-fossil population per design decision
+L-FOSSILGROVE,Fossil Grove,Kabuto,SPECIES_KABUTO,basic,grass,uncommon,15-18,
+L-FOSSILGROVE,Fossil Grove,Omanyte,SPECIES_OMANYTE,basic,grass,uncommon,15-18,
+L-FOSSILGROVE,Fossil Grove,Anorith,SPECIES_ANORITH,basic,grass,uncommon,15-18,
+L-FOSSILGROVE,Fossil Grove,Aerodactyl,SPECIES_AERODACTYL,basic,grass/rare,rare,18-22,No pre-evolution (fossil-restored) - basic stage but treated as rare spawn given pseudo-legendary tier
+R104,Route 104 - Ice Plateau,Spheal,SPECIES_SPHEAL,basic,grass (ice)/surf,common,20-23,TIER 2 - locked until HM/badge gate TBD; consolidated area (formerly separate Ice Plateau + Glacial Fringe)
+R104,Route 104 - Ice Plateau,Lapras,SPECIES_LAPRAS,basic,surf,rare,25-30,Card art: floating ice sheets
+R104,Route 104 - Ice Plateau,Sealeo,SPECIES_SEALEO,stage_1,grass (ice)/surf,uncommon,26-29,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R105,Route 105 - Volcanic Fringe (Calderas),Magmar,SPECIES_MAGMAR,basic,grass (ash),uncommon,22-25,TIER 2 - locked until HM/badge gate TBD; moved here from Deep Mirage Forest
+R105,Route 105 - Volcanic Fringe (Calderas),Magby,SPECIES_MAGBY,basic,grass (ash),rare,20-23,Moved here from Deep Mirage Forest per design decision
+R105,Route 105 - Volcanic Fringe (Calderas),Torkoal,SPECIES_TORKOAL,basic,grass (ash),common,22-25,"Card art confirmed - ""live in volcanic calderas amid active lava streams"""
+R105,Route 105 - Volcanic Fringe (Calderas),Geodude,SPECIES_GEODUDE,basic,grass (ash),common,20-23,"Card art confirmed - ""barren rocky craters"""
+R105,Route 105 - Volcanic Fringe (Calderas),Vibrava,SPECIES_VIBRAVA,stage_1,grass (ash),uncommon,25-28,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R105,Route 105 - Volcanic Fringe (Calderas),Machoke,SPECIES_MACHOKE,stage_1,grass (ash),uncommon,25-28,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R105,Route 105 - Volcanic Fringe (Calderas),Lairon,SPECIES_LAIRON,stage_1,grass (ash)/rock,uncommon,25-28,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R105,Route 105 - Volcanic Fringe (Calderas),Muk,SPECIES_MUK,final,grass (ash),rare,30+,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R105,Route 105 - Volcanic Fringe (Calderas),Graveler,SPECIES_GRAVELER,stage_1,grass (ash)/rock,uncommon,26-29,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R105,Route 105 - Volcanic Fringe (Calderas),Arcanine,SPECIES_ARCANINE,final,grass (ash),rare,28-31,Added per design decision - Tier 2 area makes the higher-level evolution acceptable wild
+R106,Route 106 - Coral Coast / Abyssal Trench,Clamperl,SPECIES_CLAMPERL,basic,surf,common,20-23,TIER 2 - locked until Surf+Dive gate; placement within zone geography TBD
+R106,Route 106 - Coral Coast / Abyssal Trench,Wailmer,SPECIES_WAILMER,basic,surf,uncommon,22-25,
+R106,Route 106 - Coral Coast / Abyssal Trench,Tentacool,SPECIES_TENTACOOL,basic,surf,common,15-18,Coastal Fringe merged in - lower-level population reflects easier shallows near the merged entrance point
+R106,Route 106 - Coral Coast / Abyssal Trench,Tentacruel,SPECIES_TENTACRUEL,final,surf,rare,28-31,Added per design decision
+R106,Route 106 - Coral Coast / Abyssal Trench,Chinchou,SPECIES_CHINCHOU,basic,dive,uncommon,15-18,Coastal Fringe merged in - lower-level population reflects easier shallows near the merged entrance point
+R106,Route 106 - Coral Coast / Abyssal Trench,Lanturn,SPECIES_LANTURN,final,dive,rare,28-31,Added per design decision
+R106,Route 106 - Coral Coast / Abyssal Trench,Gorebyss,SPECIES_GOREBYSS,final,dive,rare,28-31,Added per design decision - requires Clamperl (also present in this area) + DeepSeaScale trade in practice; listed here as direct wild spawn per instruction
+R106,Route 106 - Coral Coast / Abyssal Trench,Huntail,SPECIES_HUNTAIL,final,dive,rare,28-31,Added per design decision - requires Clamperl (also present in this area) + DeepSeaTooth trade in practice; listed here as direct wild spawn per instruction
+L-FORESTEDGE,Forest's Edge / Holon Approach,--,--,--,none (transition only),--,--,No wild encounters - pure story/transition beat per design decision
+L-REGIROCK,Regi Chamber - Rock,Regirock,SPECIES_REGIROCK,basic,static encounter (one-time),special,40 (TBD),Postgame - hidden trigger TBD
+L-REGIICE,Regi Chamber - Ice,Regice,SPECIES_REGICE,basic,static encounter (one-time),special,40 (TBD),Postgame - hidden trigger TBD
+L-REGISTEEL,Regi Chamber - Steel,Registeel,SPECIES_REGISTEEL,basic,static encounter (one-time),special,40 (TBD),Postgame - hidden trigger TBD
