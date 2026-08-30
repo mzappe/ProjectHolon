@@ -421,6 +421,10 @@ A phased, dependency-aware implementation plan for all features — config toggl
 - Estimated count: ~100–150 Delta species based on `holon_pokedex_v2.csv` (TCG set mapping)
 - With Gens 5–9 disabled, there is significant species ID headroom in the constants
 
+**Species vs. forms rule:**
+- **Default — separate species.** Every Delta Pokémon is its own species entry, distinct from its base form in the Pokédex (Charizard and Charizard δ are separate dex entries). No special handling — it's an ordinary species row. Delta lines with their own evolution chains (Dratini δ → Dragonair δ → Dragonite δ) *require* this, since forms don't evolve into other forms.
+- **Exception — forms.** A single Pokémon with multiple documented Delta typings uses one species with forms, extending the existing form-change table. Applies to Deoxys δ (Dark / Steel / Normal / Electric) and Rayquaza δ (Electric-Steel / Water-Steel / Fire). Legendaries don't evolve, so the evolution-branching objection doesn't apply, and Deoxys is already a form-based species in vanilla. Mew has only one Delta typing (Water, Gold Star δ) and does not need forms — treat as a single species.
+
 **Key files per species (expansion's simplified ~5-file system):**
 
 | File | Purpose |
