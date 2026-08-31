@@ -1,42 +1,39 @@
 # Pokemon Holon Legends
-<img width="1264" height="848" alt="Gemini_Generated_Image_kvk1i9kvk1i9kvk1" src="https://github.com/user-attachments/assets/13e247f3-7ead-41e1-ac64-7942e97ca834" />
 
 A Pokemon ROM hack set in the **Holon region** from the TCG Delta Species arc, built on [RHH's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion).
 
-An ancient meteorite lies buried beneath the Holon Research Tower. For years, the Tower broadcast electromagnetic energy to track Mew sightings in Mirage Forest — unknowingly transforming the surrounding Pokemon into **Delta Species**, creatures carrying elemental types their species was never meant to have. Then something went wrong: the broadcast reached what was buried below, and a contained local phenomenon became a spreading ecological crisis. The player travels outward from Mirage Forest through five locations mirroring the five TCG sets of the Delta Species arc, piecing together what happened and how to stop it before the region's ecosystems collapse.
+Deep in a lost primeval forest stands the **Holon Research Tower**, a spire the size of a mountain built to broadcast for Mew. It found something. It also started rewriting the wildlife around it, turning ordinary Pokemon into **Delta Species** that carry elemental types their kind was never born with. Now the change is spreading, and nobody who built the Tower will say why. You arrive as a fresh recruit with orders to catalog it, and follow the mutation outward across five regions, each one stranger than the last, until you learn what the Tower really woke up.
 
 ## Features
 
 ### The Holon Region
-- **Three geographic zones** — the forested Mainland, the island Archipelago, and the endgame Dragon Frontiers
-- **Five canonical TCG locations** — Mirage Forest (EX Legend Maker), Holon Village (EX Delta Species), Holon Lake (EX Holon Phantoms), the Unnamed Island (EX Crystal Guardians), and Dragon Frontiers (EX Dragon Frontiers)
-- Connective towns, routes, and landmarks that make the region feel inhabited beyond its story anchors
-- 8 Gyms + Pokemon League
-- Gen 3 design philosophy — no quest markers, no mission menus, world-driven exploration
 
-### Delta Species
-- Pokemon transformed by electromagnetic radiation from the Holon Research Tower
-- Non-standard elemental types, custom sprites and palettes
-- Delta mutations spread outward from the Tower, growing more severe the closer you get
-- Delta starter Pokemon
+Five zones, each based on one set of the Delta Species arc, explored in story order as you work your way out from the epicenter.
 
-### Story
-- A scientific accident, an ancient mystery, and a dormant extraterrestrial organism beneath the Tower
-- Deoxys — fractured into four Delta formes, each locked into a single behavioral extreme
-- Rayquaza — unable to identify what the fractured Delta Deoxys have become, responding with territorial aggression
-- Steven Stone investigating the Holon Ruins and the ancient civilization that once protected the crash site
-- A faction that appears to be part of the research effort but isn't what it seems
+- **Mirage Forest.** A dense, mist-drowned jungle of Jurassic-scale trees and hidden clearings. Fossil Pokemon roam it freely, Mew is rumored in it, and the healing power spot the whole region was founded on sits at its heart.
+- **Holon Village and the Research Tower.** A research settlement laid out like a giant Poke Ball and ringed with farms, with the Tower firing tracking waves into a sky that never stops crackling.
+- **Holon Lake.** A still highland lake with ancient stone domes half sunk in the shallows and a sprawl of active machinery running in the dark water underneath.
+- **Crystal Isles.** A storm-battered volcanic archipelago where glowing crystals push up through the rock, the sand, and the reefs, taking their color from whatever ground they break through.
+- **Dragon Frontiers.** Red sandstone cliffs at the edge of the map, with a second island floating above the clouds where the daytime sky fades to open starfield.
 
-### Powered by pokeemerald-expansion
-- Modern battle engine with Mega Evolution, Z-Moves, Dynamax, and Terastallization (configurable)
-- Physical/Special split, Fairy type, all items/abilities/moves through Gen IX
-- Improved AI, Level/EV caps, Sleep Clause, Type Indicators
-- Quality-of-life: indoor running, follower Pokemon, day/night cycle, DexNav, HGSS-style Pokedex
-- Full feature list in [`FEATURES.md`](FEATURES.md)
+There are 8 gym leaders and a regional Champion, an Unbound-style quest system built into open world exploration, and a roster of Gen 1 through 3 species. Your starter is one of three rare Delta specimens: **Delta Dratini (Grass)**, **Delta Ralts (Fire)**, or **Delta Bagon (Water)**.
+
+### Engine and configuration
+
+Built on [RHH's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion). Configured so far:
+
+- **Gen 6 mechanics baseline.** `GEN_LATEST` is set to `GEN_6`, covering learnsets, base stats, abilities, move data, and catch rates.
+- **HGSS-style Pokedex** with dark mode and decapped names.
+- **Follower Pokemon** enabled.
+- **Reusable TMs.**
+- **Shiny rate** doubled, from 1/8192 to 1/4096.
+
+Full upstream feature list in [`FEATURES.md`](FEATURES.md).
 
 ## Getting Started
 
 ### Prerequisites
+
 - devkitARM (ARM GCC cross-compiler)
 - libpng, pkg-config
 - Python 3
@@ -58,9 +55,9 @@ The output ROM will be `pokeemerald.gba`.
 
 ## Documentation
 
-- [`FEATURES.md`](FEATURES.md) — Full pokeemerald-expansion feature list
-- [`INSTALL.md`](INSTALL.md) — Platform-specific installation guides (Windows WSL, Linux, macOS, ChromeOS)
-- [`GDDs/`](GDDs/) — Game design documents including story bible, gameplay guide, and technical reference
+- [`FEATURES.md`](FEATURES.md): full pokeemerald-expansion feature list
+- [`INSTALL.md`](INSTALL.md): platform-specific installation guides (Windows WSL, Linux, macOS, ChromeOS)
+- [`GDDs/`](GDDs/): game design documents (story bible, region and encounter tables, Pokedex build, engine configs, build log)
 
 ## Credits
 

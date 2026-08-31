@@ -1053,6 +1053,49 @@ enum NationalDexOrder
 
 #define JOHTO_DEX_COUNT     NATIONAL_DEX_CELEBI
 
+/*
+ * Original pokeemerald-expansion NATIONAL_DEX_COUNT fallback retained for
+ * reference. It is disabled while the provisional Holon custom species extend
+ * the National Dex beyond every vanilla endpoint.
+ *
+#if P_GEN_9_POKEMON == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_PECHARUNT
+#elif P_GEN_9_CROSS_EVOS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_HYDRAPPLE
+#elif P_PALDEAN_FORMS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_CLODSIRE
+
+#elif P_GEN_8_POKEMON == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_ENAMORUS
+#elif P_HISUIAN_FORMS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_OVERQWIL
+#elif P_GEN_8_CROSS_EVOS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_URSALUNA
+#elif P_GALARIAN_FORMS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_RUNERIGUS
+
+#elif P_GEN_7_POKEMON == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_MELMETAL
+
+#elif P_GEN_6_POKEMON == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_VOLCANION
+#elif P_GEN_6_CROSS_EVOS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_SYLVEON
+
+#elif P_GEN_5_POKEMON == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_GENESECT
+
+#elif P_GEN_4_POKEMON == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_ARCEUS
+#elif P_GEN_4_CROSS_EVOS == TRUE
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_FROSLASS
+
+#else
+    #define NATIONAL_DEX_COUNT  NATIONAL_DEX_DEOXYS
+#endif
+ */
+
+// Provisional Holon custom-species endpoint used by the committed starter work.
 #define NATIONAL_DEX_COUNT  NATIONAL_DEX_SALAMENCE_DELTA_WATER
 
 #define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 1)
