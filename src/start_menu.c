@@ -31,6 +31,7 @@
 #include "party_menu.h"
 #include "pokedex.h"
 #include "pokenav.h"
+#include "rtc.h"
 #include "safari_zone.h"
 #include "save.h"
 #include "scanline_effect.h"
@@ -86,6 +87,8 @@ COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 // EWRAM
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
 EWRAM_DATA static u8 sBattlePyramidFloorWindowId = 0;
+EWRAM_DATA static u8 sStartClockWindowId = 0;
+EWRAM_DATA static u8 sStartClockLastMinute = 0; // always set by ShowStartClockWindow() before UpdateStartClockWindow() reads it
 EWRAM_DATA static u8 sStartMenuCursorPos = 0;
 EWRAM_DATA static u8 sNumStartMenuActions = 0;
 EWRAM_DATA static u8 sCurrentStartMenuActions[9] = {0};
@@ -148,7 +151,7 @@ static bool8 FieldCB_ReturnToFieldStartMenu(void);
 static const struct WindowTemplate sWindowTemplate_SafariBalls = {
     .bg = 0,
     .tilemapLeft = 1,
-    .tilemapTop = 1,
+    .tilemapTop = 5,
     .width = 9,
     .height = 4,
     .paletteNum = 15,
@@ -170,7 +173,7 @@ static const u8 *const sPyramidFloorNames[FRONTIER_STAGES_PER_CHALLENGE + 1] =
 static const struct WindowTemplate sWindowTemplate_PyramidFloor = {
     .bg = 0,
     .tilemapLeft = 1,
-    .tilemapTop = 1,
+    .tilemapTop = 5,
     .width = 10,
     .height = 4,
     .paletteNum = 15,
@@ -180,7 +183,7 @@ static const struct WindowTemplate sWindowTemplate_PyramidFloor = {
 static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
     .bg = 0,
     .tilemapLeft = 1,
-    .tilemapTop = 1,
+    .tilemapTop = 5,
     .width = 12,
     .height = 4,
     .paletteNum = 15,
@@ -258,6 +261,8 @@ static void BuildBattlePyramidStartMenu(void);
 static void BuildMultiPartnerRoomStartMenu(void);
 static void ShowSafariBallsWindow(void);
 static void ShowPyramidFloorWindow(void);
+static void ShowStartClockWindow(void);
+static void UpdateStartClockWindow(void);
 static void RemoveExtraStartMenuWindows(void);
 static bool32 PrintStartMenuActions(s8 *pIndex, u32 count);
 static bool32 InitStartMenuStep(void);
@@ -472,6 +477,58 @@ static void ShowPyramidFloorWindow(void)
     CopyWindowToVram(sBattlePyramidFloorWindowId, COPYWIN_GFX);
 }
 
+// --- START menu clock ------------------------------------------------------
+// Ported from Pawkkie/pokeemerald-expansion:start-menu-clock.
+// Displays the in-game time in a window at the top of the START menu.
+// (Weekday is intentionally omitted: pokeemerald's day-of-week is a relative
+//  counter anchored at Saturday, not a real calendar day.)
+#define START_CLOCK_24_HOUR       FALSE  // TRUE = 24-hour time, FALSE = 12-hour with AM/PM
+
+static const struct WindowTemplate sWindowTemplate_StartClock = {
+    .bg = 0,
+    .tilemapLeft = 1,
+    .tilemapTop = 1,
+    .width = 10, // recomputed per-draw in ShowStartClockWindow to fit the time string
+    .height = 2,
+    .paletteNum = 15,
+    .baseBlock = 0x38 // sits after the Safari/Pyramid windows (0x8) so both can display at once
+};
+
+static void ShowStartClockWindow(void)
+{
+    struct WindowTemplate template = sWindowTemplate_StartClock;
+    u8 timeStr[16];
+    s32 strWidth;
+    s32 x;
+
+    RtcCalcLocalTime();
+    sStartClockLastMinute = gLocalTime.minutes;
+    FormatDecimalTimeWithoutSeconds(timeStr, gLocalTime.hours, gLocalTime.minutes, START_CLOCK_24_HOUR);
+
+    // Size the window to the string (+4px horizontal padding), rounded up to whole tiles,
+    // then center the string in whatever slack the tile rounding leaves.
+    strWidth = GetStringWidth(FONT_NORMAL, timeStr, 0);
+    template.width = (strWidth + 4 + 7) / 8;
+    x = (template.width * 8 - strWidth) / 2;
+
+    sStartClockWindowId = AddWindow(&template);
+    PutWindowTilemap(sStartClockWindowId);
+    DrawStdWindowFrame(sStartClockWindowId, FALSE);
+    AddTextPrinterParameterized(sStartClockWindowId, FONT_NORMAL, timeStr, x, 1, TEXT_SKIP_DRAW, NULL);
+    CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+}
+
+static void UpdateStartClockWindow(void)
+{
+    RtcCalcLocalTime();
+    if (gLocalTime.minutes == sStartClockLastMinute)
+        return;
+
+    ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
+    RemoveWindow(sStartClockWindowId);
+    ShowStartClockWindow();
+}
+
 static void RemoveExtraStartMenuWindows(void)
 {
     if (GetSafariZoneFlag())
@@ -485,6 +542,9 @@ static void RemoveExtraStartMenuWindows(void)
         ClearStdWindowAndFrameToTransparent(sBattlePyramidFloorWindowId, FALSE);
         RemoveWindow(sBattlePyramidFloorWindowId);
     }
+
+    ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
+    RemoveWindow(sStartClockWindowId);
 }
 
 static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
@@ -542,6 +602,7 @@ static bool32 InitStartMenuStep(void)
             ShowSafariBallsWindow();
         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
             ShowPyramidFloorWindow();
+        ShowStartClockWindow();
         sInitStartMenuData[0]++;
         break;
     case 4:
@@ -678,6 +739,7 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
+    UpdateStartClockWindow();
     return FALSE;
 }
 
