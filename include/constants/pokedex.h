@@ -1040,10 +1040,24 @@ enum NationalDexOrder
     NATIONAL_DEX_IRON_CROWN,
     NATIONAL_DEX_TERAPAGOS,
     NATIONAL_DEX_PECHARUNT,
+    NATIONAL_DEX_DRATINI_DELTA_GRASS,
+    NATIONAL_DEX_DRAGONAIR_DELTA_GRASS,
+    NATIONAL_DEX_DRAGONITE_DELTA_GRASS,
+    NATIONAL_DEX_RALTS_DELTA_FIRE,
+    NATIONAL_DEX_KIRLIA_DELTA_FIRE,
+    NATIONAL_DEX_GARDEVOIR_DELTA_FIRE,
+    NATIONAL_DEX_BAGON_DELTA_WATER,
+    NATIONAL_DEX_SHELGON_DELTA_WATER,
+    NATIONAL_DEX_SALAMENCE_DELTA_WATER,
 };
 
 #define JOHTO_DEX_COUNT     NATIONAL_DEX_CELEBI
 
+/*
+ * Original pokeemerald-expansion NATIONAL_DEX_COUNT fallback retained for
+ * reference. It is disabled while the provisional Holon custom species extend
+ * the National Dex beyond every vanilla endpoint.
+ *
 #if P_GEN_9_POKEMON == TRUE
     #define NATIONAL_DEX_COUNT  NATIONAL_DEX_PECHARUNT
 #elif P_GEN_9_CROSS_EVOS == TRUE
@@ -1079,6 +1093,10 @@ enum NationalDexOrder
 #else
     #define NATIONAL_DEX_COUNT  NATIONAL_DEX_DEOXYS
 #endif
+ */
+
+// Provisional Holon custom-species endpoint used by the committed starter work.
+#define NATIONAL_DEX_COUNT  NATIONAL_DEX_SALAMENCE_DELTA_WATER
 
 #define POKEMON_SLOTS_NUMBER (NATIONAL_DEX_COUNT + 1)
 
@@ -1091,6 +1109,15 @@ enum NationalDexOrder
 #endif
 
 #define FOREACH_SPECIES_IN_HOENN_DEX_ORDER(F) \
+    F(DRATINI_DELTA_GRASS) \
+    F(DRAGONAIR_DELTA_GRASS) \
+    F(DRAGONITE_DELTA_GRASS) \
+    F(RALTS_DELTA_FIRE) \
+    F(KIRLIA_DELTA_FIRE) \
+    F(GARDEVOIR_DELTA_FIRE) \
+    F(BAGON_DELTA_WATER) \
+    F(SHELGON_DELTA_WATER) \
+    F(SALAMENCE_DELTA_WATER) \
     F(TREECKO) \
     F(GROVYLE) \
     F(SCEPTILE) \
