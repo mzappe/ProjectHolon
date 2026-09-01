@@ -425,7 +425,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonOffset = -3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ralts,
+        .frontPic = gMonFrontPic_RaltsDeltaFire,
         .frontPicSize = MON_COORDS_SIZE(24, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -434,25 +434,25 @@ const struct SpeciesInfo gSpeciesInfo[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Ralts,
+        .backPic = gMonBackPic_RaltsDeltaFire,
         .backPicSize = MON_COORDS_SIZE(32, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Ralts,
-        .shinyPalette = gMonShinyPalette_Ralts,
-        .iconSprite = gMonIcon_Ralts,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_RaltsDeltaFire,
+        .shinyPalette = gMonShinyPalette_RaltsDeltaFire,
+        .iconSprite = gMonIcon_RaltsDeltaFire,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Ralts)
+        FOOTPRINT(RaltsDeltaFire)
         OVERWORLD(
-            sPicTable_Ralts,
+            sPicTable_RaltsDeltaFire,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Ralts,
-            gShinyOverworldPalette_Ralts
+            gOverworldPalette_RaltsDeltaFire,
+            gShinyOverworldPalette_RaltsDeltaFire
         )
         .levelUpLearnset = sRaltsLevelUpLearnset,
         .teachableLearnset = sRaltsTeachableLearnset,
