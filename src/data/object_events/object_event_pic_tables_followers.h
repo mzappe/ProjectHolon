@@ -2354,6 +2354,18 @@ static const struct SpriteFrameImage sPicTable_GalladeMega[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_RALTS
 
+static const struct SpriteFrameImage sPicTable_DratiniDeltaGrass[] = {
+    overworld_ascending_frames(gObjectEventPic_DratiniDeltaGrass, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_RaltsDeltaFire[] = {
+    overworld_ascending_frames(gObjectEventPic_RaltsDeltaFire, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_BagonDeltaWater[] = {
+    overworld_ascending_frames(gObjectEventPic_BagonDeltaWater, 4, 4),
+};
+
 #if P_FAMILY_SURSKIT
 static const struct SpriteFrameImage sPicTable_Surskit[] = {
     overworld_ascending_frames(gObjectEventPic_Surskit, 4, 4),

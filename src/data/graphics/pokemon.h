@@ -27503,3 +27503,51 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonFrontPic_Egg[] = INCGFX_U32("graphics/pokemon/egg/anim_front.png", ".4bpp.smol");
     const u16 gMonPalette_Egg[] = INCGFX_U16("graphics/pokemon/egg/normal.pal", ".gbapal");
     const u8 gMonIcon_Egg[] = INCGFX_U8("graphics/pokemon/egg/icon.png", ".4bpp");
+
+    const u32 gMonFrontPic_DratiniDeltaGrass[] = INCGFX_U32("graphics/pokemon/dratini_delta_grass/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_DratiniDeltaGrass[] = INCGFX_U16("graphics/pokemon/dratini_delta_grass/normal.pal", ".gbapal");
+    const u32 gMonBackPic_DratiniDeltaGrass[] = INCGFX_U32("graphics/pokemon/dratini_delta_grass/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_DratiniDeltaGrass[] = INCGFX_U16("graphics/pokemon/dratini_delta_grass/shiny.pal", ".gbapal");
+    const u8 gMonIcon_DratiniDeltaGrass[] = INCGFX_U8("graphics/pokemon/dratini_delta_grass/icon.png", ".4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_DratiniDeltaGrass[] = INCGFX_U8("graphics/pokemon/dratini_delta_grass/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_DratiniDeltaGrass[] = INCGFX_COMP("graphics/pokemon/dratini_delta_grass/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_DratiniDeltaGrass[] = INCGFX_U16("graphics/pokemon/dratini_delta_grass/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_DratiniDeltaGrass[] = INCGFX_U16("graphics/pokemon/dratini_delta_grass/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_RaltsDeltaFire[] = INCGFX_U32("graphics/pokemon/ralts_delta_fire/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_RaltsDeltaFire[] = INCGFX_U16("graphics/pokemon/ralts_delta_fire/normal.pal", ".gbapal");
+    const u32 gMonBackPic_RaltsDeltaFire[] = INCGFX_U32("graphics/pokemon/ralts_delta_fire/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_RaltsDeltaFire[] = INCGFX_U16("graphics/pokemon/ralts_delta_fire/shiny.pal", ".gbapal");
+    const u8 gMonIcon_RaltsDeltaFire[] = INCGFX_U8("graphics/pokemon/ralts_delta_fire/icon.png", ".4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_RaltsDeltaFire[] = INCGFX_U8("graphics/pokemon/ralts_delta_fire/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_RaltsDeltaFire[] = INCGFX_COMP("graphics/pokemon/ralts_delta_fire/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_RaltsDeltaFire[] = INCGFX_U16("graphics/pokemon/ralts_delta_fire/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_RaltsDeltaFire[] = INCGFX_U16("graphics/pokemon/ralts_delta_fire/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_BagonDeltaWater[] = INCGFX_U32("graphics/pokemon/bagon_delta_water/anim_front.png", ".4bpp.smol");
+    const u16 gMonPalette_BagonDeltaWater[] = INCGFX_U16("graphics/pokemon/bagon_delta_water/normal.pal", ".gbapal");
+    const u32 gMonBackPic_BagonDeltaWater[] = INCGFX_U32("graphics/pokemon/bagon_delta_water/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_BagonDeltaWater[] = INCGFX_U16("graphics/pokemon/bagon_delta_water/shiny.pal", ".gbapal");
+    const u8 gMonIcon_BagonDeltaWater[] = INCGFX_U8("graphics/pokemon/bagon_delta_water/icon.png", ".4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_BagonDeltaWater[] = INCGFX_U8("graphics/pokemon/bagon_delta_water/footprint.png", ".1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_BagonDeltaWater[] = INCGFX_COMP("graphics/pokemon/bagon_delta_water/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_BagonDeltaWater[] = INCGFX_U16("graphics/pokemon/bagon_delta_water/overworld_normal.pal", ".gbapal");
+    const u16 gShinyOverworldPalette_BagonDeltaWater[] = INCGFX_U16("graphics/pokemon/bagon_delta_water/overworld_shiny.pal", ".gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
