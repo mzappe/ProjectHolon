@@ -1,7 +1,7 @@
 ---
 title: "Pokémon Holon Legends — Deterministic Delta Pokémon Production Pipeline"
 doc-id: HL-TEC-006
-version: 1.1
+version: 1.2
 status: Living Document
 category: Technical Art
 last-updated: 2026-09-02
@@ -10,9 +10,9 @@ author: Matt Zappe
 
 # Pokémon Holon Legends — Deterministic Delta Pokémon Production Pipeline
 
-> **Status:** Living Document | **Version:** 1.1 | **Updated:** 2026-09-02
+> **Status:** Living Document | **Version:** 1.2 | **Updated:** 2026-09-02
 
-This guide documents the repeatable process used to derive the Fire-type Ralts δ and Grass-type Dratini δ sprite sets from their canonical assets and connect them to standalone species in Project Holon. It is intended to be the default pipeline for future Delta Species that preserve a canonical Pokémon's pose and silhouette while changing palette, markings, and small controlled details.
+This guide documents the repeatable process used to derive the Fire-type Ralts δ and Grass-type Dratini δ sprite sets from their canonical assets and connect them to standalone species in Project Holon. It also records the approved front-only hydrothermal Shelgon δ and Water/Fire Salamence δ prototypes as examples of deterministic family progression. It is intended to be the default pipeline for future Delta Species that preserve a canonical Pokémon's pose and silhouette while changing palette, markings, and small controlled details.
 
 This is not an all-new image-generation workflow. Every output pixel is produced by a checked-in script from checked-in source assets, named palette tables, and explicit coordinate edits. Running the same script against the same inputs produces the same files.
 
@@ -26,6 +26,8 @@ Related references:
 - [Visual Asset and Animation Production Guide](visual-asset-production-guide.md)
 - [Ralts δ deterministic generator](../../tools/sprite_helpers/generate_ralts_delta_fire.py)
 - [Dratini δ deterministic generator](../../tools/sprite_helpers/generate_dratini_delta_grass.py)
+- [Shelgon δ front generator](../../tools/sprite_helpers/generate_shelgon_delta_water_front.py)
+- [Salamence δ front generator](../../tools/sprite_helpers/generate_salamence_delta_water_front.py)
 
 ---
 
@@ -737,7 +739,87 @@ The completed asset set passed `gbagfx` conversion and a full `make -j4` ROM bui
 
 ---
 
-## 11. Reusable Checklist
+## 11. Front-only Case Study: Hydrothermal Shelgon δ and Salamence δ
+
+The Bagon evolution family demonstrates how a Delta concept can change emphasis across evolutionary stages while retaining a coherent visual lineage. The approved progression is:
+
+```text
+Aquatic ancient-reptile Bagon
+        ↓
+Fire-oriented hydrothermal chrysalis Shelgon
+        ↓
+Deep-sea Water/Fire Salamence
+```
+
+These entries document approved `anim_front` designs only. They are not complete species-production examples: back sprites, shiny palettes, icons, followers, footprints, graphics declarations, and species-data changes have not yet been produced for Shelgon or Salamence. The `_delta_water` asset paths preserve the current family naming convention; they do not by themselves assign gameplay typing.
+
+| Species | Canonical source | Generator | Generated output | Current status |
+| --- | --- | --- | --- | --- |
+| Shelgon δ | `graphics/pokemon/shelgon/anim_front_gba.png` | `tools/sprite_helpers/generate_shelgon_delta_water_front.py` | `graphics/pokemon/shelgon_delta_water/anim_front.png` | Approved front-only Fire-oriented design |
+| Salamence δ | `graphics/pokemon/salamence/anim_front_gba.png` | `tools/sprite_helpers/generate_salamence_delta_water_front.py` | `graphics/pokemon/salamence_delta_water/anim_front.png` | Approved front-only Water/Fire design |
+
+### 11.1 Shelgon δ design contract
+
+Shelgon is the pressurized middle stage: an aquatic juvenile has descended into deep-ocean heat and sealed itself inside a hydrothermal chrysalis.
+
+- Preserve Shelgon's canonical body, face, feet, pose, and the majority of its egg-like shell silhouette.
+- Recolor the exposed body as compressed ember red and the shell as near-black basalt.
+- Use a yellow-hot eye, heated claw accent, and orange pressure fissures as the Fire cues.
+- Add one bounded, rear-swept dorsal vent crest with an internal glowing fissure.
+- Convert the viewer-right shell spiral into a geothermal crack without changing the surrounding shell geometry.
+- Avoid generic flames, detached particles, or broad shell ornamentation; the heat should appear trapped under pressure.
+
+The normal battle palette assigns semantic ramps to ember body indices 1–4, basalt shell indices 8–11, a hot eye at indices 12–13, the pressure fissures at index 14, and the outline at index 15. This keeps the design readable as dark deep-sea rock with contained internal heat rather than as an ordinary orange Fire-type recolor.
+
+### 11.2 Shelgon δ deterministic method
+
+`DORSAL_CREST` and `CARAPACE_SPIRAL` are explicit local coordinate maps combined into `FEATURES`. The first frame uses those coordinates directly. The second frame applies the canonical pose translation encoded by:
+
+```python
+FRAME_OFFSETS = ((0, 0, 0), (1, 2, 64))
+```
+
+This produces 72 explicitly declared coordinate applications across the two frames while keeping the feature attached to the moving shell. The generator always reopens the canonical indexed 64x128 source, replaces its embedded palette, applies only the approved feature coordinates, and validates mode, dimensions, index-0 transparency, 4-bit palette use, and the allowed change set.
+
+The Shelgon prototype illustrates an important exception to simple duplicated-frame maps: when the canonical animation translates the body, translate one approved feature map by the measured pose offset rather than forcing identical sheet coordinates onto both frames.
+
+### 11.3 Salamence δ design contract
+
+Salamence combines the marine anatomy established by Bagon with the basalt and heat language developed inside Shelgon.
+
+- Preserve Salamence's canonical pose, anatomy, wing outline, and complete nontransparent silhouette.
+- Use a dark navy-blue body ramp as the midpoint between aquatic Bagon and abyssal Shelgon.
+- Retain seafoam countershading on the underside as the clearest Water cue.
+- Reinterpret the canonical wings as basalt hydrothermal vent-sails.
+- Place branching red-orange magma veins only on existing wing pixels.
+- Add embedded yellow, orange, and ember-red body bioluminescence, including a curled shoulder flare and lateral nodes along the flank and tail.
+- Change the eye accent to amber so it belongs to the same warm light system.
+- Do not add external wing flames or detached flame tufts; those were rejected because the internal vent-sail veins are cleaner and preserve the silhouette.
+
+The palette reserves indices 1–4 for the abyssal body, 5–6 for basalt wing material, 7–8 and 14 for the magma and bioluminescent heat ramp, 9–11 for the slate-to-seafoam underside, 12 for claws and teeth, and 15 for the outline.
+
+### 11.4 Salamence δ deterministic method
+
+Salamence's two canonical frames change pose enough that a single translated overlay would not remain anatomically correct. Its generator therefore declares pose-specific maps:
+
+- `MAGMA_VEINS[frame]` traces approved canonical wing pixels;
+- `BODY_BIOLUMINESCENCE[frame]` marks approved canonical body pixels;
+- `EYE_PIXELS[frame]` identifies the existing eye accent in each pose.
+
+The final front sprite contains 76 intentional index changes across both frames. Validation does more than check the overall allowed set: every magma coordinate must originate on a canonical wing index, and every body-light coordinate must originate on a canonical body index. This semantic source-index check prevents a valid-looking coordinate from drifting onto the background, outline, underside, or adjacent anatomy during later revisions.
+
+### 11.5 Lessons from the family progression
+
+1. **Let an evolutionary family carry a motif without making every stage identical.** Bagon expresses aquatic reptile anatomy, Shelgon compresses that identity into basalt and heat, and Salamence releases both ideas as a Water/Fire adult.
+2. **Separate visual direction from engine state.** A folder name, palette, or approved mockup does not change species typing. Record proposed typing clearly and defer gameplay changes until the full integration pass.
+3. **Choose frame synchronization from the source motion.** Shelgon's rigid shell supports one translated feature map; Salamence's articulated pose requires explicit maps for each frame.
+4. **Prefer internal material cues to detached effects.** Pressure fissures, magma veins, and bioluminescent scales communicate Fire while keeping the Pokémon's canonical outline clean.
+5. **Constrain overlays by both coordinate and source material.** Salamence's wing/body index assertions are stronger than a coordinate allowlist alone and should be reused whenever several materials meet in a small region.
+6. **Keep prototypes honest about scope.** An approved `anim_front` is a design milestone, not a completed asset set or integrated species. Expand the same deterministic logic to every required surface before calling either evolution production-ready.
+
+---
+
+## 12. Reusable Checklist
 
 ### Design
 
@@ -784,7 +866,7 @@ The completed asset set passed `gbagfx` conversion and a full `make -j4` ROM bui
 
 ---
 
-## 12. Definition of Done
+## 13. Definition of Done
 
 A deterministic Delta Pokémon is complete when:
 
@@ -808,10 +890,13 @@ The key discipline is simple: preserve the canonical sprite as the anatomical so
 - Project Holon local expansion documentation, [`docs/tutorials/how_to_new_pokemon.md`](../../docs/tutorials/how_to_new_pokemon.md).
 - Project Holon implementation, [`tools/sprite_helpers/generate_ralts_delta_fire.py`](../../tools/sprite_helpers/generate_ralts_delta_fire.py).
 - Project Holon implementation, [`tools/sprite_helpers/generate_dratini_delta_grass.py`](../../tools/sprite_helpers/generate_dratini_delta_grass.py).
+- Project Holon front prototype, [`tools/sprite_helpers/generate_shelgon_delta_water_front.py`](../../tools/sprite_helpers/generate_shelgon_delta_water_front.py).
+- Project Holon front prototype, [`tools/sprite_helpers/generate_salamence_delta_water_front.py`](../../tools/sprite_helpers/generate_salamence_delta_water_front.py).
 
 ## Changelog
 
 | Version | Date | Changes |
 | --- | --- | --- |
+| 1.2 | 2026-09-02 | Added the approved front-only hydrothermal Shelgon δ and Water/Fire Salamence δ case studies, including family progression, palette roles, frame synchronization, semantic coordinate validation, rejected external flames, and explicit prototype scope. |
 | 1.1 | 2026-09-02 | Added the Grass-type Dratini δ case study, including tropical flower-fin design, full asset integration, exact change-set validation, and production lessons. |
 | 1.0 | 2026-08-31 | Initial reusable pipeline based on the Ralts δ Fire implementation and its sprite-placement iterations. |
