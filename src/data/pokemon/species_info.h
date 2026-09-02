@@ -223,7 +223,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonOffset = 8,
         .trainerScale = 386,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Dratini,
+        .frontPic = gMonFrontPic_DratiniDeltaGrass,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 40) : MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -232,25 +232,25 @@ const struct SpeciesInfo gSpeciesInfo[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Dratini,
+        .backPic = gMonBackPic_DratiniDeltaGrass,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 8,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Dratini,
-        .shinyPalette = gMonShinyPalette_Dratini,
-        .iconSprite = gMonIcon_Dratini,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_DratiniDeltaGrass,
+        .shinyPalette = gMonShinyPalette_DratiniDeltaGrass,
+        .iconSprite = gMonIcon_DratiniDeltaGrass,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 3, SHADOW_SIZE_L)
-        FOOTPRINT(Dratini)
+        FOOTPRINT(DratiniDeltaGrass)
         OVERWORLD(
-            sPicTable_Dratini,
+            sPicTable_DratiniDeltaGrass,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_SLITHER,
             sAnimTable_Following,
-            gOverworldPalette_Dratini,
-            gShinyOverworldPalette_Dratini
+            gOverworldPalette_DratiniDeltaGrass,
+            gShinyOverworldPalette_DratiniDeltaGrass
         )
         .levelUpLearnset = sDratiniLevelUpLearnset,
         .teachableLearnset = sDratiniTeachableLearnset,
@@ -624,7 +624,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bagon,
+        .frontPic = gMonFrontPic_BagonDeltaWater,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -635,25 +635,25 @@ const struct SpeciesInfo gSpeciesInfo[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SHAKE_TWICE : ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Bagon,
+        .backPic = gMonBackPic_BagonDeltaWater,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(48, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Bagon,
-        .shinyPalette = gMonShinyPalette_Bagon,
-        .iconSprite = gMonIcon_Bagon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .palette = gMonPalette_BagonDeltaWater,
+        .shinyPalette = gMonShinyPalette_BagonDeltaWater,
+        .iconSprite = gMonIcon_BagonDeltaWater,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(4, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Bagon)
+        FOOTPRINT(BagonDeltaWater)
         OVERWORLD(
-            sPicTable_Bagon,
+            sPicTable_BagonDeltaWater,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bagon,
-            gShinyOverworldPalette_Bagon
+            gOverworldPalette_BagonDeltaWater,
+            gShinyOverworldPalette_BagonDeltaWater
         )
         .levelUpLearnset = sBagonLevelUpLearnset,
         .teachableLearnset = sBagonTeachableLearnset,
