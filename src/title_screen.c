@@ -657,7 +657,7 @@ void CB2_InitTitleScreen(void)
                                     | DISPCNT_OBJ_ON
                                     | DISPCNT_WIN0_ON
                                     | DISPCNT_OBJWIN_ON);
-        m4aSongNumStart(MUS_RG_ENCOUNTER_DEOXYS);
+        m4aSongNumStart(MUS_CAVE_OF_ORIGIN);
         gMain.state = 5;
         break;
     case 5:
