@@ -113,6 +113,12 @@ static const u8 sDeltaWaterPokedexText[] = _(
     "displays the traits and capabilities\n"
     "of a Water-type Pokémon.");
 
+static const u8 sDeltaSteelPokedexText[] = _(
+    "Delta energy altered this Pokémon's\n"
+    "body at a fundamental level. It now\n"
+    "displays the traits and capabilities\n"
+    "of a Steel-type Pokémon.");
+
 const struct SpeciesInfo gSpeciesInfo[] =
 {
     [SPECIES_NONE] =
@@ -799,6 +805,85 @@ const struct SpeciesInfo gSpeciesInfo[] =
         )
         .levelUpLearnset = sSalamenceLevelUpLearnset,
         .teachableLearnset = sSalamenceTeachableLearnset,
+    },
+
+    [SPECIES_CHIMECHO_DELTA] =
+    {
+        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 75 : 65,
+        .baseAttack    = 50,
+        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 80 : 70,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 95,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 90 : 80,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_STEEL),
+        .catchRate = 45,
+    #if P_UPDATED_EXP_YIELDS >= GEN_7
+        .expYield = 159,
+    #elif P_UPDATED_EXP_YIELDS >= GEN_5
+        .expYield = 149,
+    #else
+        .expYield = 147,
+    #endif
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_CLEANSE_TAG,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
+        .abilities = { ABILITY_LEVITATE, ABILITY_CLEAR_BODY, ABILITY_TELEPATHY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Chimecho δ"),
+        .cryId = CRY_CHIMECHO,
+        .natDexNum = NATIONAL_DEX_CHIMECHO_DELTA,
+        .categoryName = _("Delta"),
+        .height = 6,
+        .weight = 10,
+        .description = sDeltaSteelPokedexText,
+        .pokemonScale = 505,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ChimechoDelta,
+        .frontPicSize = MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 12 : 16,
+        .backPic = gMonBackPic_ChimechoDelta,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 9,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_ChimechoDelta,
+        .shinyPalette = gMonShinyPalette_ChimechoDelta,
+        .iconSprite = gMonIcon_ChimechoDelta,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-3, 16, SHADOW_SIZE_S)
+        FOOTPRINT(ChimechoDelta)
+        OVERWORLD(
+            sPicTable_ChimechoDelta,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_ChimechoDelta,
+            gShinyOverworldPalette_ChimechoDelta
+        )
+        .levelUpLearnset = sChimechoLevelUpLearnset,
+        .teachableLearnset = sChimechoTeachableLearnset,
+        .eggMoveLearnset = sChimechoEggMoveLearnset,
     },
 
     /* You may add any custom species below this point based on the following structure: */

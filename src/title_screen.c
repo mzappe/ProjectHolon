@@ -532,10 +532,11 @@ static void StartPokemonLogoShine(u8 mode)
         break;
     case SHINE_MODE_DOUBLE:
         // Create an invisible sprite with mode set to update the background color
-        spriteId = CreateSprite(&sPokemonLogoShineSpriteTemplate, 0, 68, 0);
-        gSprites[spriteId].oam.objMode = ST_OAM_OBJ_WINDOW;
-        gSprites[spriteId].sMode = mode;
-        gSprites[spriteId].invisible = TRUE;
+        // (disabled: caused white/green flash against the new title background)
+        // spriteId = CreateSprite(&sPokemonLogoShineSpriteTemplate, 0, 68, 0);
+        // gSprites[spriteId].oam.objMode = ST_OAM_OBJ_WINDOW;
+        // gSprites[spriteId].sMode = mode;
+        // gSprites[spriteId].invisible = TRUE;
 
         // Create two faster shine sprites
         spriteId = CreateSprite(&sPokemonLogoShineSpriteTemplate, 0, 68, 0);
@@ -695,7 +696,7 @@ static void Task_TitleScreenPhase1(u8 taskId)
         if (frameNum == 176)
             StartPokemonLogoShine(SHINE_MODE_DOUBLE);
         else if (frameNum == 64)
-            StartPokemonLogoShine(SHINE_MODE_SINGLE);
+            StartPokemonLogoShine(SHINE_MODE_SINGLE_NO_BG_COLOR);
 
         gTasks[taskId].tCounter--;
     }
