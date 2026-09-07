@@ -30,6 +30,7 @@
 #include "rtc.h"
 #include "save.h"
 #include "scanline_effect.h"
+#include "shiny_rate.h"
 #include "sound.h"
 #include "sprite.h"
 #include "strings.h"
@@ -219,6 +220,10 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8);
 static void NewGameBirchSpeech_ShowGenderMenu(void);
 static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void);
 static void NewGameBirchSpeech_ClearGenderWindow(u8, u8);
+static void Task_NewGameIntro_ShinyRateMenu(u8);
+static void Task_NewGameIntro_WaitShinyRatePrompt(u8);
+static void Task_NewGameIntro_ProcessShinyRateMenu(u8);
+static void NewGameIntro_ShowShinyRateMenu(void);
 static void Task_NewGameBirchSpeech_WhatsYourName(u8);
 static void Task_NewGameBirchSpeech_SlideOutOldGenderSprite(u8);
 static void Task_NewGameBirchSpeech_SlideInNewGenderSprite(u8);
@@ -475,6 +480,23 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 static const struct MenuAction sMenuActions_Gender[] = {
     {gText_Boy, {NULL}},
     {gText_Girl, {NULL}}
+};
+
+// Project Holon: new-game Shiny-rate menu. Row order is enum ShinyRateLevel; the
+// chosen row is written straight to gSaveBlock2Ptr->shinyRate (see shiny_rate.h).
+static const u8 sText_ShinyRatePrompt[] = _("How often should Shiny\nPokémon cross your path?");
+static const u8 sText_ShinyRate_Rare[] = _("Rare");
+static const u8 sText_ShinyRate_Uncommon[] = _("Uncommon");
+static const u8 sText_ShinyRate_Classic[] = _("Classic");
+static const u8 sText_ShinyRate_Frequent[] = _("Frequent");
+static const u8 sText_ShinyRate_Common[] = _("Common");
+
+static const struct MenuAction sMenuActions_ShinyRate[] = {
+    {sText_ShinyRate_Rare,     {NULL}},
+    {sText_ShinyRate_Uncommon, {NULL}},
+    {sText_ShinyRate_Classic,  {NULL}},
+    {sText_ShinyRate_Frequent, {NULL}},
+    {sText_ShinyRate_Common,   {NULL}},
 };
 
 static const u8 *const sMalePresetNames[] = {
@@ -1663,16 +1685,49 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
     {
     case 0:
         PlaySE(SE_SELECT);
-        gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
-        NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
+        gTasks[taskId].func = Task_NewGameIntro_ShinyRateMenu;
         break;
     case MENU_B_PRESSED:
     case 1:
         PlaySE(SE_SELECT);
         gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
     }
+}
+
+// Project Holon: after the name is confirmed, ask the player how often Shiny Pokémon
+// should appear, then hand off to the same platform/fade wrap-up the intro used before.
+static void Task_NewGameIntro_ShinyRateMenu(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, sText_ShinyRatePrompt);
+    AddTextPrinterForMessage(TRUE);
+    gTasks[taskId].func = Task_NewGameIntro_WaitShinyRatePrompt;
+}
+
+static void Task_NewGameIntro_WaitShinyRatePrompt(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        NewGameIntro_ShowShinyRateMenu();
+        gTasks[taskId].func = Task_NewGameIntro_ProcessShinyRateMenu;
+    }
+}
+
+static void Task_NewGameIntro_ProcessShinyRateMenu(u8 taskId)
+{
+    s8 input = Menu_ProcessInputNoWrap();
+
+    if (input == MENU_NOTHING_CHOSEN || input == MENU_B_PRESSED)
+        return;
+
+    PlaySE(SE_SELECT);
+    gSaveBlock2Ptr->shinyRate = input;
+    NewGameBirchSpeech_ClearGenderWindow(2, TRUE);
+
+    gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+    NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
+    NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
+    gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
 }
 
 static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8 taskId)
@@ -2131,6 +2186,18 @@ static void NewGameBirchSpeech_ShowGenderMenu(void)
 static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void)
 {
     return Menu_ProcessInputNoWrap();
+}
+
+// Project Holon: draws the Shiny-rate list in the tall upper-left window (index 2),
+// the same one the naming summary uses. Cleared again in Task_NewGameIntro_ProcessShinyRateMenu.
+static void NewGameIntro_ShowShinyRateMenu(void)
+{
+    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[2], 0xF3);
+    FillWindowPixelBuffer(2, PIXEL_FILL(1));
+    PrintMenuTable(2, ARRAY_COUNT(sMenuActions_ShinyRate), sMenuActions_ShinyRate);
+    InitMenuInUpperLeftCornerNormal(2, ARRAY_COUNT(sMenuActions_ShinyRate), SHINY_RATE_DEFAULT);
+    PutWindowTilemap(2);
+    CopyWindowToVram(2, COPYWIN_FULL);
 }
 
 void NewGameBirchSpeech_SetDefaultPlayerName(u8 nameId)

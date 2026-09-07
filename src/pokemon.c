@@ -45,6 +45,7 @@
 #include "recorded_battle.h"
 #include "regions.h"
 #include "rtc.h"
+#include "shiny_rate.h"
 #include "sound.h"
 #include "string_util.h"
 #include "strings.h"
@@ -877,6 +878,7 @@ bool32 ComputePlayerShinyOdds(u32 personality, u32 value)
     if (P_NO_SHINIES_WITHOUT_POKEBALLS && !HasAtLeastOnePokeBall() && FlagGet(FLAG_SYS_POKEDEX_GET))
         return FALSE;
 
+    u32 shinyOdds = GetPlayerShinyOdds();
     u32 totalRerolls = 0;
 
     if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
@@ -890,13 +892,13 @@ bool32 ComputePlayerShinyOdds(u32 personality, u32 value)
     if (gDexNavSpecies)
         totalRerolls += CalculateDexNavShinyRolls();
 
-    while (GET_SHINY_VALUE(value, personality) >= SHINY_ODDS && totalRerolls > 0)
+    while (GET_SHINY_VALUE(value, personality) >= shinyOdds && totalRerolls > 0)
     {
         personality = Random32();
         totalRerolls--;
     }
 
-    return GET_SHINY_VALUE(value, personality) < SHINY_ODDS;
+    return GET_SHINY_VALUE(value, personality) < shinyOdds;
 }
 
 void SetBoxMonIVs(struct BoxPokemon *mon, u8 fixedIV)
@@ -980,7 +982,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     else if (trainerId.method == OT_ID_PRESET)
     {
         value = trainerId.value;
-        isShiny = GET_SHINY_VALUE(value, personality) < SHINY_ODDS;
+        isShiny = GET_SHINY_VALUE(value, personality) < GetPlayerShinyOdds();
     }
     else // Player is the OT
     {
@@ -2499,7 +2501,7 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
         case MON_DATA_IS_SHINY:
         {
             u32 shinyValue = GET_SHINY_VALUE(boxMon->otId, boxMon->personality);
-            retVal = (shinyValue < SHINY_ODDS) ^ boxMon->shinyModifier;
+            retVal = (shinyValue < GetPlayerShinyOdds()) ^ boxMon->shinyModifier;
             break;
         }
         case MON_DATA_HIDDEN_NATURE:
@@ -2931,7 +2933,7 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             u32 shinyValue = GET_SHINY_VALUE(boxMon->otId, boxMon->personality);
             bool32 isShiny;
             SET8(isShiny);
-            boxMon->shinyModifier = (shinyValue < SHINY_ODDS) ^ isShiny;
+            boxMon->shinyModifier = (shinyValue < GetPlayerShinyOdds()) ^ isShiny;
             break;
         }
         case MON_DATA_HIDDEN_NATURE:
