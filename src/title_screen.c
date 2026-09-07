@@ -35,7 +35,7 @@ enum {
 #define VERSION_BANNER_LEFT_X 88
 #define VERSION_BANNER_RIGHT_X 152
 #define VERSION_BANNER_Y 2
-#define VERSION_BANNER_Y_GOAL 70
+#define VERSION_BANNER_Y_GOAL 44 // tucked under the (shrunk) logo so the Deoxys core glow has clear space below it
 #define START_BANNER_X 128
 
 #define CLEAR_SAVE_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON | DPAD_UP)
@@ -752,7 +752,7 @@ static void Task_TitleScreenPhase2(u8 taskId)
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_MODE_1
                                     | DISPCNT_OBJ_1D_MAP
                                     | DISPCNT_BG0_ON
-                                    | DISPCNT_BG1_ON
+                                    | DISPCNT_BG1_ON  // DNA-helix overlay (shares the Deoxys palette)
                                     | DISPCNT_BG2_ON
                                     | DISPCNT_OBJ_ON);
         CreatePressStartBanner(START_BANNER_X, 108);
@@ -862,10 +862,11 @@ static void UpdateLegendaryMarkingColor(u8 frameNum)
 {
     if ((frameNum % 4) == 0) // Change color every 4th frame
     {
+        // Pulse the Deoxys core between violet and cyan (blue stays maxed at both ends).
         s32 intensity = Cos(frameNum, Q_8_8(0.5)) + Q_8_8(0.5);
-        u32 r = 31 - Q_8_8_TO_INT(intensity * 31);
-        u32 g = 31 - Q_8_8_TO_INT(intensity * 22);
-        u32 b = 12;
+        u32 r = 12 + Q_8_8_TO_INT(intensity * 12);
+        u32 g = 18 + Q_8_8_TO_INT(intensity * 13);
+        u32 b = 31;
 
         u16 color = RGB(r, g, b);
         LoadPalette(&color, BG_PLTT_ID(14) + 15, sizeof(color));
