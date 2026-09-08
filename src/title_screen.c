@@ -863,7 +863,9 @@ static void UpdateLegendaryMarkingColor(u8 frameNum)
 {
     if ((frameNum % 4) == 0) // Change color every 4th frame
     {
-        // Pulse the Deoxys core between violet and cyan (blue stays maxed at both ends).
+        // Pulse the Deoxys core centre (palette index 15) between mid blue and
+        // near-white cyan; blue stays maxed at both ends. The bloom ring around it
+        // (index 9) is deliberately left static.
         s32 intensity = Cos(frameNum, Q_8_8(0.5)) + Q_8_8(0.5);
         u32 r = 12 + Q_8_8_TO_INT(intensity * 12);
         u32 g = 18 + Q_8_8_TO_INT(intensity * 13);
