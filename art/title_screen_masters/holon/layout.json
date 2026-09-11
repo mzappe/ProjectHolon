@@ -1,0 +1,26 @@
+{
+  "landscape": {
+    "tiles": 601,
+    "tile_bytes": 38464,
+    "map_bytes": 2048
+  },
+  "pokemon": {
+    "tiles": 70,
+    "tile_bytes": 2240,
+    "map_bytes": 2048
+  },
+  "legends": {
+    "tiles": 65,
+    "tile_bytes": 2080,
+    "map_bytes": 2048
+  },
+  "display": {
+    "width": 240,
+    "height": 160,
+    "mode": 0,
+    "bg0": "8bpp landscape",
+    "bg1": "4bpp Pokemon",
+    "bg2": "4bpp Holon Legends",
+    "cloud_overlay": false
+  }
+}
