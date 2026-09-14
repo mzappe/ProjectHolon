@@ -12,15 +12,15 @@ import struct
 import numpy as np
 from PIL import Image, ImageFilter
 
-import subtitle_font
-
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 OUT = ROOT / "graphics/title_screen"
 SCREEN = (240, 160)
-SUBTITLE = "HOLON LEGENDS"
-# The wordmark ends at y=43; this clears it by three rows including the outline.
-SUBTITLE_TOP = 46
+# The finished subtitle is a hand-drawn 240x160 layer kept as source art, the
+# way approved.png is: chrome "HOLON LEGENDS" in the Delta Species style, its
+# letters drawn at final size so no glyph pixel is ever resampled. Index 0 is
+# the transparency key; the other fifteen are its own palette bank.
+SUBTITLE_LAYER = "subtitle_layer.png"
 # Source-space bounds separate the subtitle from the low corners of the logo.
 BOUNDS = {
     "pokemon": (400, 25, 1140, 307),
@@ -57,16 +57,13 @@ def title_layers(colors):
     pokemon = np.zeros((160, 240), dtype=np.uint8)
     pokemon[3:44, 59:181] = logo
 
-    # The subtitle is drawn at final size by subtitle_font, on one line, so no
-    # letter pixel is ever resampled. Centre it under the wordmark.
-    glyphs, subtitle_colors = subtitle_font.render(SUBTITLE)
-    # Snap to the GBA's five bits per channel so the preview matches hardware.
-    subtitle = indexed(glyphs, [tuple(gba(v) for v in c) for c in subtitle_colors])
-    legends = Image.new("P", SCREEN, 0)
-    legends.putpalette(subtitle.getpalette())
-    width = glyphs.shape[1]
-    assert width <= SCREEN[0], width
-    legends.paste(subtitle, ((SCREEN[0] - width) // 2, SUBTITLE_TOP))
+    # Load the subtitle layer as drawn, snapping its palette to the GBA's five
+    # bits per channel so the preview matches hardware.
+    source = Image.open(HERE / SUBTITLE_LAYER)
+    assert source.size == SCREEN, source.size
+    palette = source.getpalette()[:48]
+    legends = indexed(np.asarray(source),
+                      [tuple(gba(v) for v in palette[i:i + 3]) for i in range(0, 48, 3)])
     return {"pokemon": indexed(pokemon, colors), "legends": legends}
 
 

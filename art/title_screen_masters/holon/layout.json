@@ -10,8 +10,8 @@
     "map_bytes": 2048
   },
   "legends": {
-    "tiles": 65,
-    "tile_bytes": 2080,
+    "tiles": 66,
+    "tile_bytes": 2112,
     "map_bytes": 2048
   },
   "display": {
