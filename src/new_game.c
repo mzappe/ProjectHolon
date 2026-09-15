@@ -49,6 +49,7 @@
 #include "union_room_chat.h"
 #include "constants/map_groups.h"
 #include "constants/items.h"
+#include "shiny_rate.h"
 #include "difficulty.h"
 #include "follower_npc.h"
 
@@ -105,6 +106,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
+    gSaveBlock2Ptr->shinyRate = SHINY_RATE_DEFAULT;
 }
 
 static void ClearPokedexFlags(void)

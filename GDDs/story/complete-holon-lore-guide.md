@@ -262,6 +262,8 @@ Each of the TCG sets featuring Delta Species include a Stadium card whose name b
 
 The Bulbapedia Holon page presents two possible interpretations — separate power spots across all locations, or all structures simply referencing back to the Holon Research Tower — and explicitly states neither is confirmed.
 
+**A third interpretation, developed for this continuity:** the 3-nodes-around-a-center shape is a diagram of Deoxys itself — Normal Forme at the center, Attack/Defense/Speed as the three states cycling around it. The ancient civilization who built Holon Legacy and the region's other triangular sites (see Part I, §1) rendered what they could observe of the guardian's forme-cycling without understanding the biology behind it. Devon's Holon Research Tower, with its three satellite domes surrounding the central spire in the same formation, unknowingly echoes a symbol already carved into the region's ruins — the Stadium cards' shared iconography would then be the same guardian-diagram appearing at every site significant enough to carry it, not a reference to multiple power spots or a coincidence with the Metal Energy symbol. This reading doesn't resolve which of the two Bulbapedia interpretations is closer to source intent — it offers a third, narrative one for this project specifically.
+
 ---
 
 ## 8. Delta Distribution — Data Overview

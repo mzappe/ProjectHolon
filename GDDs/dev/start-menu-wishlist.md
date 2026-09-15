@@ -14,6 +14,56 @@ Status key: `idea` · `planned` · `wip` · `done`
 
 ---
 
+## v1 scope — Time · Location · Weather  `planned`
+
+Grow the shipped clock window into a **fixed 3-row** info panel. All three rows always
+render — nothing is dynamically hidden in v1. One file: `src/start_menu.c`. No new strings
+(label tables are local `COMPOUND_STRING`). Est. ~half a day.
+
+### Rows (all `FONT_NORMAL` for v1, no icons)
+
+| Row | Example | Source |
+|---|---|---|
+| Time | `1:27 AM` / `13:27` | existing clock code (`FormatDecimalTimeWithoutSeconds`, `gLocalTime`) |
+| Location | `LITTLEROOT TOWN` | `GetMapNameGeneric(buf, gMapHeader.regionMapSectionId)` — always populated (Holon has a section everywhere) |
+| Weather | `CLEAR` / `RAIN` / `INDOORS` | see below |
+
+### Weather row logic
+
+1. If `IsMapTypeIndoors(gMapHeader.mapType)` (covers `MAP_TYPE_INDOOR` / `SECRET_BASE`; add `MAP_TYPE_UNDERGROUND` explicitly for caves) → `INDOORS`.
+2. Else map `GetCurrentWeather()` through the label table; `WEATHER_NONE` → `CLEAR`.
+3. Anything unmapped falls through to `CLEAR`. Row is never blank, never hidden.
+
+| Label | Weather ids |
+|---|---|
+| `CLEAR` | `WEATHER_NONE` + any unmapped id |
+| `SUNNY` | `SUNNY_CLOUDS`, `SUNNY`, `DROUGHT` |
+| `CLOUDY` | `SHADE` |
+| `RAIN` | `RAIN`, `DOWNPOUR`, `RAIN_THUNDERSTORM`, `ABNORMAL` |
+| `FOG` | `FOG_HORIZONTAL`, `FOG_DIAGONAL`, `FOG` |
+| `SANDSTORM` | `SANDSTORM` |
+| `ASHFALL` | `VOLCANIC_ASH` |
+| `SNOW` | `SNOW` |
+
+### Build details
+
+- **Refactor:** `ShowStartClockWindow` → `ShowStartPanelWindow`; `sStartClockWindowId` → `sStartPanelWindowId`. Same lifecycle: built in `InitStartMenuStep` case 3, torn down in `RemoveExtraStartMenuWindows`.
+- **Refresh:** build all 3 rows once on menu-open. Keep the minute-rollover refresh (from `HandleStartMenuInput`) for the time only — location can't change with the menu open, weather changes are rare enough to leave until the next open.
+- **Window size:** fixed 3 rows. Keep the per-draw width auto-size, measured against the widest rendered row (location, up to `MAP_NAME_LENGTH` = 15 chars ≈ 15 tiles / 120px). Height = 3 × line height.
+- **baseBlock `0x38`** unchanged. Verify the taller window still clears the menu window (`0x139`); bump if needed.
+- **Config:** reuse `START_CLOCK_24_HOUR`. No per-row toggles in v1 (all rows always on).
+
+### Deferred (not v1, per MZ)
+
+- Safari Balls / Pyramid Floor window collision with the taller panel (they sit at `tilemapTop 5`).
+- Dynamic row hiding / conditional rows.
+
+### Open decision
+
+- One `FONT_NORMAL` size for all rows, or time larger / sub-rows `FONT_SMALL`?
+
+---
+
 ## Right side — menu options (`MENU_ACTION_*`)
 
 | Feature | Status | Notes |

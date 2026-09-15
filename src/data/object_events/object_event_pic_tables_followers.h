@@ -2366,6 +2366,10 @@ static const struct SpriteFrameImage sPicTable_BagonDeltaWater[] = {
     overworld_ascending_frames(gObjectEventPic_BagonDeltaWater, 4, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_ChimechoDelta[] = {
+    overworld_ascending_frames(gObjectEventPic_ChimechoDelta, 4, 4),
+};
+
 #if P_FAMILY_SURSKIT
 static const struct SpriteFrameImage sPicTable_Surskit[] = {
     overworld_ascending_frames(gObjectEventPic_Surskit, 4, 4),

@@ -30,6 +30,7 @@
 #include "rtc.h"
 #include "save.h"
 #include "scanline_effect.h"
+#include "shiny_rate.h"
 #include "sound.h"
 #include "sprite.h"
 #include "strings.h"
@@ -146,16 +147,11 @@
  * Task_NewGameBirchSpeech_SoItsPlayerName
  * Task_NewGameBirchSpeech_CreateNameYesNo
  * Task_NewGameBirchSpeech_ProcessNameYesNoMenu
- *  - If confirmed, advance to Task_NewGameBirchSpeech_SlidePlatformAway2.
+ *  - If confirmed, advance to Task_NewGameIntro_ShinyRateMenu.
  *  - Otherwise, return to Task_NewGameBirchSpeech_BoyOrGirl.
  *
- * Task_NewGameBirchSpeech_SlidePlatformAway2
- * Task_NewGameBirchSpeech_ReshowBirchLotad
- * Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter
- * Task_NewGameBirchSpeech_AreYouReady
- * Task_NewGameBirchSpeech_ShrinkPlayer
- * Task_NewGameBirchSpeech_WaitForPlayerShrink
- * Task_NewGameBirchSpeech_FadePlayerToWhite
+ * Task_NewGameIntro_ProcessShinyRateMenu
+ * Task_NewGameIntro_HoldThenFadeToBlack (Project Holon: brief hold, then fade to black into the boat scene)
  * Task_NewGameBirchSpeech_Cleanup
  *  - Advances to CB2_NewGame.
  *
@@ -219,6 +215,11 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8);
 static void NewGameBirchSpeech_ShowGenderMenu(void);
 static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void);
 static void NewGameBirchSpeech_ClearGenderWindow(u8, u8);
+static void Task_NewGameIntro_ShinyRateMenu(u8);
+static void Task_NewGameIntro_WaitShinyRatePrompt(u8);
+static void Task_NewGameIntro_ProcessShinyRateMenu(u8);
+static void Task_NewGameIntro_HoldThenFadeToBlack(u8);
+static void NewGameIntro_ShowShinyRateMenu(void);
 static void Task_NewGameBirchSpeech_WhatsYourName(u8);
 static void Task_NewGameBirchSpeech_SlideOutOldGenderSprite(u8);
 static void Task_NewGameBirchSpeech_SlideInNewGenderSprite(u8);
@@ -229,14 +230,6 @@ static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u8, u8);
-static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8);
-static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8);
-static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter(u8);
-static void Task_NewGameBirchSpeech_AreYouReady(u8);
-static void Task_NewGameBirchSpeech_ShrinkPlayer(u8);
-static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *);
-static void Task_NewGameBirchSpeech_WaitForPlayerShrink(u8);
-static void Task_NewGameBirchSpeech_FadePlayerToWhite(u8);
 static void Task_NewGameBirchSpeech_Cleanup(u8);
 static void SpriteCB_Null(struct Sprite *);
 static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox(u8);
@@ -462,19 +455,26 @@ static const struct BgTemplate sBirchBgTemplate = {
 
 static const struct ScrollArrowsTemplate sScrollArrowsTemplate_MainMenu = {2, 0x78, 8, 3, 0x78, 0x98, 3, 4, 1, 1, 0};
 
-static const union AffineAnimCmd sSpriteAffineAnim_PlayerShrink[] = {
-    AFFINEANIMCMD_FRAME(-2, -2, 0, 0x30),
-    AFFINEANIMCMD_END
-};
-
-static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
-{
-    sSpriteAffineAnim_PlayerShrink
-};
-
 static const struct MenuAction sMenuActions_Gender[] = {
     {gText_Boy, {NULL}},
     {gText_Girl, {NULL}}
+};
+
+// Project Holon: new-game Shiny-rate menu. Row order is enum ShinyRateLevel; the
+// chosen row is written straight to gSaveBlock2Ptr->shinyRate (see shiny_rate.h).
+static const u8 sText_ShinyRatePrompt[] = _("How often should Shiny\nPokémon cross your path?");
+static const u8 sText_ShinyRate_Rare[] = _("Rare");
+static const u8 sText_ShinyRate_Uncommon[] = _("Uncommon");
+static const u8 sText_ShinyRate_Classic[] = _("Classic");
+static const u8 sText_ShinyRate_Frequent[] = _("Frequent");
+static const u8 sText_ShinyRate_Common[] = _("Common");
+
+static const struct MenuAction sMenuActions_ShinyRate[] = {
+    {sText_ShinyRate_Rare,     {NULL}},
+    {sText_ShinyRate_Uncommon, {NULL}},
+    {sText_ShinyRate_Classic,  {NULL}},
+    {sText_ShinyRate_Frequent, {NULL}},
+    {sText_ShinyRate_Common,   {NULL}},
 };
 
 static const u8 *const sMalePresetNames[] = {
@@ -1322,7 +1322,7 @@ static void Task_NewGameBirchSpeech_Init(u8 taskId)
     gTasks[taskId].tPlayerSpriteId = SPRITE_NONE;
     gTasks[taskId].data[3] = 0xFF;
     gTasks[taskId].tTimer = 0xD8;
-    PlayBGM(MUS_ROUTE122);
+    PlayBGM(MUS_ABANDONED_SHIP);
     ShowBg(0);
     ShowBg(1);
 }
@@ -1402,11 +1402,11 @@ static void Task_NewGameBirchSpeechSub_InitPokeBall(u8 taskId)
     u8 spriteId = gTasks[sBirchSpeechMainTaskId].tLotadSpriteId;
 
     gSprites[spriteId].x = 100;
-    gSprites[spriteId].y = 75;
+    gSprites[spriteId].y = 65; // raised: Chimecho delta hangs lower than Lotad
     gSprites[spriteId].invisible = FALSE;
     gSprites[spriteId].data[0] = 0;
 
-    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_LOTAD);
+    CreatePokeballSpriteToReleaseMon(spriteId, gSprites[spriteId].oam.paletteNum, 112, 58, 0, 0, 32, PALETTES_BG, SPECIES_CHIMECHO_DELTA);
     gTasks[taskId].func = Task_NewGameBirchSpeechSub_WaitForLotad;
     gTasks[sBirchSpeechMainTaskId].tTimer = 0;
 }
@@ -1443,9 +1443,9 @@ static void Task_NewGameBirchSpeech_AndYouAre(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
     {
+        // Project Holon: no "And you are?" line -- straight from the lore
+        // block into the gender-menu platform fade.
         sStartedPokeBallTask = FALSE;
-        StringExpandPlaceholders(gStringVar4, gText_Birch_AndYouAre);
-        AddTextPrinterForMessage(TRUE);
         gTasks[taskId].func = Task_NewGameBirchSpeech_StartBirchLotadPlatformFade;
     }
 }
@@ -1663,10 +1663,7 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
     {
     case 0:
         PlaySE(SE_SELECT);
-        gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
-        NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
+        gTasks[taskId].func = Task_NewGameIntro_ShinyRateMenu;
         break;
     case MENU_B_PRESSED:
     case 1:
@@ -1675,136 +1672,55 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
     }
 }
 
-static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8 taskId)
+// Project Holon: after the name is confirmed, ask the player how often Shiny Pokémon
+// should appear, then hand off to the same platform/fade wrap-up the intro used before.
+static void Task_NewGameIntro_ShinyRateMenu(u8 taskId)
 {
-    if (gTasks[taskId].tBG1HOFS)
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, sText_ShinyRatePrompt);
+    AddTextPrinterForMessage(TRUE);
+    gTasks[taskId].func = Task_NewGameIntro_WaitShinyRatePrompt;
+}
+
+static void Task_NewGameIntro_WaitShinyRatePrompt(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
     {
-        gTasks[taskId].tBG1HOFS += 2;
-        SetGpuReg(REG_OFFSET_BG1HOFS, gTasks[taskId].tBG1HOFS);
-    }
-    else
-    {
-        gTasks[taskId].func = Task_NewGameBirchSpeech_ReshowBirchLotad;
+        NewGameIntro_ShowShinyRateMenu();
+        gTasks[taskId].func = Task_NewGameIntro_ProcessShinyRateMenu;
     }
 }
 
-static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8 taskId)
+static void Task_NewGameIntro_ProcessShinyRateMenu(u8 taskId)
 {
-    u8 spriteId;
+    s8 input = Menu_ProcessInputNoWrap();
 
-    if (gTasks[taskId].tIsDoneFadingSprites)
-    {
-        gSprites[gTasks[taskId].tBrendanSpriteId].invisible = TRUE;
-        gSprites[gTasks[taskId].tMaySpriteId].invisible = TRUE;
-        spriteId = gTasks[taskId].tBirchSpriteId;
-        gSprites[spriteId].x = 136;
-        gSprites[spriteId].y = 60;
-        gSprites[spriteId].invisible = FALSE;
-        gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        spriteId = gTasks[taskId].tLotadSpriteId;
-        gSprites[spriteId].x = 100;
-        gSprites[spriteId].y = 75;
-        gSprites[spriteId].invisible = FALSE;
-        gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
-        NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
-        NewGameBirchSpeech_ClearWindow(0);
-        StringExpandPlaceholders(gStringVar4, gText_Birch_YourePlayer);
-        AddTextPrinterForMessage(TRUE);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter;
-    }
+    if (input == MENU_NOTHING_CHOSEN || input == MENU_B_PRESSED)
+        return;
+
+    PlaySE(SE_SELECT);
+    gSaveBlock2Ptr->shinyRate = input;
+    NewGameBirchSpeech_ClearGenderWindow(2, TRUE);
+
+    // Project Holon: character creation is done. No send-off, no shrink -- hold
+    // the frame briefly, then fade straight to black. The boat scene opens on
+    // black from CB2_NewGame.
+    NewGameBirchSpeech_ClearWindow(0);
+    gTasks[taskId].tTimer = 60;
+    gTasks[taskId].func = Task_NewGameIntro_HoldThenFadeToBlack;
 }
 
-static void Task_NewGameBirchSpeech_WaitForSpriteFadeInAndTextPrinter(u8 taskId)
+static void Task_NewGameIntro_HoldThenFadeToBlack(u8 taskId)
 {
-    if (gTasks[taskId].tIsDoneFadingSprites)
+    if (gTasks[taskId].tTimer)
     {
-        gSprites[gTasks[taskId].tBirchSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-        gSprites[gTasks[taskId].tLotadSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-        if (!RunTextPrintersAndIsPrinter0Active())
-        {
-            gSprites[gTasks[taskId].tBirchSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-            gSprites[gTasks[taskId].tLotadSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-            NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
-            NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
-            gTasks[taskId].tTimer = 64;
-            gTasks[taskId].func = Task_NewGameBirchSpeech_AreYouReady;
-        }
+        gTasks[taskId].tTimer--;
+        return;
     }
-}
 
-static void Task_NewGameBirchSpeech_AreYouReady(u8 taskId)
-{
-    u8 spriteId;
-
-    if (gTasks[taskId].tIsDoneFadingSprites)
-    {
-        gSprites[gTasks[taskId].tBirchSpriteId].invisible = TRUE;
-        gSprites[gTasks[taskId].tLotadSpriteId].invisible = TRUE;
-        if (gTasks[taskId].tTimer)
-        {
-            gTasks[taskId].tTimer--;
-            return;
-        }
-        if (gSaveBlock2Ptr->playerGender != MALE)
-            spriteId = gTasks[taskId].tMaySpriteId;
-        else
-            spriteId = gTasks[taskId].tBrendanSpriteId;
-        gSprites[spriteId].x = 120;
-        gSprites[spriteId].y = 60;
-        gSprites[spriteId].invisible = FALSE;
-        gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-        gTasks[taskId].tPlayerSpriteId = spriteId;
-        NewGameBirchSpeech_StartFadeInTarget1OutTarget2(taskId, 2);
-        NewGameBirchSpeech_StartFadePlatformOut(taskId, 1);
-        StringExpandPlaceholders(gStringVar4, gText_Birch_AreYouReady);
-        AddTextPrinterForMessage(TRUE);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_ShrinkPlayer;
-    }
-}
-
-static void Task_NewGameBirchSpeech_ShrinkPlayer(u8 taskId)
-{
-    u8 spriteId;
-
-    if (gTasks[taskId].tIsDoneFadingSprites)
-    {
-        gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_NORMAL;
-        if (!RunTextPrintersAndIsPrinter0Active())
-        {
-            spriteId = gTasks[taskId].tPlayerSpriteId;
-            gSprites[spriteId].oam.affineMode = ST_OAM_AFFINE_NORMAL;
-            gSprites[spriteId].affineAnims = sSpriteAffineAnimTable_PlayerShrink;
-            InitSpriteAffineAnim(&gSprites[spriteId]);
-            StartSpriteAffineAnim(&gSprites[spriteId], 0);
-            gSprites[spriteId].callback = SpriteCB_MovePlayerDownWhileShrinking;
-            BeginNormalPaletteFade(PALETTES_BG, 0, 0, 16, RGB_BLACK);
-            FadeOutBGM(4);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForPlayerShrink;
-        }
-    }
-}
-
-static void Task_NewGameBirchSpeech_WaitForPlayerShrink(u8 taskId)
-{
-    u8 spriteId = gTasks[taskId].tPlayerSpriteId;
-
-    if (gSprites[spriteId].affineAnimEnded)
-        gTasks[taskId].func = Task_NewGameBirchSpeech_FadePlayerToWhite;
-}
-
-static void Task_NewGameBirchSpeech_FadePlayerToWhite(u8 taskId)
-{
-    u8 spriteId;
-
-    if (!gPaletteFade.active)
-    {
-        spriteId = gTasks[taskId].tPlayerSpriteId;
-        gSprites[spriteId].callback = SpriteCB_Null;
-        SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
-        BeginNormalPaletteFade(PALETTES_OBJECTS, 0, 0, 16, RGB_WHITEALPHA);
-        gTasks[taskId].func = Task_NewGameBirchSpeech_Cleanup;
-    }
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+    FadeOutBGM(4);
+    gTasks[taskId].func = Task_NewGameBirchSpeech_Cleanup;
 }
 
 static void Task_NewGameBirchSpeech_Cleanup(u8 taskId)
@@ -1895,18 +1811,9 @@ static void SpriteCB_Null(struct Sprite *sprite)
 {
 }
 
-static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *sprite)
-{
-    u32 y;
-
-    y = (sprite->y << 16) + sprite->data[0] + 0xC000;
-    sprite->y = y >> 16;
-    sprite->data[0] = y;
-}
-
 static u8 NewGameBirchSpeech_CreateLotadSprite(u8 x, u8 y)
 {
-    return CreateMonPicSprite_Affine(SPECIES_LOTAD, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
+    return CreateMonPicSprite_Affine(SPECIES_CHIMECHO_DELTA, FALSE, 0, MON_PIC_AFFINE_FRONT, x, y, 14, TAG_NONE);
 }
 
 static void AddBirchSpeechObjects(u8 taskId)
@@ -1921,7 +1828,7 @@ static void AddBirchSpeechObjects(u8 taskId)
     gSprites[birchSpriteId].oam.priority = 0;
     gSprites[birchSpriteId].invisible = TRUE;
     gTasks[taskId].tBirchSpriteId = birchSpriteId;
-    lotadSpriteId = NewGameBirchSpeech_CreateLotadSprite(100, 0x4B);
+    lotadSpriteId = NewGameBirchSpeech_CreateLotadSprite(100, 0x41);
     gSprites[lotadSpriteId].callback = SpriteCB_Null;
     gSprites[lotadSpriteId].oam.priority = 0;
     gSprites[lotadSpriteId].invisible = TRUE;
@@ -2131,6 +2038,18 @@ static void NewGameBirchSpeech_ShowGenderMenu(void)
 static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void)
 {
     return Menu_ProcessInputNoWrap();
+}
+
+// Project Holon: draws the Shiny-rate list in the tall upper-left window (index 2),
+// the same one the naming summary uses. Cleared again in Task_NewGameIntro_ProcessShinyRateMenu.
+static void NewGameIntro_ShowShinyRateMenu(void)
+{
+    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[2], 0xF3);
+    FillWindowPixelBuffer(2, PIXEL_FILL(1));
+    PrintMenuTable(2, ARRAY_COUNT(sMenuActions_ShinyRate), sMenuActions_ShinyRate);
+    InitMenuInUpperLeftCornerNormal(2, ARRAY_COUNT(sMenuActions_ShinyRate), SHINY_RATE_DEFAULT);
+    PutWindowTilemap(2);
+    CopyWindowToVram(2, COPYWIN_FULL);
 }
 
 void NewGameBirchSpeech_SetDefaultPlayerName(u8 nameId)
