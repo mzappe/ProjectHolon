@@ -3930,7 +3930,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_MAY,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
     .size = 256,
     .width = 16,
