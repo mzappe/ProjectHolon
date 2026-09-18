@@ -2,6 +2,7 @@
 #define GUARD_TEXT_WINDOW_H
 
 #define WINDOW_FRAMES_COUNT 20
+#define WINDOW_FRAME_HOLON 19 // Frame 20 in Options (zero-based).
 
 struct TilesPal
 {

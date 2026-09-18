@@ -31,6 +31,7 @@
 #include "party_menu.h"
 #include "pokedex.h"
 #include "pokenav.h"
+#include "region_map.h"
 #include "rtc.h"
 #include "safari_zone.h"
 #include "save.h"
@@ -49,8 +50,11 @@
 #include "dexnav.h"
 #include "wild_encounter.h"
 #include "constants/battle_frontier.h"
+#include "constants/characters.h"
+#include "constants/map_types.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "constants/weather.h"
 
 // Menu actions
 enum
@@ -87,8 +91,11 @@ COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 // EWRAM
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
 EWRAM_DATA static u8 sBattlePyramidFloorWindowId = 0;
-EWRAM_DATA static u8 sStartClockWindowId = 0;
-EWRAM_DATA static u8 sStartClockLastMinute = 0; // always set by ShowStartClockWindow() before UpdateStartClockWindow() reads it
+EWRAM_DATA static u8 sStartPanelWindowId = 0;
+EWRAM_DATA static bool8 sExtraStartMenuWindowsActive = FALSE;
+EWRAM_DATA static u8 sStartPanelLastMinute = 0; // always set by ShowStartPanelWindow() before UpdateStartPanelWindow() reads it
+EWRAM_DATA static u8 sStartPanelLastWeather = 0;
+EWRAM_DATA static u32 sStartPanelLastSaveAge = 0;
 EWRAM_DATA static u8 sStartMenuCursorPos = 0;
 EWRAM_DATA static u8 sNumStartMenuActions = 0;
 EWRAM_DATA static u8 sCurrentStartMenuActions[9] = {0};
@@ -151,7 +158,7 @@ static bool8 FieldCB_ReturnToFieldStartMenu(void);
 static const struct WindowTemplate sWindowTemplate_SafariBalls = {
     .bg = 0,
     .tilemapLeft = 1,
-    .tilemapTop = 5,
+    .tilemapTop = 12,
     .width = 9,
     .height = 4,
     .paletteNum = 15,
@@ -173,7 +180,7 @@ static const u8 *const sPyramidFloorNames[FRONTIER_STAGES_PER_CHALLENGE + 1] =
 static const struct WindowTemplate sWindowTemplate_PyramidFloor = {
     .bg = 0,
     .tilemapLeft = 1,
-    .tilemapTop = 5,
+    .tilemapTop = 12,
     .width = 10,
     .height = 4,
     .paletteNum = 15,
@@ -183,7 +190,7 @@ static const struct WindowTemplate sWindowTemplate_PyramidFloor = {
 static const struct WindowTemplate sWindowTemplate_PyramidPeak = {
     .bg = 0,
     .tilemapLeft = 1,
-    .tilemapTop = 5,
+    .tilemapTop = 12,
     .width = 12,
     .height = 4,
     .paletteNum = 15,
@@ -261,8 +268,8 @@ static void BuildBattlePyramidStartMenu(void);
 static void BuildMultiPartnerRoomStartMenu(void);
 static void ShowSafariBallsWindow(void);
 static void ShowPyramidFloorWindow(void);
-static void ShowStartClockWindow(void);
-static void UpdateStartClockWindow(void);
+static void ShowStartPanelWindow(void);
+static void UpdateStartPanelWindow(void);
 static void RemoveExtraStartMenuWindows(void);
 static bool32 PrintStartMenuActions(s8 *pIndex, u32 count);
 static bool32 InitStartMenuStep(void);
@@ -443,6 +450,8 @@ static void BuildMultiPartnerRoomStartMenu(void)
 static void ShowSafariBallsWindow(void)
 {
     sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
+    if (sSafariBallsWindowId == WINDOW_NONE)
+        return;
     PutWindowTilemap(sSafariBallsWindowId);
     DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
     if (IS_FRLG)
@@ -469,6 +478,8 @@ static void ShowPyramidFloorWindow(void)
     else
         sBattlePyramidFloorWindowId = AddWindow(&sWindowTemplate_PyramidFloor);
 
+    if (sBattlePyramidFloorWindowId == WINDOW_NONE)
+        return;
     PutWindowTilemap(sBattlePyramidFloorWindowId);
     DrawStdWindowFrame(sBattlePyramidFloorWindowId, FALSE);
     StringCopy(gStringVar1, sPyramidFloorNames[gSaveBlock2Ptr->frontier.curChallengeBattleNum]);
@@ -477,74 +488,268 @@ static void ShowPyramidFloorWindow(void)
     CopyWindowToVram(sBattlePyramidFloorWindowId, COPYWIN_GFX);
 }
 
-// --- START menu clock ------------------------------------------------------
-// Ported from Pawkkie/pokeemerald-expansion:start-menu-clock.
-// Displays the in-game time in a window at the top of the START menu.
-// (Weekday is intentionally omitted: pokeemerald's day-of-week is a relative
-//  counter anchored at Saturday, not a real calendar day.)
-#define START_CLOCK_24_HOUR       FALSE  // TRUE = 24-hour time, FALSE = 12-hour with AM/PM
+// --- START menu panel --------------------------------------------------------
+// Holon: the two windows share Frame 20's palette, leaving dialogue palette 15
+// alone. Artwork is native 4bpp; the watermark uses pale silver, not alpha.
+#define START_CLOCK_24_HOUR FALSE
+#define START_MENU_ROW_HEIGHT 16
+#define START_MENU_FILL 1
+#define START_MENU_INK 2
+#define START_MENU_SHADOW 3
+#define START_MENU_PURPLE 5
+#define START_MENU_GREEN_SHADOW 11
+#define START_MENU_HIGHLIGHT 12
 
-static const struct WindowTemplate sWindowTemplate_StartClock = {
+enum
+{
+    START_WEATHER_CLEAR,
+    START_WEATHER_SUNNY,
+    START_WEATHER_CLOUDY,
+    START_WEATHER_RAIN,
+    START_WEATHER_FOG,
+    START_WEATHER_SANDSTORM,
+    START_WEATHER_ASHFALL,
+    START_WEATHER_SNOW,
+    START_WEATHER_INDOORS,
+};
+
+static const u8 sStartClockGfx[] = INCGFX_U8("graphics/start_menu/clock.png", ".4bpp");
+static const u8 sStartWeatherGfx[] = INCGFX_U8("graphics/start_menu/weather_icons.png", ".4bpp");
+static const u8 sStartMetalWatermarkGfx[] = INCGFX_U8("graphics/start_menu/metal_watermark.png", ".4bpp");
+static const u8 sStartTextColors[] = {START_MENU_FILL, START_MENU_INK, START_MENU_SHADOW};
+static const u8 sStartSelectedColors[] = {START_MENU_HIGHLIGHT, START_MENU_INK, START_MENU_GREEN_SHADOW};
+
+static const u8 *const sStartWeatherLabels[] =
+{
+    [START_WEATHER_CLEAR] = COMPOUND_STRING("CLEAR"),
+    [START_WEATHER_SUNNY] = COMPOUND_STRING("SUNNY"),
+    [START_WEATHER_CLOUDY] = COMPOUND_STRING("CLOUDY"),
+    [START_WEATHER_RAIN] = COMPOUND_STRING("RAIN"),
+    [START_WEATHER_FOG] = COMPOUND_STRING("FOG"),
+    [START_WEATHER_SANDSTORM] = COMPOUND_STRING("SANDSTORM"),
+    [START_WEATHER_ASHFALL] = COMPOUND_STRING("ASHFALL"),
+    [START_WEATHER_SNOW] = COMPOUND_STRING("SNOW"),
+    [START_WEATHER_INDOORS] = COMPOUND_STRING("INDOORS"),
+};
+
+STATIC_ASSERT(sizeof(sStartWeatherGfx) == ARRAY_COUNT(sStartWeatherLabels) * 32, StartWeatherIconCount);
+STATIC_ASSERT(0x38 + 16 * 8 <= 0x139, StartPanelTilesFit);
+STATIC_ASSERT(0x139 + 9 * 18 <= DLG_WINDOW_BASE_TILE_NUM, StartActionTilesFit);
+
+static const struct WindowTemplate sWindowTemplate_StartPanel = {
     .bg = 0,
     .tilemapLeft = 1,
     .tilemapTop = 1,
-    .width = 10, // recomputed per-draw in ShowStartClockWindow to fit the time string
-    .height = 2,
-    .paletteNum = 15,
+    .width = 16,
+    .height = 8,
+    .paletteNum = STD_WINDOW_PALETTE_NUM,
     .baseBlock = 0x38 // sits after the Safari/Pyramid windows (0x8) so both can display at once
 };
 
-static void ShowStartClockWindow(void)
+static const u8 *const sText_PanelSavedPrefix      = COMPOUND_STRING("Saved ");
+static const u8 *const sText_PanelSavedMinSuffix   = COMPOUND_STRING("m ago");
+static const u8 *const sText_PanelSavedHourSuffix  = COMPOUND_STRING("h ago");
+
+// Row 3 (weather): always resolves to a value - never blank, never hidden.
+static u8 GetStartPanelWeather(void)
 {
-    struct WindowTemplate template = sWindowTemplate_StartClock;
-    u8 timeStr[16];
-    s32 strWidth;
-    s32 x;
+    if (IsMapTypeIndoors(gMapHeader.mapType) || gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+        return START_WEATHER_INDOORS;
 
-    RtcCalcLocalTime();
-    sStartClockLastMinute = gLocalTime.minutes;
-    FormatDecimalTimeWithoutSeconds(timeStr, gLocalTime.hours, gLocalTime.minutes, START_CLOCK_24_HOUR);
-
-    // Size the window to the string (+4px horizontal padding), rounded up to whole tiles,
-    // then center the string in whatever slack the tile rounding leaves.
-    strWidth = GetStringWidth(FONT_NORMAL, timeStr, 0);
-    template.width = (strWidth + 4 + 7) / 8;
-    x = (template.width * 8 - strWidth) / 2;
-
-    sStartClockWindowId = AddWindow(&template);
-    PutWindowTilemap(sStartClockWindowId);
-    DrawStdWindowFrame(sStartClockWindowId, FALSE);
-    AddTextPrinterParameterized(sStartClockWindowId, FONT_NORMAL, timeStr, x, 1, TEXT_SKIP_DRAW, NULL);
-    CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+    switch (GetCurrentWeather())
+    {
+    case WEATHER_SUNNY_CLOUDS:
+    case WEATHER_SUNNY:
+    case WEATHER_DROUGHT:
+        return START_WEATHER_SUNNY;
+    case WEATHER_SHADE:
+        return START_WEATHER_CLOUDY;
+    case WEATHER_RAIN:
+    case WEATHER_RAIN_THUNDERSTORM:
+    case WEATHER_DOWNPOUR:
+    case WEATHER_ABNORMAL:
+        return START_WEATHER_RAIN;
+    case WEATHER_FOG_HORIZONTAL:
+    case WEATHER_FOG_DIAGONAL:
+    case WEATHER_FOG:
+        return START_WEATHER_FOG;
+    case WEATHER_SANDSTORM:
+        return START_WEATHER_SANDSTORM;
+    case WEATHER_VOLCANIC_ASH:
+        return START_WEATHER_ASHFALL;
+    case WEATHER_SNOW:
+        return START_WEATHER_SNOW;
+    default:
+        return START_WEATHER_CLEAR;
+    }
 }
 
-static void UpdateStartClockWindow(void)
+static u32 GetStartPanelSaveAge(void)
 {
-    RtcCalcLocalTime();
-    if (gLocalTime.minutes == sStartClockLastMinute)
+    u32 currentSeconds = (u32)gSaveBlock2Ptr->playTimeHours * MINUTES_PER_HOUR * SECONDS_PER_MINUTE
+        + (u32)gSaveBlock2Ptr->playTimeMinutes * SECONDS_PER_MINUTE
+        + gSaveBlock2Ptr->playTimeSeconds;
+    u32 savedSeconds = gSaveBlock2Ptr->lastSavePlayTimeSeconds;
+
+    // LoadGameSave seeds older saves from their saved playtime. Stored times
+    // are offset by one so a save at playtime 0 differs from a new game.
+    if (savedSeconds == 0 || savedSeconds > currentSeconds + 1)
+        return UINT32_MAX;
+    return (currentSeconds + 1 - savedSeconds) / SECONDS_PER_MINUTE;
+}
+
+static void FormatStartPanelSavedAgo(u8 *dest)
+{
+    u32 elapsedMinutes = GetStartPanelSaveAge();
+    u8 *ptr;
+
+    if (elapsedMinutes == UINT32_MAX)
+    {
+        // A pre-update emulator state can bypass LoadGameSave's migration.
+        StringCopy(dest, gDifferentSaveFile ? COMPOUND_STRING("Not saved yet")
+                                           : COMPOUND_STRING("Save to set timer"));
+        return;
+    }
+
+    ptr = StringCopy(dest, sText_PanelSavedPrefix);
+    if (elapsedMinutes < MINUTES_PER_HOUR)
+    {
+        ptr = ConvertIntToDecimalStringN(ptr, elapsedMinutes, STR_CONV_MODE_LEFT_ALIGN, 3);
+        StringAppend(ptr, sText_PanelSavedMinSuffix);
+    }
+    else
+    {
+        ptr = ConvertIntToDecimalStringN(ptr, elapsedMinutes / MINUTES_PER_HOUR, STR_CONV_MODE_LEFT_ALIGN, 3);
+        StringAppend(ptr, sText_PanelSavedHourSuffix);
+    }
+}
+
+// All strings here are short local labels, expanded player names, or map names.
+// Prefer the normal font; narrow only an unusually long label before truncating.
+static void PrintStartMenuText(u8 windowId, u8 font, u8 *text, u8 x, u8 y, u8 maxWidth, const u8 *colors)
+{
+    u32 length;
+
+    if (GetStringWidth(font, text, 0) > maxWidth)
+        font = FONT_SMALL;
+    length = StringLength(text);
+    while (length > 1 && GetStringWidth(font, text, 0) > maxWidth)
+    {
+        text[--length] = EOS;
+        text[length - 1] = CHAR_ELLIPSIS;
+    }
+    AddTextPrinterParameterized4(windowId, font, x, y, 0, 0, colors, TEXT_SKIP_DRAW, text);
+}
+
+static void DrawStartPanel(void)
+{
+    u8 text[128];
+    u8 windowId = sStartPanelWindowId;
+
+    if (windowId == WINDOW_NONE)
         return;
 
-    ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-    RemoveWindow(sStartClockWindowId);
-    ShowStartClockWindow();
+    RtcCalcLocalTime();
+    sStartPanelLastMinute = gLocalTime.minutes;
+    sStartPanelLastWeather = GetStartPanelWeather();
+    sStartPanelLastSaveAge = GetStartPanelSaveAge();
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(START_MENU_FILL));
+    BlitBitmapToWindow(windowId, sStartMetalWatermarkGfx, 88, 24, 32, 32);
+    FillWindowPixelRect(windowId, PIXEL_FILL(START_MENU_SHADOW), 2, 17, 124, 1);
+
+    GetMapNameGeneric(text, gMapHeader.regionMapSectionId);
+    PrintStartMenuText(windowId, FONT_NORMAL, text, 2, 0, 124, sStartTextColors);
+
+    BlitBitmapToWindow(windowId, sStartClockGfx, 3, 23, 8, 8);
+    FormatDecimalTimeWithoutSeconds(text, gLocalTime.hours, gLocalTime.minutes, START_CLOCK_24_HOUR);
+    PrintStartMenuText(windowId, FONT_NORMAL, text, 16, 19, 70, sStartTextColors);
+
+    BlitBitmapToWindow(windowId, sStartWeatherGfx + sStartPanelLastWeather * 32, 3, 39, 8, 8);
+    StringCopy(text, sStartWeatherLabels[sStartPanelLastWeather]);
+    PrintStartMenuText(windowId, FONT_NORMAL, text, 16, 35, 70, sStartTextColors);
+
+    FormatStartPanelSavedAgo(text);
+    PrintStartMenuText(windowId, FONT_SMALL, text, 2, 51, 84, sStartTextColors);
+    CopyWindowToVram(windowId, COPYWIN_GFX);
+}
+
+static void ShowStartPanelWindow(void)
+{
+    sStartPanelWindowId = AddWindow(&sWindowTemplate_StartPanel);
+    if (sStartPanelWindowId == WINDOW_NONE)
+        return;
+    DrawStdWindowFrame(sStartPanelWindowId, FALSE);
+    DrawStartPanel();
+}
+
+static void UpdateStartPanelWindow(void)
+{
+    RtcCalcLocalTime();
+    if (gLocalTime.minutes == sStartPanelLastMinute
+     && GetStartPanelWeather() == sStartPanelLastWeather
+     && GetStartPanelSaveAge() == sStartPanelLastSaveAge)
+        return;
+
+    DrawStartPanel();
 }
 
 static void RemoveExtraStartMenuWindows(void)
 {
-    if (GetSafariZoneFlag())
+    if (!sExtraStartMenuWindowsActive)
+        return;
+
+    if (sSafariBallsWindowId != WINDOW_NONE)
     {
         ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
         CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
         RemoveWindow(sSafariBallsWindowId);
+        sSafariBallsWindowId = WINDOW_NONE;
     }
-    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+    if (sBattlePyramidFloorWindowId != WINDOW_NONE)
     {
         ClearStdWindowAndFrameToTransparent(sBattlePyramidFloorWindowId, FALSE);
         RemoveWindow(sBattlePyramidFloorWindowId);
+        sBattlePyramidFloorWindowId = WINDOW_NONE;
     }
 
-    ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-    RemoveWindow(sStartClockWindowId);
+    if (sStartPanelWindowId != WINDOW_NONE)
+    {
+        ClearStdWindowAndFrameToTransparent(sStartPanelWindowId, FALSE);
+        RemoveWindow(sStartPanelWindowId);
+        sStartPanelWindowId = WINDOW_NONE;
+    }
+    sExtraStartMenuWindowsActive = FALSE;
+    // Restore the player's frame for scripts and save/retire prompts.
+    LoadUserWindowBorderGfx(0, STD_WINDOW_BASE_TILE_NUM, BG_PLTT_ID(STD_WINDOW_PALETTE_NUM));
+}
+
+static void DrawStartMenuAction(u8 index)
+{
+    u8 windowId = GetStartMenuWindowId();
+    bool32 selected = index == sStartMenuCursorPos;
+    u8 y = index * START_MENU_ROW_HEIGHT;
+    u32 i;
+
+    FillWindowPixelRect(windowId, PIXEL_FILL(selected ? START_MENU_HIGHLIGHT : START_MENU_FILL),
+                        0, y, 72, START_MENU_ROW_HEIGHT);
+    if (selected)
+    {
+        for (i = 0; i < 4; i++)
+            FillWindowPixelRect(windowId, PIXEL_FILL(START_MENU_PURPLE), 3 + i, y + 4 + i, 1, 7 - i * 2);
+    }
+    StringExpandPlaceholders(gStringVar4, sStartMenuItems[sCurrentStartMenuActions[index]].text);
+    PrintStartMenuText(windowId, FONT_NORMAL, gStringVar4, 11, y, 60,
+                       selected ? sStartSelectedColors : sStartTextColors);
+}
+
+static void MoveStartMenuCursor(s8 delta)
+{
+    u8 oldPos = sStartMenuCursorPos;
+
+    sStartMenuCursorPos = (sStartMenuCursorPos + sNumStartMenuActions + delta) % sNumStartMenuActions;
+    DrawStartMenuAction(oldPos);
+    DrawStartMenuAction(sStartMenuCursorPos);
+    CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_GFX);
 }
 
 static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
@@ -553,15 +758,7 @@ static bool32 PrintStartMenuActions(s8 *pIndex, u32 count)
 
     do
     {
-        if (sStartMenuItems[sCurrentStartMenuActions[index]].func.u8_void == StartMenuPlayerNameCallback)
-        {
-            PrintPlayerNameOnWindow(GetStartMenuWindowId(), sStartMenuItems[sCurrentStartMenuActions[index]].text, 8, (index << 4) + 9);
-        }
-        else
-        {
-            StringExpandPlaceholders(gStringVar4, sStartMenuItems[sCurrentStartMenuActions[index]].text);
-            AddTextPrinterParameterized(GetStartMenuWindowId(), FONT_NORMAL, gStringVar4, 8, (index << 4) + 9, TEXT_SKIP_DRAW, NULL);
-        }
+        DrawStartMenuAction(index);
 
         index++;
         if (index >= sNumStartMenuActions)
@@ -589,10 +786,17 @@ static bool32 InitStartMenuStep(void)
         break;
     case 1:
         BuildStartMenuActions();
+        sSafariBallsWindowId = WINDOW_NONE;
+        sBattlePyramidFloorWindowId = WINDOW_NONE;
+        sStartPanelWindowId = WINDOW_NONE;
+        sExtraStartMenuWindowsActive = TRUE;
+        if (sStartMenuCursorPos >= sNumStartMenuActions)
+            sStartMenuCursorPos = 0;
         sInitStartMenuData[0]++;
         break;
     case 2:
         LoadMessageBoxAndBorderGfx();
+        LoadWindowGfx(0, WINDOW_FRAME_HOLON, STD_WINDOW_BASE_TILE_NUM, BG_PLTT_ID(STD_WINDOW_PALETTE_NUM));
         DrawStdWindowFrame(AddStartMenuWindow(sNumStartMenuActions), FALSE);
         sInitStartMenuData[1] = 0;
         sInitStartMenuData[0]++;
@@ -602,7 +806,7 @@ static bool32 InitStartMenuStep(void)
             ShowSafariBallsWindow();
         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
             ShowPyramidFloorWindow();
-        ShowStartClockWindow();
+        ShowStartPanelWindow();
         sInitStartMenuData[0]++;
         break;
     case 4:
@@ -610,8 +814,7 @@ static bool32 InitStartMenuStep(void)
             sInitStartMenuData[0]++;
         break;
     case 5:
-        sStartMenuCursorPos = InitMenuNormal(GetStartMenuWindowId(), FONT_NORMAL, 0, 9, 16, sNumStartMenuActions, sStartMenuCursorPos);
-        CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_MAP);
+        CopyWindowToVram(GetStartMenuWindowId(), COPYWIN_FULL);
         return TRUE;
     }
 
@@ -697,13 +900,13 @@ static bool8 HandleStartMenuInput(void)
     if (JOY_NEW(DPAD_UP))
     {
         PlaySE(SE_SELECT);
-        sStartMenuCursorPos = Menu_MoveCursor(-1);
+        MoveStartMenuCursor(-1);
     }
 
     if (JOY_NEW(DPAD_DOWN))
     {
         PlaySE(SE_SELECT);
-        sStartMenuCursorPos = Menu_MoveCursor(1);
+        MoveStartMenuCursor(1);
     }
 
     if (JOY_NEW(A_BUTTON))
@@ -739,7 +942,7 @@ static bool8 HandleStartMenuInput(void)
         return TRUE;
     }
 
-    UpdateStartClockWindow();
+    UpdateStartPanelWindow();
     return FALSE;
 }
 
@@ -827,8 +1030,7 @@ static bool8 StartMenuPlayerNameCallback(void)
 
 static bool8 StartMenuSaveCallback(void)
 {
-    if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
-        RemoveExtraStartMenuWindows();
+    RemoveExtraStartMenuWindows();
 
     gMenuCallback = SaveStartCallback; // Display save menu
 
@@ -894,6 +1096,7 @@ static bool8 StartMenuLinkModePlayerNameCallback(void)
     if (!gPaletteFade.active)
     {
         PlayRainStoppingSoundEffect();
+        RemoveExtraStartMenuWindows();
         CleanupOverworldWindowsAndTilemaps();
         ShowTrainerCardInLink(gLocalLinkPlayerId, CB2_ReturnToFieldWithOpenMenu);
 
@@ -1105,8 +1308,12 @@ static bool8 SaveErrorTimer(void)
 
 static u8 SaveConfirmSaveCallback(void)
 {
-    ClearStdWindowAndFrame(GetStartMenuWindowId(), FALSE);
-    RemoveStartMenuWindow();
+    RemoveExtraStartMenuWindows();
+    if (GetStartMenuWindowId() != WINDOW_NONE)
+    {
+        ClearStdWindowAndFrame(GetStartMenuWindowId(), FALSE);
+        RemoveStartMenuWindow();
+    }
     ShowSaveInfoWindow();
 
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
@@ -1296,6 +1503,7 @@ static void InitBattlePyramidRetire(void)
 
 static u8 BattlePyramidConfirmRetireCallback(void)
 {
+    RemoveExtraStartMenuWindows();
     ClearStdWindowAndFrame(GetStartMenuWindowId(), FALSE);
     RemoveStartMenuWindow();
     ShowSaveMessage(gText_BattlePyramidConfirmRetire, BattlePyramidRetireYesNoCallback);
@@ -1569,6 +1777,9 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
 
 static bool8 StartMenuDexNavCallback(void)
 {
+    if (gPaletteFade.active)
+        return FALSE;
+    RemoveExtraStartMenuWindows();
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
     return TRUE;
 }
