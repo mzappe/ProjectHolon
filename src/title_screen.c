@@ -220,7 +220,7 @@ void CB2_InitTitleScreen(void)
         EnableInterrupts(INTR_FLAG_VBLANK);
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_MODE_0 | DISPCNT_OBJ_1D_MAP
                   | DISPCNT_BG0_ON | DISPCNT_BG1_ON | DISPCNT_BG2_ON | DISPCNT_OBJ_ON);
-        m4aSongNumStart(MUS_OCEANIC_MUSEUM);
+        m4aSongNumStart(MUS_CAVE_OF_ORIGIN);
         CreateTask(Task_TitleScreen, 0);
         SetMainCallback2(MainCB2);
         break;

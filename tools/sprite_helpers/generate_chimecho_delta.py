@@ -13,9 +13,9 @@ Per-surface budget
 | Surface   | Method                                                          |
 | --------- | --------------------------------------------------------------- |
 | Front     | Palette + saucer brim, running-lights, under-hull, beacon glint  |
-| Back      | Same treatment, brim placed at the back view's widest rows       |
-| Icon      | Remap into shared icon palette 0 + a 1px brim at the widest row  |
-| Overworld | Palette only -- brim detail becomes noise at native 32x32        |
+| Back      | Saucer brim, continuous metal shading, violet tail              |
+| Icon      | Shared palette 0, silver hull, outlined brim following the bob  |
+| Overworld | Small outlined saucer, directional face, violet tail and lights |
 | Footprint | Exact copy (canonical Chimecho's is empty)                       |
 
 Both battle surfaces share one semantic index plan so a single pair of 16-colour
@@ -86,7 +86,7 @@ BATTLE_SHINY = [
     (72, 48, 80),      # 15: secondary edge
 ]
 
-# Follower sheet keeps its own index layout; roles mirror the canonical file.
+# Follower sheet retains the canonical slots, with 13-15 reserved for the rim.
 OVERWORLD_NORMAL = [
     (152, 208, 160),  # 0: transparent
     (46, 110, 90),     # 1: dome shadow
@@ -97,13 +97,13 @@ OVERWORLD_NORMAL = [
     (90, 180, 145),    # 6: dome midtone
     (170, 175, 195),  # 7: hull midtone
     (206, 212, 226),  # 8: hull light
-    (120, 205, 165),  # 9: spectral glow (tail)
-    (58, 44, 80),      # 10: void shadow (tail)
+    (92, 70, 120),    # 9: violet tail midtone
+    (40, 28, 60),     # 10: violet tail edge
     (100, 190, 155),   # 11: dome accent
     (92, 96, 124),     # 12: deep hull shadow
-    (0, 0, 0),         # 13: unused
-    (0, 0, 0),         # 14: unused
-    (0, 0, 0),         # 15: unused
+    (196, 202, 218),   # 13: saucer plate
+    (170, 250, 205),   # 14: running lights
+    (58, 44, 80),      # 15: saucer underside
 ]
 
 OVERWORLD_SHINY = [
@@ -116,13 +116,13 @@ OVERWORLD_SHINY = [
     (214, 74, 180),    # 6: dome midtone
     (86, 84, 104),     # 7: hull midtone
     (124, 122, 146),  # 8: hull light
-    (232, 96, 200),    # 9: magenta glow (tail)
-    (26, 18, 34),      # 10: void shadow (tail)
+    (110, 34, 86),     # 9: deep magenta tail
+    (60, 16, 48),      # 10: magenta tail edge
     (198, 60, 164),    # 11: dome accent
     (44, 42, 58),      # 12: deep hull shadow
-    (0, 0, 0),         # 13: unused
-    (0, 0, 0),         # 14: unused
-    (0, 0, 0),         # 15: unused
+    (110, 108, 132),   # 13: saucer plate
+    (255, 190, 240),   # 14: running lights
+    (26, 18, 34),      # 15: saucer underside
 ]
 
 # ------------------------------------------------------- shared transforms --
@@ -151,23 +151,50 @@ BACK_TAIL_Y = 44
 
 # Icon: canonical index -> shared icon palette 0 index.
 ICON_PAL_INDEX = 0
-ICON_REMAP = {5: 13, 4: 13, 12: 2, 8: 1, 1: 2, 11: 13, 9: 14}
-ICON_BRIM_ROW = 17
+ICON_REMAP = {5: 13, 4: 13, 12: 3, 8: 2, 1: 2, 11: 1, 9: 14, 14: 15}
+ICON_TAIL_REMAP = {12: 2, 11: 9, 9: 13}
 ICON_FRAME_YS = (0, 32)
+# The second canonical icon bobs down one pixel. Local coordinates below follow
+# that motion, including the brim, instead of cutting across the face in frame 1.
+ICON_BOB = (0, 1)
+ICON_BRIM = {
+    19: (9, "f222222222222f"),
+    20: (10, "f1d11111d11f"),
+    21: (11, "ffffffffff"),
+}
+
+# Hex strings are palette indices, with an explicit origin in each 32px frame.
+# The shallow lens leaves the face above the plate and the original tail below.
+OVERWORLD_BRIM = {
+    20: (9, "4ddedddedddedd4"),
+    21: (10, "44fffffffff44"),
+    22: (12, "444444444"),
+}
+OVERWORLD_SIDE_BRIM = {
+    20: (9, "4dedddeddddddd4"),
+    21: (10, "44fffffffff44"),
+    22: (12, "444444444"),
+}
 
 
 def read_jasc(path: Path) -> list[tuple[int, int, int]]:
-    lines = path.read_text().split("\n")
-    if lines[0].strip() != "JASC-PAL" or lines[2].strip() != "16":
+    lines = path.read_text().splitlines()
+    if len(lines) != 19 or lines[:3] != ["JASC-PAL", "0100", "16"]:
         raise ValueError(f"{path}: not a 16-colour JASC palette")
-    return [tuple(int(v) for v in line.split()) for line in lines[3:19]]
+    colors = [tuple(int(v) for v in line.split()) for line in lines[3:]]
+    if any(len(c) != 3 or any(v < 0 or v > 255 for v in c) for c in colors):
+        raise ValueError(f"{path}: invalid RGB entry")
+    return colors
 
 
 def write_jasc(path: Path, colors: list[tuple[int, int, int]]) -> None:
     if len(colors) != 16:
         raise ValueError(f"{path}: expected 16 colours, got {len(colors)}")
     body = "\n".join(f"{r} {g} {b}" for r, g, b in colors)
-    path.write_text(f"JASC-PAL\n0100\n16\n{body}\n")
+    text = f"JASC-PAL\n0100\n16\n{body}\n"
+    # Preserve existing line endings when the runtime colors are unchanged.
+    if not path.exists() or path.read_text() != text:
+        path.write_text(text)
 
 
 def open_indexed(name: str, size: tuple[int, int]) -> Image.Image:
@@ -279,6 +306,20 @@ def build_back(touched: set) -> Image.Image:
     grow_brim(px, put, BACK_BRIM, BACK_BRIM_LIGHT_ROW)
     remap_rows(px, put, BACK_UNDER_HULL, UNDER_HULL_REMAP)
 
+    # Consolidate the canonical checker highlights into continuous material
+    # clusters. Only the original dome/hull indices may receive these shades.
+    src = open_indexed("back_gba.png", (64, 64))
+    for y in range(8, 20):
+        for x in range(64):
+            if src.getpixel((x, y)) in (8, 9):
+                put(x, y, 8 if x + y <= 43 else 9)
+    for y in range(24, 32):
+        for x in range(64):
+            if src.getpixel((x, y)) in (3, 4):
+                put(x, y, 4 if x + y <= 58 else 3)
+    # The hanging ribbon uses the front's violet material, not hull grey.
+    remap_rows(px, put, range(45, 57), {5: 11, 10: 12})
+
     apply_palette(img, BATTLE_NORMAL)
     return img
 
@@ -287,22 +328,19 @@ def build_icon() -> Image.Image:
     img = open_indexed("icon_gba.png", (32, 64)).copy()
     grid = img.load()
 
-    for fy in ICON_FRAME_YS:
+    for fy, bob in zip(ICON_FRAME_YS, ICON_BOB):
         for y in range(32):
             for x in range(32):
                 v = grid[x, y + fy]
-                if v in ICON_REMAP:
-                    grid[x, y + fy] = ICON_REMAP[v]
+                table = ICON_REMAP | ICON_TAIL_REMAP if y >= 23 + bob else ICON_REMAP
+                grid[x, y + fy] = table.get(v, v)
 
-        row = [x for x in range(32) if grid[x, ICON_BRIM_ROW + fy]]
-        if row:                                      # 1px brim at the widest row
-            lo, hi = min(row), max(row)
-            for x, inner in ((lo - 1, 2), (hi + 1, 2)):
-                if 0 <= x < 32 and grid[x, ICON_BRIM_ROW + fy] == 0:
-                    grid[x, ICON_BRIM_ROW + fy] = inner
-            for x in (lo - 2, hi + 2):
-                if 0 <= x < 32 and grid[x, ICON_BRIM_ROW + fy] == 0:
-                    grid[x, ICON_BRIM_ROW + fy] = 15
+        for y, (left, indices) in ICON_BRIM.items():
+            for dx, index in enumerate(indices):
+                grid[left + dx, y + bob + fy] = int(index, 16)
+        # A compact top-left reflection gives the beacon a round, glassy read.
+        for x, y in ((14, 11), (14, 12), (15, 12)):
+            grid[x, y + bob + fy] = 3
 
     apply_palette(img, read_jasc(ROOT / "graphics/pokemon/icon_palettes/pal0.pal"))
     return img
@@ -310,6 +348,29 @@ def build_icon() -> Image.Image:
 
 def build_overworld() -> Image.Image:
     img = open_indexed("overworld.png", (192, 32)).copy()
+    for frame in range(6):
+        fx = frame * 32
+        side = frame >= 4
+        for y in range(16, 20):
+            for x in range(32):
+                v = img.getpixel((fx + x, y))
+                # Red base-species markings become subdued hull shade, leaving
+                # the green accent budget for the dome and tiny running lights.
+                if v in (9, 10, 11):
+                    img.putpixel((fx + x, y), {9: 7, 10: 5, 11: 5}[v])
+        # Preserve readable eyes only on south/west views; north has no face.
+        eyes = ((14, 19), (18, 19)) if frame < 2 else ((14, 19),) if side else ()
+        for x, y in eyes:
+            img.putpixel((fx + x, y), 4)
+        brim = OVERWORLD_SIDE_BRIM if side else OVERWORLD_BRIM
+        for y, (left, indices) in brim.items():
+            for dx, index in enumerate(indices):
+                img.putpixel((fx + left + dx, y), int(index, 16))
+        # The ribbon retains its canonical swing, with a small spectral seam.
+        for y in range(24, 28):
+            for x in range(32):
+                if img.getpixel((fx + x, y)) == 7:
+                    img.putpixel((fx + x, y), 6)
     apply_palette(img, OVERWORLD_NORMAL)
     return img
 
@@ -381,11 +442,60 @@ def validate(front_touched: set, back_touched: set) -> None:
                 if src0 and not out0 and (y % 64) not in allowed:
                     raise ValueError(f"{name}: silhouette grew off the brim at ({x}, {y})")
 
-    # The overworld sheet must be a pure palette swap.
-    ow_src = Image.open(SOURCE / "overworld.png")
-    ow_out = Image.open(TARGET / "overworld.png")
-    if list(ow_src.convert('P').tobytes()) != list(ow_out.convert('P').tobytes()):
-        raise ValueError("overworld.png: must stay palette-only")
+    # Small sprites keep canonical anatomy; new silhouette pixels are restricted
+    # to the declared lens. Palette edits never turn a body pixel transparent.
+    for name, source_name, frames, brim, remap in (
+        ("icon.png", "icon_gba.png", 2, ICON_BRIM, ICON_REMAP),
+        ("overworld.png", "overworld.png", 6, OVERWORLD_BRIM, {}),
+    ):
+        src = Image.open(SOURCE / source_name)
+        out = Image.open(TARGET / name)
+        for frame in range(frames):
+            icon = name == "icon.png"
+            fx, fy = (0, frame * 32) if icon else (frame * 32, 0)
+            bob = ICON_BOB[frame] if icon else 0
+            frame_brim = OVERWORLD_SIDE_BRIM if not icon and frame >= 4 else brim
+            lens = {(left + dx, y + bob): int(index, 16)
+                    for y, (left, indices) in frame_brim.items()
+                    for dx, index in enumerate(indices)}
+            glint = {(14, 11 + bob), (14, 12 + bob), (15, 12 + bob)} if icon else set()
+            for y in range(32):
+                for x in range(32):
+                    a, b = src.getpixel((fx + x, fy + y)), out.getpixel((fx + x, fy + y))
+                    if a and not b:
+                        raise ValueError(f"{name}: silhouette shrank in frame {frame}")
+                    if not a and b and (x, y) not in lens:
+                        raise ValueError(f"{name}: silhouette grew off brim in frame {frame}")
+                    if (x, y) in lens:
+                        expected = lens[x, y]
+                    elif (x, y) in glint:
+                        expected = 3
+                    elif icon:
+                        table = remap | ICON_TAIL_REMAP if y >= 23 + bob else remap
+                        expected = table.get(a, a)
+                    else:
+                        expected = a
+                        if 16 <= y < 20:
+                            expected = {9: 7, 10: 5, 11: 5}.get(a, a)
+                        if y == 19 and ((frame < 2 and x in (14, 18)) or (frame >= 4 and x == 14)):
+                            expected = 4
+                        if 24 <= y < 28 and a == 7:
+                            expected = 6
+                    if b != expected:
+                        raise ValueError(f"{name}: undeclared edit in frame {frame} at {(x, y)}")
+
+        # Paired frames must retain the same head; only the source tail swings.
+        if name == "overworld.png":
+            for frame in (0, 2, 4):
+                a = out.crop((frame * 32, 0, (frame + 1) * 32, 23))
+                b = out.crop(((frame + 1) * 32, 0, (frame + 2) * 32, 23))
+                if a.tobytes() != b.tobytes():
+                    raise ValueError("overworld.png: head flickers between paired frames")
+        elif out.crop((0, 0, 32, 22)).tobytes() != out.crop((0, 33, 32, 55)).tobytes():
+            raise ValueError("icon.png: saucer does not follow the one-pixel bob")
+
+    if (TARGET / "footprint.png").read_bytes() != (SOURCE / "footprint.png").read_bytes():
+        raise ValueError("footprint.png: canonical footprint changed")
 
 
 def main() -> None:
