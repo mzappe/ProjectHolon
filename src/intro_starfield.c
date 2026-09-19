@@ -19,6 +19,7 @@ enum
     PLATFORM_FADE_TIMER,
     PLATFORM_FADE_DELAY,
     PLATFORM_FADE_ACTIVE,
+    STAR_PALETTE,
 };
 
 static const u32 sPlatformTiles[] = INCGFX_U32("graphics/birch_speech/shadow.png", ".4bpp");
@@ -59,7 +60,7 @@ static const u16 sMeteorPalette[16] =
     RGB_BLACK, RGB(5, 7, 11), RGB(10, 14, 19), RGB(19, 23, 28), RGB_WHITE,
 };
 
-static void UpdateStarPalette(u16 frame)
+static void UpdateStarPalette(u16 frame, u8 palette)
 {
     u16 colors[16] = {RGB_BLACK};
     u32 i;
@@ -71,7 +72,7 @@ static void UpdateStarPalette(u16 frame)
         u32 light = 6 + (phase < 32 ? phase : 63 - phase) * 3 / 4;
         colors[i + 1] = RGB(light - 2, light - 1, light);
     }
-    LoadPalette(colors, BG_PLTT_ID(0), sizeof(colors));
+    LoadPalette(colors, BG_PLTT_ID(palette), sizeof(colors));
 }
 
 static void UpdatePlatformPalette(u8 darkness)
@@ -123,7 +124,7 @@ static void Task_IntroStarfield(u8 taskId)
 
     data[0] = (data[0] + 1) & 255;
     if ((data[0] & 3) == 0)
-        UpdateStarPalette(data[0]);
+        UpdateStarPalette(data[0], data[STAR_PALETTE]);
 
     if (data[1] > 0)
     {
@@ -201,7 +202,7 @@ static void InitIntroPlatform(s16 offset, bool8 visible)
         HideBg(3);
 }
 
-void InitIntroStarfield(s16 platformOffset, bool8 showPlatform)
+static void InitStarfield(s16 platformOffset, bool8 showPlatform, bool8 menu)
 {
     u32 tiles[25][8] = {0};
     vu16 *stars = (vu16 *)BG_SCREEN_ADDR(7);
@@ -210,6 +211,19 @@ void InitIntroStarfield(s16 platformOffset, bool8 showPlatform)
     u32 i;
     u8 taskId;
 
+    // Menus keep BG0/BG1 for windows. Use BG3 for their sky and reserve
+    // palettes 8/9 so Options text (palette 1) and frames (palette 7) survive.
+    if (menu)
+    {
+        const struct BgTemplate sky = {
+            .bg = 3, .charBaseIndex = 0, .mapBaseIndex = 7,
+            .screenSize = 0, .paletteMode = 0, .priority = 3, .baseTile = 0,
+        };
+        InitBgFromTemplate(&sky);
+        SetGpuReg(REG_OFFSET_BG3HOFS, 0);
+        SetGpuReg(REG_OFFSET_BG3VOFS, 0);
+        ShowBg(3);
+    }
     InitBgFromTemplate(&sMeteorBg);
     HideBg(2);
     SetGpuReg(REG_OFFSET_BG1HOFS, 0);
@@ -245,18 +259,44 @@ void InitIntroStarfield(s16 platformOffset, bool8 showPlatform)
         tile = 1 + ((seed >> 8) % 8);
         if (i % 11 == 0)
             tile += 8;
-        stars[y * 32 + x] = tile | ((seed & 3) << 10);
+        stars[y * 32 + x] = tile | ((seed & 3) << 10) | ((menu ? 8 : 0) << 12);
+    }
+    if (menu)
+    {
+        // Options exposes only the outermost columns. The seeded sky has
+        // one star on the left and five on the right; balance those margins.
+        static const u8 leftRows[] = {5, 9, 13, 17};
+
+        for (i = 0; i < ARRAY_COUNT(leftRows); i++)
+            stars[leftRows[i] * 32] = (2 + i * 2) | (8 << 12);
     }
     for (i = 0; i < 8; i++)
-        meteor[(i / 4) * 32 + i % 4] = (METEOR_FIRST_TILE + i) | (1 << 12);
+        meteor[(i / 4) * 32 + i % 4] = (METEOR_FIRST_TILE + i) | ((menu ? 9 : 1) << 12);
 
-    UpdateStarPalette(0);
-    LoadPalette(sMeteorPalette, BG_PLTT_ID(1), sizeof(sMeteorPalette));
-    InitIntroPlatform(platformOffset, showPlatform);
+    UpdateStarPalette(0, menu ? 8 : 0);
+    LoadPalette(sMeteorPalette, BG_PLTT_ID(menu ? 9 : 1), sizeof(sMeteorPalette));
+    if (!menu)
+        InitIntroPlatform(platformOffset, showPlatform);
+    else
+    {
+        const u16 black = RGB_BLACK;
+        LoadPalette(&black, 0, sizeof(black));
+    }
     taskId = CreateTask(Task_IntroStarfield, 1);
+    gTasks[taskId].data[STAR_PALETTE] = menu ? 8 : 0;
     gTasks[taskId].data[1] = METEOR_WAIT_FRAMES;
     gTasks[taskId].data[6] = platformOffset;
     gTasks[taskId].data[7] = platformOffset;
+}
+
+void InitIntroStarfield(s16 platformOffset, bool8 showPlatform)
+{
+    InitStarfield(platformOffset, showPlatform, FALSE);
+}
+
+void InitMenuStarfield(void)
+{
+    InitStarfield(0, FALSE, TRUE);
 }
 
 void FadeInIntroPlatform(u8 delay)

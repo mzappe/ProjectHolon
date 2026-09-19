@@ -2,6 +2,7 @@
 #include "option_menu.h"
 #include "bg.h"
 #include "gpu_regs.h"
+#include "intro_starfield.h"
 #include "international_string_util.h"
 #include "main.h"
 #include "menu.h"
@@ -193,8 +194,8 @@ void CB2_InitOptionMenu(void)
         DeactivateAllTextPrinters();
         SetGpuReg(REG_OFFSET_WIN0H, 0);
         SetGpuReg(REG_OFFSET_WIN0V, 0);
-        SetGpuReg(REG_OFFSET_WININ, WININ_WIN0_BG0);
-        SetGpuReg(REG_OFFSET_WINOUT, WINOUT_WIN01_BG0 | WINOUT_WIN01_BG1 | WINOUT_WIN01_CLR);
+        SetGpuReg(REG_OFFSET_WININ, WININ_WIN0_BG0 | WININ_WIN0_BG2 | WININ_WIN0_BG3);
+        SetGpuReg(REG_OFFSET_WINOUT, WINOUT_WIN01_BG_ALL | WINOUT_WIN01_CLR);
         SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_BG0 | BLDCNT_EFFECT_DARKEN);
         SetGpuReg(REG_OFFSET_BLDALPHA, 0);
         SetGpuReg(REG_OFFSET_BLDY, 4);
@@ -264,6 +265,7 @@ void CB2_InitOptionMenu(void)
         break;
     }
     case 11:
+        InitMenuStarfield();
         BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
         SetVBlankCallback(VBlankCB);
         SetMainCallback2(MainCB2);
@@ -381,6 +383,7 @@ static void Task_OptionMenuFadeOut(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
+        FreeIntroStarfield();
         DestroyTask(taskId);
         FreeAllWindowBuffers();
         SetMainCallback2(gMain.savedCallback);
