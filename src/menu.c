@@ -393,7 +393,8 @@ void DisplayYesNoMenuWithDefault(u8 initialCursorPos)
 u8 AddStartMenuWindow(u8 numActions)
 {
     if (sStartMenuWindowId == WINDOW_NONE)
-        sStartMenuWindowId = AddWindowParameterized(0, 22, 1, 7, (numActions * 2) + 2, 15, 0x139);
+        // Nine 16px rows plus the outer frame fit exactly in the 160px screen.
+        sStartMenuWindowId = AddWindowParameterized(0, 20, 1, 9, numActions * 2, STD_WINDOW_PALETTE_NUM, 0x139);
     return sStartMenuWindowId;
 }
 

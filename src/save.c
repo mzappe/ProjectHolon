@@ -12,6 +12,7 @@
 #include "trainer_hill.h"
 #include "link.h"
 #include "constants/game_stat.h"
+#include "constants/siirtc.h"
 
 static u16 CalculateChecksum(void *, u16);
 static bool8 ReadFlashSector(u8, struct SaveSector *);
@@ -710,10 +711,24 @@ static void UpdateSaveAddresses(void)
     }
 }
 
+static u32 GetSavePlayTimeStamp(void)
+{
+    // Zero remains available to mean that this adventure has not been saved.
+    return 1
+        + (u32)gSaveBlock2Ptr->playTimeHours * MINUTES_PER_HOUR * SECONDS_PER_MINUTE
+        + (u32)gSaveBlock2Ptr->playTimeMinutes * SECONDS_PER_MINUTE
+        + gSaveBlock2Ptr->playTimeSeconds;
+}
+
 u8 HandleSavingData(u8 saveType)
 {
     u8 i;
     u32 *backupVar = gTrainerHillVBlankCounter;
+    u32 previousSaveTime = gSaveBlock2Ptr->lastSavePlayTimeSeconds;
+
+    // Include the timestamp in the write itself, including save-screen retries.
+    // Offset by one to reserve zero for saves made before this field existed.
+    gSaveBlock2Ptr->lastSavePlayTimeSeconds = GetSavePlayTimeStamp();
 
     gTrainerHillVBlankCounter = NULL;
     UpdateSaveAddresses();
@@ -766,6 +781,8 @@ u8 HandleSavingData(u8 saveType)
         WriteSaveSectorOrSlot(FULL_SAVE_SLOT, gRamSaveSectorLocations);
         break;
     }
+    if (gDamagedSaveSectors)
+        gSaveBlock2Ptr->lastSavePlayTimeSeconds = previousSaveTime;
     gTrainerHillVBlankCounter = backupVar;
     return 0;
 }
@@ -892,6 +909,11 @@ u8 LoadGameSave(u8 saveType)
     case SAVE_NORMAL:
     default:
         status = TryLoadSaveSlot(FULL_SAVE_SLOT, gRamSaveSectorLocations);
+        // Loaded playtime is the time of this save, even for files predating
+        // the timestamp field or made by an incremental link save. ERROR here
+        // means one slot failed and the other valid slot was recovered.
+        if (status == SAVE_STATUS_OK || status == SAVE_STATUS_ERROR)
+            gSaveBlock2Ptr->lastSavePlayTimeSeconds = GetSavePlayTimeStamp();
         CopyPartyAndObjectsFromSave();
         gSaveFileStatus = status;
         gGameContinueCallback = NULL;

@@ -3065,10 +3065,7 @@ static void DrawPokerusCuredSymbol(struct Pokemon *mon) // This checks if the mo
 
 static void SetMonPicBackgroundPalette(bool8 isMonShiny)
 {
-    if (!isMonShiny)
-        SetBgTilemapPalette(3, 1, 4, 8, 8, 0);
-    else
-        SetBgTilemapPalette(3, 1, 4, 8, 8, 5);
+    SetBgTilemapPalette(3, 1, 4, 8, 8, 0);
     ScheduleBgCopyTilemapToVram(3);
 }
 

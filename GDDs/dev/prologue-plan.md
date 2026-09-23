@@ -5,18 +5,19 @@ Target flow (player-facing):
 
 0. Choose player gender + name
 1. Boat intro with Steven's recruitment letter (interspersed with sailing visuals)
-2. Player, Ty, and Grandma arrive together
+2. Player and Grandma arrive together
 3. Exit boat, through reception, greeted by aide
 4. Goodbye to Grandma; aide gives a quick town tour (reception, houses, lab)
 5. Tour ends back at reception; told to settle into the house
 6. Go home, see Grandma, set clock / check room
-7. Go to lab, meet Cozmo (Ty already there); player confirms/edits Ty's name
+7. Go to lab, meet Cozmo and meet Ty for the first time (Ty already there); player confirms/edits Ty's name
 8. Cozmo speech + starter choice (balls on table)
 9. Pick starter, receive Pokedex
 10. Leave lab — Ty battles outside, then gives running shoes
 11. Prologue ends — free roam town/reception before Route 1
 
 Decisions locked:
+- Ty is first introduced inside Cozmo's lab in Archtide Town. The player arrives with Grandma; Ty does not appear on the boat, at reception, or during the town tour. This simplifies arrival choreography and preserves suspense about the other researcher until the lab meeting.
 - Step 0 is a **Steven reskin of the existing Birch intro cutscene** (`CB2_NewGameBirchSpeech` in `src/main_menu.c`) — keep the whole task chain, swap sprite + text + released species, insert the shiny menu. NOT a rewrite/strip. Full breakdown in the Step 0 section.
 - The recruitment letter is **delivered in Step 0** (Steven reads it to you). Step 1's boat cutaways are therefore the **player's internal monologue**, not letter fragments.
 - Boat scene uses the **FRLG Seagallop ferry cutscene** (`src/seagallop.c`), NOT the Emerald SS Tidal porthole.
@@ -139,14 +140,14 @@ State vars:
 | 2 | Goodbye to Grandma + town tour |
 | 3 | Tour done — free to walk home |
 | 4 | Met Grandma / clock set — free to go to lab |
-| 5 | In lab — name confirm + Cozmo speech + starter |
+| 5 | In lab — first meeting with Ty + name confirm + Cozmo speech + starter |
 | 6 | Got starter + Pokedex — leaving lab |
 | 7 | Ty battle done + running shoes given |
 | 8 | Prologue complete — full free roam, Route 1 open |
 
 "Normal town" logic gates on `>= 8`.
 
-Flags (from `FLAG_UNUSED_0x02x` block): `FLAG_HIDE_PROLOGUE_TY_DOCK`, `_TY_RECEPTION`, `_TY_LAB`, `_TY_TOWN`, `_GRANDMA_DOCK`, `_GRANDMA_HOME`, `_AIDE_RECEPTION`, `_COZMO_LAB`, `FLAG_HOLON_PROLOGUE_DONE`, `FLAG_HOLON_ROUTE1_BLOCKED`.
+Flags (from `FLAG_UNUSED_0x02x` block): `FLAG_HIDE_PROLOGUE_TY_LAB`, `_TY_TOWN`, `_GRANDMA_DOCK`, `_GRANDMA_HOME`, `_AIDE_RECEPTION`, `_COZMO_LAB`, `FLAG_HOLON_PROLOGUE_DONE`, `FLAG_HOLON_ROUTE1_BLOCKED`.
 
 New maps: `StarterTown` (exists — add dock tiles, reception + 2 house + lab exteriors, Route 1 exit/blocker), `StarterTown_Reception`, `StarterTown_PlayersHouse_1F`, `StarterTown_TysHouse`, `StarterTown_Lab`, Route 1 stub.
 
@@ -156,9 +157,9 @@ Object gfx: Ty (reuse OW rival sprites), Grandma (reuse elderly-woman OW), Aide 
 
 ## Step 1 — Boat / introspection scene (FRLG Seagallop, alternating legs)
 
-Player spawns hidden on the dock; StarterTown `ON_FRAME` (runs while black, before fade-in) plays: **a thought fragment** on black -> one ferry leg -> next thought -> next leg (opposite direction) -> ... -> final leg fades in on the dock with Ty + Grandma beside the player.
+Player spawns hidden on the dock; StarterTown `ON_FRAME` (runs while black, before fade-in) plays: **a thought fragment** on black -> one ferry leg -> next thought -> next leg (opposite direction) -> ... -> final leg fades in on the dock with Grandma beside the player.
 
-The letter was already read in Step 0, so these black-screen boxes are the player's **internal monologue** — turning the letter over, picturing Holon, wondering why Steven picked them, half-listening to Ty. Text symbols: `Prologue_Text_Thought1..N` (was `Prologue_Text_Letter1..5`). Mechanically identical — `msgbox` on black between `DoSeagallopFerryScene` legs; count/length flexible.
+The letter was already read in Step 0, so these black-screen boxes are the player's **internal monologue** — turning the letter over, picturing Holon, wondering why Steven picked them. Text symbols: `Prologue_Text_Thought1..N` (was `Prologue_Text_Letter1..5`). Mechanically identical — `msgbox` on black between `DoSeagallopFerryScene` legs; count/length flexible.
 
 ### C changes — one file, `src/seagallop.c`, all gated on `gSpecialVar_0x8005 != 0`
 
@@ -193,7 +194,7 @@ StarterTown_MapScripts {
 }
 
 StarterTown_OnTransition {
-    if (var(VAR_HOLON_PROLOGUE_STATE) == 1)   // place Ty + Grandma on the dock beside player
+    if (var(VAR_HOLON_PROLOGUE_STATE) == 1)   // place Grandma on the dock beside player
     ...
 }
 
@@ -220,7 +221,7 @@ Prologue_EventScript_BoatIntro {
     setvar(VAR_0x8005, PROLOGUE_BOAT_LEG_FINAL)
     special(DoSeagallopFerryScene); waitstate           // fades IN on the dock
 
-    applymovement(player, disembark); applymovement(LOCALID_TY, disembark_behind)
+    applymovement(player, disembark); applymovement(LOCALID_GRANDMA, disembark_behind)
     waitmovement(0)
     setvar(VAR_0x8005, 0)                               // reset so real ferries work
     clearflag(FLAG_HIDE_MAP_NAME_POPUP)
@@ -232,18 +233,18 @@ Prologue_EventScript_BoatIntro {
 ## Steps 2-5 — reception, aide, goodbye, tour
 
 - State 1 -> reception: entering `StarterTown_Reception`, `ON_FRAME` runs the aide greeting, walk everyone out front, set state 2.
-- State 2 -> goodbye + tour: Grandma farewell, `removeobject` Grandma. Aide leads with paired `applymovement` (aide N tiles; player follows one beat behind). One-line `msgbox` at reception desk -> houses -> lab exterior. Ty tags along via `create_follower_npc` (`FNPC_ENABLE_NPC_FOLLOWERS` already on). End at reception, set state 3.
+- State 2 -> goodbye + tour: Grandma farewell, `removeobject` Grandma. Aide leads with paired `applymovement` (aide N tiles; player follows one beat behind). One-line `msgbox` at reception desk -> houses -> lab exterior. End at reception, set state 3.
 - State 3: aide "settle into your house," `removeobject` aide, `releaseall`.
 
 ## Step 6 — home
 
 `StarterTown_PlayersHouse_1F` `ON_TRANSITION` at state <= 3: Grandma downstairs. Talk -> clock-set (reuse `EventScript_SetWallClock` body) -> optional bedroom beat. Leaving with clock set -> state 4.
 
-## Steps 7-9 — lab, name confirm, starter, Pokedex
+## Steps 7-9 — lab, first meeting with Ty, name confirm, starter, Pokedex
 
 Port from `data/maps/PalletTown_ProfessorOaksLab_Frlg/scripts.inc`:
 - `ON_TRANSITION` state 4: Cozmo at desk, Ty by the table.
-- Greetings, then rival-name confirm: `msgbox("...{RIVAL}, right?", YES_NO)` -> on NO `namingscreen(NAMING_SCREEN_RIVAL)`, re-confirm.
+- Cozmo greets the player and introduces Ty as the other researcher; this is the player's first meeting with Ty. Follow the introduction with rival-name confirm: `msgbox("...{RIVAL}, right?", YES_NO)` -> on NO `namingscreen(NAMING_SCREEN_RIVAL)`, re-confirm.
 - Speech + starter table: adapt `PalletTown_ProfessorOaksLab_ChooseStarterScene` (line 199) — 3 balls as objects, YES/NO each.
 - On pick: `givemon`, `setflag(FLAG_STARTER_CHOSEN)`, hide other balls, nickname prompt, Cozmo gives Pokedex (`setflag FLAG_SYS_POKEDEX_GET` + give-dex special). Set state 6.
 
@@ -262,11 +263,11 @@ Adapt `PalletTown_ProfessorOaksLab_EventScript_RivalBattle` (line 288) on the la
 |---|---|
 | M1 | Step 0 (see full breakdown above): Steven reskin of the Birch intro (repoint sprite at `steven.png` + text swap + Delta mon in the release beat), shiny-rate menu (`VAR_HOLON_SHINY_RATE` + `GetPlayerShinyOdds()`), `new_game.c` warp -> StarterTown dock, `VAR_HOLON_PROLOGUE_STATE` define + `scripts.pory` stub. No boat. Intro half (main_menu/pokemon) is map-independent; can land before the StarterTown map exists. |
 | M2 | `seagallop.c` branch + one leg fired from a script, returning to field on black. |
-| M3 | Full boat intro: 3 legs + ~5 introspection boxes + final leg dock reveal with Ty & Grandma. |
+| M3 | Full boat intro: 3 legs + ~5 introspection boxes + final leg dock reveal with Grandma. |
 | M4 | Reception + aide greeting + Grandma farewell (stub dialogue). |
 | M5 | Tour choreography. |
 | M6 | Home + Grandma + clock. |
-| M7 | Lab: name confirm + speech + starter + Pokedex (port from FRLG Oak's Lab). |
+| M7 | Lab: first meeting with Ty + name confirm + speech + starter + Pokedex (port from FRLG Oak's Lab). |
 | M8 | Ty battle + running shoes + cleanup. |
 | M9 | Art (optional bespoke Steven intro pose, Cozmo sprite, dock tiles), music (Steven intro BGM, sea theme), final text (letter, thoughts). |
 

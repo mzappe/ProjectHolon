@@ -24,6 +24,7 @@
 #include "tv.h"
 #include "coins.h"
 #include "text.h"
+#include "text_window.h"
 #include "overworld.h"
 #include "mail.h"
 #include "battle_records.h"
@@ -101,7 +102,7 @@ static void InitPlayerTrainerId(void)
 static void SetDefaultOptions(void)
 {
     gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
-    gSaveBlock2Ptr->optionsWindowFrameType = 0;
+    gSaveBlock2Ptr->optionsWindowFrameType = WINDOW_FRAME_HOLON;
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_MONO;
     gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
@@ -184,6 +185,7 @@ void NewGameInitData(void)
     gSaveBlock2Ptr->gcnLinkFlags = 0;
     InitPlayerTrainerId();
     PlayTimeCounter_Reset();
+    gSaveBlock2Ptr->lastSavePlayTimeSeconds = 0;
     ClearPokedexFlags();
     InitEventData();
     ClearTVShowData();
